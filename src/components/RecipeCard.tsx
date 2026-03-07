@@ -75,7 +75,7 @@ export default function RecipeCard({ recipe, breakdown, config, onConfigChange }
                 <input
                   type="number"
                   className="w-16 bg-gray-50 border border-gray-200 rounded px-1.5 py-0.5 text-right text-gray-700 text-xs font-mono focus:outline-none focus:border-accent-400 focus:bg-white flex-shrink-0"
-                  value={config.materialPrices[mat.name] ?? 0}
+                  value={config.materialPrices[mat.name] || ''}
                   min={0}
                   onClick={(e) => e.stopPropagation()}
                   onChange={(e) => {
@@ -98,7 +98,25 @@ export default function RecipeCard({ recipe, breakdown, config, onConfigChange }
             <span className="w-5 h-5 flex items-center justify-center text-accent-500 flex-shrink-0 text-[10px] font-bold bg-accent-50 rounded">
               MP
             </span>
-            <span className="text-xs">补魔 {breakdown.mpCost}点</span>
+            <span className="text-xs">耗魔</span>
+            <input
+              type="number"
+              className="w-16 bg-gray-50 border border-gray-200 rounded px-1.5 py-0.5 text-right text-gray-700 text-xs font-mono focus:outline-none focus:border-accent-400 focus:bg-white flex-shrink-0"
+              value={(config.recipeMpCosts[recipe.id] ?? recipe.mpCost) || ''}
+              min={0}
+              onClick={(e) => e.stopPropagation()}
+              onChange={(e) => {
+                e.stopPropagation();
+                onConfigChange({
+                  ...config,
+                  recipeMpCosts: {
+                    ...config.recipeMpCosts,
+                    [recipe.id]: Number(e.target.value) || 0,
+                  },
+                });
+              }}
+            />
+            <span className="text-xs text-gray-400">点</span>
             <span className="ml-auto font-medium flex-shrink-0 text-xs font-mono tabular-nums">{breakdown.mpTotal}元</span>
           </div>
 
