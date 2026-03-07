@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Recipe, CostBreakdown, PriceConfig } from "../lib/types";
+import MaterialModal from "./MaterialModal";
 
 interface RecipeCardProps {
   recipe: Recipe;
@@ -10,6 +11,7 @@ interface RecipeCardProps {
 
 export default function RecipeCard({ recipe, breakdown, config, onConfigChange }: RecipeCardProps) {
   const [expanded, setExpanded] = useState(false);
+  const [selectedMaterial, setSelectedMaterial] = useState<{ name: string; image: string } | null>(null);
 
   const markup =
     breakdown.totalCost > 0
@@ -70,9 +72,13 @@ export default function RecipeCard({ recipe, breakdown, config, onConfigChange }
                 <img
                   src={`/items/${mat.image}`}
                   alt={mat.name}
-                  className="w-5 h-5 object-contain flex-shrink-0"
+                  className="w-5 h-5 object-contain flex-shrink-0 cursor-pointer hover:scale-110 transition-transform"
+                  onClick={(e) => { e.stopPropagation(); setSelectedMaterial({ name: mat.name, image: mat.image }); }}
                 />
-                <span className="truncate text-xs">{mat.name}</span>
+                <span
+                  className="truncate text-xs cursor-pointer hover:text-accent-600 transition-colors"
+                  onClick={(e) => { e.stopPropagation(); setSelectedMaterial({ name: mat.name, image: mat.image }); }}
+                >{mat.name}</span>
                 <span className="text-gray-400 flex-shrink-0 text-xs font-mono">x{mat.quantity}</span>
                 <span className="flex-shrink-0 text-xs font-mono text-gray-300">@</span>
                 <input
@@ -139,6 +145,15 @@ export default function RecipeCard({ recipe, breakdown, config, onConfigChange }
           </div>
         </div>
       </div>
+
+      {/* Material source modal */}
+      {selectedMaterial && (
+        <MaterialModal
+          name={selectedMaterial.name}
+          image={selectedMaterial.image}
+          onClose={() => setSelectedMaterial(null)}
+        />
+      )}
     </div>
   );
 }
