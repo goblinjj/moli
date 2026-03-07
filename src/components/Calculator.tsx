@@ -135,9 +135,9 @@ export default function Calculator({ recipes }: CalculatorProps) {
       {/* Header */}
       <header className="bg-slate-900 text-white px-6 py-3.5 shadow-lg">
         <h1 className="text-lg font-bold tracking-wide select-none">
-          <span className="text-accent-500">MR</span>
+          <span className="text-accent-500">Qi魔力</span>
           <span className="mx-1.5 text-slate-400">|</span>
-          魔力宝贝生产计算器
+          生产计算器
         </h1>
       </header>
 
