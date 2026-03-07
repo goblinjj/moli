@@ -1,0 +1,1192 @@
+[
+  {
+    "id": "cooking-1a",
+    "name": "蕃茄醬",
+    "category": "cooking",
+    "level": 1,
+    "variant": "A",
+    "image": "b560764824fe5a301591d589a3bab960.png",
+    "mpCost": 20,
+    "materials": [
+      {
+        "name": "蕃茄",
+        "quantity": 5,
+        "image": "1f0e3d76f9ea4f372f8df93296fa69c0.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "瓶子",
+        "quantity": 1,
+        "image": "70620fd2c8b23c205fe106470a402d1c.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-1b",
+    "name": "麵包",
+    "category": "cooking",
+    "level": 1,
+    "variant": "B",
+    "image": "e62594ad5c772e0252a95e5f03b92d22.png",
+    "mpCost": 20,
+    "materials": [
+      {
+        "name": "小麥粉",
+        "quantity": 16,
+        "image": "41b8558c8be2443910db8c88e5c95538.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "牛奶",
+        "quantity": 10,
+        "image": "ba846cff739c96f7205c3b2eb1bffac4.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹽",
+        "quantity": 5,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "cooking-1c",
+    "name": "神聖美乃滋",
+    "category": "cooking",
+    "level": 1,
+    "variant": "C",
+    "image": "aa289477ea8d88961c8a7b2a607edb3d.png",
+    "mpCost": 20,
+    "materials": [
+      {
+        "name": "鹽",
+        "quantity": 1,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "神聖油",
+        "quantity": 2,
+        "image": "1e9b1701b3595324f8aa59aec83ddaeb.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "神聖醋",
+        "quantity": 2,
+        "image": "05164ab7750701c35c6efa4c769b5be3.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "雞蛋",
+        "quantity": 2,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-1d",
+    "name": "白飯",
+    "category": "cooking",
+    "level": 1,
+    "variant": "D",
+    "image": "4bb832503d87f280096b41c8a316eea3.png",
+    "mpCost": 20,
+    "materials": [
+      {
+        "name": "飯碗",
+        "quantity": 5,
+        "image": "e314cf7179d6c2add7c41f0c1075fa2a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "神聖米",
+        "quantity": 5,
+        "image": "e9e4896ebaaff38db3f2b8617917fc07.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-1e",
+    "name": "美乃滋芝麻拌飯",
+    "category": "cooking",
+    "level": 1,
+    "variant": "E",
+    "image": "4c5c531640b0ef7cd60baa24fa6820bd.png",
+    "mpCost": 20,
+    "materials": [
+      {
+        "name": "芝麻娃娃",
+        "quantity": 1,
+        "image": "2668923bd168827cd620544a87cd3d47.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "神聖美乃滋",
+        "quantity": 3,
+        "image": "aa289477ea8d88961c8a7b2a607edb3d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "白飯",
+        "quantity": 3,
+        "image": "4bb832503d87f280096b41c8a316eea3.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-1f",
+    "name": "蛋飯",
+    "category": "cooking",
+    "level": 1,
+    "variant": "F",
+    "image": "117ba8d53de37ab5fb20716ce59f6d61.png",
+    "mpCost": 20,
+    "materials": [
+      {
+        "name": "白飯",
+        "quantity": 3,
+        "image": "4bb832503d87f280096b41c8a316eea3.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "雞蛋",
+        "quantity": 10,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-2a",
+    "name": "蛋包飯",
+    "category": "cooking",
+    "level": 2,
+    "variant": "A",
+    "image": "34ab7b28fd0e2f261d5dadb21d2a8e85.png",
+    "mpCost": 40,
+    "materials": [
+      {
+        "name": "雞蛋",
+        "quantity": 10,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "牛奶",
+        "quantity": 15,
+        "image": "ba846cff739c96f7205c3b2eb1bffac4.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹽",
+        "quantity": 5,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "芹菜",
+        "quantity": 1,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "蕃茄醬",
+        "quantity": 1,
+        "image": "b560764824fe5a301591d589a3bab960.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-2b",
+    "name": "法國麵包",
+    "category": "cooking",
+    "level": 2,
+    "variant": "B",
+    "image": "da651ce03500dd48db772b1117e9fa54.png",
+    "mpCost": 40,
+    "materials": [
+      {
+        "name": "小麥粉",
+        "quantity": 20,
+        "image": "41b8558c8be2443910db8c88e5c95538.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "牛奶",
+        "quantity": 20,
+        "image": "ba846cff739c96f7205c3b2eb1bffac4.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "cooking-3a",
+    "name": "炒麵",
+    "category": "cooking",
+    "level": 3,
+    "variant": "A",
+    "image": "4d110e4faa9ec5f457b20d9fad9600a9.png",
+    "mpCost": 60,
+    "materials": [
+      {
+        "name": "小麥粉",
+        "quantity": 20,
+        "image": "41b8558c8be2443910db8c88e5c95538.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹽",
+        "quantity": 10,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "海苔",
+        "quantity": 20,
+        "image": "2700bf355f9d2b06540a5d16705aeff2.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "薑",
+        "quantity": 12,
+        "image": "277f1120fd89f968aec48796ef89c23a.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cooking-3b",
+    "name": "青椒肉絲",
+    "category": "cooking",
+    "level": 3,
+    "variant": "B",
+    "image": "4437eb47de9662a054827096b8a7e134.png",
+    "mpCost": 60,
+    "materials": [
+      {
+        "name": "青椒",
+        "quantity": 20,
+        "image": "f012c1ef7e4f372eaab68a458e101b19.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹽",
+        "quantity": 10,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "竹筍",
+        "quantity": 20,
+        "image": "43dbd5681ff066d59a54cc87f0304013.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "牛肉",
+        "quantity": 20,
+        "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cooking-3c",
+    "name": "猛毒的餌",
+    "category": "cooking",
+    "level": 3,
+    "variant": "C",
+    "image": "77112d0cd8781dadc4e19ddfe0283e75.png",
+    "mpCost": 60,
+    "materials": [
+      {
+        "name": "必死的劇藥",
+        "quantity": 1,
+        "image": "f0af1ec7ed76e49f9f2cddd51f25dfeb.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "牛肉",
+        "quantity": 20,
+        "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cooking-4a",
+    "name": "燒雞",
+    "category": "cooking",
+    "level": 4,
+    "variant": "A",
+    "image": "3efe9d1b032c69ef7baf20d12d049aae.png",
+    "mpCost": 80,
+    "materials": [
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "雞肉",
+        "quantity": 20,
+        "image": "1545dc22816539a5d5dcd38686fd8d6d.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "胡椒",
+        "quantity": 20,
+        "image": "d6695c9a18f212a07c53b4f5234331ef.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 20,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "cooking-4b",
+    "name": "親子丼",
+    "category": "cooking",
+    "level": 4,
+    "variant": "B",
+    "image": "f455aa4a7f165f41455662f6ecb9bf6c.png",
+    "mpCost": 80,
+    "materials": [
+      {
+        "name": "雞蛋",
+        "quantity": 20,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "蔥",
+        "quantity": 20,
+        "image": "91d27673a80cc4141d1c9b7a4b919565.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "醬油",
+        "quantity": 20,
+        "image": "b75b456813e35325ccc85c5029b56171.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "雞肉",
+        "quantity": 20,
+        "image": "1545dc22816539a5d5dcd38686fd8d6d.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "米",
+        "quantity": 20,
+        "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "cooking-5a",
+    "name": "漢堡",
+    "category": "cooking",
+    "level": 5,
+    "variant": "A",
+    "image": "2adf6358f1438d671ef8d4c20da5ef0d.png",
+    "mpCost": 100,
+    "materials": [
+      {
+        "name": "雞蛋",
+        "quantity": 20,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "蔥",
+        "quantity": 20,
+        "image": "91d27673a80cc4141d1c9b7a4b919565.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "蕃茄醬",
+        "quantity": 3,
+        "image": "b560764824fe5a301591d589a3bab960.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "牛肉",
+        "quantity": 20,
+        "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cooking-5b",
+    "name": "星鰻飯糰",
+    "category": "cooking",
+    "level": 5,
+    "variant": "B",
+    "image": "c2b3cd38eef91aff73253da8e6cc6faa.png",
+    "mpCost": 100,
+    "materials": [
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "醬油",
+        "quantity": 20,
+        "image": "b75b456813e35325ccc85c5029b56171.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "海苔",
+        "quantity": 20,
+        "image": "2700bf355f9d2b06540a5d16705aeff2.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "星鰻",
+        "quantity": 20,
+        "image": "784b94aa75f893178daf51bb5ed70883.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "米",
+        "quantity": 20,
+        "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "cooking-5c",
+    "name": "醬油豬骨拉麵",
+    "category": "cooking",
+    "level": 5,
+    "variant": "C",
+    "image": "c69be0023cc68710eb8efc1058ffcafc.png",
+    "mpCost": 100,
+    "materials": [
+      {
+        "name": "小麥粉",
+        "quantity": 20,
+        "image": "41b8558c8be2443910db8c88e5c95538.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "雞蛋",
+        "quantity": 20,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "醬油",
+        "quantity": 20,
+        "image": "b75b456813e35325ccc85c5029b56171.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "海苔",
+        "quantity": 20,
+        "image": "2700bf355f9d2b06540a5d16705aeff2.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "豬肉",
+        "quantity": 20,
+        "image": "f9f814337691841f18a750416dbae036.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cooking-6a",
+    "name": "炒麵麵包",
+    "category": "cooking",
+    "level": 6,
+    "variant": "A",
+    "image": "16d7ec3818357c55c3d0f2fe93feb88b.png",
+    "mpCost": 120,
+    "materials": [
+      {
+        "name": "法國麵包",
+        "quantity": 1,
+        "image": "da651ce03500dd48db772b1117e9fa54.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "炒麵",
+        "quantity": 1,
+        "image": "4d110e4faa9ec5f457b20d9fad9600a9.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "cooking-6b",
+    "name": "壽喜鍋",
+    "category": "cooking",
+    "level": 6,
+    "variant": "B",
+    "image": "5bc996f8b1589b06fef05bc59e8750fb.png",
+    "mpCost": 120,
+    "materials": [
+      {
+        "name": "蔥",
+        "quantity": 20,
+        "image": "91d27673a80cc4141d1c9b7a4b919565.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "醬油",
+        "quantity": 20,
+        "image": "b75b456813e35325ccc85c5029b56171.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "牛肉",
+        "quantity": 20,
+        "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "砂糖",
+        "quantity": 20,
+        "image": "86dd6a652fc6c126cf7b70f5b73e447a.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "cooking-7a",
+    "name": "咖哩飯",
+    "category": "cooking",
+    "level": 7,
+    "variant": "A",
+    "image": "ddb63cb2bcbe1009183ce070060d5465.png",
+    "mpCost": 140,
+    "materials": [
+      {
+        "name": "蔥",
+        "quantity": 20,
+        "image": "91d27673a80cc4141d1c9b7a4b919565.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "雞肉",
+        "quantity": 20,
+        "image": "1545dc22816539a5d5dcd38686fd8d6d.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "馬鈴薯",
+        "quantity": 20,
+        "image": "bb3aa265222c656aa8b22ccb0c6f0194.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "米",
+        "quantity": 20,
+        "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "咖哩塊",
+        "quantity": 10,
+        "image": "531dedd74617b2df1a5bef6e77677b48.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "cooking-7b",
+    "name": "韓式泡菜飯",
+    "category": "cooking",
+    "level": 7,
+    "variant": "B",
+    "image": "a6b587f4bd6adbcd89e5b90ee66cb246.png",
+    "mpCost": 140,
+    "materials": [
+      {
+        "name": "雞蛋",
+        "quantity": 10,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "牛肉",
+        "quantity": 20,
+        "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "米",
+        "quantity": 20,
+        "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "辣椒",
+        "quantity": 20,
+        "image": "a8ab9f244462269568596a3165d17b03.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "cooking-7c",
+    "name": "水龍料理",
+    "category": "cooking",
+    "level": 7,
+    "variant": "C",
+    "image": "3bbb6f3394811f8790aed9c4906314aa.png",
+    "mpCost": 140,
+    "materials": [
+      {
+        "name": "水龍的鰭",
+        "quantity": 1,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-8a",
+    "name": "螃蟹鍋",
+    "category": "cooking",
+    "level": 8,
+    "variant": "A",
+    "image": "d37aed30936695d58dc3c57aaea246b2.png",
+    "mpCost": 160,
+    "materials": [
+      {
+        "name": "蔥",
+        "quantity": 20,
+        "image": "91d27673a80cc4141d1c9b7a4b919565.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "醬油",
+        "quantity": 20,
+        "image": "b75b456813e35325ccc85c5029b56171.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "馬鈴薯",
+        "quantity": 20,
+        "image": "bb3aa265222c656aa8b22ccb0c6f0194.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "辣椒",
+        "quantity": 20,
+        "image": "a8ab9f244462269568596a3165d17b03.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "螃蟹",
+        "quantity": 10,
+        "image": "91bec443f9f92d9f5874a51086dcb18b.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "cooking-8b",
+    "name": "牛排",
+    "category": "cooking",
+    "level": 8,
+    "variant": "B",
+    "image": "ea088f16cd889496963bd7ddde09cd7a.png",
+    "mpCost": 160,
+    "materials": [
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "胡椒",
+        "quantity": 10,
+        "image": "d6695c9a18f212a07c53b4f5234331ef.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "馬鈴薯",
+        "quantity": 10,
+        "image": "bb3aa265222c656aa8b22ccb0c6f0194.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "高級奶油",
+        "quantity": 20,
+        "image": "e833f21a124ddbc0f07d533a0de42e7b.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "霜降牛肉",
+        "quantity": 20,
+        "image": "4dff4d2cf989e076e14139b48103efd0.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "cooking-8c",
+    "name": "魅惑的哈密瓜麵包",
+    "category": "cooking",
+    "level": 8,
+    "variant": "C",
+    "image": "6a706643f6bc53c026796b9881b6e539.png",
+    "mpCost": 160,
+    "materials": [
+      {
+        "name": "小麥粉",
+        "quantity": 20,
+        "image": "41b8558c8be2443910db8c88e5c95538.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "牛奶",
+        "quantity": 20,
+        "image": "ba846cff739c96f7205c3b2eb1bffac4.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "砂糖",
+        "quantity": 20,
+        "image": "86dd6a652fc6c126cf7b70f5b73e447a.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔法紅蘿蔔",
+        "quantity": 10,
+        "image": "6a6cb752d3cf056e7a0d4d7f3f0720c4.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "阿巴尼斯哈密瓜",
+        "quantity": 3,
+        "image": "4c79b731c2811185dc62ce76894b9623.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "cooking-9a",
+    "name": "醋飯壽司",
+    "category": "cooking",
+    "level": 9,
+    "variant": "A",
+    "image": "d914210c0b6ab01137b76e7d5fa357b5.png",
+    "mpCost": 180,
+    "materials": [
+      {
+        "name": "海苔",
+        "quantity": 20,
+        "image": "2700bf355f9d2b06540a5d16705aeff2.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "星鰻",
+        "quantity": 20,
+        "image": "784b94aa75f893178daf51bb5ed70883.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "米",
+        "quantity": 20,
+        "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "螃蟹",
+        "quantity": 20,
+        "image": "91bec443f9f92d9f5874a51086dcb18b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "伊勢蝦",
+        "quantity": 10,
+        "image": "9f185fea79573507366043d3b15e8b01.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "cooking-9b",
+    "name": "豪華壽司組",
+    "category": "cooking",
+    "level": 9,
+    "variant": "B",
+    "image": "8acd76ba51ce17f335ce473c4bfb8295.png",
+    "mpCost": 180,
+    "materials": [
+      {
+        "name": "雞蛋",
+        "quantity": 20,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "醬油",
+        "quantity": 20,
+        "image": "b75b456813e35325ccc85c5029b56171.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "海苔",
+        "quantity": 20,
+        "image": "2700bf355f9d2b06540a5d16705aeff2.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "伊勢蝦",
+        "quantity": 15,
+        "image": "9f185fea79573507366043d3b15e8b01.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "海膽",
+        "quantity": 15,
+        "image": "cb4307ea265c54831087058e3b121cff.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "cooking-10a",
+    "name": "魚翅湯",
+    "category": "cooking",
+    "level": 10,
+    "variant": "A",
+    "image": "584e3602870c91d193bbe4b03f0bbcf2.png",
+    "mpCost": 200,
+    "materials": [
+      {
+        "name": "雞蛋",
+        "quantity": 20,
+        "image": "0898fe7c20631883736376cf7168de2d.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "蔥",
+        "quantity": 20,
+        "image": "91d27673a80cc4141d1c9b7a4b919565.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "胡椒",
+        "quantity": 20,
+        "image": "d6695c9a18f212a07c53b4f5234331ef.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "魚翅",
+        "quantity": 20,
+        "image": "a30844b6d503be58a65aa7ebeb7c4d93.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking-10b",
+    "name": "鱉料理",
+    "category": "cooking",
+    "level": 10,
+    "variant": "B",
+    "image": "645026ba9a8b11c1f63bb773b8344436.png",
+    "mpCost": 200,
+    "materials": [
+      {
+        "name": "辣椒",
+        "quantity": 20,
+        "image": "a8ab9f244462269568596a3165d17b03.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "螃蟹",
+        "quantity": 20,
+        "image": "91bec443f9f92d9f5874a51086dcb18b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "伊勢蝦",
+        "quantity": 10,
+        "image": "9f185fea79573507366043d3b15e8b01.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "海膽",
+        "quantity": 10,
+        "image": "cb4307ea265c54831087058e3b121cff.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鱉",
+        "quantity": 20,
+        "image": "86b24c9b7b4c7644baa3854d54fec76b.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking-11a",
+    "name": "韓式海鮮鍋",
+    "category": "cooking",
+    "level": 11,
+    "variant": "A",
+    "image": "2cfb28013461472e05e9f27b20d8ee4e.png",
+    "mpCost": 220,
+    "materials": [
+      {
+        "name": "鱉",
+        "quantity": 20,
+        "image": "86b24c9b7b4c7644baa3854d54fec76b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "伊勢蝦",
+        "quantity": 40,
+        "image": "9f185fea79573507366043d3b15e8b01.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "螃蟹",
+        "quantity": 20,
+        "image": "91bec443f9f92d9f5874a51086dcb18b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "竹夾魚",
+        "quantity": 20,
+        "image": "72f40390b166eb9a88fc2610be80cb0c.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "泡菜",
+        "quantity": 3,
+        "image": "9184a4dfc3802fffa09388e52b46fef0.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cooking-11b",
+    "name": "定食飯盒",
+    "category": "cooking",
+    "level": 11,
+    "variant": "B",
+    "image": "8acd76ba51ce17f335ce473c4bfb8295.png",
+    "mpCost": 220,
+    "materials": [
+      {
+        "name": "伊勢蝦",
+        "quantity": 20,
+        "image": "9f185fea79573507366043d3b15e8b01.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "霜降牛肉",
+        "quantity": 20,
+        "image": "4dff4d2cf989e076e14139b48103efd0.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "米",
+        "quantity": 20,
+        "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "黃豆",
+        "quantity": 20,
+        "image": "c9517cbe0264338d9bf39340fe23410b.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "cooking-12a",
+    "name": "紅燒牛腩",
+    "category": "cooking",
+    "level": 12,
+    "variant": "A",
+    "image": "62c6227e9bd6aa0632838c6624bb6e53.png",
+    "mpCost": 240,
+    "materials": [
+      {
+        "name": "醬油",
+        "quantity": 40,
+        "image": "b75b456813e35325ccc85c5029b56171.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "辣椒",
+        "quantity": 20,
+        "image": "a8ab9f244462269568596a3165d17b03.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "霜降牛肉",
+        "quantity": 40,
+        "image": "4dff4d2cf989e076e14139b48103efd0.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "黃豆",
+        "quantity": 20,
+        "image": "c9517cbe0264338d9bf39340fe23410b.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "牛肋條",
+        "quantity": 20,
+        "image": "2b487c13c029274f5a848d6fd723b737.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "cooking-13a",
+    "name": "魚翅燕窩",
+    "category": "cooking",
+    "level": 13,
+    "variant": "A",
+    "image": "438d67a70644d77df476f7ad57468280.png",
+    "mpCost": 260,
+    "materials": [
+      {
+        "name": "鹽",
+        "quantity": 40,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "天然燕窩",
+        "quantity": 40,
+        "image": "92e084a46641ebc3edeb7bf4e06f15d1.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "魚翅",
+        "quantity": 40,
+        "image": "a30844b6d503be58a65aa7ebeb7c4d93.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "砂糖",
+        "quantity": 20,
+        "image": "86dd6a652fc6c126cf7b70f5b73e447a.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "cooking-13b",
+    "name": "風虎料理",
+    "category": "cooking",
+    "level": 13,
+    "variant": "B",
+    "image": "2b415ba16c25dc76728301c6cbf6aecf.png",
+    "mpCost": 260,
+    "materials": [
+      {
+        "name": "天然燕窩",
+        "quantity": 40,
+        "image": "92e084a46641ebc3edeb7bf4e06f15d1.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "熟成的肉排",
+        "quantity": 1,
+        "image": "613552c4135502f71f79a852c6d3f520.png",
+        "materialLevel": 0
+      }
+    ]
+  },
+  {
+    "id": "cooking-14a",
+    "name": "海陸鍋",
+    "category": "cooking",
+    "level": 14,
+    "variant": "A",
+    "image": "b44918565b507626745ec4e0c17d1f48.png",
+    "mpCost": 280,
+    "materials": [
+      {
+        "name": "鹽",
+        "quantity": 40,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "螃蟹",
+        "quantity": 20,
+        "image": "91bec443f9f92d9f5874a51086dcb18b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "霜降牛肉",
+        "quantity": 20,
+        "image": "4dff4d2cf989e076e14139b48103efd0.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "伊勢蝦",
+        "quantity": 20,
+        "image": "9f185fea79573507366043d3b15e8b01.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鹿茸",
+        "quantity": 40,
+        "image": "5b288977bb2c4d5dd99a1137b6093522.png",
+        "materialLevel": 14
+      }
+    ]
+  }
+]
