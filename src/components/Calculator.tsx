@@ -74,20 +74,24 @@ export default function Calculator({ recipes }: CalculatorProps) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-100 flex flex-col">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
-      <header className="bg-slate-800 text-white px-4 py-3 flex items-center justify-between shadow-md">
-        <h1 className="text-lg font-bold tracking-wide">魔力宝贝生产计算器</h1>
-        <div className="flex items-center gap-2">
+      <header className="bg-slate-900 text-white px-6 py-3.5 flex items-center justify-between shadow-lg">
+        <h1 className="text-lg font-bold tracking-wide select-none">
+          <span className="text-accent-500">MR</span>
+          <span className="mx-1.5 text-slate-400">|</span>
+          魔力宝贝生产计算器
+        </h1>
+        <div className="flex items-center gap-1.5">
           {(["bow", "cooking"] as Category[]).map((cat) => (
             <button
               key={cat}
               type="button"
               onClick={() => handleCategoryChange(cat)}
-              className={`px-4 py-1.5 rounded text-sm font-medium transition-colors ${
+              className={`px-4 py-1.5 rounded-md text-sm font-medium transition-all duration-150 ${
                 activeCategory === cat
-                  ? "bg-blue-500 text-white"
-                  : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                  ? "bg-accent-500 text-white shadow-sm shadow-accent-500/30"
+                  : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-slate-200"
               }`}
             >
               {CATEGORY_LABELS[cat]}
@@ -99,7 +103,7 @@ export default function Calculator({ recipes }: CalculatorProps) {
       {/* Mobile sidebar toggle */}
       <button
         type="button"
-        className="md:hidden fixed bottom-4 right-4 z-50 bg-blue-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-xl"
+        className="md:hidden fixed bottom-5 right-5 z-50 bg-accent-500 hover:bg-accent-600 text-white w-13 h-13 rounded-full shadow-lg shadow-accent-500/30 flex items-center justify-center text-xl transition-colors"
         onClick={() => setSidebarOpen((v) => !v)}
         aria-label="Toggle price settings"
       >
@@ -130,7 +134,7 @@ export default function Calculator({ recipes }: CalculatorProps) {
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 overflow-y-auto p-4">
+        <main className="flex-1 overflow-y-auto p-5 lg:p-6">
           <SearchFilter
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
@@ -140,11 +144,11 @@ export default function Calculator({ recipes }: CalculatorProps) {
           />
 
           {breakdowns.length === 0 ? (
-            <div className="text-center text-slate-400 mt-12 text-sm">
+            <div className="text-center text-slate-400 mt-16 text-sm">
               没有找到匹配的配方
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
               {breakdowns.map(({ recipe, breakdown }) => (
                 <RecipeCard key={recipe.id} recipe={recipe} breakdown={breakdown} />
               ))}

@@ -16,11 +16,11 @@ export default function SearchFilter({
   const levelOptions: (number | null)[] = [null, ...Array.from({ length: maxLevel }, (_, i) => i + 1)];
 
   return (
-    <div className="w-full flex items-center gap-3 py-2">
+    <div className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-3 pb-2">
       {/* Search input */}
-      <div className="relative flex-1 max-w-xs">
+      <div className="relative flex-1 max-w-sm w-full">
         <svg
-          className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none"
+          className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -37,7 +37,7 @@ export default function SearchFilter({
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder="搜索物品名称..."
-          className="w-full bg-slate-700 border border-slate-600 rounded-full pl-8 pr-3 py-1.5 text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-blue-400"
+          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2 text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500 transition-shadow"
         />
       </div>
 
@@ -50,10 +50,10 @@ export default function SearchFilter({
               key={level ?? "all"}
               type="button"
               onClick={() => onLevelChange(level)}
-              className={`px-2.5 py-1 rounded-full text-xs font-medium transition-colors ${
+              className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all duration-150 ${
                 isActive
-                  ? "bg-blue-500 text-white"
-                  : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                  ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:text-gray-900 shadow-sm"
               }`}
             >
               {level === null ? "全部" : `${level}级`}

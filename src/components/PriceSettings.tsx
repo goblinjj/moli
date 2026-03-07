@@ -42,16 +42,26 @@ interface CollapsibleSectionProps {
 function CollapsibleSection({ title, children, defaultOpen = false }: CollapsibleSectionProps) {
   const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="border-t border-slate-600">
+    <div className="border-t border-slate-700/50">
       <button
         type="button"
-        className="w-full flex items-center justify-between py-2 px-1 text-sm font-semibold text-slate-200 hover:text-white"
+        className="w-full flex items-center justify-between py-2.5 px-1 text-sm font-semibold text-slate-300 hover:text-white transition-colors"
         onClick={() => setOpen((v) => !v)}
       >
         <span>{title}</span>
-        <span className="text-xs">{open ? "▼" : "▶"}</span>
+        <svg
+          className={`w-3.5 h-3.5 text-slate-500 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2.5}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
-      {open && <div className="pb-2">{children}</div>}
+      <div className={`card-expand overflow-hidden ${open ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"}`}>
+        <div className="pb-3">{children}</div>
+      </div>
     </div>
   );
 }

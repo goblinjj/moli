@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  --font-mono: "SF Mono", "Cascadia Code", "Fira Code", ui-monospace, monospace;
+  --color-accent-50: #eff6ff;
+  --color-accent-100: #dbeafe;
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
+}
+
+/* Smooth scrollbar for sidebar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Tabular numbers for price alignment */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Card expand animation */
+.card-expand {
+  transition: max-height 0.25s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Image rendering */
+img {
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
