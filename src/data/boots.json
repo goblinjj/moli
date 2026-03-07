@@ -1,0 +1,1310 @@
+[
+  {
+    "id": "boots-1a",
+    "name": "軟皮靴",
+    "category": "boots",
+    "level": 1,
+    "variant": "A",
+    "image": "d56bcfa700f464b46388bc2d9df7f505.png",
+    "mpCost": 20,
+    "stats": "防禦 5~10抗魔 3~5耐久 200~250",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 4,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "boots-1b",
+    "name": "皮靴",
+    "category": "boots",
+    "level": 1,
+    "variant": "B",
+    "image": "373a7abd8d6caec85394e6f9fbdd4424.png",
+    "mpCost": 20,
+    "stats": "防禦 8~15抗魔 1~3耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 7,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "boots-2a",
+    "name": "硬皮靴",
+    "category": "boots",
+    "level": 2,
+    "variant": "A",
+    "image": "79b8f9a9521ac1fb1eed97d8eed3a9f8.png",
+    "mpCost": 40,
+    "stats": "防禦 10~19抗魔 6~10耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 4,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "boots-2b",
+    "name": "長靴",
+    "category": "boots",
+    "level": 2,
+    "variant": "B",
+    "image": "1ef180de6b2885bd8110c376573ebd97.png",
+    "mpCost": 40,
+    "stats": "防禦 13~24抗魔 2~6耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 3,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 3,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 3,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 3,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "boots-3a",
+    "name": "厚底靴",
+    "category": "boots",
+    "level": 3,
+    "variant": "A",
+    "image": "3a918d6e3a7c55f5e73ec0477e065006.png",
+    "mpCost": 60,
+    "stats": "防禦 17~29抗魔 9~15耐久 200~250",
+    "materials": [
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 8,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 4,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 3,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "boots-3b",
+    "name": "編織的靴子",
+    "category": "boots",
+    "level": 3,
+    "variant": "B",
+    "image": "373a7abd8d6caec85394e6f9fbdd4424.png",
+    "mpCost": 60,
+    "stats": "防禦 20~34抗魔 3~9耐久 200~250",
+    "materials": [
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 5,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 9,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 2,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "boots-4a",
+    "name": "鎖鍊長靴",
+    "category": "boots",
+    "level": 4,
+    "variant": "A",
+    "image": "676702a47573e4d3a677757ecd952e75.png",
+    "mpCost": 80,
+    "stats": "防禦 25~38抗魔 12~20耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 6,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 6,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "麻布",
+        "quantity": 6,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 3,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "boots-4b",
+    "name": "鎖鍊靴",
+    "category": "boots",
+    "level": 4,
+    "variant": "B",
+    "image": "3a05cbb808306304035246cccdec625f.png",
+    "mpCost": 80,
+    "stats": "防禦 28~43抗魔 4~12耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 3,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "毛氈",
+        "quantity": 3,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "細線",
+        "quantity": 3,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "boots-5a",
+    "name": "蜥蝪靴",
+    "category": "boots",
+    "level": 5,
+    "variant": "A",
+    "image": "b83f0abe21cf68136ec446ab24a88b85.png",
+    "mpCost": 100,
+    "stats": "防禦 34~48抗魔 15~25耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "毛氈",
+        "quantity": 3,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 3,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "boots-5b",
+    "name": "蜥蝪長靴",
+    "category": "boots",
+    "level": 5,
+    "variant": "B",
+    "image": "744b5b4422fa7f2abb4b331fee999741.png",
+    "mpCost": 100,
+    "stats": "防禦 37~53抗魔 5~15耐久 200~250",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 4,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 5,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "boots-5c",
+    "name": "防護靴",
+    "category": "boots",
+    "level": 5,
+    "variant": "C",
+    "image": "e68c59f09a3c5318ab47358369e477df.png",
+    "mpCost": 100,
+    "stats": "防禦 +20必殺 +6閃躲 -5抗魔 4~10耐久 200~250",
+    "materials": [
+      {
+        "name": "絹布",
+        "quantity": 3,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 3,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "金條",
+        "quantity": 2,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 3,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "boots-6a",
+    "name": "鋼靴",
+    "category": "boots",
+    "level": 6,
+    "variant": "A",
+    "image": "67849c2e50525b874342f5813d038a48.png",
+    "mpCost": 120,
+    "stats": "防禦 43~57抗魔 18~30耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 20,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "boots-6b",
+    "name": "鋼製長靴",
+    "category": "boots",
+    "level": 6,
+    "variant": "B",
+    "image": "d044d6751a287729ba86bf71072ba74c.png",
+    "mpCost": 120,
+    "stats": "防禦 47~62抗魔 6~18耐久 200~250",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 7,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "boots-7a",
+    "name": "水晶靴",
+    "category": "boots",
+    "level": 7,
+    "variant": "A",
+    "image": "d9117876860cc08c79ac5b55a06b2fde.png",
+    "mpCost": 140,
+    "stats": "防禦 54~72抗魔 21~35耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "金條",
+        "quantity": 8,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "boots-7b",
+    "name": "銀靴",
+    "category": "boots",
+    "level": 7,
+    "variant": "B",
+    "image": "716c5a10a16b00c1baaaf19c6cb637c9.png",
+    "mpCost": 140,
+    "stats": "防禦 50~67敏捷 +10抗昏睡 +8抗魔 +12耐久 200~250",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 7,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "boots-7c",
+    "name": "水龍之靴",
+    "category": "boots",
+    "level": 7,
+    "variant": "C",
+    "image": "2f99597d95b7e1903851cab5fcc44115.png",
+    "mpCost": 140,
+    "stats": "防禦 +100必殺 +5命中 +5魔力 +150耐久 200",
+    "materials": [
+      {
+        "name": "破爛的靴子",
+        "quantity": 1,
+        "image": "882796abb050ee382bb17fb5b072b5a8.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "boots-8a",
+    "name": "流水之靴",
+    "category": "boots",
+    "level": 8,
+    "variant": "A",
+    "image": "680c4d1dc75397d284a4eacd67d76f75.png",
+    "mpCost": 160,
+    "stats": "防禦 61~81抗魔 24~40耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 5,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "boots-8b",
+    "name": "芙蕾雅之靴",
+    "category": "boots",
+    "level": 8,
+    "variant": "B",
+    "image": "142e8a0d0d1073703d942a36a40cd04a.png",
+    "mpCost": 160,
+    "stats": "防禦 +30必殺 +4反擊 +4抗魔 +16耐久 200~250",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 5,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "火焰之魂",
+        "quantity": 1,
+        "image": "681950d48b2bf2f1a84c8348d8a675a5.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "boots-8c",
+    "name": "標準長靴+",
+    "category": "boots",
+    "level": 8,
+    "variant": "C",
+    "image": "d9117876860cc08c79ac5b55a06b2fde.png",
+    "mpCost": 160,
+    "stats": "防禦 55~75閃躲 1~3抗魔 8~24耐久 170~220",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 20,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "阿巴尼斯製的布",
+        "quantity": 5,
+        "image": "38908a4f47f001578a0c9894d7b9ca75.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 20,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "boots-9a",
+    "name": "鑽石靴",
+    "category": "boots",
+    "level": 9,
+    "variant": "A",
+    "image": "33de61cbccbe2c2cd90fbb3cd17b2c7a.png",
+    "mpCost": 180,
+    "stats": "防禦 78~91抗魔 27~45耐久 200~250",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 4,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 5,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "boots-9b",
+    "name": "鑽石長靴",
+    "category": "boots",
+    "level": 9,
+    "variant": "B",
+    "image": "75c04533cccd04c56050e05ee2aefa10.png",
+    "mpCost": 180,
+    "stats": "防禦 +80必殺 +3反擊 +3命中 +2抗魔 +18耐久 200~250",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "隕石",
+        "quantity": 1,
+        "image": "f13ca1d71b6f3889463478d58720d531.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "boots-10a",
+    "name": "秘密之靴",
+    "category": "boots",
+    "level": 10,
+    "variant": "A",
+    "image": "4ee449a4abc52233686dd643c4853b3b.png",
+    "mpCost": 200,
+    "stats": "防禦 85~100抗魔 40~50耐久 200~250",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "細麻布",
+        "quantity": 5,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "boots-10b",
+    "name": "龍之靴",
+    "category": "boots",
+    "level": 10,
+    "variant": "B",
+    "image": "f82f6a80ec6776e070d51140754f353c.png",
+    "mpCost": 200,
+    "stats": "防禦 +85敏捷 +15命中 +3閃躲 +3抗魔 +15耐久 200~250",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 8,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "boots-11a",
+    "name": "幸運靴",
+    "category": "boots",
+    "level": 11,
+    "variant": "A",
+    "image": "6f728e3fb9fa7890e5f8bfddef77fbab.png",
+    "mpCost": 220,
+    "stats": "防禦 79~92閃躲 +10抗魔 20~25耐久 200~250",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 3,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 2,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 3,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 2,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "boots-11b",
+    "name": "試力鞋",
+    "category": "boots",
+    "level": 11,
+    "variant": "B",
+    "image": "5bb06eb6ecfcc032e48d82bae156008e.png",
+    "mpCost": 220,
+    "stats": "防禦 101~116反擊 +6抗魔 55~59耐久 200~250",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 8,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 14,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 15,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 2,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "boots-11c",
+    "name": "彩繪靴",
+    "category": "boots",
+    "level": 11,
+    "variant": "C",
+    "image": "288af94287cbcf9c68edd4bfe970c5b3.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "開米士毛線",
+        "quantity": 11,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 6,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 9,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 10,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "boots-12a",
+    "name": "踏雪靴",
+    "category": "boots",
+    "level": 12,
+    "variant": "A",
+    "image": "0a0f4140416fe28df6eb225c91b8cdcd.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鵝絨",
+        "quantity": 11,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 4,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 4,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 7,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 5,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "boots-12b",
+    "name": "天使長靴",
+    "category": "boots",
+    "level": 12,
+    "variant": "B",
+    "image": "494badea867efc0a61fb0ec794ce9b21.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "火山岩石",
+        "quantity": 2,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 11,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 11,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 9,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "boots-12c",
+    "name": "碎藥之靴",
+    "category": "boots",
+    "level": 12,
+    "variant": "C",
+    "image": "1539eca0c0f4088be2eef45288639d87.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "棗木",
+        "quantity": 7,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 12,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 15,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 20,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "boots-13a",
+    "name": "描金鞋",
+    "category": "boots",
+    "level": 13,
+    "variant": "A",
+    "image": "18721d7e6baf430eb4efa4d87b8dc113.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "朱砂錠",
+        "quantity": 3,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 10,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 6,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 6,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 7,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "boots-13b",
+    "name": "龍爪重靴",
+    "category": "boots",
+    "level": 13,
+    "variant": "B",
+    "image": "f106c6748e94ad51b6196d63ceae74d5.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "火山岩石",
+        "quantity": 3,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 9,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 12,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 11,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 14,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "boots-14a",
+    "name": "雕玉履",
+    "category": "boots",
+    "level": 14,
+    "variant": "A",
+    "image": "42904a2ea5b8ae7aa1176813b3ca2568.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "寧麻布",
+        "quantity": 10,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 10,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "紫英石",
+        "quantity": 4,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 9,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "boots-14b",
+    "name": "棘鱗長靴",
+    "category": "boots",
+    "level": 14,
+    "variant": "B",
+    "image": "bb837c304c1edd7e3dcf8ac6e0f0080d.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "火山岩石",
+        "quantity": 3,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 3,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 9,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "boots-15a",
+    "name": "花凋靴",
+    "category": "boots",
+    "level": 15,
+    "variant": "A",
+    "image": "5ecb50a9b467344e08f97aa85203aee0.png",
+    "mpCost": 300,
+    "stats": "",
+    "materials": [
+      {
+        "name": "萱草",
+        "quantity": 20,
+        "image": "5e7e6c5d23ff6006612cd1a573612f4a.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "梔子花",
+        "quantity": 20,
+        "image": "dcc2138b0259858a6c4899091a540d25.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "石油",
+        "quantity": 5,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "紫英石",
+        "quantity": 8,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石墨條",
+        "quantity": 7,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "boots-15b",
+    "name": "墨丘力戰靴",
+    "category": "boots",
+    "level": 15,
+    "variant": "B",
+    "image": "fdc5673d5f93249c83c6bfe259783de9.png",
+    "mpCost": 300,
+    "stats": "閃躲 +10",
+    "materials": [
+      {
+        "name": "火山岩石",
+        "quantity": 4,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 13,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 9,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "紫英石",
+        "quantity": 12,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 6,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

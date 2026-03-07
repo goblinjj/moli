@@ -1,0 +1,362 @@
+[
+  {
+    "id": "collar-1a",
+    "name": "皮頸圈",
+    "category": "collar",
+    "level": 1,
+    "variant": "A",
+    "image": "62ad8035ffaefed8f0026f4cc85cf696.png",
+    "mpCost": 20,
+    "stats": "攻擊 5~10回復 +2負重 515~521耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 10,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "collar-2a",
+    "name": "青銅頸圈",
+    "category": "collar",
+    "level": 2,
+    "variant": "A",
+    "image": "f7294790acbad9c63f9f8105616fc887.png",
+    "mpCost": 40,
+    "stats": "攻擊 +14防禦 +8負重 +552耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "木棉布",
+        "quantity": 20,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "collar-3a",
+    "name": "銅頸圈",
+    "category": "collar",
+    "level": 3,
+    "variant": "A",
+    "image": "d3b45835d81be2d38865cea1a492c7ec.png",
+    "mpCost": 60,
+    "stats": "攻擊 +23防禦 +13回復 +9負重 +600耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 10,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "銀條",
+        "quantity": 20,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "樅",
+        "quantity": 10,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "木棉布",
+        "quantity": 20,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "collar-4a",
+    "name": "健康頸圈",
+    "category": "collar",
+    "level": 4,
+    "variant": "A",
+    "image": "db11c2836c2c90bafaeacaf865916c93.png",
+    "mpCost": 80,
+    "stats": "攻擊 +20防禦 20~21負重 627~642耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 10,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "銀條",
+        "quantity": 20,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "毛氈",
+        "quantity": 20,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "collar-5a",
+    "name": "運動頸圈",
+    "category": "collar",
+    "level": 5,
+    "variant": "A",
+    "image": "d42a677a67012cf03fb8cb07c54bbbf2.png",
+    "mpCost": 100,
+    "stats": "攻擊 +37防禦 +30負重 +635耐久 100",
+    "materials": [
+      {
+        "name": "細線",
+        "quantity": 20,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "絹布",
+        "quantity": 20,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "金條",
+        "quantity": 20,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 10,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "collar-6a",
+    "name": "黑暗頸圈",
+    "category": "collar",
+    "level": 6,
+    "variant": "A",
+    "image": "78c8f00d5599404b7ba7fe0092b137fc.png",
+    "mpCost": 120,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "細線",
+        "quantity": 20,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "絹布",
+        "quantity": 20,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 20,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "collar-7a",
+    "name": "甜美頸圈",
+    "category": "collar",
+    "level": 7,
+    "variant": "A",
+    "image": "6ae6d7183da35d2e2228f22cc18928a0.png",
+    "mpCost": 140,
+    "stats": "攻擊 +71防禦 +49抗酒醉 +5負重 +691耐久 100",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "白金條",
+        "quantity": 20,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "絹布",
+        "quantity": 20,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "collar-8a",
+    "name": "自然頸圈",
+    "category": "collar",
+    "level": 8,
+    "variant": "A",
+    "image": "3cb12f100ababcec484fb4d0a55f7075.png",
+    "mpCost": 160,
+    "stats": "攻擊 +61防禦 +62抗石化 +5負重 +752耐久 100",
+    "materials": [
+      {
+        "name": "杉",
+        "quantity": 10,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 3,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "白金條",
+        "quantity": 20,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 20,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "collar-9a",
+    "name": "純潔頸圈",
+    "category": "collar",
+    "level": 9,
+    "variant": "A",
+    "image": "cb9abbc655325caee3b8ffb7557ce0b6.png",
+    "mpCost": 180,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "魔族的水晶",
+        "quantity": 3,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 20,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 20,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "collar-10a",
+    "name": "華麗項圈",
+    "category": "collar",
+    "level": 10,
+    "variant": "A",
+    "image": "5d3460e0e1793f5ef3248fb5d03d6145.png",
+    "mpCost": 200,
+    "stats": "攻擊 100~130防禦 80~90抗石化 +5負重 783~856耐久 100",
+    "materials": [
+      {
+        "name": "藍龍之鱗",
+        "quantity": 3,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 20,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "細麻布",
+        "quantity": 20,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  }
+]

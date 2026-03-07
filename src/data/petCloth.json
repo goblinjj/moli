@@ -1,0 +1,380 @@
+[
+  {
+    "id": "petCloth-1a",
+    "name": "小紅領巾",
+    "category": "petCloth",
+    "level": 1,
+    "variant": "A",
+    "image": "af2084f2fe90cbe7d0dd7c9bcd54b24f.png",
+    "mpCost": 20,
+    "stats": "防禦 +12閃躲 +1負重 +514耐久 100",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petCloth-2a",
+    "name": "虎斑領巾",
+    "category": "petCloth",
+    "level": 2,
+    "variant": "A",
+    "image": "84dd49b58d57b7015af1bcf75436cad5.png",
+    "mpCost": 40,
+    "stats": "防禦 +12閃躲 +1負重 +569耐久 100",
+    "materials": [
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 2,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petCloth-3a",
+    "name": "叢林領巾",
+    "category": "petCloth",
+    "level": 3,
+    "variant": "A",
+    "image": "6beae17f42a23b84af3e6524d8a62e2d.png",
+    "mpCost": 60,
+    "stats": "",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 5,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petCloth-4a",
+    "name": "水手領巾",
+    "category": "petCloth",
+    "level": 4,
+    "variant": "A",
+    "image": "7bf7605a08193f2ccaa1f0b747ac204f.png",
+    "mpCost": 80,
+    "stats": "防禦 +39閃躲 +1負重 +616耐久 100",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 5,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petCloth-5a",
+    "name": "貴婦領巾",
+    "category": "petCloth",
+    "level": 5,
+    "variant": "A",
+    "image": "adbabc557b62232f37778def1d28d0f0.png",
+    "mpCost": 100,
+    "stats": "",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petCloth-6a",
+    "name": "熱血圍巾",
+    "category": "petCloth",
+    "level": 6,
+    "variant": "A",
+    "image": "5119e00eb1a948ff1a23b86e2ca5b4ef.png",
+    "mpCost": 120,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "赤松",
+        "quantity": 8,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petCloth-7a",
+    "name": "沉著圍巾",
+    "category": "petCloth",
+    "level": 7,
+    "variant": "A",
+    "image": "6a82a940e02fddc0203943933d895a17.png",
+    "mpCost": 140,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "赤松",
+        "quantity": 10,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 5,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "妖草的血",
+        "quantity": 1,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "petCloth-8a",
+    "name": "時尚圍巾",
+    "category": "petCloth",
+    "level": 8,
+    "variant": "A",
+    "image": "79cd813a0e600c7f54f8fe3c99817c82.png",
+    "mpCost": 160,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "杉",
+        "quantity": 10,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "petCloth-9a",
+    "name": "探險圍巾",
+    "category": "petCloth",
+    "level": 9,
+    "variant": "A",
+    "image": "8ee784b802ae5cd902ee7ad8c401ad21.png",
+    "mpCost": 180,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "絲柏",
+        "quantity": 5,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "細麻布",
+        "quantity": 10,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "petCloth-10a",
+    "name": "清新圍巾",
+    "category": "petCloth",
+    "level": 10,
+    "variant": "A",
+    "image": "ab9e99d2ce6be8ddcc04be007b4a7af3.png",
+    "mpCost": 200,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "開米士毛線",
+        "quantity": 10,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 10,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "赤松",
+        "quantity": 10,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      }
+    ]
+  }
+]

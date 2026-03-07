@@ -7,6 +7,7 @@
     "variant": "A",
     "image": "b560764824fe5a301591d589a3bab960.png",
     "mpCost": 20,
+    "stats": "魔力值回復約30點",
     "materials": [
       {
         "name": "蕃茄",
@@ -30,6 +31,7 @@
     "variant": "B",
     "image": "e62594ad5c772e0252a95e5f03b92d22.png",
     "mpCost": 20,
+    "stats": "魔力值回復約100點",
     "materials": [
       {
         "name": "小麥粉",
@@ -59,6 +61,7 @@
     "variant": "C",
     "image": "aa289477ea8d88961c8a7b2a607edb3d.png",
     "mpCost": 20,
+    "stats": "魔力值回復約50點",
     "materials": [
       {
         "name": "鹽",
@@ -94,6 +97,7 @@
     "variant": "D",
     "image": "4bb832503d87f280096b41c8a316eea3.png",
     "mpCost": 20,
+    "stats": "魔力值回復約30點",
     "materials": [
       {
         "name": "飯碗",
@@ -117,6 +121,7 @@
     "variant": "E",
     "image": "4c5c531640b0ef7cd60baa24fa6820bd.png",
     "mpCost": 20,
+    "stats": "魔力值回復約300點",
     "materials": [
       {
         "name": "芝麻娃娃",
@@ -146,6 +151,7 @@
     "variant": "F",
     "image": "117ba8d53de37ab5fb20716ce59f6d61.png",
     "mpCost": 20,
+    "stats": "魔力值回復約50點",
     "materials": [
       {
         "name": "白飯",
@@ -169,6 +175,7 @@
     "variant": "A",
     "image": "34ab7b28fd0e2f261d5dadb21d2a8e85.png",
     "mpCost": 40,
+    "stats": "魔力值回復約150點",
     "materials": [
       {
         "name": "雞蛋",
@@ -210,6 +217,7 @@
     "variant": "B",
     "image": "da651ce03500dd48db772b1117e9fa54.png",
     "mpCost": 40,
+    "stats": "魔力值回復約200點",
     "materials": [
       {
         "name": "小麥粉",
@@ -239,6 +247,7 @@
     "variant": "A",
     "image": "4d110e4faa9ec5f457b20d9fad9600a9.png",
     "mpCost": 60,
+    "stats": "魔力值回復約250點",
     "materials": [
       {
         "name": "小麥粉",
@@ -274,6 +283,7 @@
     "variant": "B",
     "image": "4437eb47de9662a054827096b8a7e134.png",
     "mpCost": 60,
+    "stats": "魔力值回復約300點",
     "materials": [
       {
         "name": "青椒",
@@ -309,6 +319,7 @@
     "variant": "C",
     "image": "77112d0cd8781dadc4e19ddfe0283e75.png",
     "mpCost": 60,
+    "stats": "",
     "materials": [
       {
         "name": "必死的劇藥",
@@ -332,6 +343,7 @@
     "variant": "A",
     "image": "3efe9d1b032c69ef7baf20d12d049aae.png",
     "mpCost": 80,
+    "stats": "魔力值回復約350點",
     "materials": [
       {
         "name": "鹽",
@@ -367,6 +379,7 @@
     "variant": "B",
     "image": "f455aa4a7f165f41455662f6ecb9bf6c.png",
     "mpCost": 80,
+    "stats": "魔力值回復約400點",
     "materials": [
       {
         "name": "雞蛋",
@@ -408,6 +421,7 @@
     "variant": "A",
     "image": "2adf6358f1438d671ef8d4c20da5ef0d.png",
     "mpCost": 100,
+    "stats": "魔力值回復約450點",
     "materials": [
       {
         "name": "雞蛋",
@@ -443,6 +457,7 @@
     "variant": "B",
     "image": "c2b3cd38eef91aff73253da8e6cc6faa.png",
     "mpCost": 100,
+    "stats": "魔力值回復約500點",
     "materials": [
       {
         "name": "鹽",
@@ -484,6 +499,7 @@
     "variant": "C",
     "image": "c69be0023cc68710eb8efc1058ffcafc.png",
     "mpCost": 100,
+    "stats": "魔力值回復約400點",
     "materials": [
       {
         "name": "小麥粉",
@@ -525,6 +541,7 @@
     "variant": "A",
     "image": "16d7ec3818357c55c3d0f2fe93feb88b.png",
     "mpCost": 120,
+    "stats": "魔力值回復約550點",
     "materials": [
       {
         "name": "法國麵包",
@@ -548,6 +565,7 @@
     "variant": "B",
     "image": "5bc996f8b1589b06fef05bc59e8750fb.png",
     "mpCost": 120,
+    "stats": "魔力值回復約600點",
     "materials": [
       {
         "name": "蔥",
@@ -589,6 +607,7 @@
     "variant": "A",
     "image": "ddb63cb2bcbe1009183ce070060d5465.png",
     "mpCost": 140,
+    "stats": "魔力值回復約650點",
     "materials": [
       {
         "name": "蔥",
@@ -630,6 +649,7 @@
     "variant": "B",
     "image": "a6b587f4bd6adbcd89e5b90ee66cb246.png",
     "mpCost": 140,
+    "stats": "魔力值回復約700點",
     "materials": [
       {
         "name": "雞蛋",
@@ -671,6 +691,7 @@
     "variant": "C",
     "image": "3bbb6f3394811f8790aed9c4906314aa.png",
     "mpCost": 140,
+    "stats": "",
     "materials": [
       {
         "name": "水龍的鰭",
@@ -688,6 +709,7 @@
     "variant": "A",
     "image": "d37aed30936695d58dc3c57aaea246b2.png",
     "mpCost": 160,
+    "stats": "魔力值回復約750點",
     "materials": [
       {
         "name": "蔥",
@@ -729,6 +751,7 @@
     "variant": "B",
     "image": "ea088f16cd889496963bd7ddde09cd7a.png",
     "mpCost": 160,
+    "stats": "魔力值回復約800點",
     "materials": [
       {
         "name": "鹽",
@@ -770,6 +793,7 @@
     "variant": "C",
     "image": "6a706643f6bc53c026796b9881b6e539.png",
     "mpCost": 160,
+    "stats": "",
     "materials": [
       {
         "name": "小麥粉",
@@ -811,6 +835,7 @@
     "variant": "A",
     "image": "d914210c0b6ab01137b76e7d5fa357b5.png",
     "mpCost": 180,
+    "stats": "魔力值回復約850點",
     "materials": [
       {
         "name": "海苔",
@@ -852,6 +877,7 @@
     "variant": "B",
     "image": "8acd76ba51ce17f335ce473c4bfb8295.png",
     "mpCost": 180,
+    "stats": "魔力值回復約900點",
     "materials": [
       {
         "name": "雞蛋",
@@ -893,6 +919,7 @@
     "variant": "A",
     "image": "584e3602870c91d193bbe4b03f0bbcf2.png",
     "mpCost": 200,
+    "stats": "魔力值回復約1000點",
     "materials": [
       {
         "name": "雞蛋",
@@ -934,6 +961,7 @@
     "variant": "B",
     "image": "645026ba9a8b11c1f63bb773b8344436.png",
     "mpCost": 200,
+    "stats": "魔力值回復約1200點",
     "materials": [
       {
         "name": "辣椒",
@@ -975,6 +1003,7 @@
     "variant": "A",
     "image": "2cfb28013461472e05e9f27b20d8ee4e.png",
     "mpCost": 220,
+    "stats": "魔力值回復約1400點",
     "materials": [
       {
         "name": "鱉",
@@ -1016,6 +1045,7 @@
     "variant": "B",
     "image": "8acd76ba51ce17f335ce473c4bfb8295.png",
     "mpCost": 220,
+    "stats": "",
     "materials": [
       {
         "name": "伊勢蝦",
@@ -1057,6 +1087,7 @@
     "variant": "A",
     "image": "62c6227e9bd6aa0632838c6624bb6e53.png",
     "mpCost": 240,
+    "stats": "魔力值回復約1300點",
     "materials": [
       {
         "name": "醬油",
@@ -1098,6 +1129,7 @@
     "variant": "A",
     "image": "438d67a70644d77df476f7ad57468280.png",
     "mpCost": 260,
+    "stats": "",
     "materials": [
       {
         "name": "鹽",
@@ -1133,6 +1165,7 @@
     "variant": "B",
     "image": "2b415ba16c25dc76728301c6cbf6aecf.png",
     "mpCost": 260,
+    "stats": "魔力值回復約2800點",
     "materials": [
       {
         "name": "天然燕窩",
@@ -1156,6 +1189,7 @@
     "variant": "A",
     "image": "b44918565b507626745ec4e0c17d1f48.png",
     "mpCost": 280,
+    "stats": "",
     "materials": [
       {
         "name": "鹽",

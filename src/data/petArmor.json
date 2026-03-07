@@ -1,0 +1,278 @@
+[
+  {
+    "id": "petArmor-1a",
+    "name": "鐵護肩",
+    "category": "petArmor",
+    "level": 1,
+    "variant": "A",
+    "image": "64d603e06df3f708bd312632ed65640e.png",
+    "mpCost": 20,
+    "stats": "防禦 +14閃躲 -1魔力 +17負重 +548耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petArmor-5a",
+    "name": "黃金肩甲",
+    "category": "petArmor",
+    "level": 5,
+    "variant": "A",
+    "image": "c93010dc861d33381c4320b8514de897.png",
+    "mpCost": 100,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鐵杉",
+        "quantity": 5,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 20,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "petArmor-6a",
+    "name": "赤龍手甲",
+    "category": "petArmor",
+    "level": 6,
+    "variant": "A",
+    "image": "09407ee8bced07b7dfe04490e95a4636.png",
+    "mpCost": 120,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "鐵杉",
+        "quantity": 5,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 20,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 0
+      }
+    ]
+  },
+  {
+    "id": "petArmor-7a",
+    "name": "黃銅手甲",
+    "category": "petArmor",
+    "level": 7,
+    "variant": "A",
+    "image": "d5ebc4268c4bf1febfb1dd84b03088cf.png",
+    "mpCost": 140,
+    "stats": "防禦 +173反擊 +2閃躲 -1魔力 +193負重 +767耐久 100",
+    "materials": [
+      {
+        "name": "水的水晶碎片",
+        "quantity": 1,
+        "image": "a564860bb32d5fde60b40e4bc98dd3b7.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "赤松",
+        "quantity": 10,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "petArmor-8a",
+    "name": "青龍手甲",
+    "category": "petArmor",
+    "level": 8,
+    "variant": "A",
+    "image": "667b7225b1e9cafa87e61fcce39c8c68.png",
+    "mpCost": 160,
+    "stats": "防禦 +197抗昏睡 +5閃躲 -1魔力 +215負重 +751耐久 100",
+    "materials": [
+      {
+        "name": "火的水晶碎片",
+        "quantity": 1,
+        "image": "d2411a4a9747e6eb832840d55212a67b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 10,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "細線",
+        "quantity": 20,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "petArmor-9a",
+    "name": "翡翠手甲",
+    "category": "petArmor",
+    "level": 9,
+    "variant": "A",
+    "image": "69eaaf8f61afdfeae72b5e9232ee8610.png",
+    "mpCost": 180,
+    "stats": "防禦 +135抗石化 +5閃躲 -2魔力 +253負重 +809耐久 100",
+    "materials": [
+      {
+        "name": "朴",
+        "quantity": 5,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 1,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 15,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "細麻布",
+        "quantity": 10,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 20,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "petArmor-10a",
+    "name": "幻龍手甲",
+    "category": "petArmor",
+    "level": 10,
+    "variant": "A",
+    "image": "377e5426bc675bb5cf1ac499e6bf8800.png",
+    "mpCost": 200,
+    "stats": "防禦 178~202必殺 +2閃躲 -2魔力 278~279負重 819~868耐久 100",
+    "materials": [
+      {
+        "name": "曼陀羅草的皮",
+        "quantity": 5,
+        "image": "a39bea1809ec64f6171bcd036112c345.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "細麻布",
+        "quantity": 10,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 10,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  }
+]

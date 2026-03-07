@@ -1,0 +1,1424 @@
+[
+  {
+    "id": "sword-1a",
+    "name": "長劍",
+    "category": "sword",
+    "level": 1,
+    "variant": "A",
+    "image": "ee257aaed63d575a34ac486cb218b410.png",
+    "mpCost": 20,
+    "stats": "攻擊 12~24耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "sword-1b",
+    "name": "闊劍",
+    "category": "sword",
+    "level": 1,
+    "variant": "B",
+    "image": "0d7d79520a3d69ea1842980a8191c7f3.png",
+    "mpCost": 20,
+    "stats": "攻擊 18~36耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "sword-2a",
+    "name": "突刺劍",
+    "category": "sword",
+    "level": 2,
+    "variant": "A",
+    "image": "d06189b8b5b051ec69d8c83e12a59c1c.png",
+    "mpCost": 40,
+    "stats": "攻擊 26~48耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "sword-2b",
+    "name": "火舌劍",
+    "category": "sword",
+    "level": 2,
+    "variant": "B",
+    "image": "b41efc6c56b945267fc0f50188b96f81.png",
+    "mpCost": 40,
+    "stats": "攻擊 33~60耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 7,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "sword-3a",
+    "name": "麵包劍",
+    "category": "sword",
+    "level": 3,
+    "variant": "A",
+    "image": "ee257aaed63d575a34ac486cb218b410.png",
+    "mpCost": 60,
+    "stats": "攻擊 43~72耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 7,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 6,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "sword-3b",
+    "name": "雙手劍",
+    "category": "sword",
+    "level": 3,
+    "variant": "B",
+    "image": "5984ec782f520121ad8c40ac3d6283d8.png",
+    "mpCost": 60,
+    "stats": "攻擊 50~84耐久 250~300",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "sword-4a",
+    "name": "雙刃長劍",
+    "category": "sword",
+    "level": 4,
+    "variant": "A",
+    "image": "488e7d40fece8afe5b0121cd1a16c9e0.png",
+    "mpCost": 80,
+    "stats": "攻擊 62~96耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 15,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "sword-4b",
+    "name": "鎖刃劍",
+    "category": "sword",
+    "level": 4,
+    "variant": "B",
+    "image": "bf071b7b19bcaed7cfaf22a7c1385281.png",
+    "mpCost": 80,
+    "stats": "攻擊 70~108耐久 250~300",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "sword-5a",
+    "name": "格鬥劍",
+    "category": "sword",
+    "level": 5,
+    "variant": "A",
+    "image": "0d7d79520a3d69ea1842980a8191c7f3.png",
+    "mpCost": 100,
+    "stats": "攻擊 84~120耐久 250~300",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 6,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "sword-5b",
+    "name": "長鍔劍",
+    "category": "sword",
+    "level": 5,
+    "variant": "B",
+    "image": "5984ec782f520121ad8c40ac3d6283d8.png",
+    "mpCost": 100,
+    "stats": "攻擊 82~132耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 10,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 7,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 8,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "sword-5c",
+    "name": "黑作太刀",
+    "category": "sword",
+    "level": 5,
+    "variant": "C",
+    "image": "4f06a8ebf1cf103827f16118a898b1d4.png",
+    "mpCost": 100,
+    "stats": "攻擊 94~136敏捷 1~5命中 +2閃躲 +1耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 10,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 7,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "sword-6a",
+    "name": "豬牙劍",
+    "category": "sword",
+    "level": 6,
+    "variant": "A",
+    "image": "a2491a1931a4a5008f8b0c3b240a9292.png",
+    "mpCost": 120,
+    "stats": "攻擊 108~144耐久 250~300",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 8,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "sword-6b",
+    "name": "雙刃闊劍",
+    "category": "sword",
+    "level": 6,
+    "variant": "B",
+    "image": "1299f4ba9342210b207302b7f6acc767.png",
+    "mpCost": 120,
+    "stats": "攻擊 117~156耐久 250~300",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 6,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "sword-7a",
+    "name": "巨劍",
+    "category": "sword",
+    "level": 7,
+    "variant": "A",
+    "image": "5984ec782f520121ad8c40ac3d6283d8.png",
+    "mpCost": 140,
+    "stats": "攻擊 125~170命中 +10閃躲 -5耐久 250~300",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 15,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 7,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "sword-7b",
+    "name": "長軍刀",
+    "category": "sword",
+    "level": 7,
+    "variant": "B",
+    "image": "707be7bc21ceeeea0b95991303e21042.png",
+    "mpCost": 140,
+    "stats": "攻擊 135~180耐久 250~300",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 13,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 11,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "sword-7c",
+    "name": "水龍之劍",
+    "category": "sword",
+    "level": 7,
+    "variant": "C",
+    "image": "b8618df8681f250d007c2e0f0f4a8951.png",
+    "mpCost": 140,
+    "stats": "攻擊 +210敏捷 +5命中 +2閃躲 +2耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的劍",
+        "quantity": 1,
+        "image": "488e7d40fece8afe5b0121cd1a16c9e0.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "sword-8a",
+    "name": "護身短劍",
+    "category": "sword",
+    "level": 8,
+    "variant": "A",
+    "image": "8699c9cd7570994b863a6c01040c3372.png",
+    "mpCost": 160,
+    "stats": "攻擊 225~230防禦 -50魔力 -200耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 15,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "白金條",
+        "quantity": 16,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 13,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "sword-8b",
+    "name": "細柄短劍",
+    "category": "sword",
+    "level": 8,
+    "variant": "B",
+    "image": "f75c755ac66475d71b1c196d48cbff37.png",
+    "mpCost": 160,
+    "stats": "攻擊 153~204耐久 250~300",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 13,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "sword-8c",
+    "name": "長軍刀+",
+    "category": "sword",
+    "level": 8,
+    "variant": "C",
+    "image": "707be7bc21ceeeea0b95991303e21042.png",
+    "mpCost": 160,
+    "stats": "攻擊 90~180必殺 1~2耐久 250~300",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 18,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 18,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 20,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "sword-9a",
+    "name": "細刃重劍",
+    "category": "sword",
+    "level": 9,
+    "variant": "A",
+    "image": "32ffd46e7352e25f907ab793db26dab7.png",
+    "mpCost": 180,
+    "stats": "攻擊 182~228耐久 250~300",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "sword-9b",
+    "name": "剛硬巨劍",
+    "category": "sword",
+    "level": 9,
+    "variant": "B",
+    "image": "c2a43302e5f4208fbf3d7b207fc1e96e.png",
+    "mpCost": 180,
+    "stats": "攻擊 +185耐久 250~300連擊耗魔-20%",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "sword-10a",
+    "name": "青龍刀",
+    "category": "sword",
+    "level": 10,
+    "variant": "A",
+    "image": "1d27c287128588a5058ea9f9ba60e69d.png",
+    "mpCost": 200,
+    "stats": "攻擊 204~240耐久 250~300",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "sword-10b",
+    "name": "曲刀",
+    "category": "sword",
+    "level": 10,
+    "variant": "B",
+    "image": "0a16762023eea1e597da14839986d916.png",
+    "mpCost": 200,
+    "stats": "攻擊 +250敏捷 +1命中 +1閃躲 +1耐久 250~300",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "sword-11a",
+    "name": "彎勾劍",
+    "category": "sword",
+    "level": 11,
+    "variant": "A",
+    "image": "9d8cdde6bae828f87c65029f4d318208.png",
+    "mpCost": 220,
+    "stats": "攻擊 239~250回復 +11命中 +5耐久 250~300",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 5,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 4,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "sword-11b",
+    "name": "剛毅",
+    "category": "sword",
+    "level": 11,
+    "variant": "B",
+    "image": "3aeaecc04a81685f9b558e52446b8995.png",
+    "mpCost": 220,
+    "stats": "攻擊 285~300閃躲 +20耐久 250~300",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 4,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "sword-11c",
+    "name": "烏金劍",
+    "category": "sword",
+    "level": 11,
+    "variant": "C",
+    "image": "365d7ffa0be61fd762761d90490eedac.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 9,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 11,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "sword-12a",
+    "name": "流瑩劍",
+    "category": "sword",
+    "level": 12,
+    "variant": "A",
+    "image": "4766716f1a10c05b6da748d967b66ba8.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 15,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 12,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "sword-12b",
+    "name": "天使長劍",
+    "category": "sword",
+    "level": 12,
+    "variant": "B",
+    "image": "ec5656cdbd8ffdfc645a16c253e7bbb2.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "藤木",
+        "quantity": 40,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 12,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 19,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "sword-12c",
+    "name": "碎藥之劍",
+    "category": "sword",
+    "level": 12,
+    "variant": "C",
+    "image": "6ac13f0cb6699aca4e41c66d25f27c75.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 2,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 12,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 15,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "sword-13a",
+    "name": "追風劍",
+    "category": "sword",
+    "level": 13,
+    "variant": "A",
+    "image": "400cfc6c06a53f50f46bf3672545b662.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 19,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 7,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "sword-13b",
+    "name": "楓紅劍",
+    "category": "sword",
+    "level": 13,
+    "variant": "B",
+    "image": "7dfc9a7c6f11da4d99b55f6dd96974de.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 4,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 40,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 19,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 18,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "sword-13c",
+    "name": "風虎巨劍",
+    "category": "sword",
+    "level": 13,
+    "variant": "C",
+    "image": "7362a029a0da8e3e891573233b4a00c2.png",
+    "mpCost": 260,
+    "stats": "攻擊 +399敏捷 +50反擊 -20命中 +15耐久 339追月耗魔-25%",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 40,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "火山岩石",
+        "quantity": 5,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "光輝結晶",
+        "quantity": 5,
+        "image": "971503002bee9a8df25fe0cdecc56762.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "塵封的大劍",
+        "quantity": 1,
+        "image": "f53fb3366e203462a9289b127074ef9c.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "sword-14a",
+    "name": "逐霓劍",
+    "category": "sword",
+    "level": 14,
+    "variant": "A",
+    "image": "b4bb1e03229653e898c33fe6277d0fca.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "誓言之證",
+        "quantity": 3,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "檜木",
+        "quantity": 20,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 10,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 10,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 4,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "sword-14b",
+    "name": "破石巨刃",
+    "category": "sword",
+    "level": 14,
+    "variant": "B",
+    "image": "6c9354f7b07886b7df5f0d0116b6be58.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石墨條",
+        "quantity": 7,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 5,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 12,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "sword-15a",
+    "name": "兩儀劍",
+    "category": "sword",
+    "level": 15,
+    "variant": "A",
+    "image": "bd9937adf525a13a6bfa2a563c52327a.png",
+    "mpCost": 300,
+    "stats": "攻擊 353~362必殺 +10反擊 5~10命中 10~12",
+    "materials": [
+      {
+        "name": "檀木",
+        "quantity": 40,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 14,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 4,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 12,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 8,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "sword-15b",
+    "name": "勇者之劍",
+    "category": "sword",
+    "level": 15,
+    "variant": "B",
+    "image": "a18c9e525a6c25a064c650a3a971553c.png",
+    "mpCost": 300,
+    "stats": "攻擊 +430必殺 +9反擊 +12命中 +13",
+    "materials": [
+      {
+        "name": "火山岩石",
+        "quantity": 4,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "檀木",
+        "quantity": 40,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "紫英石",
+        "quantity": 17,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 11,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

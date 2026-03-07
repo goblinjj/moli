@@ -1,4 +1,9 @@
-export type Category = "bow" | "cooking";
+export type Category =
+  | "sword" | "axe" | "spear" | "bow" | "staff" | "dagger" | "throw" | "bomb"
+  | "helmet" | "hat" | "armor" | "cloth" | "robe" | "boots" | "shoes" | "shield"
+  | "cooking" | "pharmacy" | "accessory"
+  | "dragon" | "fiveC" | "scroll"
+  | "collar" | "crystal" | "petArmor" | "petAccessory" | "petCloth";
 
 export interface Material {
   name: string;
@@ -16,12 +21,13 @@ export interface Recipe {
   image: string;
   materials: Material[];
   mpCost: number;
+  stats?: string;
 }
 
 export interface PriceConfig {
   materialPrices: Record<string, number>;
   recipeMpCosts: Record<string, number>;
-  markupRates: Record<Category, number>;
+  markupRates: Record<string, number>;
 }
 
 export interface CostBreakdown {

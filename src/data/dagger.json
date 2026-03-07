@@ -1,0 +1,1460 @@
+[
+  {
+    "id": "dagger-1a",
+    "name": "小刀",
+    "category": "dagger",
+    "level": 1,
+    "variant": "A",
+    "image": "c380096e830d8e513592d2b331d10ad5.png",
+    "mpCost": 20,
+    "stats": "攻擊 9~18必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "dagger-1b",
+    "name": "銳刃小刀",
+    "category": "dagger",
+    "level": 1,
+    "variant": "B",
+    "image": "88f3787d14e011de12b56946147b645c.png",
+    "mpCost": 20,
+    "stats": "攻擊 14~27必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "dagger-2a",
+    "name": "圓盤小刀",
+    "category": "dagger",
+    "level": 2,
+    "variant": "A",
+    "image": "88f3787d14e011de12b56946147b645c.png",
+    "mpCost": 40,
+    "stats": "攻擊 20~36必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 6,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "木棉布",
+        "quantity": 3,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "dagger-2b",
+    "name": "細刃擲刀",
+    "category": "dagger",
+    "level": 2,
+    "variant": "B",
+    "image": "2a910c16dd3082817ba3bfcd2f7909f8.png",
+    "mpCost": 40,
+    "stats": "攻擊 25~45必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 7,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "木棉布",
+        "quantity": 4,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "dagger-3a",
+    "name": "滑翔小刀",
+    "category": "dagger",
+    "level": 3,
+    "variant": "A",
+    "image": "4285ff98c2ab82503786e1e9116c2721.png",
+    "mpCost": 60,
+    "stats": "攻擊 32~54必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "毛氈",
+        "quantity": 4,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "dagger-3b",
+    "name": "細直刃小刀",
+    "category": "dagger",
+    "level": 3,
+    "variant": "B",
+    "image": "1c15839bae1d855bb4477b239092d776.png",
+    "mpCost": 60,
+    "stats": "攻擊 38~63必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 7,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "毛氈",
+        "quantity": 7,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "dagger-4a",
+    "name": "耳柄小刀",
+    "category": "dagger",
+    "level": 4,
+    "variant": "A",
+    "image": "4b39dfb33e9bd7d82ee7d5a7f513c6c8.png",
+    "mpCost": 80,
+    "stats": "攻擊 47~72必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "綿",
+        "quantity": 7,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "dagger-4b",
+    "name": "騎士小刀",
+    "category": "dagger",
+    "level": 4,
+    "variant": "B",
+    "image": "451c990a768e5a334c80a332a16649f1.png",
+    "mpCost": 80,
+    "stats": "攻擊 53~81必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 8,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "dagger-5a",
+    "name": "球鍔小刀",
+    "category": "dagger",
+    "level": 5,
+    "variant": "A",
+    "image": "40ad0a2d4515bd2a0e353cd9bb438a32.png",
+    "mpCost": 100,
+    "stats": "攻擊 63~90必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 8,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "細線",
+        "quantity": 8,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "dagger-5b",
+    "name": "雙刃小刀",
+    "category": "dagger",
+    "level": 5,
+    "variant": "B",
+    "image": "fd367694802ab0f74fdd27a61f91be24.png",
+    "mpCost": 100,
+    "stats": "攻擊 69~99必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 7,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "dagger-5c",
+    "name": "忍者飛鏢",
+    "category": "dagger",
+    "level": 5,
+    "variant": "C",
+    "image": "7dfb67de659ef4198afce08452d91d36.png",
+    "mpCost": 100,
+    "stats": "攻擊 65~110敏捷 1~6必殺 +3命中 +2閃躲 +2耐久 180~220",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 6,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "dagger-6a",
+    "name": "闊刃小刀",
+    "category": "dagger",
+    "level": 6,
+    "variant": "A",
+    "image": "fd367694802ab0f74fdd27a61f91be24.png",
+    "mpCost": 120,
+    "stats": "攻擊 81~108必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 8,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "dagger-6b",
+    "name": "觸角小刀",
+    "category": "dagger",
+    "level": 6,
+    "variant": "B",
+    "image": "88f3787d14e011de12b56946147b645c.png",
+    "mpCost": 120,
+    "stats": "攻擊 88~117必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 15,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "dagger-7a",
+    "name": "漢拉提小刀",
+    "category": "dagger",
+    "level": 7,
+    "variant": "A",
+    "image": "78e90a19cacf1a9659002dadc2dd517d.png",
+    "mpCost": 140,
+    "stats": "攻擊 116~126必殺 +3命中 +15閃躲 -15耐久 180~220",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "神眼",
+        "quantity": 1,
+        "image": "432199df98c5d6427fe5194ee2fddc6f.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "dagger-7b",
+    "name": "兇殺刀",
+    "category": "dagger",
+    "level": 7,
+    "variant": "B",
+    "image": "baaf03ed79bc0e7acdf115e2a693a3f5.png",
+    "mpCost": 140,
+    "stats": "攻擊 101~135必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-7c",
+    "name": "水龍的小刀",
+    "category": "dagger",
+    "level": 7,
+    "variant": "C",
+    "image": "eb61b29c4295fc369af6d3d7aca46b46.png",
+    "mpCost": 140,
+    "stats": "攻擊 +130命中 +25耐久 300明鏡止水耗魔-50%",
+    "materials": [
+      {
+        "name": "生鏽的短劍",
+        "quantity": 1,
+        "image": "0b6511dcf802eb1eccba43b8e9993fdb.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-8a",
+    "name": "切肉小刀",
+    "category": "dagger",
+    "level": 8,
+    "variant": "A",
+    "image": "8c4459327961aaf7e23d7263f2679c84.png",
+    "mpCost": 160,
+    "stats": "攻擊 +50敏捷 +15必殺 +18命中 +15閃躲 +15耐久 180~220",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-8b",
+    "name": "古傳小刀",
+    "category": "dagger",
+    "level": 8,
+    "variant": "B",
+    "image": "a9eae95757afb8a077e5c1899aba6533.png",
+    "mpCost": 160,
+    "stats": "攻擊 115~153必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 14,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-8c",
+    "name": "疾速短刀+",
+    "category": "dagger",
+    "level": 8,
+    "variant": "C",
+    "image": "baaf03ed79bc0e7acdf115e2a693a3f5.png",
+    "mpCost": 160,
+    "stats": "攻擊 110~140必殺 1~5命中 1~3耐久 180~220",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 12,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "濕地毒蛇",
+        "quantity": 10,
+        "image": "81fa9642475a85cc0926d9325919ad21.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "dagger-9a",
+    "name": "華麗小刀",
+    "category": "dagger",
+    "level": 9,
+    "variant": "A",
+    "image": "53b4de84739a7d05277eb504f03867d2.png",
+    "mpCost": 180,
+    "stats": "攻擊 137~171必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 20,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "dagger-9b",
+    "name": "手裡劍",
+    "category": "dagger",
+    "level": 9,
+    "variant": "B",
+    "image": "57f1be1c42d05860f969c94f2b0e5dce.png",
+    "mpCost": 180,
+    "stats": "攻擊 117~151必殺 +6命中 +3耐久 180~220陽炎耗魔-30%",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 15,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-10a",
+    "name": "勾爪擲刀",
+    "category": "dagger",
+    "level": 10,
+    "variant": "A",
+    "image": "ba8fd6728639940a96fab5f130ab5f1a.png",
+    "mpCost": 200,
+    "stats": "攻擊 161~189必殺 +3耐久 180~220",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 15,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "dagger-10b",
+    "name": "幻之匕首",
+    "category": "dagger",
+    "level": 10,
+    "variant": "B",
+    "image": "c2b4bce34dd7f44f8946c595b106354d.png",
+    "mpCost": 200,
+    "stats": "攻擊 190~210必殺 -3耐久 180~220",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "神眼",
+        "quantity": 1,
+        "image": "432199df98c5d6427fe5194ee2fddc6f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-11a",
+    "name": "破滅刀",
+    "category": "dagger",
+    "level": 11,
+    "variant": "A",
+    "image": "c5538a4b27789ae99a77a7793c85ef33.png",
+    "mpCost": 220,
+    "stats": "攻擊 190~220命中 +10閃躲 +4耐久 180~220",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 4,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 3,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-11b",
+    "name": "兇殘刀",
+    "category": "dagger",
+    "level": 11,
+    "variant": "B",
+    "image": "1983fb96173370d6d816ec5bb1194f15.png",
+    "mpCost": 220,
+    "stats": "攻擊 186~200必殺 +11耐久 180~220",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 2,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dagger-11c",
+    "name": "水紋短劍",
+    "category": "dagger",
+    "level": 11,
+    "variant": "C",
+    "image": "d4a156717344ab431d9d5c6f00693cb8.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "dagger-12a",
+    "name": "響馬小刀",
+    "category": "dagger",
+    "level": 12,
+    "variant": "A",
+    "image": "dc4bf162ad56a2c781485d0738174686.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 6,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 12,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鋁條",
+        "quantity": 11,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "dagger-12b",
+    "name": "天使小刀",
+    "category": "dagger",
+    "level": 12,
+    "variant": "B",
+    "image": "78e90a19cacf1a9659002dadc2dd517d.png",
+    "mpCost": 240,
+    "stats": "攻擊 +304必殺 +10命中 +8閃躲 +8",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 8,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 11,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 7,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "石墨條",
+        "quantity": 9,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "dagger-12c",
+    "name": "碎藥之小刀",
+    "category": "dagger",
+    "level": 12,
+    "variant": "C",
+    "image": "b3b4f31adbaead56c5a2d006c5e939f3.png",
+    "mpCost": 240,
+    "stats": "攻擊 +284必殺 +30命中 +6閃躲 +5耐久 255~294",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 15,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 12,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 12,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "dagger-13a",
+    "name": "綠玉小刀",
+    "category": "dagger",
+    "level": 13,
+    "variant": "A",
+    "image": "c8145bf36e198db95138d1b5f833eec3.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "藤木",
+        "quantity": 40,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 17,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 8,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 8,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "dagger-13b",
+    "name": "天蠍的螫針",
+    "category": "dagger",
+    "level": 13,
+    "variant": "B",
+    "image": "f32ab0eb9331585b94e89f2269175aa4.png",
+    "mpCost": 260,
+    "stats": "攻擊 +333必殺 +10命中 +9閃躲 +7",
+    "materials": [
+      {
+        "name": "桃花心木",
+        "quantity": 40,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "石墨條",
+        "quantity": 6,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 19,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 9,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "dagger-13c",
+    "name": "風虎短刃",
+    "category": "dagger",
+    "level": 13,
+    "variant": "C",
+    "image": "f3146a12ced4d5d7cba6295c83f3ea96.png",
+    "mpCost": 260,
+    "stats": "攻擊 327~332抗毒 +50必殺 +15命中 +15閃躲 +15生命 +500一擊必中耗魔-25%",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 40,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "火山岩石",
+        "quantity": 5,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "光輝結晶",
+        "quantity": 5,
+        "image": "971503002bee9a8df25fe0cdecc56762.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "塵封的小刀",
+        "quantity": 1,
+        "image": "aac2608e048137a62e8570e78e32ada7.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "dagger-14a",
+    "name": "獅子短刃",
+    "category": "dagger",
+    "level": 14,
+    "variant": "A",
+    "image": "f5e65ff5f47fbf3e12645596d397af35.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "月桂木",
+        "quantity": 40,
+        "image": "968b90347bf3b70a2b6d4c041416664e.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "棗木",
+        "quantity": 40,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "檜木",
+        "quantity": 20,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 11,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 6,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "dagger-14b",
+    "name": "刺殺匕首",
+    "category": "dagger",
+    "level": 14,
+    "variant": "B",
+    "image": "54869c10c595865ec7dc74409cd6776a.png",
+    "mpCost": 280,
+    "stats": "攻擊 +340必殺 +20命中 +11閃躲 +13",
+    "materials": [
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 20,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 5,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 5,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 14,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "dagger-15a",
+    "name": "飛龍短刃",
+    "category": "dagger",
+    "level": 15,
+    "variant": "A",
+    "image": "de5bfc7175dc4f61b97a419872305a25.png",
+    "mpCost": 300,
+    "stats": "攻擊 +332敏捷 +8閃躲 +8耐久 400",
+    "materials": [
+      {
+        "name": "檀木",
+        "quantity": 20,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "鋁條",
+        "quantity": 18,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 7,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 7,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 11,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "dagger-15b",
+    "name": "漂泊者彎刀",
+    "category": "dagger",
+    "level": 15,
+    "variant": "B",
+    "image": "ba8fd6728639940a96fab5f130ab5f1a.png",
+    "mpCost": 300,
+    "stats": "攻擊 +354必殺 +20命中 +13閃躲 +11一擊必中耗魔-25%",
+    "materials": [
+      {
+        "name": "檀木",
+        "quantity": 40,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "石墨條",
+        "quantity": 11,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 11,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "紫英石",
+        "quantity": 9,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 7,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

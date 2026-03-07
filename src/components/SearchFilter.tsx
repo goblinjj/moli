@@ -16,7 +16,7 @@ export default function SearchFilter({
   const levelOptions: (number | null)[] = [null, ...Array.from({ length: maxLevel }, (_, i) => i + 1)];
 
   return (
-    <div className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-3 pb-2">
+    <>
       {/* Search input */}
       <div className="relative flex-1 max-w-sm w-full">
         <svg
@@ -61,6 +61,6 @@ export default function SearchFilter({
           );
         })}
       </div>
-    </div>
+    </>
   );
 }

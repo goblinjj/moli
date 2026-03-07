@@ -1,11 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Calculator from "../components/Calculator";
-import bowData from "../data/bow.json";
-import cookingData from "../data/cooking.json";
 import type { Recipe } from "../lib/types";
 
-const recipes = [...bowData, ...cookingData] as Recipe[];
+import swordData from "../data/sword.json";
+import axeData from "../data/axe.json";
+import spearData from "../data/spear.json";
+import bowData from "../data/bow.json";
+import staffData from "../data/staff.json";
+import daggerData from "../data/dagger.json";
+import throwData from "../data/throw.json";
+import bombData from "../data/bomb.json";
+import helmetData from "../data/helmet.json";
+import hatData from "../data/hat.json";
+import armorData from "../data/armor.json";
+import clothData from "../data/cloth.json";
+import robeData from "../data/robe.json";
+import bootsData from "../data/boots.json";
+import shoesData from "../data/shoes.json";
+import shieldData from "../data/shield.json";
+import cookingData from "../data/cooking.json";
+import pharmacyData from "../data/pharmacy.json";
+import accessoryData from "../data/accessory.json";
+import dragonData from "../data/dragon.json";
+import fiveCData from "../data/fiveC.json";
+import scrollData from "../data/scroll.json";
+import collarData from "../data/collar.json";
+import crystalData from "../data/crystal.json";
+import petArmorData from "../data/petArmor.json";
+import petAccessoryData from "../data/petAccessory.json";
+import petClothData from "../data/petCloth.json";
+
+const recipes = [
+  ...swordData, ...axeData, ...spearData, ...bowData, ...staffData,
+  ...daggerData, ...throwData, ...bombData,
+  ...helmetData, ...hatData, ...armorData, ...clothData, ...robeData,
+  ...bootsData, ...shoesData, ...shieldData,
+  ...cookingData, ...pharmacyData, ...accessoryData,
+  ...dragonData, ...fiveCData, ...scrollData,
+  ...collarData, ...crystalData, ...petArmorData, ...petAccessoryData, ...petClothData,
+] as Recipe[];
 ---
 
 <Layout>

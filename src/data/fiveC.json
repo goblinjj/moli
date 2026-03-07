@@ -1,0 +1,626 @@
+[
+  {
+    "id": "fiveC-5c",
+    "name": "黑作太刀",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "4f06a8ebf1cf103827f16118a898b1d4.png",
+    "mpCost": 100,
+    "stats": "攻擊 94~136敏捷 1~5命中 +2閃躲 +1耐久 250~300",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 10,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 7,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "鑽保雷格之斧",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "b7d45f593caf8985d49b968e5a5279e2.png",
+    "mpCost": 100,
+    "stats": "攻擊 100~167防禦 -10敏捷 -24必殺 +18反擊 1~4命中 +3耐久 250~300",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 7,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 2,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "偃月刀",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "56b93fc173ae954f1a1746beda7d9b4b.png",
+    "mpCost": 100,
+    "stats": "攻擊 87~126防禦 1~5反擊 +8命中 +4耐久 300~350",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 5,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "米斯特汀之弓",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "18c2ae0ddc1c1322ee675d99acff64b4.png",
+    "mpCost": 100,
+    "stats": "攻擊 80~123閃躲 1~3耐久 250~300",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 19,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 15,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "魔晶之杖",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "9a8ec491e7a0a59c167af6352faf85f3.png",
+    "mpCost": 100,
+    "stats": "攻擊 39~48防禦 +5精神 +5回復 1~6魔攻 135~142耐久 450~500",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 7,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "忍者飛鏢",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "7dfb67de659ef4198afce08452d91d36.png",
+    "mpCost": 100,
+    "stats": "攻擊 65~110敏捷 1~6必殺 +3命中 +2閃躲 +2耐久 180~220",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 6,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "北斗之鎌刀",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "b40538ba8a6c8fc219b6423a6be228dd.png",
+    "mpCost": 100,
+    "stats": "攻擊 88~135必殺 1~5閃躲 +1耐久 200~250",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 6,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "聖騎士之盔",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "30cea6347abb045b1510b2045866e351.png",
+    "mpCost": 100,
+    "stats": "防禦 42~51命中 +6閃躲 -5抗魔 35~40耐久 350~400",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 4,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 3,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "劍客帽",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "df62dde345f6dc0761f9746bc6479db6.png",
+    "mpCost": 100,
+    "stats": "防禦 9~14精神 -10命中 +5閃躲 +3生命 65~75耐久 300~350",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "地的水晶碎片",
+        "quantity": 2,
+        "image": "cedf23d5208d579a6bca5e51c078fbd2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "毛氈",
+        "quantity": 10,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "絹布",
+        "quantity": 4,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "劍齒鎧甲",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "2928b49d6cc4f1f6d8e09157aaf3db1e.png",
+    "mpCost": 100,
+    "stats": "防禦 104~111必殺 -5反擊 +8閃躲 -10抗魔 19~28耐久 300~400",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "白金條",
+        "quantity": 4,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 6,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "功夫裝",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "35b8d68555365388b81575a6b366893b.png",
+    "mpCost": 100,
+    "stats": "防禦 +43抗魔 +18耐久 300~400",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "絹布",
+        "quantity": 4,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "純銀條",
+        "quantity": 3,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 4,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "治癒之袍",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "b8e18f907ba633101398f7266dda26b4.png",
+    "mpCost": 100,
+    "stats": "防禦 77~80回復 +8魔力 151~169耐久 400~450",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 40,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "絹布",
+        "quantity": 7,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "綿",
+        "quantity": 3,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鋁條",
+        "quantity": 4,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "防護靴",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "e68c59f09a3c5318ab47358369e477df.png",
+    "mpCost": 100,
+    "stats": "防禦 +20必殺 +6閃躲 -5抗魔 4~10耐久 200~250",
+    "materials": [
+      {
+        "name": "絹布",
+        "quantity": 3,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 3,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "金條",
+        "quantity": 2,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 3,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "特製舞鞋",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "dbe39d436dd6f45806255f8b8f07d1a4.png",
+    "mpCost": 100,
+    "stats": "防禦 +15敏捷 20~24精神 +8生命 -33~-30耐久 200~250",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "純銀條",
+        "quantity": 2,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 3,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "金條",
+        "quantity": 2,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 3,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "fiveC-5c",
+    "name": "聖者之盾",
+    "category": "fiveC",
+    "level": 5,
+    "variant": "C",
+    "image": "be1b11c2894e0a9781434b71abc5d8b2.png",
+    "mpCost": 100,
+    "stats": "防禦 +28命中 -3閃躲 -5魔力 100~120抗魔 50~55耐久 200~250",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 2,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 2,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "金條",
+        "quantity": 2,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 3,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  }
+]

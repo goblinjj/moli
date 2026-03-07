@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "accessory-1a",
+    "name": "鹿皮手套",
+    "category": "accessory",
+    "level": 1,
+    "variant": "A",
+    "image": "a31edcf04409ace10b4eb5feeeb0708a.png",
+    "mpCost": 20,
+    "stats": "耐久 3",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻",
+        "quantity": 20,
+        "image": "527fbfc679096f018ea2aa8ec42a9ff7.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 1,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "accessory-1b",
+    "name": "皮製鈴鼓",
+    "category": "accessory",
+    "level": 1,
+    "variant": "B",
+    "image": "d6329018acc12e6414cadfd79ef2248a.png",
+    "mpCost": 20,
+    "stats": "抗遺忘 -2~5耐久 100",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "銅條",
+        "quantity": 1,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "accessory-2a",
+    "name": "隕石之鼓",
+    "category": "accessory",
+    "level": 2,
+    "variant": "A",
+    "image": "191cc58f9d326962317dfa95deb8cb8d.png",
+    "mpCost": 40,
+    "stats": "抗石化 -1~5命中 -1~6耐久 100",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 10,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銅條",
+        "quantity": 1,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "隕石",
+        "quantity": 1,
+        "image": "f13ca1d71b6f3889463478d58720d531.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "accessory-2b",
+    "name": "薰香包",
+    "category": "accessory",
+    "level": 2,
+    "variant": "B",
+    "image": "5ef307167cf6b0a92eab2214cb18c318.png",
+    "mpCost": 40,
+    "stats": "精神 -3~5魅力 +5耐久 100",
+    "materials": [
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 10,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "麻布",
+        "quantity": 1,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 1,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "accessory-3a",
+    "name": "雪之結晶",
+    "category": "accessory",
+    "level": 3,
+    "variant": "A",
+    "image": "6b3e45cef2ee5ebb60a6e619e081c540.png",
+    "mpCost": 60,
+    "stats": "精神 -3~8耐久 100",
+    "materials": [
+      {
+        "name": "永久冰石",
+        "quantity": 10,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鹽",
+        "quantity": 20,
+        "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵條",
+        "quantity": 1,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "accessory-3b",
+    "name": "銀折扇",
+    "category": "accessory",
+    "level": 3,
+    "variant": "B",
+    "image": "2c78dab8402fcd6084410702454639d2.png",
+    "mpCost": 60,
+    "stats": "反擊 -5~10閃躲 -1~5耐久 100",
+    "materials": [
+      {
+        "name": "蝴蝶花",
+        "quantity": 10,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "accessory-4a",
+    "name": "惡魔風笛",
+    "category": "accessory",
+    "level": 4,
+    "variant": "A",
+    "image": "6baf6e1c38af03541c2b31b9963d7ff1.png",
+    "mpCost": 80,
+    "stats": "抗毒 -3~10抗混亂 -3~10耐久 100",
+    "materials": [
+      {
+        "name": "惡魔的卡片",
+        "quantity": 1,
+        "image": "b166dbbb0d1bef5c9c7ed28c84704baf.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "孟宗竹",
+        "quantity": 20,
+        "image": "c6d13760243f68de4cdc56cf5b9fde65.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "銅條",
+        "quantity": 1,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 2,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "木棉布",
+        "quantity": 1,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "accessory-4b",
+    "name": "戀愛耳環",
+    "category": "accessory",
+    "level": 4,
+    "variant": "B",
+    "image": "ed64ba9d9aad273b355ef1e487b57203.png",
+    "mpCost": 80,
+    "stats": "耐力 +5智力 -5耐久 100",
+    "materials": [
+      {
+        "name": "戀愛蘋果",
+        "quantity": 2,
+        "image": "995142dae4503c423d5479e0ea0deaf5.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "純銀條",
+        "quantity": 1,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 3,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "accessory-4c",
+    "name": "皇后手鐲",
+    "category": "accessory",
+    "level": 4,
+    "variant": "C",
+    "image": "9d447be3450760472ca566e0f719907e.png",
+    "mpCost": 80,
+    "stats": "回復 1~5必殺 -1~1反擊 -1~1命中 -1~1閃躲 -1~1耐久 64",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 1,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 1,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鈦礦石",
+        "quantity": 20,
+        "image": "5f34676bfe5d1c9de07cc978c0b64b64.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "冰凍愛麗絲",
+        "quantity": 20,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "accessory-5a",
+    "name": "淚石之戒",
+    "category": "accessory",
+    "level": 5,
+    "variant": "A",
+    "image": "2d028b8d6e6235ef74c4475c3acab260.png",
+    "mpCost": 100,
+    "stats": "生命 110~200耐久 100",
+    "materials": [
+      {
+        "name": "天使之淚",
+        "quantity": 1,
+        "image": "7e356fc597684c39970008c752cc8529.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "金條",
+        "quantity": 1,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "純銀條",
+        "quantity": 2,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 1,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "accessory-5b",
+    "name": "龍之環",
+    "category": "accessory",
+    "level": 5,
+    "variant": "B",
+    "image": "23a5e9e8248fe6b2a89bdf2e46d71e75.png",
+    "mpCost": 100,
+    "stats": "耐久 50",
+    "materials": [
+      {
+        "name": "濕地毒蛇",
+        "quantity": 5,
+        "image": "81fa9642475a85cc0926d9325919ad21.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "金條",
+        "quantity": 3,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "純銀條",
+        "quantity": 1,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "銅條",
+        "quantity": 1,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "accessory-6a",
+    "name": "藍羽髮暨",
+    "category": "accessory",
+    "level": 6,
+    "variant": "A",
+    "image": "6e7e83a5464dee2bf6a1f89c1c935653.png",
+    "mpCost": 120,
+    "stats": "回復 10~20命中 -5~-3耐久 100",
+    "materials": [
+      {
+        "name": "藍鳳凰的羽毛",
+        "quantity": 1,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "白金條",
+        "quantity": 3,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "純銀條",
+        "quantity": 1,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鈦礦石",
+        "quantity": 2,
+        "image": "5f34676bfe5d1c9de07cc978c0b64b64.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "accessory-6b",
+    "name": "黑魔法之戒",
+    "category": "accessory",
+    "level": 6,
+    "variant": "B",
+    "image": "de6aea3ab321ee53b011d2fbddc26f4c.png",
+    "mpCost": 120,
+    "stats": "魔力 110~200耐久 100",
+    "materials": [
+      {
+        "name": "魔力手環",
+        "quantity": 1,
+        "image": "eae9cba912da63826abb3dc14e96ae3e.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "金條",
+        "quantity": 3,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "純銀條",
+        "quantity": 1,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "蠶絲",
+        "quantity": 2,
+        "image": "7b5d720d15f2c95908bf69d6753a872c.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "accessory-7a",
+    "name": "祈願之符",
+    "category": "accessory",
+    "level": 7,
+    "variant": "A",
+    "image": "b804d4413441af8731d38ac3adb914d9.png",
+    "mpCost": 140,
+    "stats": "攻擊 -120必殺 +50耐久 3",
+    "materials": [
+      {
+        "name": "法蘭遺跡紀念木刀",
+        "quantity": 1,
+        "image": "2c78dab8402fcd6084410702454639d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 1,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "accessory-7b",
+    "name": "鏡戒",
+    "category": "accessory",
+    "level": 7,
+    "variant": "B",
+    "image": "882ecc9d23f08c990fff8a1bc9f1a386.png",
+    "mpCost": 140,
+    "stats": "反擊 10~15耐久 100",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 1,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 1,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "accessory-8a",
+    "name": "紅羽髮暨",
+    "category": "accessory",
+    "level": 8,
+    "variant": "A",
+    "image": "339c01f68b9bad1d1c4c2e917b2a96b9.png",
+    "mpCost": 160,
+    "stats": "閃躲 -3~5魔攻 10~15耐久 100",
+    "materials": [
+      {
+        "name": "紅鳳凰的羽毛",
+        "quantity": 1,
+        "image": "05c24977ac54f3448cb3f0d4142cdd35.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "白金條",
+        "quantity": 3,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 1,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鈦礦石",
+        "quantity": 2,
+        "image": "5f34676bfe5d1c9de07cc978c0b64b64.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "accessory-8b",
+    "name": "香草錦囊",
+    "category": "accessory",
+    "level": 8,
+    "variant": "B",
+    "image": "dea2219ffd62149ab95c6f79981153d3.png",
+    "mpCost": 160,
+    "stats": "命中 10~15耐久 100",
+    "materials": [
+      {
+        "name": "香草",
+        "quantity": 20,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "單木",
+        "quantity": 20,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絹布",
+        "quantity": 1,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 2,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "accessory-9a",
+    "name": "豐年之穗",
+    "category": "accessory",
+    "level": 9,
+    "variant": "A",
+    "image": "8e4f164b08ed0b59bf7deeec648be149.png",
+    "mpCost": 180,
+    "stats": "攻擊 +100耐久 50",
+    "materials": [
+      {
+        "name": "瞿麥",
+        "quantity": 20,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 1,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "火焰之魂",
+        "quantity": 2,
+        "image": "681950d48b2bf2f1a84c8348d8a675a5.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "accessory-9b",
+    "name": "茴香環",
+    "category": "accessory",
+    "level": 9,
+    "variant": "B",
+    "image": "58b4194e2c493f2bdb314f6d184f1626.png",
+    "mpCost": 180,
+    "stats": "防禦 +100耐久 50",
+    "materials": [
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 1,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "accessory-10a",
+    "name": "奇石步搖",
+    "category": "accessory",
+    "level": 10,
+    "variant": "A",
+    "image": "4f49a8d4549e3384b2e18e7f1359e811.png",
+    "mpCost": 200,
+    "stats": "敏捷 +40耐久 50",
+    "materials": [
+      {
+        "name": "鈦礦石",
+        "quantity": 7,
+        "image": "5f34676bfe5d1c9de07cc978c0b64b64.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 5,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 1,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "accessory-10b",
+    "name": "香柏環",
+    "category": "accessory",
+    "level": 10,
+    "variant": "B",
+    "image": "43dc3617affa8ed23bef21994f3e906c.png",
+    "mpCost": 200,
+    "stats": "抗毒 +10抗昏睡 +10抗石化 +10抗酒醉 +10抗混亂 +10抗遺忘 +10耐久 50",
+    "materials": [
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 1,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "七葉樹",
+        "quantity": 20,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 1,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "accessory-11a",
+    "name": "文昌筆",
+    "category": "accessory",
+    "level": 11,
+    "variant": "A",
+    "image": "840343e854615a510cccf3f53bca3be8.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "火焰之魂",
+        "quantity": 5,
+        "image": "681950d48b2bf2f1a84c8348d8a675a5.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 10,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "棗木",
+        "quantity": 40,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "accessory-12a",
+    "name": "貔貅墜",
+    "category": "accessory",
+    "level": 12,
+    "variant": "A",
+    "image": "ae29dd1b3b1e326d5d81a757c9ed7a8d.png",
+    "mpCost": 240,
+    "stats": "生命 361~400魔攻 28~39耐久 50",
+    "materials": [
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 5,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 15,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 15,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 20,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 40,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "accessory-12b",
+    "name": "碎藥之護符",
+    "category": "accessory",
+    "level": 12,
+    "variant": "B",
+    "image": "7d761629575d3c95bb8fa19a0cdfcd54.png",
+    "mpCost": 240,
+    "stats": "攻擊 110~120抗毒 +10抗昏睡 +10抗石化 +10抗酒醉 +10抗混亂 +10抗遺忘 +10耐久 100",
+    "materials": [
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 5,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 5,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 5,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "accessory-13a",
+    "name": "避毒珠",
+    "category": "accessory",
+    "level": 13,
+    "variant": "A",
+    "image": "951211a58f3e8ec1597ed421392033c4.png",
+    "mpCost": 260,
+    "stats": "抗毒 30~44耐久 50",
+    "materials": [
+      {
+        "name": "火焰之魂",
+        "quantity": 5,
+        "image": "681950d48b2bf2f1a84c8348d8a675a5.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "妖草的血",
+        "quantity": 5,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "茉莉",
+        "quantity": 40,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 15,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 15,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "accessory-13b",
+    "name": "風虎之戒",
+    "category": "accessory",
+    "level": 13,
+    "variant": "B",
+    "image": "856eeca45280bfc7f3ad52b3779c7ba4.png",
+    "mpCost": 260,
+    "stats": "攻擊 87~93精神 +71魔攻 +37耐久 328",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 200,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "銀絲綿線",
+        "quantity": 10,
+        "image": "61b70c318dedc9ec2e59e087daec4d7e.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "光輝結晶",
+        "quantity": 10,
+        "image": "971503002bee9a8df25fe0cdecc56762.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "塵封的鐵戒",
+        "quantity": 1,
+        "image": "46e6f2d2f930dff6386f1f9b36c9832e.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "accessory-14a",
+    "name": "狐仙手環",
+    "category": "accessory",
+    "level": 14,
+    "variant": "A",
+    "image": "b81652b2525a7a3787efdd83c083c044.png",
+    "mpCost": 280,
+    "stats": "攻擊 63~73魔力 121~145耐久 50",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 10,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 15,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 20,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "紫英石",
+        "quantity": 20,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "accessory-15a",
+    "name": "九龍珮",
+    "category": "accessory",
+    "level": 15,
+    "variant": "A",
+    "image": "b72f2d32aa4ae606c81f623df7948750.png",
+    "mpCost": 300,
+    "stats": "攻擊 60~100防禦 65~100魔攻 63~100耐久 50",
+    "materials": [
+      {
+        "name": "誓言之證",
+        "quantity": 5,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "萱草",
+        "quantity": 40,
+        "image": "5e7e6c5d23ff6006612cd1a573612f4a.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 20,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 20,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 15,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

@@ -1,0 +1,584 @@
+[
+  {
+    "id": "dragon-7c",
+    "name": "水龍之劍",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "b8618df8681f250d007c2e0f0f4a8951.png",
+    "mpCost": 140,
+    "stats": "攻擊 +210敏捷 +5命中 +2閃躲 +2耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的劍",
+        "quantity": 1,
+        "image": "488e7d40fece8afe5b0121cd1a16c9e0.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之斧",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "c0904c78c2849d8fe600a07bcc3a2147.png",
+    "mpCost": 140,
+    "stats": "攻擊 +220防禦 +25必殺 +18耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的斧",
+        "quantity": 1,
+        "image": "9cbdf5bd155387aee7e1b8d04975221e.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之槍",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "1cba118ddbc483507315b2e8b6594783.png",
+    "mpCost": 140,
+    "stats": "攻擊 +140敏捷 +50必殺 +12命中 +6耐久 300",
+    "materials": [
+      {
+        "name": "生鏽的槍",
+        "quantity": 1,
+        "image": "e06105ed6e4dc8cab517556e3a2db7a7.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之弓",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "eb593433b2cf678faff8aa4c904ba697.png",
+    "mpCost": 140,
+    "stats": "攻擊 +165必殺 +2命中 +20耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的弓",
+        "quantity": 1,
+        "image": "48e8223ca615292798b3f46a925cc5b9.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之杖",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "8734d084287d82c2ffcc20fdad861252.png",
+    "mpCost": 140,
+    "stats": "攻擊 +70精神 +35魔攻 +218耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的杖",
+        "quantity": 1,
+        "image": "48be0a05aafe5a515167eb6a8710f59b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍的小刀",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "eb61b29c4295fc369af6d3d7aca46b46.png",
+    "mpCost": 140,
+    "stats": "攻擊 +130命中 +25耐久 300明鏡止水耗魔-50%",
+    "materials": [
+      {
+        "name": "生鏽的短劍",
+        "quantity": 1,
+        "image": "0b6511dcf802eb1eccba43b8e9993fdb.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "冰龍",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "48ac874f311e5e5a118ce4a8215d1ba3.png",
+    "mpCost": 140,
+    "stats": "攻擊 +173精神 +10必殺 +20耐久 300",
+    "materials": [
+      {
+        "name": "生鏽的投擲武器",
+        "quantity": 1,
+        "image": "0697b06509e210375dd3cdc38c09ce8c.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之盔",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "7c93a8117ced34a84a853b602d4f2eca.png",
+    "mpCost": 140,
+    "stats": "防禦 +110耐久 200護衛耗魔-50%",
+    "materials": [
+      {
+        "name": "生鏽的頭盔",
+        "quantity": 1,
+        "image": "274f307fa66e7912afaac91b0c6f5fed.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之帽",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "b18418273baad576825af0c53df3f9e7.png",
+    "mpCost": 140,
+    "stats": "防禦 +53精神 +20命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "破爛的帽子",
+        "quantity": 1,
+        "image": "78356968400501f618511208fe3b9123.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍鎧甲",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "32d03cf8a3c03fbb852958c563d7cdd1.png",
+    "mpCost": 140,
+    "stats": "防禦 +170抗毒 +65耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的鎧",
+        "quantity": 1,
+        "image": "5545aad4343e79f7c4528f68de0b9962.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之衣",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "3e4f7a18f2deb1382687ad52cd64e461.png",
+    "mpCost": 140,
+    "stats": "防禦 +30閃躲 +80耐久 200",
+    "materials": [
+      {
+        "name": "破爛的衣服",
+        "quantity": 1,
+        "image": "c70f60023f6b6ddf3005d2d7246f35a2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍法袍",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "0c40fa7167b77deca7e0a3bc3fc12564.png",
+    "mpCost": 140,
+    "stats": "防禦 +70抗毒 +10抗昏睡 +10抗石化 +10魔力 +500耐久 400~450超強補血魔法耗魔-30%",
+    "materials": [
+      {
+        "name": "破爛的袍",
+        "quantity": 1,
+        "image": "0c098c52b5b4d3d864e507c69ec8b8a5.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之靴",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "2f99597d95b7e1903851cab5fcc44115.png",
+    "mpCost": 140,
+    "stats": "防禦 +100必殺 +5命中 +5魔力 +150耐久 200",
+    "materials": [
+      {
+        "name": "破爛的靴子",
+        "quantity": 1,
+        "image": "882796abb050ee382bb17fb5b072b5a8.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之鞋",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "6cd6aec42fcbf71f45dd3f47a7d802ca.png",
+    "mpCost": 140,
+    "stats": "防禦 +30敏捷 +30命中 +2閃躲 +2耐久 200~250",
+    "materials": [
+      {
+        "name": "破爛的鞋子",
+        "quantity": 1,
+        "image": "986ac2e6114cec58608a209f31e5bb4c.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 10,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍之盾",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "8bde13e85cf85a211e4708f241493887.png",
+    "mpCost": 140,
+    "stats": "攻擊 +20防禦 +100耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的盾",
+        "quantity": 1,
+        "image": "6ea895a11ca1a8b6b47ccd405b7d37c5.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "dragon-7c",
+    "name": "水龍料理",
+    "category": "dragon",
+    "level": 7,
+    "variant": "C",
+    "image": "3bbb6f3394811f8790aed9c4906314aa.png",
+    "mpCost": 140,
+    "stats": "",
+    "materials": [
+      {
+        "name": "水龍的鰭",
+        "quantity": 1,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "dragon-7b",
+    "name": "水龍之藥",
+    "category": "dragon",
+    "level": 7,
+    "variant": "B",
+    "image": "a8671a4f8f7046dd91ee97a8c9e03c73.png",
+    "mpCost": 140,
+    "stats": "",
+    "materials": [
+      {
+        "name": "渾濁的水",
+        "quantity": 1,
+        "image": "3304c9e0c2240b3c3e6f3337972a6492.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  }
+]

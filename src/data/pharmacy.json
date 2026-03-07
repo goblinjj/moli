@@ -1,0 +1,824 @@
+[
+  {
+    "id": "pharmacy-1a",
+    "name": "生命力回復藥（100）",
+    "category": "pharmacy",
+    "level": 1,
+    "variant": "A",
+    "image": "ed5c31d3b918a7eb7dc90f37cee31407.png",
+    "mpCost": 20,
+    "stats": "生命值回復約100點",
+    "materials": [
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 1,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-2a",
+    "name": "生命力回復藥（150）",
+    "category": "pharmacy",
+    "level": 2,
+    "variant": "A",
+    "image": "ed5c31d3b918a7eb7dc90f37cee31407.png",
+    "mpCost": 40,
+    "stats": "生命值回復約150點",
+    "materials": [
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 10,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-2b",
+    "name": "想泉丸",
+    "category": "pharmacy",
+    "level": 2,
+    "variant": "B",
+    "image": "b64666c5a798ef9ce2fc673a55dbc742.png",
+    "mpCost": 40,
+    "stats": "",
+    "materials": [
+      {
+        "name": "桃連蛇",
+        "quantity": 20,
+        "image": "984374afc4294f4b56309a611688fcb0.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "桃茂",
+        "quantity": 20,
+        "image": "41f9b199000d94d1e44f85035c9018fd.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "桃冠",
+        "quantity": 20,
+        "image": "73879a714e368d49ff3119c166c7ec30.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-3c",
+    "name": "猛毒的餌",
+    "category": "pharmacy",
+    "level": 3,
+    "variant": "C",
+    "image": "77112d0cd8781dadc4e19ddfe0283e75.png",
+    "mpCost": 60,
+    "stats": "",
+    "materials": [
+      {
+        "name": "必死的劇藥",
+        "quantity": 1,
+        "image": "f0af1ec7ed76e49f9f2cddd51f25dfeb.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "牛肉",
+        "quantity": 20,
+        "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-3a",
+    "name": "生命力回復藥（200）",
+    "category": "pharmacy",
+    "level": 3,
+    "variant": "A",
+    "image": "ed5c31d3b918a7eb7dc90f37cee31407.png",
+    "mpCost": 60,
+    "stats": "生命值回復約200點",
+    "materials": [
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 10,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 5,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-4a",
+    "name": "生命力回復藥（250）",
+    "category": "pharmacy",
+    "level": 4,
+    "variant": "A",
+    "image": "d4b08e21050bd1e04bcf374ba94e150a.png",
+    "mpCost": 80,
+    "stats": "生命值回復約250點",
+    "materials": [
+      {
+        "name": "檸檬草",
+        "quantity": 10,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 15,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "果梨",
+        "quantity": 5,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-4b",
+    "name": "迷魂藥",
+    "category": "pharmacy",
+    "level": 4,
+    "variant": "B",
+    "image": "0c2d712fac73cdc544ff23865a12f9a0.png",
+    "mpCost": 80,
+    "stats": "",
+    "materials": [
+      {
+        "name": "摩斯蜥蜴",
+        "quantity": 1,
+        "image": "d8a02e6fee0c556190e676f3de14ba7f.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "井底蛙",
+        "quantity": 1,
+        "image": "014e3923f21b9ce03ca5dfb64ce476f1.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "惡魔魚",
+        "quantity": 1,
+        "image": "6166e3f8b62c56567743c5f2e9f265f0.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "戀愛蘋果",
+        "quantity": 20,
+        "image": "995142dae4503c423d5479e0ea0deaf5.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-4c",
+    "name": "畢克銀酸",
+    "category": "pharmacy",
+    "level": 4,
+    "variant": "C",
+    "image": "0db6fd33c9bb157fa092551b2877a818.png",
+    "mpCost": 80,
+    "stats": "",
+    "materials": [
+      {
+        "name": "摩斯蜥蜴",
+        "quantity": 1,
+        "image": "d8a02e6fee0c556190e676f3de14ba7f.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "井底蛙",
+        "quantity": 1,
+        "image": "014e3923f21b9ce03ca5dfb64ce476f1.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "惡魔魚",
+        "quantity": 1,
+        "image": "6166e3f8b62c56567743c5f2e9f265f0.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "迷你蝙蝠的血",
+        "quantity": 1,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 0
+      },
+      {
+        "name": "純銀",
+        "quantity": 1,
+        "image": "a32f564755236c52909b8ef0c6d2aa2c.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-5a",
+    "name": "生命力回復藥（300）",
+    "category": "pharmacy",
+    "level": 5,
+    "variant": "A",
+    "image": "d4b08e21050bd1e04bcf374ba94e150a.png",
+    "mpCost": 100,
+    "stats": "生命值回復約300點",
+    "materials": [
+      {
+        "name": "蝴蝶花",
+        "quantity": 15,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "果梨",
+        "quantity": 15,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "桃木",
+        "quantity": 5,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-6a",
+    "name": "生命力回復藥（400）",
+    "category": "pharmacy",
+    "level": 6,
+    "variant": "A",
+    "image": "d4b08e21050bd1e04bcf374ba94e150a.png",
+    "mpCost": 120,
+    "stats": "生命值回復約400點",
+    "materials": [
+      {
+        "name": "果梨",
+        "quantity": 10,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "桃木",
+        "quantity": 15,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "番紅花",
+        "quantity": 15,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-7a",
+    "name": "生命力回復藥（500）",
+    "category": "pharmacy",
+    "level": 7,
+    "variant": "A",
+    "image": "50799ba53a6f4c0fd16c4425d89295e3.png",
+    "mpCost": 140,
+    "stats": "生命值回復約500點",
+    "materials": [
+      {
+        "name": "果梨",
+        "quantity": 5,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "桃木",
+        "quantity": 13,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "番紅花",
+        "quantity": 15,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "百里香",
+        "quantity": 15,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-7b",
+    "name": "水龍之藥",
+    "category": "pharmacy",
+    "level": 7,
+    "variant": "B",
+    "image": "a8671a4f8f7046dd91ee97a8c9e03c73.png",
+    "mpCost": 140,
+    "stats": "",
+    "materials": [
+      {
+        "name": "渾濁的水",
+        "quantity": 1,
+        "image": "3304c9e0c2240b3c3e6f3337972a6492.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-8a",
+    "name": "生命力回復藥（600）",
+    "category": "pharmacy",
+    "level": 8,
+    "variant": "A",
+    "image": "50799ba53a6f4c0fd16c4425d89295e3.png",
+    "mpCost": 160,
+    "stats": "生命值回復約600點",
+    "materials": [
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "果梨",
+        "quantity": 10,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "番紅花",
+        "quantity": 10,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 10,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-8b",
+    "name": "香水：深藍九號",
+    "category": "pharmacy",
+    "level": 8,
+    "variant": "B",
+    "image": "80b2270d2325366e7bfef63f94f8eb04.png",
+    "mpCost": 160,
+    "stats": "",
+    "materials": [
+      {
+        "name": "百里香",
+        "quantity": 10,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 10,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔法紅蘿蔔",
+        "quantity": 20,
+        "image": "6a6cb752d3cf056e7a0d4d7f3f0720c4.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "濕地毒蛇",
+        "quantity": 10,
+        "image": "81fa9642475a85cc0926d9325919ad21.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "水的水晶碎片",
+        "quantity": 5,
+        "image": "a564860bb32d5fde60b40e4bc98dd3b7.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-9a",
+    "name": "生命力回復藥（800）",
+    "category": "pharmacy",
+    "level": 9,
+    "variant": "A",
+    "image": "50799ba53a6f4c0fd16c4425d89295e3.png",
+    "mpCost": 180,
+    "stats": "生命值回復約800點",
+    "materials": [
+      {
+        "name": "蝴蝶花",
+        "quantity": 5,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "番紅花",
+        "quantity": 7,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 5,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 10,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "七葉樹",
+        "quantity": 5,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-10a",
+    "name": "生命力回復藥（1000）",
+    "category": "pharmacy",
+    "level": 10,
+    "variant": "A",
+    "image": "e4e902f6be81c4ba35dc0a63c83f2b39.png",
+    "mpCost": 200,
+    "stats": "生命值回復約1000點",
+    "materials": [
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 10,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 6,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 8,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "七葉樹",
+        "quantity": 10,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-11a",
+    "name": "生命力回復藥（1400）",
+    "category": "pharmacy",
+    "level": 11,
+    "variant": "A",
+    "image": "533ba972c91e277f1f10f9f1c6917c25.png",
+    "mpCost": 220,
+    "stats": "生命值回復約1400點",
+    "materials": [
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 20,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 10,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "七葉樹",
+        "quantity": 10,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "井底蛙",
+        "quantity": 1,
+        "image": "014e3923f21b9ce03ca5dfb64ce476f1.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-11b",
+    "name": "生命力回復藥(1200)",
+    "category": "pharmacy",
+    "level": 11,
+    "variant": "B",
+    "image": "e4e902f6be81c4ba35dc0a63c83f2b39.png",
+    "mpCost": 220,
+    "stats": "生命值回復約1200點",
+    "materials": [
+      {
+        "name": "七葉樹",
+        "quantity": 40,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "香草",
+        "quantity": 20,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "紫茉莉",
+        "quantity": 20,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-11c",
+    "name": "水粉",
+    "category": "pharmacy",
+    "level": 11,
+    "variant": "C",
+    "image": "bca069a0d83692676c112a1dc9bdc85d.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "魔法紅蘿蔔",
+        "quantity": 1,
+        "image": "6a6cb752d3cf056e7a0d4d7f3f0720c4.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "香草",
+        "quantity": 3,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "德島果蘭",
+        "quantity": 20,
+        "image": "74006bc22977d348030b2861d8ae28a6.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "月桂樹的葉子",
+        "quantity": 20,
+        "image": "0afc44a85b4487851d03deb80921f8c4.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-12a",
+    "name": "生命力回復藥(1400)",
+    "category": "pharmacy",
+    "level": 12,
+    "variant": "A",
+    "image": "e4e902f6be81c4ba35dc0a63c83f2b39.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "香草",
+        "quantity": 20,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "紫茉莉",
+        "quantity": 20,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 20,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-13a",
+    "name": "生命力回復藥(1600)",
+    "category": "pharmacy",
+    "level": 13,
+    "variant": "A",
+    "image": "e4e902f6be81c4ba35dc0a63c83f2b39.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "瞿麥",
+        "quantity": 20,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "七葉樹",
+        "quantity": 20,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "紫茉莉",
+        "quantity": 20,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "茉莉",
+        "quantity": 20,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-13b",
+    "name": "風虎藥水",
+    "category": "pharmacy",
+    "level": 13,
+    "variant": "B",
+    "image": "dd12734f01e551c1479676bb90d81abb.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "茉莉",
+        "quantity": 40,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "純淨泉水",
+        "quantity": 1,
+        "image": "10315e6e8701615785fcfdb013a9b518.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-14a",
+    "name": "生命力回復藥(2000)",
+    "category": "pharmacy",
+    "level": 14,
+    "variant": "A",
+    "image": "e4e902f6be81c4ba35dc0a63c83f2b39.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "紫茉莉",
+        "quantity": 40,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 40,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "茉莉",
+        "quantity": 40,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "萱草",
+        "quantity": 20,
+        "image": "5e7e6c5d23ff6006612cd1a573612f4a.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "pharmacy-15a",
+    "name": "生命力回復藥(2400)",
+    "category": "pharmacy",
+    "level": 15,
+    "variant": "A",
+    "image": "e4e902f6be81c4ba35dc0a63c83f2b39.png",
+    "mpCost": 300,
+    "stats": "",
+    "materials": [
+      {
+        "name": "紫茉莉",
+        "quantity": 40,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 40,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "茉莉",
+        "quantity": 40,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "萱草",
+        "quantity": 20,
+        "image": "5e7e6c5d23ff6006612cd1a573612f4a.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "梔子花",
+        "quantity": 20,
+        "image": "dcc2138b0259858a6c4899091a540d25.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

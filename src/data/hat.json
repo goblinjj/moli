@@ -1,0 +1,1412 @@
+[
+  {
+    "id": "hat-1a",
+    "name": "麻布帽",
+    "category": "hat",
+    "level": 1,
+    "variant": "A",
+    "image": "a06fb8472b967ff0b64494ffa4f8ca2f.png",
+    "mpCost": 20,
+    "stats": "防禦 4~7命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 2,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "hat-1b",
+    "name": "硬帽",
+    "category": "hat",
+    "level": 1,
+    "variant": "B",
+    "image": "78356968400501f618511208fe3b9123.png",
+    "mpCost": 20,
+    "stats": "防禦 6~11命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 4,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "hat-2a",
+    "name": "輕帽",
+    "category": "hat",
+    "level": 2,
+    "variant": "A",
+    "image": "fabcd9ea5f2cb2cad9113212cd061bee.png",
+    "mpCost": 40,
+    "stats": "防禦 8~14命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 20,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "麻布",
+        "quantity": 5,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 2,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "hat-2b",
+    "name": "皮帽",
+    "category": "hat",
+    "level": 2,
+    "variant": "B",
+    "image": "3d835e3d9df82fed3d11530194bdcb12.png",
+    "mpCost": 40,
+    "stats": "防禦 10~18命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 20,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 6,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 3,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "hat-3a",
+    "name": "硬皮帽",
+    "category": "hat",
+    "level": 3,
+    "variant": "A",
+    "image": "386ccb0892e50a335a9f2ef4431971b6.png",
+    "mpCost": 60,
+    "stats": "防禦 13~21命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 5,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 4,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "hat-3b",
+    "name": "可愛的帽子",
+    "category": "hat",
+    "level": 3,
+    "variant": "B",
+    "image": "fabcd9ea5f2cb2cad9113212cd061bee.png",
+    "mpCost": 60,
+    "stats": "防禦 15~25命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "果梨",
+        "quantity": 20,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "麻布",
+        "quantity": 6,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 6,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 5,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "hat-4a",
+    "name": "時髦帽子",
+    "category": "hat",
+    "level": 4,
+    "variant": "A",
+    "image": "00b1d35507f111baf3562824fea3a417.png",
+    "mpCost": 80,
+    "stats": "防禦 18~28命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "檸檬草",
+        "quantity": 20,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 20,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "麻布",
+        "quantity": 6,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 6,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 6,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "hat-4b",
+    "name": "鴨舌帽",
+    "category": "hat",
+    "level": 4,
+    "variant": "B",
+    "image": "ddae0663de8e5d3357be7674ce02cde0.png",
+    "mpCost": 80,
+    "stats": "防禦 21~32命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "果梨",
+        "quantity": 20,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 11,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 11,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "hat-5a",
+    "name": "藍徽章之帽",
+    "category": "hat",
+    "level": 5,
+    "variant": "A",
+    "image": "c7295114b218ec5397141c42488f27a6.png",
+    "mpCost": 100,
+    "stats": "防禦 25~35命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "果梨",
+        "quantity": 20,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "綿",
+        "quantity": 7,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "hat-5b",
+    "name": "高級帽子",
+    "category": "hat",
+    "level": 5,
+    "variant": "B",
+    "image": "5d1ef49a14325cee65afb7594af812e8.png",
+    "mpCost": 100,
+    "stats": "防禦 27~39命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 8,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "hat-5c",
+    "name": "劍客帽",
+    "category": "hat",
+    "level": 5,
+    "variant": "C",
+    "image": "df62dde345f6dc0761f9746bc6479db6.png",
+    "mpCost": 100,
+    "stats": "防禦 9~14精神 -10命中 +5閃躲 +3生命 65~75耐久 300~350",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "地的水晶碎片",
+        "quantity": 2,
+        "image": "cedf23d5208d579a6bca5e51c078fbd2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "毛氈",
+        "quantity": 10,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "絹布",
+        "quantity": 4,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "hat-6a",
+    "name": "裝飾著花的帽子",
+    "category": "hat",
+    "level": 6,
+    "variant": "A",
+    "image": "fd8578d9b46c7251abf5a9a2e635503d.png",
+    "mpCost": 120,
+    "stats": "防禦 32~42命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "綿",
+        "quantity": 19,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 20,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 20,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "果梨",
+        "quantity": 20,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "hat-6b",
+    "name": "青銅帽子",
+    "category": "hat",
+    "level": 6,
+    "variant": "B",
+    "image": "e9c98a27b1cfec7d41f6b23c1fc0088f.png",
+    "mpCost": 120,
+    "stats": "防禦 35~46命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 15,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 14,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "番紅花",
+        "quantity": 20,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "hat-7a",
+    "name": "淑女帽",
+    "category": "hat",
+    "level": 7,
+    "variant": "A",
+    "image": "9e6f68dfa452edc80b33616aa0a85330.png",
+    "mpCost": 140,
+    "stats": "防禦 +10精神 +20耐久 300~350",
+    "materials": [
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "水的水晶碎片",
+        "quantity": 5,
+        "image": "a564860bb32d5fde60b40e4bc98dd3b7.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "hat-7b",
+    "name": "可愛的扁帽子",
+    "category": "hat",
+    "level": 7,
+    "variant": "B",
+    "image": "532bf6f18ecdd490a4801afdccad5b80.png",
+    "mpCost": 140,
+    "stats": "防禦 40~53命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 13,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "火的水晶碎片",
+        "quantity": 5,
+        "image": "d2411a4a9747e6eb832840d55212a67b.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "hat-7c",
+    "name": "水龍之帽",
+    "category": "hat",
+    "level": 7,
+    "variant": "C",
+    "image": "b18418273baad576825af0c53df3f9e7.png",
+    "mpCost": 140,
+    "stats": "防禦 +53精神 +20命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "破爛的帽子",
+        "quantity": 1,
+        "image": "78356968400501f618511208fe3b9123.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "hat-8a",
+    "name": "軍帽",
+    "category": "hat",
+    "level": 8,
+    "variant": "A",
+    "image": "87d28801c54d9dc6c1b74544ba208213.png",
+    "mpCost": 160,
+    "stats": "防禦 42~56命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "瞿麥",
+        "quantity": 20,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 5,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 10,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "hat-8b",
+    "name": "時髦避暑帽",
+    "category": "hat",
+    "level": 8,
+    "variant": "B",
+    "image": "59e6e9b791f87cc82be8a78a52e77970.png",
+    "mpCost": 160,
+    "stats": "防禦 32~46命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "番紅花",
+        "quantity": 20,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 20,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 10,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 1,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "hat-8c",
+    "name": "可愛的扁帽子+",
+    "category": "hat",
+    "level": 8,
+    "variant": "C",
+    "image": "532bf6f18ecdd490a4801afdccad5b80.png",
+    "mpCost": 160,
+    "stats": "防禦 38~45命中 +5閃躲 1~3耐久 300~350",
+    "materials": [
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 20,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "火的水晶碎片",
+        "quantity": 10,
+        "image": "d2411a4a9747e6eb832840d55212a67b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "魔法紅蘿蔔",
+        "quantity": 20,
+        "image": "6a6cb752d3cf056e7a0d4d7f3f0720c4.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "hat-8d",
+    "name": "頭目帽子",
+    "category": "hat",
+    "level": 8,
+    "variant": "D",
+    "image": "954bd73860efff4ba7d3256d6ea1d15a.png",
+    "mpCost": 160,
+    "stats": "防禦 +56命中 +5閃躲 +3耐久 300~350竊盜耗魔-50%",
+    "materials": [
+      {
+        "name": "破爛的帽子",
+        "quantity": 2,
+        "image": "78356968400501f618511208fe3b9123.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 3,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 3,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "香草",
+        "quantity": 20,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "hat-9a",
+    "name": "羽毛帽",
+    "category": "hat",
+    "level": 9,
+    "variant": "A",
+    "image": "89d963fa7b9bebb04cae474a79550c5c.png",
+    "mpCost": 180,
+    "stats": "防禦 54~67命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 6,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 8,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "hat-9b",
+    "name": "魔術師之帽",
+    "category": "hat",
+    "level": 9,
+    "variant": "B",
+    "image": "8a186cf72c58c637f89ee73b70ddb52c.png",
+    "mpCost": 180,
+    "stats": "防禦 +5命中 +15耐久 300~350",
+    "materials": [
+      {
+        "name": "瞿麥",
+        "quantity": 20,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "毛氈",
+        "quantity": 20,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 10,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "hat-10a",
+    "name": "黃昏之帽",
+    "category": "hat",
+    "level": 10,
+    "variant": "A",
+    "image": "6d1031f135396213cc288fb72a64ab18.png",
+    "mpCost": 200,
+    "stats": "防禦 63~74命中 +5耐久 300~350",
+    "materials": [
+      {
+        "name": "七葉樹",
+        "quantity": 20,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 5,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "細麻布",
+        "quantity": 7,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "hat-10b",
+    "name": "妖精之帽",
+    "category": "hat",
+    "level": 10,
+    "variant": "B",
+    "image": "a4cb980d1c51dd1805fe1f3ea4dddb72.png",
+    "mpCost": 200,
+    "stats": "防禦 +60命中 +5閃躲 +2耐久 300~350恢復魔法耗魔-15%",
+    "materials": [
+      {
+        "name": "七葉樹",
+        "quantity": 20,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 5,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "曼陀羅草的皮",
+        "quantity": 5,
+        "image": "a39bea1809ec64f6171bcd036112c345.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 2,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "hat-11a",
+    "name": "貝斯神帽",
+    "category": "hat",
+    "level": 11,
+    "variant": "A",
+    "image": "0bf06849cc60a68721d8cfa5e5f7d455.png",
+    "mpCost": 220,
+    "stats": "防禦 36~47抗昏睡 +20抗酒醉 +20抗遺忘 +20閃躲 +10耐久 250",
+    "materials": [
+      {
+        "name": "莎蓮娜線",
+        "quantity": 11,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "七葉樹",
+        "quantity": 40,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "香草",
+        "quantity": 40,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "曼陀羅草的皮",
+        "quantity": 2,
+        "image": "a39bea1809ec64f6171bcd036112c345.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "妖草的血",
+        "quantity": 1,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "hat-11b",
+    "name": "神官帽",
+    "category": "hat",
+    "level": 11,
+    "variant": "B",
+    "image": "30881a1b19cb3d4750f27db0dc082e9a.png",
+    "mpCost": 220,
+    "stats": "防禦 67~74抗毒 +20抗石化 +20抗混亂 +20命中 +10耐久 300~350",
+    "materials": [
+      {
+        "name": "開米士毛線",
+        "quantity": 16,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 2,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "茴香",
+        "quantity": 40,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "香草",
+        "quantity": 40,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "火焰之魂",
+        "quantity": 2,
+        "image": "681950d48b2bf2f1a84c8348d8a675a5.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "hat-11c",
+    "name": "絨毛帽",
+    "category": "hat",
+    "level": 11,
+    "variant": "C",
+    "image": "bb7f6656a06d291323ce0f02d7c4438e.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "紫茉莉",
+        "quantity": 20,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "細麻布",
+        "quantity": 9,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 10,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 8,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "hat-12a",
+    "name": "鵝毛帽",
+    "category": "hat",
+    "level": 12,
+    "variant": "A",
+    "image": "dc4548fa14e86be5ec15f3fb2765b831.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "七葉樹",
+        "quantity": 20,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "紫茉莉",
+        "quantity": 20,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 10,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 4,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 7,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "hat-12b",
+    "name": "天使郊遊帽",
+    "category": "hat",
+    "level": 12,
+    "variant": "B",
+    "image": "fd8578d9b46c7251abf5a9a2e635503d.png",
+    "mpCost": 240,
+    "stats": "防禦 +121精神 +18閃躲 +1",
+    "materials": [
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 16,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 9,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "紫茉莉",
+        "quantity": 40,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 40,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "hat-12c",
+    "name": "碎藥之帽",
+    "category": "hat",
+    "level": 12,
+    "variant": "C",
+    "image": "954bd73860efff4ba7d3256d6ea1d15a.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 7,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "紫茉莉",
+        "quantity": 12,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 15,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 20,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "hat-13a",
+    "name": "金絲帽",
+    "category": "hat",
+    "level": 13,
+    "variant": "A",
+    "image": "cff9e085134de1b6e5a997d28f55b38d.png",
+    "mpCost": 260,
+    "stats": "防禦 100~112敏捷 43~47命中 +5",
+    "materials": [
+      {
+        "name": "茉莉",
+        "quantity": 20,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 9,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "細麻布",
+        "quantity": 7,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 9,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 11,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "hat-13b",
+    "name": "狙擊手鴨舌帽",
+    "category": "hat",
+    "level": 13,
+    "variant": "B",
+    "image": "c7295114b218ec5397141c42488f27a6.png",
+    "mpCost": 260,
+    "stats": "防禦 +144精神 +11命中 +5",
+    "materials": [
+      {
+        "name": "朱砂錠",
+        "quantity": 9,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 12,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 14,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 40,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "茉莉",
+        "quantity": 40,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "hat-13c",
+    "name": "風虎帽",
+    "category": "hat",
+    "level": 13,
+    "variant": "C",
+    "image": "c75182ee775072e8f33e4f74ce2e297a.png",
+    "mpCost": 260,
+    "stats": "防禦 144~165精神 +31回復 +50閃躲 +5魔攻 +30",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 40,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "銀絲綿線",
+        "quantity": 5,
+        "image": "61b70c318dedc9ec2e59e087daec4d7e.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "黯淡的獸皮",
+        "quantity": 5,
+        "image": "fd0fa67703d8b08be68cd7bf524b9a01.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "hat-14a",
+    "name": "鑲玉帽",
+    "category": "hat",
+    "level": 14,
+    "variant": "A",
+    "image": "1e344743caf826bb3f3f00bb3abf94d9.png",
+    "mpCost": 280,
+    "stats": "防禦 127~136精神 49~50魔攻 +50耐久 250",
+    "materials": [
+      {
+        "name": "紫英石",
+        "quantity": 8,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "萱草",
+        "quantity": 20,
+        "image": "5e7e6c5d23ff6006612cd1a573612f4a.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 12,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 11,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 9,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "hat-14b",
+    "name": "深紅禮帽",
+    "category": "hat",
+    "level": 14,
+    "variant": "B",
+    "image": "001526a4f57d4d9214b023924bb63c5b.png",
+    "mpCost": 280,
+    "stats": "防禦 +157精神 +38魔力 +500魔攻 +38",
+    "materials": [
+      {
+        "name": "魔法之羽",
+        "quantity": 6,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 7,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 17,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "茉莉",
+        "quantity": 40,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "萱草",
+        "quantity": 40,
+        "image": "5e7e6c5d23ff6006612cd1a573612f4a.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "hat-15a",
+    "name": "紅香帽",
+    "category": "hat",
+    "level": 15,
+    "variant": "A",
+    "image": "d61a0b5b1afe0a2f29589edd60f3d562.png",
+    "mpCost": 300,
+    "stats": "防禦 +132命中 +5閃躲 +8一擊必中耗魔-25%",
+    "materials": [
+      {
+        "name": "紫英石",
+        "quantity": 11,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "梔子花",
+        "quantity": 20,
+        "image": "dcc2138b0259858a6c4899091a540d25.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 6,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 4,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 13,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "hat-15b",
+    "name": "烏拉諾斯黑禮帽",
+    "category": "hat",
+    "level": 15,
+    "variant": "B",
+    "image": "386ccb0892e50a335a9f2ef4431971b6.png",
+    "mpCost": 300,
+    "stats": "防禦 153~172精神 29~35命中 +5閃躲 +2",
+    "materials": [
+      {
+        "name": "紫英石",
+        "quantity": 11,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 6,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 4,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 13,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "梔子花",
+        "quantity": 20,
+        "image": "dcc2138b0259858a6c4899091a540d25.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

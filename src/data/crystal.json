@@ -1,0 +1,344 @@
+[
+  {
+    "id": "crystal-1a",
+    "name": "眠塵晶石",
+    "category": "crystal",
+    "level": 1,
+    "variant": "A",
+    "image": "519586c76f893850d99001681ee2fce3.png",
+    "mpCost": 20,
+    "stats": "命中 1~2負重 512~558耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 20,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "蘋果薄荷",
+        "quantity": 20,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "crystal-2a",
+    "name": "幼芽晶石",
+    "category": "crystal",
+    "level": 2,
+    "variant": "A",
+    "image": "ed8b0c4e6850668ddda83ceb82ad5f36.png",
+    "mpCost": 40,
+    "stats": "反擊 1~2負重 579~595耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 20,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "蘋果薄荷",
+        "quantity": 15,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 10,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "crystal-3a",
+    "name": "土靈晶石",
+    "category": "crystal",
+    "level": 3,
+    "variant": "A",
+    "image": "2f5bc5b3c601d91651d79227a4fd0fa3.png",
+    "mpCost": 60,
+    "stats": "必殺 1~2負重 603~612耐久 100",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵條",
+        "quantity": 20,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "蘋果薄荷",
+        "quantity": 15,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 15,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "crystal-4a",
+    "name": "綠星晶石",
+    "category": "crystal",
+    "level": 4,
+    "variant": "A",
+    "image": "c27471ca6474531b6f5774742406630e.png",
+    "mpCost": 80,
+    "stats": "反擊 +2命中 3~5負重 609~651耐久 100",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 25,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "果梨",
+        "quantity": 20,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "crystal-5a",
+    "name": "大地晶石",
+    "category": "crystal",
+    "level": 5,
+    "variant": "A",
+    "image": "5eb43a7abf98baa993a83384a1bf86a5.png",
+    "mpCost": 100,
+    "stats": "必殺 +2反擊 3~4負重 658~693耐久 100",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 20,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "crystal-6a",
+    "name": "灰燼晶石",
+    "category": "crystal",
+    "level": 6,
+    "variant": "A",
+    "image": "8fb22cd3aaabf3212e55beacd5fc40c2.png",
+    "mpCost": 120,
+    "stats": "必殺 3~5命中 +2負重 710~740耐久 100",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 20,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 15,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "番紅花",
+        "quantity": 20,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "crystal-7a",
+    "name": "焰苗晶石",
+    "category": "crystal",
+    "level": 7,
+    "variant": "A",
+    "image": "238e42a5b4c397832c61c0383b864716.png",
+    "mpCost": 140,
+    "stats": "命中 7~11閃躲 -9~-5負重 708~779耐久 100",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 20,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "百里香",
+        "quantity": 25,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "crystal-8a",
+    "name": "火靈晶石",
+    "category": "crystal",
+    "level": 8,
+    "variant": "A",
+    "image": "59aa39a12fcb7c99e76c9edc90eaf180.png",
+    "mpCost": 160,
+    "stats": "反擊 9~10閃躲 -10~-8負重 772~775耐久 100",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 20,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "百里香",
+        "quantity": 30,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "crystal-9a",
+    "name": "燃燒晶石",
+    "category": "crystal",
+    "level": 9,
+    "variant": "A",
+    "image": "8f54192f3291d3b1a93a041c5a80ea6c.png",
+    "mpCost": 180,
+    "stats": "必殺 7~12閃躲 -10~-5負重 778~824耐久 100",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 20,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 20,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 25,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "crystal-10a",
+    "name": "熾焰晶石",
+    "category": "crystal",
+    "level": 10,
+    "variant": "A",
+    "image": "76237fa1ee307803124dc0538609db0a.png",
+    "mpCost": 200,
+    "stats": "必殺 1~4反擊 1~4命中 1~4閃躲 6~13負重 814~892耐久 100",
+    "materials": [
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 20,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 20,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "茴香",
+        "quantity": 20,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "七葉樹",
+        "quantity": 25,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      }
+    ]
+  }
+]

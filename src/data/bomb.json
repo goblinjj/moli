@@ -1,0 +1,1004 @@
+[
+  {
+    "id": "bomb-1a",
+    "name": "蕃茄炸彈",
+    "category": "bomb",
+    "level": 1,
+    "variant": "A",
+    "image": "13a288db891b24d1f5c8ab39ad530f34.png",
+    "mpCost": 20,
+    "stats": "攻擊 +10",
+    "materials": [
+      {
+        "name": "麻布",
+        "quantity": 4,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "蕃茄",
+        "quantity": 20,
+        "image": "1f0e3d76f9ea4f372f8df93296fa69c0.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "bomb-1b",
+    "name": "白米炸彈",
+    "category": "bomb",
+    "level": 1,
+    "variant": "B",
+    "image": "c9c17c642edb151ffbe44e5c8c9bb7e5.png",
+    "mpCost": 20,
+    "stats": "攻擊 +18",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 8,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 8,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "神聖米",
+        "quantity": 20,
+        "image": "e9e4896ebaaff38db3f2b8617917fc07.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "bomb-2a",
+    "name": "石彈",
+    "category": "bomb",
+    "level": 2,
+    "variant": "A",
+    "image": "83e541ba03dba74714b74a4cd161efa3.png",
+    "mpCost": 40,
+    "stats": "攻擊 +25",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 6,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 4,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "地的水晶碎片",
+        "quantity": 2,
+        "image": "cedf23d5208d579a6bca5e51c078fbd2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "bomb-2b",
+    "name": "火焰彈",
+    "category": "bomb",
+    "level": 2,
+    "variant": "B",
+    "image": "11abd86fe6aa5474daf87191bccd9321.png",
+    "mpCost": 40,
+    "stats": "攻擊 +32",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 2,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "木棉布",
+        "quantity": 8,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "火的水晶碎片",
+        "quantity": 8,
+        "image": "d2411a4a9747e6eb832840d55212a67b.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "bomb-3a",
+    "name": "手榴彈",
+    "category": "bomb",
+    "level": 3,
+    "variant": "A",
+    "image": "0383d9b13bf421306ea5c7dd6f09cb3c.png",
+    "mpCost": 60,
+    "stats": "攻擊 +71",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 6,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "毛氈",
+        "quantity": 4,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "bomb-3b",
+    "name": "冷凍彈",
+    "category": "bomb",
+    "level": 3,
+    "variant": "B",
+    "image": "e22fd959030bdbed717f1a667ab375c1.png",
+    "mpCost": 60,
+    "stats": "攻擊 +82",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 16,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "毛氈",
+        "quantity": 8,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "水的水晶碎片",
+        "quantity": 12,
+        "image": "a564860bb32d5fde60b40e4bc98dd3b7.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "bomb-4a",
+    "name": "輪刃",
+    "category": "bomb",
+    "level": 4,
+    "variant": "A",
+    "image": "081873c75769eec45d788d25b48f5509.png",
+    "mpCost": 80,
+    "stats": "攻擊 +96",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "綿",
+        "quantity": 4,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "風的水晶碎片",
+        "quantity": 16,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "bomb-4b",
+    "name": "蜂巢",
+    "category": "bomb",
+    "level": 4,
+    "variant": "B",
+    "image": "7b69830b77bcb0dae98b8d64f7b3bc0a.png",
+    "mpCost": 80,
+    "stats": "攻擊 +108",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 8,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 20,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "桃木",
+        "quantity": 20,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 8,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "bomb-5a",
+    "name": "黃色炸彈",
+    "category": "bomb",
+    "level": 5,
+    "variant": "A",
+    "image": "5403e2c1f116686eaeaf9108c2c7482c.png",
+    "mpCost": 100,
+    "stats": "攻擊 +123",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "細線",
+        "quantity": 8,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "bomb-5b",
+    "name": "迷魂彈",
+    "category": "bomb",
+    "level": 5,
+    "variant": "B",
+    "image": "92518f908e71d5774018d7029d1ab97a.png",
+    "mpCost": 100,
+    "stats": "攻擊 +135",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 7,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "赤松",
+        "quantity": 12,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 20,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "bomb-6a",
+    "name": "臭彈",
+    "category": "bomb",
+    "level": 6,
+    "variant": "A",
+    "image": "af605cf86a5caa6232c1a33b9fe3de55.png",
+    "mpCost": 120,
+    "stats": "攻擊 +150",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 8,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "赤松",
+        "quantity": 8,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 14,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "香水：深藍九號",
+        "quantity": 1,
+        "image": "80b2270d2325366e7bfef63f94f8eb04.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "bomb-6b",
+    "name": "狂風炸彈",
+    "category": "bomb",
+    "level": 6,
+    "variant": "B",
+    "image": "0e8acf5bb9f96fb8171764ed070e66ba.png",
+    "mpCost": 120,
+    "stats": "攻擊 +162",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 12,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 12,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "風的水晶碎片",
+        "quantity": 30,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "bomb-7a",
+    "name": "催淚彈",
+    "category": "bomb",
+    "level": 7,
+    "variant": "A",
+    "image": "2b1be9fabea421a901d46a34839dad8f.png",
+    "mpCost": 140,
+    "stats": "攻擊 +189",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 16,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 8,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "神眼",
+        "quantity": 1,
+        "image": "432199df98c5d6427fe5194ee2fddc6f.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "bomb-7b",
+    "name": "催眠彈",
+    "category": "bomb",
+    "level": 7,
+    "variant": "B",
+    "image": "23fe9db2ff31e24c4539fc3a921467ae.png",
+    "mpCost": 140,
+    "stats": "攻擊 +177",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 12,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 12,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "bomb-8a",
+    "name": "星星彈",
+    "category": "bomb",
+    "level": 8,
+    "variant": "A",
+    "image": "79975582f2b0c51b1bf578c9ca64e540.png",
+    "mpCost": 160,
+    "stats": "攻擊 +240",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "bomb-8b",
+    "name": "毒氣彈",
+    "category": "bomb",
+    "level": 8,
+    "variant": "B",
+    "image": "197f008a195627915eae9cb314b2e654.png",
+    "mpCost": 160,
+    "stats": "攻擊 +207",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 18,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 10,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "阿巴尼斯製的布",
+        "quantity": 12,
+        "image": "38908a4f47f001578a0c9894d7b9ca75.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "摩斯蜥蜴",
+        "quantity": 1,
+        "image": "d8a02e6fee0c556190e676f3de14ba7f.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "bomb-9a",
+    "name": "碎紙彈",
+    "category": "bomb",
+    "level": 9,
+    "variant": "A",
+    "image": "1b07e92e1fa3d13bba21249e9ce4e183.png",
+    "mpCost": 180,
+    "stats": "攻擊 +234",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 20,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "蘋果薄荷",
+        "quantity": 20,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "香草",
+        "quantity": 20,
+        "image": "0f002d1d2edffc3a52123fa4f9d7952a.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "茴香",
+        "quantity": 16,
+        "image": "4eb8ed6f841e169f0a8229790f6f2769.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "細麻布",
+        "quantity": 16,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "bomb-9b",
+    "name": "雪花彈",
+    "category": "bomb",
+    "level": 9,
+    "variant": "B",
+    "image": "869d2a72451b52e3c09468ed8f46506f.png",
+    "mpCost": 180,
+    "stats": "攻擊 +288",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 15,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 12,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "bomb-10a",
+    "name": "銀彈",
+    "category": "bomb",
+    "level": 10,
+    "variant": "A",
+    "image": "e1d77a0a7914ee8d1e86846fe113eed9.png",
+    "mpCost": 200,
+    "stats": "攻擊 +266",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 15,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 12,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 8,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "單木",
+        "quantity": 20,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 12,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "bomb-10b",
+    "name": "震撼彈",
+    "category": "bomb",
+    "level": 10,
+    "variant": "B",
+    "image": "a3563468ee45468f9684ff9f7209b182.png",
+    "mpCost": 200,
+    "stats": "攻擊 +360",
+    "materials": [
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 10,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 3,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 2,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "bomb-11a",
+    "name": "地縳彈",
+    "category": "bomb",
+    "level": 11,
+    "variant": "A",
+    "image": "8d4eb1bb76939318c800df2bb270f3cd.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "誓言之證",
+        "quantity": 2,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 5,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 10,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "bomb-12a",
+    "name": "千羽彈",
+    "category": "bomb",
+    "level": 12,
+    "variant": "A",
+    "image": "34cbcae305c11b123860b3bef07420ad.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "紅鳳凰的羽毛",
+        "quantity": 6,
+        "image": "05c24977ac54f3448cb3f0d4142cdd35.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "藍鳳凰的羽毛",
+        "quantity": 6,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 10,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "bomb-13a",
+    "name": "入夢彈",
+    "category": "bomb",
+    "level": 13,
+    "variant": "A",
+    "image": "ad84cfa0d9c3028d999504b7697c8134.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "含月草",
+        "quantity": 7,
+        "image": "bfac64a2e7beb62957bb38202dbf9966.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "薄荷",
+        "quantity": 7,
+        "image": "145e67610a75b8cb1759e8a77935171e.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 10,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 10,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "bomb-14a",
+    "name": "水煙彈",
+    "category": "bomb",
+    "level": 14,
+    "variant": "A",
+    "image": "241e5cf6ecbd60fcec5d376093ca352e.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "永久冰石",
+        "quantity": 7,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "冰凍愛麗絲",
+        "quantity": 7,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "石墨條",
+        "quantity": 12,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 12,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "bomb-15a",
+    "name": "萬蠱彈",
+    "category": "bomb",
+    "level": 15,
+    "variant": "A",
+    "image": "acb146782fb402a1942a977baefc19c1.png",
+    "mpCost": 300,
+    "stats": "",
+    "materials": [
+      {
+        "name": "曼陀羅草的皮",
+        "quantity": 2,
+        "image": "a39bea1809ec64f6171bcd036112c345.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "濕地毒蛇",
+        "quantity": 10,
+        "image": "81fa9642475a85cc0926d9325919ad21.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 12,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 12,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      }
+    ]
+  }
+]

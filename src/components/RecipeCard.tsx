@@ -37,7 +37,10 @@ export default function RecipeCard({ recipe, breakdown, config, onConfigChange }
               Lv.{recipe.level}{recipe.variant}
             </span>
           </div>
-          <div className="flex items-center gap-3 mt-1 text-sm tabular-nums">
+          {recipe.stats && (
+            <div className="text-[11px] text-gray-400 mt-0.5 truncate">{recipe.stats}</div>
+          )}
+          <div className="flex items-center gap-3 mt-0.5 text-sm tabular-nums">
             <span className="text-gray-400 font-mono text-xs">成本 <span className="text-gray-600 font-medium">{breakdown.totalCost}</span></span>
             <span className="text-amber-500 font-mono text-xs">售价 <span className="text-amber-600 font-semibold">{breakdown.sellingPrice}</span></span>
           </div>

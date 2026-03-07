@@ -7,6 +7,7 @@
     "variant": "A",
     "image": "8d9f8bd75c370e01c056c3efb5705e4f.png",
     "mpCost": 20,
+    "stats": "攻擊 11~22耐久 250~300",
     "materials": [
       {
         "name": "銅條",
@@ -36,6 +37,7 @@
     "variant": "B",
     "image": "20dd78f3d92a67dc0a20d409eaeefb41.png",
     "mpCost": 20,
+    "stats": "攻擊 17~33耐久 250~300",
     "materials": [
       {
         "name": "銅條",
@@ -77,6 +79,7 @@
     "variant": "A",
     "image": "582ea57db2c09ef3fbdf301c3257ecfb.png",
     "mpCost": 40,
+    "stats": "攻擊 24~44耐久 250~300",
     "materials": [
       {
         "name": "鐵條",
@@ -118,6 +121,7 @@
     "variant": "B",
     "image": "2591a94d6a45fb82dc2ebc5bfc2b387f.png",
     "mpCost": 40,
+    "stats": "攻擊 30~55耐久 250~300",
     "materials": [
       {
         "name": "鐵條",
@@ -159,6 +163,7 @@
     "variant": "A",
     "image": "de7a96d8d4ee8df60d25b67c1ba85504.png",
     "mpCost": 60,
+    "stats": "攻擊 40~66耐久 250~300",
     "materials": [
       {
         "name": "銀條",
@@ -200,6 +205,7 @@
     "variant": "B",
     "image": "db421a0f0d299dd9df85bbb2027dd85e.png",
     "mpCost": 60,
+    "stats": "攻擊 46~77耐久 250~300",
     "materials": [
       {
         "name": "銀條",
@@ -241,6 +247,7 @@
     "variant": "A",
     "image": "db421a0f0d299dd9df85bbb2027dd85e.png",
     "mpCost": 80,
+    "stats": "攻擊 57~88耐久 250~300",
     "materials": [
       {
         "name": "純銀條",
@@ -282,6 +289,7 @@
     "variant": "B",
     "image": "35d95f2efd5d80250527988aa360961e.png",
     "mpCost": 80,
+    "stats": "攻擊 64~99耐久 250~300",
     "materials": [
       {
         "name": "純銀條",
@@ -323,6 +331,7 @@
     "variant": "A",
     "image": "0115f4fa05bc8b8a1538383b9f4124dd.png",
     "mpCost": 100,
+    "stats": "攻擊 77~110耐久 250~300",
     "materials": [
       {
         "name": "純銀條",
@@ -364,6 +373,7 @@
     "variant": "B",
     "image": "de7a96d8d4ee8df60d25b67c1ba85504.png",
     "mpCost": 100,
+    "stats": "攻擊 85~121耐久 250~300",
     "materials": [
       {
         "name": "銀條",
@@ -405,6 +415,7 @@
     "variant": "C",
     "image": "18c2ae0ddc1c1322ee675d99acff64b4.png",
     "mpCost": 100,
+    "stats": "攻擊 80~123閃躲 1~3耐久 250~300",
     "materials": [
       {
         "name": "鋁條",
@@ -446,6 +457,7 @@
     "variant": "A",
     "image": "e2bc6229045ee25e129f59b8408dc10f.png",
     "mpCost": 120,
+    "stats": "攻擊 99~132耐久 250~300",
     "materials": [
       {
         "name": "金條",
@@ -487,6 +499,7 @@
     "variant": "B",
     "image": "582ea57db2c09ef3fbdf301c3257ecfb.png",
     "mpCost": 120,
+    "stats": "攻擊 107~143耐久 250~300",
     "materials": [
       {
         "name": "金條",
@@ -528,6 +541,7 @@
     "variant": "A",
     "image": "582ea57db2c09ef3fbdf301c3257ecfb.png",
     "mpCost": 140,
+    "stats": "攻擊 120~130必殺 +2命中 +10耐久 250~300",
     "materials": [
       {
         "name": "白金條",
@@ -569,6 +583,7 @@
     "variant": "B",
     "image": "6e12a1a01f8eca3dda7b51d70736011c.png",
     "mpCost": 140,
+    "stats": "攻擊 124~165耐久 250~300",
     "materials": [
       {
         "name": "白金條",
@@ -610,6 +625,7 @@
     "variant": "C",
     "image": "eb593433b2cf678faff8aa4c904ba697.png",
     "mpCost": 140,
+    "stats": "攻擊 +165必殺 +2命中 +20耐久 200",
     "materials": [
       {
         "name": "生鏽的弓",
@@ -645,6 +661,7 @@
     "variant": "A",
     "image": "d7f543f05e68efd6609df9a35e039230.png",
     "mpCost": 160,
+    "stats": "攻擊 170~187命中 +15耐久 250~300亂射耗魔+100%",
     "materials": [
       {
         "name": "白金條",
@@ -686,6 +703,7 @@
     "variant": "B",
     "image": "390897319def9ba146cdfd8b134e8461.png",
     "mpCost": 160,
+    "stats": "攻擊 140~187耐久 250~300",
     "materials": [
       {
         "name": "幻之鋼條",
@@ -727,6 +745,7 @@
     "variant": "C",
     "image": "6e12a1a01f8eca3dda7b51d70736011c.png",
     "mpCost": 160,
+    "stats": "攻擊 130~160命中 1~5耐久 250~300",
     "materials": [
       {
         "name": "幻之銀條",
@@ -768,6 +787,7 @@
     "variant": "A",
     "image": "d903a440ed3bcc37ec892766e374f038.png",
     "mpCost": 180,
+    "stats": "攻擊 167~209耐久 250~300",
     "materials": [
       {
         "name": "幻之鋼條",
@@ -809,6 +829,7 @@
     "variant": "B",
     "image": "3473c926a1a3894afe1f19fe93192702.png",
     "mpCost": 180,
+    "stats": "攻擊 +165耐久 250~300亂射耗魔-20%",
     "materials": [
       {
         "name": "幻之銀條",
@@ -850,6 +871,7 @@
     "variant": "A",
     "image": "53c6e3a67ac724b4b13c224be4122db1.png",
     "mpCost": 200,
+    "stats": "攻擊 196~231耐久 250~300",
     "materials": [
       {
         "name": "幻之銀條",
@@ -891,6 +913,7 @@
     "variant": "B",
     "image": "2046260738c14aa36a21707c017863e0.png",
     "mpCost": 200,
+    "stats": "攻擊 +195命中 +5耐久 250~300陽炎耗魔-20%",
     "materials": [
       {
         "name": "勒格耐席鉧條",
@@ -932,6 +955,7 @@
     "variant": "A",
     "image": "8cd69c281a2a12d5f230694a1d5bd92b.png",
     "mpCost": 220,
+    "stats": "攻擊 182~230必殺 +6閃躲 +10耐久 250~260",
     "materials": [
       {
         "name": "達馬斯礦條",
@@ -973,6 +997,7 @@
     "variant": "B",
     "image": "625e83e6d3215dc9fdba233fa82a7b6d.png",
     "mpCost": 220,
+    "stats": "攻擊 231~250防禦 +30命中 +8閃躲 -10耐久 250~260",
     "materials": [
       {
         "name": "幻之銀條",
@@ -1014,6 +1039,7 @@
     "variant": "C",
     "image": "803620b02df0535cd7dfc16cf83b1b1f.png",
     "mpCost": 220,
+    "stats": "",
     "materials": [
       {
         "name": "石墨條",
@@ -1055,6 +1081,7 @@
     "variant": "A",
     "image": "018a6bce59f809a16eb49ea94d940b96.png",
     "mpCost": 240,
+    "stats": "",
     "materials": [
       {
         "name": "鉛錠",
@@ -1096,6 +1123,7 @@
     "variant": "B",
     "image": "2046260738c14aa36a21707c017863e0.png",
     "mpCost": 240,
+    "stats": "",
     "materials": [
       {
         "name": "萊姆騎士礦條",
@@ -1137,6 +1165,7 @@
     "variant": "C",
     "image": "d4114216bab86d6eb99f43fdd9bf53ce.png",
     "mpCost": 240,
+    "stats": "",
     "materials": [
       {
         "name": "魔族的水晶",
@@ -1178,6 +1207,7 @@
     "variant": "A",
     "image": "afbbd6762afffe076f8f084b869e52fa.png",
     "mpCost": 260,
+    "stats": "",
     "materials": [
       {
         "name": "朱砂錠",
@@ -1219,6 +1249,7 @@
     "variant": "B",
     "image": "31d5e7ac68b4dfffeb0b44ff1eac3163.png",
     "mpCost": 260,
+    "stats": "",
     "materials": [
       {
         "name": "謝爾哈特礦條",
@@ -1260,6 +1291,7 @@
     "variant": "C",
     "image": "fed08f5de49ee2ac9f8e155fed2d3ee7.png",
     "mpCost": 260,
+    "stats": "攻擊 +338敏捷 +80抗混亂 +50命中 +20閃躲 +5耐久 346陽炎耗魔-25%",
     "materials": [
       {
         "name": "風的水晶碎片",
@@ -1301,6 +1333,7 @@
     "variant": "A",
     "image": "baa405d85443320c0cc806d01749eabf.png",
     "mpCost": 280,
+    "stats": "",
     "materials": [
       {
         "name": "石墨條",
@@ -1342,6 +1375,7 @@
     "variant": "B",
     "image": "3f252cedbee2bba6633a847823414c0a.png",
     "mpCost": 280,
+    "stats": "",
     "materials": [
       {
         "name": "鉛錠",
@@ -1383,6 +1417,7 @@
     "variant": "A",
     "image": "f16d37524dc08e8c8aa010cf74abc724.png",
     "mpCost": 300,
+    "stats": "攻擊 360~380敏捷 +100必殺 -4~-2命中 +10亂射耗魔-25%",
     "materials": [
       {
         "name": "誓言之證",
@@ -1424,6 +1459,7 @@
     "variant": "B",
     "image": "83fa6153800f9670a704ff42f10297ef.png",
     "mpCost": 300,
+    "stats": "攻擊 381~387敏捷 24~39命中 22~25魔力 +200耐久 300亂射耗魔-25%",
     "materials": [
       {
         "name": "冰龍石",

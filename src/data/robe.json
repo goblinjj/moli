@@ -1,0 +1,1496 @@
+[
+  {
+    "id": "robe-1a",
+    "name": "羽毛袍",
+    "category": "robe",
+    "level": 1,
+    "variant": "A",
+    "image": "0c098c52b5b4d3d864e507c69ec8b8a5.png",
+    "mpCost": 20,
+    "stats": "防禦 4~8魔力 40~50耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 4,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 10,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "robe-1b",
+    "name": "輕皮袍",
+    "category": "robe",
+    "level": 1,
+    "variant": "B",
+    "image": "ce93f0c8b79c74c0fec0abff6aa0f8eb.png",
+    "mpCost": 20,
+    "stats": "防禦 6~12魔力 60~75耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 5,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 4,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 10,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "robe-2a",
+    "name": "網袍",
+    "category": "robe",
+    "level": 2,
+    "variant": "A",
+    "image": "2d0b1175f232d61abe1c633265060673.png",
+    "mpCost": 40,
+    "stats": "防禦 9~16魔力 80~100耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 2,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 10,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "樅",
+        "quantity": 10,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "robe-2b",
+    "name": "風袍",
+    "category": "robe",
+    "level": 2,
+    "variant": "B",
+    "image": "c09ffcdbf30142ac909a683432156bdc.png",
+    "mpCost": 40,
+    "stats": "防禦 11~20魔力 100~125耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 4,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 10,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 2,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "樅",
+        "quantity": 10,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "robe-3a",
+    "name": "硬皮袍",
+    "category": "robe",
+    "level": 3,
+    "variant": "A",
+    "image": "ce93f0c8b79c74c0fec0abff6aa0f8eb.png",
+    "mpCost": 60,
+    "stats": "防禦 14~24魔力 120~150耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 7,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 8,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 5,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "黃月木",
+        "quantity": 10,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "robe-3b",
+    "name": "環袍",
+    "category": "robe",
+    "level": 3,
+    "variant": "B",
+    "image": "6a5f7eb25b433a2a935051314a6403a8.png",
+    "mpCost": 60,
+    "stats": "防禦 17~28魔力 140~175耐久 400~450",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "麻布",
+        "quantity": 5,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 7,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 3,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 10,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "robe-4a",
+    "name": "烏鴉之袍",
+    "category": "robe",
+    "level": 4,
+    "variant": "A",
+    "image": "2d0b1175f232d61abe1c633265060673.png",
+    "mpCost": 80,
+    "stats": "防禦 21~32魔力 160~200耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 10,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 6,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 10,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "robe-4b",
+    "name": "月亮之袍",
+    "category": "robe",
+    "level": 4,
+    "variant": "B",
+    "image": "71ec7d6e7585d15de17c8212bfd71972.png",
+    "mpCost": 80,
+    "stats": "防禦 23~36魔力 180~225耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 6,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 10,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "細線",
+        "quantity": 11,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 10,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "robe-4c",
+    "name": "狐皮披風",
+    "category": "robe",
+    "level": 4,
+    "variant": "C",
+    "image": "86037634870cb7edd27fab35efd83cf8.png",
+    "mpCost": 80,
+    "stats": "防禦 17~20敏捷 7~9抗毒 1~2抗昏睡 1~2抗石化 1~2抗酒醉 1~2抗混亂 1~2抗遺忘 1~2魔力 +58耐久 400~450",
+    "materials": [
+      {
+        "name": "狐皮",
+        "quantity": 4,
+        "image": "2ace31f2e1a4a6e4516ce3ea1a53d790.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "樅",
+        "quantity": 2,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "綿",
+        "quantity": 20,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 4,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "robe-5a",
+    "name": "東方法衣",
+    "category": "robe",
+    "level": 5,
+    "variant": "A",
+    "image": "6a5f7eb25b433a2a935051314a6403a8.png",
+    "mpCost": 100,
+    "stats": "防禦 28~40魔力 200~250耐久 400~450",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 11,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 10,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "robe-5b",
+    "name": "聖堂之袍",
+    "category": "robe",
+    "level": 5,
+    "variant": "B",
+    "image": "e3c9a160e9f5e094527d3f315ad925ee.png",
+    "mpCost": 100,
+    "stats": "防禦 31~44魔力 220~275耐久 400~450",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 5,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "絹布",
+        "quantity": 15,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 10,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "robe-5c",
+    "name": "治癒之袍",
+    "category": "robe",
+    "level": 5,
+    "variant": "C",
+    "image": "b8e18f907ba633101398f7266dda26b4.png",
+    "mpCost": 100,
+    "stats": "防禦 77~80回復 +8魔力 151~169耐久 400~450",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 40,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "絹布",
+        "quantity": 7,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "綿",
+        "quantity": 3,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鋁條",
+        "quantity": 4,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "robe-6a",
+    "name": "聖者之袍",
+    "category": "robe",
+    "level": 6,
+    "variant": "A",
+    "image": "78dea9943b3cf85ada61fbf451d26b09.png",
+    "mpCost": 120,
+    "stats": "防禦 36~48魔力 240~300耐久 400~450",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 13,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "赤松",
+        "quantity": 10,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "robe-6b",
+    "name": "戰鬥長袍",
+    "category": "robe",
+    "level": 6,
+    "variant": "B",
+    "image": "ce3e150c4704ed68b322a65fa8bc006b.png",
+    "mpCost": 120,
+    "stats": "防禦 39~52魔力 260~325耐久 400~450",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 20,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 6,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 10,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "robe-7a",
+    "name": "冠軍之袍",
+    "category": "robe",
+    "level": 7,
+    "variant": "A",
+    "image": "15158d269bde9b3d9231ccc2c16fa3ca.png",
+    "mpCost": 140,
+    "stats": "防禦 42~56耐久 400~450吸血魔法耗魔-20%",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 20,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "robe-7b",
+    "name": "時之袍",
+    "category": "robe",
+    "level": 7,
+    "variant": "B",
+    "image": "96ebdb14c8e6548c3d384701ff5a2f2d.png",
+    "mpCost": 140,
+    "stats": "防禦 45~60魔力 300~375耐久 400~450",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 10,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "robe-7c",
+    "name": "水龍法袍",
+    "category": "robe",
+    "level": 7,
+    "variant": "C",
+    "image": "0c40fa7167b77deca7e0a3bc3fc12564.png",
+    "mpCost": 140,
+    "stats": "防禦 +70抗毒 +10抗昏睡 +10抗石化 +10魔力 +500耐久 400~450超強補血魔法耗魔-30%",
+    "materials": [
+      {
+        "name": "破爛的袍",
+        "quantity": 1,
+        "image": "0c098c52b5b4d3d864e507c69ec8b8a5.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "robe-8a",
+    "name": "死神之袍",
+    "category": "robe",
+    "level": 8,
+    "variant": "A",
+    "image": "1236a8e96585f4fa6347b99a1f3f9ac4.png",
+    "mpCost": 160,
+    "stats": "防禦 48~64抗毒 +4抗昏睡 +4抗石化 +4抗酒醉 +4抗混亂 +4抗遺忘 +4魔力 320~400耐久 400~450",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 5,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "神眼",
+        "quantity": 1,
+        "image": "432199df98c5d6427fe5194ee2fddc6f.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "robe-8b",
+    "name": "勇者之袍",
+    "category": "robe",
+    "level": 8,
+    "variant": "B",
+    "image": "ddd5b8a9e1407f072c619ed071ba076c.png",
+    "mpCost": 160,
+    "stats": "防禦 51~68魔力 340~425耐久 400~450",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 5,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "robe-8c",
+    "name": "潔淨之袍+",
+    "category": "robe",
+    "level": 8,
+    "variant": "C",
+    "image": "96ebdb14c8e6548c3d384701ff5a2f2d.png",
+    "mpCost": 160,
+    "stats": "防禦 45~61回復 1~5魔力 300~400耐久 400~450",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "阿巴尼斯製的布",
+        "quantity": 20,
+        "image": "38908a4f47f001578a0c9894d7b9ca75.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔法紅蘿蔔",
+        "quantity": 20,
+        "image": "6a6cb752d3cf056e7a0d4d7f3f0720c4.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "robe-9a",
+    "name": "黑暗之袍",
+    "category": "robe",
+    "level": 9,
+    "variant": "A",
+    "image": "7b44838b6a8f0bc63c278845cf708013.png",
+    "mpCost": 180,
+    "stats": "防禦 61~76魔力 380~475耐久 400~450",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 3,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "毛氈",
+        "quantity": 5,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 5,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "細麻布",
+        "quantity": 8,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "robe-9b",
+    "name": "聖袍",
+    "category": "robe",
+    "level": 9,
+    "variant": "B",
+    "image": "02f746a47721da88df5b53b155dcf231.png",
+    "mpCost": 180,
+    "stats": "防禦 -10魔力 +650耐久 400~450",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 3,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "細麻布",
+        "quantity": 10,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 2,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "robe-10a",
+    "name": "靈魂之袍",
+    "category": "robe",
+    "level": 10,
+    "variant": "A",
+    "image": "fa3abd87aeb8a46132ea3e6e88292f94.png",
+    "mpCost": 200,
+    "stats": "防禦 71~84魔力 480~525耐久 400~450",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 2,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 10,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 5,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "robe-10b",
+    "name": "奇蹟之袍",
+    "category": "robe",
+    "level": 10,
+    "variant": "B",
+    "image": "66b41010f151d1e6394c78352ae4c05e.png",
+    "mpCost": 200,
+    "stats": "防禦 +80魔力 +400耐久 400~450補血魔法耗魔-25%",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "細麻布",
+        "quantity": 15,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "神眼",
+        "quantity": 1,
+        "image": "432199df98c5d6427fe5194ee2fddc6f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "robe-11a",
+    "name": "共嗚之袍",
+    "category": "robe",
+    "level": 11,
+    "variant": "A",
+    "image": "3e32bc5033e7ccaaecf9441255a26f35.png",
+    "mpCost": 220,
+    "stats": "防禦 27~30回復 +10閃躲 +10魔力 514~550耐久 200~250",
+    "materials": [
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "單木",
+        "quantity": 20,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "曼陀羅草的皮",
+        "quantity": 2,
+        "image": "a39bea1809ec64f6171bcd036112c345.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "妖草的血",
+        "quantity": 2,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "robe-11b",
+    "name": "和平之袍",
+    "category": "robe",
+    "level": 11,
+    "variant": "B",
+    "image": "be1e6649c0c59f7a00dd68dff09cad54.png",
+    "mpCost": 220,
+    "stats": "防禦 +120必殺 +10魔力 +179耐久 200~250",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 13,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 10,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 2,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 2,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "robe-11c",
+    "name": "絨毛袍",
+    "category": "robe",
+    "level": 11,
+    "variant": "C",
+    "image": "16851f98610f8507aea33ea98d636a9b.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 7,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 8,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 6,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "細麻布",
+        "quantity": 4,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "robe-12a",
+    "name": "織花袍",
+    "category": "robe",
+    "level": 12,
+    "variant": "A",
+    "image": "abf0c565e553920de893f1824d445f2e.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "紫茉莉",
+        "quantity": 20,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 20,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 5,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 5,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 9,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "robe-12b",
+    "name": "天使長袍",
+    "category": "robe",
+    "level": 12,
+    "variant": "B",
+    "image": "952b588eb69ef6fc11320485208d1c47.png",
+    "mpCost": 240,
+    "stats": "防禦 +123精神 +10魔力 +300魔攻 +24",
+    "materials": [
+      {
+        "name": "魔法之羽",
+        "quantity": 4,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 12,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 13,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 6,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "robe-12c",
+    "name": "碎藥之袍",
+    "category": "robe",
+    "level": 12,
+    "variant": "C",
+    "image": "952b588eb69ef6fc11320485208d1c47.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "誓言之證",
+        "quantity": 5,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 7,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 12,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "棗木",
+        "quantity": 15,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 20,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "robe-13a",
+    "name": "金線袍",
+    "category": "robe",
+    "level": 13,
+    "variant": "A",
+    "image": "ce67f8e22d5c1845a5ad50b25076e03d.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 4,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 4,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 10,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 10,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "robe-13b",
+    "name": "修行者長袍",
+    "category": "robe",
+    "level": 13,
+    "variant": "B",
+    "image": "14b2ea9bfc4dbfd248fce858018aeaff.png",
+    "mpCost": 260,
+    "stats": "防禦 +143精神 +13魔力 +500魔攻 +33",
+    "materials": [
+      {
+        "name": "魔法之羽",
+        "quantity": 4,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 12,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 9,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 9,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "robe-13c",
+    "name": "風虎法袍",
+    "category": "robe",
+    "level": 13,
+    "variant": "C",
+    "image": "373a16112bec3439021f79e9375e8c80.png",
+    "mpCost": 260,
+    "stats": "防禦 +150精神 +30抗遺忘 +50魔力 +2000魔攻 +50",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 40,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "銀絲綿線",
+        "quantity": 5,
+        "image": "61b70c318dedc9ec2e59e087daec4d7e.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "黯淡的獸皮",
+        "quantity": 5,
+        "image": "fd0fa67703d8b08be68cd7bf524b9a01.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "塵封的長袍",
+        "quantity": 1,
+        "image": "86037634870cb7edd27fab35efd83cf8.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "robe-14a",
+    "name": "綴玉袍",
+    "category": "robe",
+    "level": 14,
+    "variant": "A",
+    "image": "a80cf7f3ce6ef06a641bcc091742af3d.png",
+    "mpCost": 280,
+    "stats": "恢復魔法耗魔-25%",
+    "materials": [
+      {
+        "name": "紫英石",
+        "quantity": 4,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "鳳仙花",
+        "quantity": 20,
+        "image": "bf37ba0f2e601e5eed37dfe5e517cf68.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "茉莉",
+        "quantity": 20,
+        "image": "93c6748bd12f4f8f1719f3e56ae181dd.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 7,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 7,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "robe-14b",
+    "name": "神官長袍",
+    "category": "robe",
+    "level": 14,
+    "variant": "B",
+    "image": "198cf30c71f93939d24fa4b4ceae76cc.png",
+    "mpCost": 280,
+    "stats": "防禦 +149精神 +16魔力 +700魔攻 +33",
+    "materials": [
+      {
+        "name": "魔法之羽",
+        "quantity": 5,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 10,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 10,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "紫英石",
+        "quantity": 13,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "robe-15a",
+    "name": "防寒袍",
+    "category": "robe",
+    "level": 15,
+    "variant": "A",
+    "image": "9b54cd5f51bc98bdd19f94e42f65c5df.png",
+    "mpCost": 300,
+    "stats": "防禦 148~160精神 60~70魔力 932~948耐久 300精神衝擊波耗魔-25%",
+    "materials": [
+      {
+        "name": "德特家的布",
+        "quantity": 5,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 9,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 7,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 10,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 10,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "robe-15b",
+    "name": "普魯托法袍",
+    "category": "robe",
+    "level": 15,
+    "variant": "B",
+    "image": "b8e18f907ba633101398f7266dda26b4.png",
+    "mpCost": 300,
+    "stats": "防禦 +152精神 +22魔力 +1000魔攻 +40",
+    "materials": [
+      {
+        "name": "魔法之羽",
+        "quantity": 6,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 13,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 9,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "紫英石",
+        "quantity": 9,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 11,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

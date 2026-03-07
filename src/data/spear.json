@@ -1,0 +1,1460 @@
+[
+  {
+    "id": "spear-1a",
+    "name": "短矛",
+    "category": "spear",
+    "level": 1,
+    "variant": "A",
+    "image": "1e77239cef4a242220b88cebfaad389e.png",
+    "mpCost": 20,
+    "stats": "攻擊 10~20反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "spear-1b",
+    "name": "攻城槍",
+    "category": "spear",
+    "level": 1,
+    "variant": "B",
+    "image": "9b67658a5fcdce3b56c87ac5b89283f9.png",
+    "mpCost": 20,
+    "stats": "攻擊 15~30反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "spear-2a",
+    "name": "刺槍",
+    "category": "spear",
+    "level": 2,
+    "variant": "A",
+    "image": "9aadf8335990121cd101c8bdaf3bec7b.png",
+    "mpCost": 40,
+    "stats": "攻擊 22~40反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 7,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "spear-2b",
+    "name": "金屬槍",
+    "category": "spear",
+    "level": 2,
+    "variant": "B",
+    "image": "fde95fd7f98c4d305d39490a62a421cd.png",
+    "mpCost": 40,
+    "stats": "攻擊 28~50反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 8,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "spear-3a",
+    "name": "長柄彎槍",
+    "category": "spear",
+    "level": 3,
+    "variant": "A",
+    "image": "fde95fd7f98c4d305d39490a62a421cd.png",
+    "mpCost": 60,
+    "stats": "攻擊 36~60反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 10,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 6,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "spear-3b",
+    "name": "長柄尖槍",
+    "category": "spear",
+    "level": 3,
+    "variant": "B",
+    "image": "514153624cf59ac1a49cc7c3ead78947.png",
+    "mpCost": 60,
+    "stats": "攻擊 42~70反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 6,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "spear-4a",
+    "name": "穗槍",
+    "category": "spear",
+    "level": 4,
+    "variant": "A",
+    "image": "9b67658a5fcdce3b56c87ac5b89283f9.png",
+    "mpCost": 80,
+    "stats": "攻擊 52~80反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 8,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 7,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "spear-4b",
+    "name": "雙叉戟",
+    "category": "spear",
+    "level": 4,
+    "variant": "B",
+    "image": "28c3055e2885e857fb884fda89fef92b.png",
+    "mpCost": 80,
+    "stats": "攻擊 59~90反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 3,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "spear-5a",
+    "name": "護衛槍",
+    "category": "spear",
+    "level": 5,
+    "variant": "A",
+    "image": "e2800fb786cf8d6c87580a5d084a5158.png",
+    "mpCost": 100,
+    "stats": "攻擊 70~100反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 15,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "spear-5b",
+    "name": "騎士槍",
+    "category": "spear",
+    "level": 5,
+    "variant": "B",
+    "image": "6330b766858e0db945e9a46cfb682821.png",
+    "mpCost": 100,
+    "stats": "攻擊 77~110反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 15,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "spear-5c",
+    "name": "偃月刀",
+    "category": "spear",
+    "level": 5,
+    "variant": "C",
+    "image": "56b93fc173ae954f1a1746beda7d9b4b.png",
+    "mpCost": 100,
+    "stats": "攻擊 87~126防禦 1~5反擊 +8命中 +4耐久 300~350",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 5,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "spear-6a",
+    "name": "大砍槍",
+    "category": "spear",
+    "level": 6,
+    "variant": "A",
+    "image": "514153624cf59ac1a49cc7c3ead78947.png",
+    "mpCost": 120,
+    "stats": "攻擊 90~120反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 8,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "spear-6b",
+    "name": "長尖槍",
+    "category": "spear",
+    "level": 6,
+    "variant": "B",
+    "image": "fde95fd7f98c4d305d39490a62a421cd.png",
+    "mpCost": 120,
+    "stats": "攻擊 98~130反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 9,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "spear-7a",
+    "name": "蠍槍",
+    "category": "spear",
+    "level": 7,
+    "variant": "A",
+    "image": "54d6ffc149e902c8fbef9c6a7b85d5c9.png",
+    "mpCost": 140,
+    "stats": "攻擊 105~140反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 15,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 8,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "spear-7b",
+    "name": "雙刃槍",
+    "category": "spear",
+    "level": 7,
+    "variant": "B",
+    "image": "e9a5a11bbeb27bb384fea24623447072.png",
+    "mpCost": 140,
+    "stats": "攻擊 120~125反擊 +12命中 +6耐久 300~350",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 14,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "spear-7c",
+    "name": "水龍之槍",
+    "category": "spear",
+    "level": 7,
+    "variant": "C",
+    "image": "1cba118ddbc483507315b2e8b6594783.png",
+    "mpCost": 140,
+    "stats": "攻擊 +140敏捷 +50必殺 +12命中 +6耐久 300",
+    "materials": [
+      {
+        "name": "生鏽的槍",
+        "quantity": 1,
+        "image": "e06105ed6e4dc8cab517556e3a2db7a7.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "spear-8a",
+    "name": "闊刃槍",
+    "category": "spear",
+    "level": 8,
+    "variant": "A",
+    "image": "fde95fd7f98c4d305d39490a62a421cd.png",
+    "mpCost": 160,
+    "stats": "攻擊 120~160反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 20,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "spear-8b",
+    "name": "東方長刺鎗",
+    "category": "spear",
+    "level": 8,
+    "variant": "B",
+    "image": "ae538e2d396e1bee48cf3b91e6a55c9d.png",
+    "mpCost": 160,
+    "stats": "攻擊 +140反擊 +6命中 +8閃躲 -4耐久 300~350",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 9,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 9,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "spear-8c",
+    "name": "蠍槍+",
+    "category": "spear",
+    "level": 8,
+    "variant": "C",
+    "image": "54d6ffc149e902c8fbef9c6a7b85d5c9.png",
+    "mpCost": 160,
+    "stats": "攻擊 110~148反擊 5~7命中 3~5耐久 300~350",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 17,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 13,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 20,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "spear-9a",
+    "name": "鉤爪槍",
+    "category": "spear",
+    "level": 9,
+    "variant": "A",
+    "image": "8efd4f26fd4d5b09a2f7671f80e0c2ff.png",
+    "mpCost": 180,
+    "stats": "攻擊 152~190反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 15,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "spear-9b",
+    "name": "原始槍",
+    "category": "spear",
+    "level": 9,
+    "variant": "B",
+    "image": "b16bf5db8b4179d9d85ff56dac0e41af.png",
+    "mpCost": 180,
+    "stats": "攻擊 180~190反擊 +9命中 +5閃躲 -3耐久 300~350諸刃耗魔-20%",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "spear-10a",
+    "name": "三叉戰戟",
+    "category": "spear",
+    "level": 10,
+    "variant": "A",
+    "image": "ad337830d67ddb2ad3dd0d01372bc013.png",
+    "mpCost": 200,
+    "stats": "攻擊 179~210反擊 +6命中 +3耐久 300~350",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "spear-10b",
+    "name": "異型槍",
+    "category": "spear",
+    "level": 10,
+    "variant": "B",
+    "image": "3b35cd13b4736930322fdec1f7b05fd7.png",
+    "mpCost": 200,
+    "stats": "攻擊 +225反擊 +1命中 +1閃躲 -4耐久 300~350諸刃耗魔-20%",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 3,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "spear-11a",
+    "name": "痛擊槍",
+    "category": "spear",
+    "level": 11,
+    "variant": "A",
+    "image": "5efdae53a8fd715865e4d4eeb8c82064.png",
+    "mpCost": 220,
+    "stats": "攻擊 206~230必殺 +8反擊 +7耐久 300~350",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 9,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "spear-11b",
+    "name": "穿刺槍",
+    "category": "spear",
+    "level": 11,
+    "variant": "B",
+    "image": "0f882fcdc81301d7683a9a6261cdbb86.png",
+    "mpCost": 220,
+    "stats": "攻擊 225~250命中 +15耐久 300~350",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 13,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "spear-11c",
+    "name": "烈火槍",
+    "category": "spear",
+    "level": 11,
+    "variant": "C",
+    "image": "f2f3dd2c725a1f72703d146e23b367a0.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "石墨條",
+        "quantity": 4,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 4,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "棗木",
+        "quantity": 40,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "spear-12a",
+    "name": "鬼戈",
+    "category": "spear",
+    "level": 12,
+    "variant": "A",
+    "image": "5760943cc6189a5494f372d73b241d76.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鉛錠",
+        "quantity": 11,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "月桂木",
+        "quantity": 20,
+        "image": "968b90347bf3b70a2b6d4c041416664e.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "spear-12b",
+    "name": "天使騎槍",
+    "category": "spear",
+    "level": 12,
+    "variant": "B",
+    "image": "be550bb6f14f207fbf891ce1d098a13c.png",
+    "mpCost": 240,
+    "stats": "攻擊 +337防禦 +43反擊 +17生命 +1000",
+    "materials": [
+      {
+        "name": "杉",
+        "quantity": 40,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藤木",
+        "quantity": 40,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 6,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "spear-12c",
+    "name": "碎藥之槍",
+    "category": "spear",
+    "level": 12,
+    "variant": "C",
+    "image": "67444e02b8293012d78cc1b1ed89df01.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "石墨條",
+        "quantity": 12,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 4,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "spear-13a",
+    "name": "疾風槍",
+    "category": "spear",
+    "level": 13,
+    "variant": "A",
+    "image": "2c0eaf08ee49645fd4d76b50c8f79918.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "朱砂錠",
+        "quantity": 9,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 4,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "棗木",
+        "quantity": 40,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "spear-13b",
+    "name": "守護者之翼",
+    "category": "spear",
+    "level": 13,
+    "variant": "B",
+    "image": "928012932b86a97e811b4633f30b3cd6.png",
+    "mpCost": 260,
+    "stats": "攻擊 +374防禦 +48反擊 +17生命 +1000",
+    "materials": [
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 40,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 9,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 19,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 10,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "spear-13c",
+    "name": "風虎長戟",
+    "category": "spear",
+    "level": 13,
+    "variant": "C",
+    "image": "9939dee93da3172860ebd2703575ee8a.png",
+    "mpCost": 260,
+    "stats": "攻擊 +426防禦 +100必殺 +5反擊 +20命中 +10生命 +1000耐久 323",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 40,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "火山岩石",
+        "quantity": 5,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "光輝結晶",
+        "quantity": 5,
+        "image": "971503002bee9a8df25fe0cdecc56762.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "spear-14a",
+    "name": "落雷之槍",
+    "category": "spear",
+    "level": 14,
+    "variant": "A",
+    "image": "ed36a27c59027d8ecb5069b978a014f3.png",
+    "mpCost": 280,
+    "stats": "攻擊 +362防禦 152~168反擊 +20閃躲 +20生命 +999",
+    "materials": [
+      {
+        "name": "紫英石",
+        "quantity": 13,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "棗木",
+        "quantity": 40,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 40,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "檜木",
+        "quantity": 20,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "spear-14b",
+    "name": "青炎槍",
+    "category": "spear",
+    "level": 14,
+    "variant": "B",
+    "image": "c174d203bedbcc833bfe6a07cc1797a4.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 6,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 17,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 17,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 7,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "spear-15a",
+    "name": "黃金矛",
+    "category": "spear",
+    "level": 15,
+    "variant": "A",
+    "image": "a8e3992336f4b894f82d94d90b36b781.png",
+    "mpCost": 300,
+    "stats": "攻擊 +345防禦 +195命中 +10閃躲 +12反擊耗魔-30%",
+    "materials": [
+      {
+        "name": "魔族的水晶",
+        "quantity": 4,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "石油",
+        "quantity": 17,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "檀木",
+        "quantity": 20,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "spear-15b",
+    "name": "殉教者長槍",
+    "category": "spear",
+    "level": 15,
+    "variant": "B",
+    "image": "92c66a0724a892dece73196f301ea720.png",
+    "mpCost": 300,
+    "stats": "攻擊 +437防禦 +63反擊 +16生命 +1000一石二鳥耗魔-25%",
+    "materials": [
+      {
+        "name": "冰龍石",
+        "quantity": 4,
+        "image": "69c2bd67643b6402897ec74bcfbde81c.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "檀木",
+        "quantity": 40,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "紫英石",
+        "quantity": 19,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 9,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "armor-1a",
+    "name": "軟皮甲",
+    "category": "armor",
+    "level": 1,
+    "variant": "A",
+    "image": "8f597004c3789a4b8a502725b1cb7838.png",
+    "mpCost": 20,
+    "stats": "防禦 11~21閃躲 -10抗魔 6~8耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 3,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "armor-1b",
+    "name": "護心甲",
+    "category": "armor",
+    "level": 1,
+    "variant": "B",
+    "image": "6c3075ce54563d2b4a44338c2061df13.png",
+    "mpCost": 20,
+    "stats": "防禦 16~32閃躲 -10抗魔 4~6耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "armor-2a",
+    "name": "青銅鎧甲",
+    "category": "armor",
+    "level": 2,
+    "variant": "A",
+    "image": "cb62959a6751e21987c96856501aa86f.png",
+    "mpCost": 40,
+    "stats": "防禦 23~42閃躲 -10抗魔 12~16耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 7,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 2,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "armor-2b",
+    "name": "輕型鎧甲",
+    "category": "armor",
+    "level": 2,
+    "variant": "B",
+    "image": "70cc320b0bddbf77d80ca29a3507b3d5.png",
+    "mpCost": 40,
+    "stats": "防禦 29~53閃躲 -10抗魔 8~12耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "armor-3a",
+    "name": "輕型鎖鍊甲",
+    "category": "armor",
+    "level": 3,
+    "variant": "A",
+    "image": "a3590c3bee85e8578dcc824d42b8f260.png",
+    "mpCost": 60,
+    "stats": "防禦 38~63閃躲 -10抗魔 18~24耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 6,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "armor-3b",
+    "name": "環甲",
+    "category": "armor",
+    "level": 3,
+    "variant": "B",
+    "image": "b05069d8d34fe72927f52f9895ddbdd6.png",
+    "mpCost": 60,
+    "stats": "防禦 44~74閃躲 -10抗魔 12~18耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "armor-4a",
+    "name": "鋼鐵鎧甲",
+    "category": "armor",
+    "level": 4,
+    "variant": "A",
+    "image": "3b36afdb685b9576d911ca88fe178b35.png",
+    "mpCost": 80,
+    "stats": "防禦 55~84閃躲 -10抗魔 24~32耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 13,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 4,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 2,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "armor-4b",
+    "name": "金屬皮甲",
+    "category": "armor",
+    "level": 4,
+    "variant": "B",
+    "image": "5dedaf7d83a1b918c0b715e41d7335d8.png",
+    "mpCost": 80,
+    "stats": "防禦 62~95閃躲 -10抗魔 16~24耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 6,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 9,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "armor-5a",
+    "name": "長型金屬鎧甲",
+    "category": "armor",
+    "level": 5,
+    "variant": "A",
+    "image": "38d419ac2881068dc3aa0ee7783918e4.png",
+    "mpCost": 100,
+    "stats": "防禦 74~105閃躲 -10抗魔 30~40耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 7,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "armor-5b",
+    "name": "索狀鎧甲",
+    "category": "armor",
+    "level": 5,
+    "variant": "B",
+    "image": "b05069d8d34fe72927f52f9895ddbdd6.png",
+    "mpCost": 100,
+    "stats": "防禦 81~116閃躲 -10抗魔 20~30耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 8,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "armor-5c",
+    "name": "劍齒鎧甲",
+    "category": "armor",
+    "level": 5,
+    "variant": "C",
+    "image": "2928b49d6cc4f1f6d8e09157aaf3db1e.png",
+    "mpCost": 100,
+    "stats": "防禦 104~111必殺 -5反擊 +8閃躲 -10抗魔 19~28耐久 300~400",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "白金條",
+        "quantity": 4,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鋁條",
+        "quantity": 6,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "armor-6a",
+    "name": "重鐵板甲",
+    "category": "armor",
+    "level": 6,
+    "variant": "A",
+    "image": "3b36afdb685b9576d911ca88fe178b35.png",
+    "mpCost": 120,
+    "stats": "防禦 95~126閃躲 -10抗魔 36~48耐久 300~400",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "armor-6b",
+    "name": "鐵板半身甲",
+    "category": "armor",
+    "level": 6,
+    "variant": "B",
+    "image": "f51fe6dbad6c6c70a11dc6b38db78ab7.png",
+    "mpCost": 120,
+    "stats": "防禦 103~137閃躲 -10抗魔 24~36耐久 300~400",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 6,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 6,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 6,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "armor-7a",
+    "name": "實戰鎧甲",
+    "category": "armor",
+    "level": 7,
+    "variant": "A",
+    "image": "d48a4342254a92f25c627c900b2f33c8.png",
+    "mpCost": 140,
+    "stats": "防禦 110~147閃躲 -10抗魔 42~56耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 20,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 8,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "armor-7b",
+    "name": "黃金鎧甲",
+    "category": "armor",
+    "level": 7,
+    "variant": "B",
+    "image": "4dbe89e75d4d47774b1fa384d3d61e8a.png",
+    "mpCost": 140,
+    "stats": "防禦 +20精神 +50閃躲 -5抗魔 +40耐久 300~400",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "曼陀羅草的皮",
+        "quantity": 1,
+        "image": "a39bea1809ec64f6171bcd036112c345.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "armor-7c",
+    "name": "水龍鎧甲",
+    "category": "armor",
+    "level": 7,
+    "variant": "C",
+    "image": "32d03cf8a3c03fbb852958c563d7cdd1.png",
+    "mpCost": 140,
+    "stats": "防禦 +170抗毒 +65耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的鎧",
+        "quantity": 1,
+        "image": "5545aad4343e79f7c4528f68de0b9962.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "armor-8a",
+    "name": "重金屬鎧甲",
+    "category": "armor",
+    "level": 8,
+    "variant": "A",
+    "image": "fc9ec362e45e26fd1fc49802892a2ab5.png",
+    "mpCost": 160,
+    "stats": "防禦 126~179閃躲 -10抗魔 48~64耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 20,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "armor-8b",
+    "name": "野獸之鎧",
+    "category": "armor",
+    "level": 8,
+    "variant": "B",
+    "image": "31bf1e4be223af21650884c27e851da1.png",
+    "mpCost": 160,
+    "stats": "防禦 130~140抗魔 16~24耐久 300~400",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 15,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 20,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 1,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "armor-8c",
+    "name": "輕短鎧甲+",
+    "category": "armor",
+    "level": 8,
+    "variant": "C",
+    "image": "d48a4342254a92f25c627c900b2f33c8.png",
+    "mpCost": 160,
+    "stats": "防禦 115~155敏捷 -10~-5閃躲 -10~-5抗魔 24~40耐久 300~400",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 13,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 15,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 10,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 20,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "armor-9a",
+    "name": "帝王之鎧",
+    "category": "armor",
+    "level": 9,
+    "variant": "A",
+    "image": "590e20e21f1cc13d12f94ef30fa6c109.png",
+    "mpCost": 180,
+    "stats": "防禦 160~200閃躲 -10抗魔 27~36耐久 300~400",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "armor-9b",
+    "name": "亡靈鎧甲",
+    "category": "armor",
+    "level": 9,
+    "variant": "B",
+    "image": "71b6d0e3619ac2a2d5e300aee9d9688e.png",
+    "mpCost": 180,
+    "stats": "防禦 +160抗毒 +3抗昏睡 +3抗石化 +3閃躲 +10抗魔 +12耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 20,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 12,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "armor-10a",
+    "name": "漆黑之鎧",
+    "category": "armor",
+    "level": 10,
+    "variant": "A",
+    "image": "bb44a3619ccd3d1e794f4bbe386cd16a.png",
+    "mpCost": 200,
+    "stats": "防禦 188~221閃躲 -10抗魔 70~80耐久 300~400",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "armor-10b",
+    "name": "騎士鎧甲",
+    "category": "armor",
+    "level": 10,
+    "variant": "B",
+    "image": "c48c5f92ae0886d1dec12c76b053a7f0.png",
+    "mpCost": 200,
+    "stats": "攻擊 -15防禦 +240閃躲 -7抗魔 50~60耐久 300~400",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "armor-11a",
+    "name": "紅繩威鎧",
+    "category": "armor",
+    "level": 11,
+    "variant": "A",
+    "image": "a9b51d4c5dcb47e174ef7d03bf37346d.png",
+    "mpCost": 220,
+    "stats": "防禦 214~222命中 +8閃躲 -10抗魔 +51耐久 300~400",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 13,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 10,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 2,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 2,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "armor-11b",
+    "name": "守護鎧甲",
+    "category": "armor",
+    "level": 11,
+    "variant": "B",
+    "image": "bbc143f6e552f7e4fe81299ace32e248.png",
+    "mpCost": 220,
+    "stats": "防禦 +227閃躲 -5生命 +93抗魔 +99耐久 300~400",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 5,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 4,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 8,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "妖草的血",
+        "quantity": 2,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "armor-11c",
+    "name": "軟蝟甲",
+    "category": "armor",
+    "level": 11,
+    "variant": "C",
+    "image": "75ec7d6eb368d97396f29632065a748d.png",
+    "mpCost": 220,
+    "stats": "防禦 +282閃躲 -11抗魔 +64",
+    "materials": [
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 11,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "克德謝爾礦",
+        "quantity": 6,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 7,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 6,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "armor-12a",
+    "name": "烏鋼甲",
+    "category": "armor",
+    "level": 12,
+    "variant": "A",
+    "image": "78b3fe6e252ad242cce7eef904610fb7.png",
+    "mpCost": 240,
+    "stats": "防禦 +276閃躲 -11生命 +402抗魔 +66",
+    "materials": [
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "克德謝爾礦",
+        "quantity": 5,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 3,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 8,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 11,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "armor-12b",
+    "name": "天使鎧甲",
+    "category": "armor",
+    "level": 12,
+    "variant": "B",
+    "image": "c10e30d3bbe6845f0a0e4bff721d6777.png",
+    "mpCost": 240,
+    "stats": "防禦 +280生命 +354抗魔 +90",
+    "materials": [
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 11,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 9,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 16,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "armor-12c",
+    "name": "碎藥之鎧",
+    "category": "armor",
+    "level": 12,
+    "variant": "C",
+    "image": "9559d9cea48c8d36d2dd50acdd8dc884.png",
+    "mpCost": 240,
+    "stats": "防禦 +267抗毒 +20生命 +350抗魔 +100",
+    "materials": [
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 5,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "藤木",
+        "quantity": 7,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 12,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "石墨條",
+        "quantity": 15,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 20,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "armor-13a",
+    "name": "金絲甲",
+    "category": "armor",
+    "level": 13,
+    "variant": "A",
+    "image": "d209f47ab092ce0221f7d6b9685136be.png",
+    "mpCost": 260,
+    "stats": "防禦 +306命中 +8閃躲 -11抗魔 +79",
+    "materials": [
+      {
+        "name": "硬綢布",
+        "quantity": 8,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 5,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 6,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 7,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "白金",
+        "quantity": 18,
+        "image": "6b37b743c3f95a5ccce6b02679c2493e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "armor-13b",
+    "name": "高階天使鎧甲",
+    "category": "armor",
+    "level": 13,
+    "variant": "B",
+    "image": "50a6954a00b9af616d7289029ebcbec1.png",
+    "mpCost": 260,
+    "stats": "防禦 +350閃躲 -11生命 +590抗魔 +120",
+    "materials": [
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 7,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 16,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 11,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "armor-14a",
+    "name": "玉石甲",
+    "category": "armor",
+    "level": 14,
+    "variant": "A",
+    "image": "363f7fab17180927808c355446a6e9c9.png",
+    "mpCost": 280,
+    "stats": "防禦 +321抗混亂 +10閃躲 -11抗魔 +89",
+    "materials": [
+      {
+        "name": "寧麻布",
+        "quantity": 12,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 4,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 10,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "紫英石",
+        "quantity": 11,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "armor-14b",
+    "name": "棘鱗鎧甲",
+    "category": "armor",
+    "level": 14,
+    "variant": "B",
+    "image": "a30e58b97f567978812fca86db8cd36e.png",
+    "mpCost": 280,
+    "stats": "防禦 +361閃躲 -3生命 +826抗魔 +112",
+    "materials": [
+      {
+        "name": "寧麻布",
+        "quantity": 9,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 10,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 7,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 17,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "armor-15a",
+    "name": "螢月甲",
+    "category": "armor",
+    "level": 15,
+    "variant": "A",
+    "image": "c189fab9645a6e2aa2cfaa8affac78a3.png",
+    "mpCost": 300,
+    "stats": "防禦 +337抗石化 +10反擊 +9命中 +9抗魔 +102",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 4,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 6,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 5,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 19,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 4,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "armor-15b",
+    "name": "維納斯戰甲",
+    "category": "armor",
+    "level": 15,
+    "variant": "B",
+    "image": "54df4aa5b0556bb70bdfaa50c63f3416.png",
+    "mpCost": 300,
+    "stats": "防禦 306~338命中 +5閃躲 +5生命 +1000抗魔 121~141耐久 300",
+    "materials": [
+      {
+        "name": "硬綢布",
+        "quantity": 15,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 15,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 13,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 12,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 8,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

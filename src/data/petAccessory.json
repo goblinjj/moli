@@ -1,0 +1,374 @@
+[
+  {
+    "id": "petAccessory-1a",
+    "name": "小鈴鐺",
+    "category": "petAccessory",
+    "level": 1,
+    "variant": "A",
+    "image": "b0544180fd368662130f78c2bceba9fa.png",
+    "mpCost": 20,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "印度輕木",
+        "quantity": 10,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 20,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-2a",
+    "name": "粉紅鈴鐺",
+    "category": "petAccessory",
+    "level": 2,
+    "variant": "A",
+    "image": "8065960f83606ad40852f5cedf5ff407.png",
+    "mpCost": 40,
+    "stats": "魔力 +26負重 +556耐久 100",
+    "materials": [
+      {
+        "name": "蘋果薄荷",
+        "quantity": 10,
+        "image": "629dfa8d2869dc288825aeec06a7117b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 10,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "麻布",
+        "quantity": 10,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-3a",
+    "name": "血淋淋鈴鐺",
+    "category": "petAccessory",
+    "level": 3,
+    "variant": "A",
+    "image": "596380018ca93ac5548966c144b45984.png",
+    "mpCost": 60,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "檸檬草",
+        "quantity": 15,
+        "image": "44f1c917f34ec79a01d073502a0c09da.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 15,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "毛氈",
+        "quantity": 10,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-4a",
+    "name": "翡翠鈴鐺",
+    "category": "petAccessory",
+    "level": 4,
+    "variant": "A",
+    "image": "b9ab5715768526e04a034c9b029d6f47.png",
+    "mpCost": 80,
+    "stats": "魔力 +73負重 +662耐久 100",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "蝴蝶花",
+        "quantity": 10,
+        "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "黃月木",
+        "quantity": 10,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-5a",
+    "name": "睿智鈴鐺",
+    "category": "petAccessory",
+    "level": 5,
+    "variant": "A",
+    "image": "0c99150abfa192e1d26d129ec6d772b3.png",
+    "mpCost": 100,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "果梨",
+        "quantity": 15,
+        "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "桃木",
+        "quantity": 15,
+        "image": "31cff60130c2cf89f0acb7e64164005b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-6a",
+    "name": "緞帶鈴鐺",
+    "category": "petAccessory",
+    "level": 6,
+    "variant": "A",
+    "image": "b0772f1c5c93796774178c28de9a5f36.png",
+    "mpCost": 120,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "番紅花",
+        "quantity": 20,
+        "image": "a21a24ca60d29c77f4838bda846565b9.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 15,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "絹布",
+        "quantity": 15,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-7a",
+    "name": "可愛鈴鐺",
+    "category": "petAccessory",
+    "level": 7,
+    "variant": "A",
+    "image": "51ae9f5601083278db2dfd258344d805.png",
+    "mpCost": 140,
+    "stats": "生命 +106魔力 +114負重 +754耐久 100",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "百里香",
+        "quantity": 15,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 15,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 15,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 10,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-8a",
+    "name": "怪異鈴鐺",
+    "category": "petAccessory",
+    "level": 8,
+    "variant": "A",
+    "image": "81e282edd2387405f1f99e70f26f37ae.png",
+    "mpCost": 160,
+    "stats": "耐久 100",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "百里香",
+        "quantity": 10,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 15,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "朴",
+        "quantity": 10,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 15,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-9a",
+    "name": "水靈鈴鐺",
+    "category": "petAccessory",
+    "level": 9,
+    "variant": "A",
+    "image": "c8981139c22dce6dd115f146dd90282c.png",
+    "mpCost": 180,
+    "stats": "生命 160~250魔力 165~172耐久 100",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 15,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "瞿麥",
+        "quantity": 10,
+        "image": "9a3db37de1d19deeaa5426b221780f47.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 15,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "petAccessory-10a",
+    "name": "幻想鈴鐺",
+    "category": "petAccessory",
+    "level": 10,
+    "variant": "A",
+    "image": "e6744fd575cf1a3147a0dc667f41bdd0.png",
+    "mpCost": 200,
+    "stats": "生命 +148魔力 +271負重 +794耐久 100",
+    "materials": [
+      {
+        "name": "七葉樹",
+        "quantity": 20,
+        "image": "ab962a2d0c46c0daef413a6977e26b81.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 15,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 15,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 15,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  }
+]

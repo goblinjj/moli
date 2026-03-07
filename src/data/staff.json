@@ -1,0 +1,1436 @@
+[
+  {
+    "id": "staff-1a",
+    "name": "短杖",
+    "category": "staff",
+    "level": 1,
+    "variant": "A",
+    "image": "48be0a05aafe5a515167eb6a8710f59b.png",
+    "mpCost": 20,
+    "stats": "攻擊 +5精神 4~5魔攻 11~14耐久 450~500",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "staff-1b",
+    "name": "權杖",
+    "category": "staff",
+    "level": 1,
+    "variant": "B",
+    "image": "73548a95c6dd345ee75868885e6b9b04.png",
+    "mpCost": 20,
+    "stats": "攻擊 5~10精神 +5魔攻 11~12耐久 450~500",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 6,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 2,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "staff-2a",
+    "name": "大地之杖",
+    "category": "staff",
+    "level": 2,
+    "variant": "A",
+    "image": "181747419351aa65a042273239072e2a.png",
+    "mpCost": 40,
+    "stats": "攻擊 +5精神 8~10魔攻 42~48耐久 450~500",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "staff-2b",
+    "name": "激流權杖",
+    "category": "staff",
+    "level": 2,
+    "variant": "B",
+    "image": "447a035995fb826b57131fba95d7b7df.png",
+    "mpCost": 40,
+    "stats": "攻擊 11~20精神 +5魔攻 42~45耐久 450~500",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 12,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "staff-3a",
+    "name": "魔之手杖",
+    "category": "staff",
+    "level": 3,
+    "variant": "A",
+    "image": "38eac5e7953b98825949345600768cf9.png",
+    "mpCost": 60,
+    "stats": "攻擊 +5精神 10~15魔攻 73~82耐久 450~500",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 14,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 2,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "staff-3b",
+    "name": "魔之權杖",
+    "category": "staff",
+    "level": 3,
+    "variant": "B",
+    "image": "2ec75898f9d73994ac9ec63f4148bcf7.png",
+    "mpCost": 60,
+    "stats": "攻擊 20~30精神 +5魔攻 73~77耐久 450~500",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 11,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "staff-4a",
+    "name": "賢者手杖",
+    "category": "staff",
+    "level": 4,
+    "variant": "A",
+    "image": "5b256cdb7cb7d6953a366d067eca3d25.png",
+    "mpCost": 80,
+    "stats": "攻擊 +5精神 15~20魔攻 104~116耐久 450~500",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 10,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 10,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "staff-4b",
+    "name": "賢者權杖",
+    "category": "staff",
+    "level": 4,
+    "variant": "B",
+    "image": "e2e765f579994b553e357ff5432beec8.png",
+    "mpCost": 80,
+    "stats": "攻擊 28~40精神 +5魔攻 104~110耐久 450~500",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 12,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 12,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "staff-5a",
+    "name": "琥珀杖",
+    "category": "staff",
+    "level": 5,
+    "variant": "A",
+    "image": "d275de43501d026fdeaa8617318fcc6e.png",
+    "mpCost": 100,
+    "stats": "攻擊 +5精神 20~25魔攻 135~150耐久 450~500",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 16,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "staff-5b",
+    "name": "琥珀權杖",
+    "category": "staff",
+    "level": 5,
+    "variant": "B",
+    "image": "e7194f62feed2512d3bcaf4365f50d27.png",
+    "mpCost": 100,
+    "stats": "攻擊 37~50精神 +5魔攻 135~142耐久 450~500",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 17,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "staff-5c",
+    "name": "魔晶之杖",
+    "category": "staff",
+    "level": 5,
+    "variant": "C",
+    "image": "9a8ec491e7a0a59c167af6352faf85f3.png",
+    "mpCost": 100,
+    "stats": "攻擊 39~48防禦 +5精神 +5回復 1~6魔攻 135~142耐久 450~500",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 7,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "staff-6a",
+    "name": "元素之杖",
+    "category": "staff",
+    "level": 6,
+    "variant": "A",
+    "image": "1bc473b6eb87dc4ee7bf8f5ad0c2ac10.png",
+    "mpCost": 120,
+    "stats": "攻擊 +5精神 24~30魔攻 166~184耐久 450~500",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 16,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "staff-6b",
+    "name": "神聖之杖",
+    "category": "staff",
+    "level": 6,
+    "variant": "B",
+    "image": "6a62f658702f489913f138b6cdbe31a3.png",
+    "mpCost": 120,
+    "stats": "攻擊 46~60精神 +5魔攻 166~175耐久 450~500",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 17,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "staff-7a",
+    "name": "怒音之杖",
+    "category": "staff",
+    "level": 7,
+    "variant": "A",
+    "image": "e4f649fc286708879d2c85aa27e332f1.png",
+    "mpCost": 140,
+    "stats": "攻擊 +5精神 28~35魔攻 197~218耐久 450~500",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 18,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "staff-7b",
+    "name": "隱者之杖",
+    "category": "staff",
+    "level": 7,
+    "variant": "B",
+    "image": "bac1d6ed02d956023e77d4a9e726f073.png",
+    "mpCost": 140,
+    "stats": "攻擊 55~70精神 +5魔攻 197~207耐久 450~500",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 12,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 9,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "staff-7c",
+    "name": "水龍之杖",
+    "category": "staff",
+    "level": 7,
+    "variant": "C",
+    "image": "8734d084287d82c2ffcc20fdad861252.png",
+    "mpCost": 140,
+    "stats": "攻擊 +70精神 +35魔攻 +218耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的杖",
+        "quantity": 1,
+        "image": "48be0a05aafe5a515167eb6a8710f59b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "staff-8a",
+    "name": "光明短杖",
+    "category": "staff",
+    "level": 8,
+    "variant": "A",
+    "image": "44c44d1dcff89c2eb779d70b3b3a1e1d.png",
+    "mpCost": 160,
+    "stats": "攻擊 +5精神 32~40魔攻 228~252耐久 450~500",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 10,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 12,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "staff-8b",
+    "name": "惡魔之杖",
+    "category": "staff",
+    "level": 8,
+    "variant": "B",
+    "image": "06868c1834e9433169091a0f5b97a16a.png",
+    "mpCost": 160,
+    "stats": "攻擊 64~80精神 +5魔攻 228~240耐久 450~500",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 7,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "staff-8c",
+    "name": "落雷權杖+",
+    "category": "staff",
+    "level": 8,
+    "variant": "C",
+    "image": "bac1d6ed02d956023e77d4a9e726f073.png",
+    "mpCost": 160,
+    "stats": "攻擊 50~70精神 28~35魔攻 197~208耐久 450~500",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 15,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "濕地毒蛇",
+        "quantity": 10,
+        "image": "81fa9642475a85cc0926d9325919ad21.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "staff-9a",
+    "name": "太陽短杖",
+    "category": "staff",
+    "level": 9,
+    "variant": "A",
+    "image": "54208e51f17117f3f151e76597695924.png",
+    "mpCost": 180,
+    "stats": "攻擊 +5精神 36~45魔攻 259~286耐久 450~500",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 15,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "staff-9b",
+    "name": "天使之杖",
+    "category": "staff",
+    "level": 9,
+    "variant": "B",
+    "image": "ce7fe3e7b408bac665a825046d772e8b.png",
+    "mpCost": 180,
+    "stats": "攻擊 72~90精神 +5魔攻 259~272耐久 450~500",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 15,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "staff-10a",
+    "name": "聖者之杖",
+    "category": "staff",
+    "level": 10,
+    "variant": "A",
+    "image": "66ffe1bc5116c1f59113a45178b0c202.png",
+    "mpCost": 200,
+    "stats": "攻擊 +5精神 43~50魔攻 290~320耐久 450~500",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 10,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "staff-10b",
+    "name": "星屑短杖",
+    "category": "staff",
+    "level": 10,
+    "variant": "B",
+    "image": "ec29eb6ec96caaf8a7e80d0a6e759373.png",
+    "mpCost": 200,
+    "stats": "攻擊 85~100精神 +5魔攻 290~305耐久 450~500",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 15,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "staff-11a",
+    "name": "王者之手",
+    "category": "staff",
+    "level": 11,
+    "variant": "A",
+    "image": "96d2bfb191ff3a11d44c12ec53db9936.png",
+    "mpCost": 220,
+    "stats": "精神 53~60閃躲 +10魔攻 300~330耐久 200~250",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 3,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 3,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "staff-11b",
+    "name": "星錘杖",
+    "category": "staff",
+    "level": 11,
+    "variant": "B",
+    "image": "8b5bd044accd9af3572e3e9a78ddfe66.png",
+    "mpCost": 220,
+    "stats": "攻擊 153~180防禦 +50命中 +10魔攻 228~251耐久 200~250",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 3,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "staff-11c",
+    "name": "紅蓮杖",
+    "category": "staff",
+    "level": 11,
+    "variant": "C",
+    "image": "7a578aa95917c06596e43e7fb4055e42.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "石墨條",
+        "quantity": 4,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 11,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 9,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "月桂木",
+        "quantity": 20,
+        "image": "968b90347bf3b70a2b6d4c041416664e.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "staff-12a",
+    "name": "貔貅杖",
+    "category": "staff",
+    "level": 12,
+    "variant": "A",
+    "image": "02669314e9dc174f7e2eb96bbd90f256.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 4,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 11,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "棗木",
+        "quantity": 40,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "staff-12b",
+    "name": "天使魔杖",
+    "category": "staff",
+    "level": 12,
+    "variant": "B",
+    "image": "759380f9cf50c7caaf528508243e8e8a.png",
+    "mpCost": 240,
+    "stats": "精神 +69閃躲 +8魔力 +1000魔攻 +347",
+    "materials": [
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "藤木",
+        "quantity": 40,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 11,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "staff-12c",
+    "name": "碎藥之法杖",
+    "category": "staff",
+    "level": 12,
+    "variant": "C",
+    "image": "da19d186fd87d3f3d095d78bc7ace94e.png",
+    "mpCost": 240,
+    "stats": "精神 65~75魔力 400~500魔攻 365~395耐久 250~300",
+    "materials": [
+      {
+        "name": "魔族的水晶",
+        "quantity": 4,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 18,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 9,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "staff-12d",
+    "name": "碎藥之權杖",
+    "category": "staff",
+    "level": 12,
+    "variant": "D",
+    "image": "7a512c61f8d2305e7ab2bdcdac16fe26.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "火焰之魂",
+        "quantity": 3,
+        "image": "681950d48b2bf2f1a84c8348d8a675a5.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 4,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "石墨條",
+        "quantity": 13,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "staff-13a",
+    "name": "鬼頭杖",
+    "category": "staff",
+    "level": 13,
+    "variant": "A",
+    "image": "00416de026068e599b7397212dba4f02.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鉛錠",
+        "quantity": 10,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 10,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "棗木",
+        "quantity": 40,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 40,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "staff-13b",
+    "name": "普羅米修斯手杖",
+    "category": "staff",
+    "level": 13,
+    "variant": "B",
+    "image": "c2ad9edce528571c67d2cae44ffc4cba.png",
+    "mpCost": 260,
+    "stats": "精神 +88閃躲 +13魔力 +1000魔攻 +367",
+    "materials": [
+      {
+        "name": "絲柏",
+        "quantity": 40,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "藤木",
+        "quantity": 40,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 40,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 9,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 12,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "staff-13c",
+    "name": "風虎杖",
+    "category": "staff",
+    "level": 13,
+    "variant": "C",
+    "image": "6b0577eef3bc5e001fd051ad83195ad4.png",
+    "mpCost": 260,
+    "stats": "精神 +100回復 +200閃躲 +10魔力 +1000魔攻 +385耐久 311超強補血魔法耗魔-50%",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 40,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "火山岩石",
+        "quantity": 5,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "光輝結晶",
+        "quantity": 5,
+        "image": "971503002bee9a8df25fe0cdecc56762.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "staff-14a",
+    "name": "青蛇杖",
+    "category": "staff",
+    "level": 14,
+    "variant": "A",
+    "image": "d90d8e5926c2897c7a19663d9a578d64.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "石墨條",
+        "quantity": 10,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 10,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 8,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 7,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "檜木",
+        "quantity": 20,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "staff-14b",
+    "name": "大主教權杖",
+    "category": "staff",
+    "level": 14,
+    "variant": "B",
+    "image": "98fb25ecd386a65e58c44ef15470b776.png",
+    "mpCost": 280,
+    "stats": "精神 +110閃躲 +17魔力 +1000魔攻 +376耐久 300",
+    "materials": [
+      {
+        "name": "棗木",
+        "quantity": 10,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石墨條",
+        "quantity": 12,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 19,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 9,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "staff-15a",
+    "name": "追魂杖",
+    "category": "staff",
+    "level": 15,
+    "variant": "A",
+    "image": "68a778be27e923ee8ca4e154ff7052b8.png",
+    "mpCost": 300,
+    "stats": "攻擊 +286命中 +15魔攻 317~346隕石魔法耗魔-25%",
+    "materials": [
+      {
+        "name": "魔族的水晶",
+        "quantity": 7,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "紫英石",
+        "quantity": 15,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 5,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "檀木",
+        "quantity": 40,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "staff-15b",
+    "name": "先知者手杖",
+    "category": "staff",
+    "level": 15,
+    "variant": "B",
+    "image": "dbc4aef665118d6dc77c05e0bf171116.png",
+    "mpCost": 300,
+    "stats": "精神 106~125閃躲 16~20魔力 +1000魔攻 383~416耐久 250~300",
+    "materials": [
+      {
+        "name": "魔法之羽",
+        "quantity": 3,
+        "image": "a7a222c805c490333e443ed8f08d835a.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "檜木",
+        "quantity": 40,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "檀木",
+        "quantity": 40,
+        "image": "0e19776ce208258b16c12365b2cc9da6.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "紫英石",
+        "quantity": 12,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 17,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

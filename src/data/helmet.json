@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "helmet-1a",
+    "name": "硬皮頭盔",
+    "category": "helmet",
+    "level": 1,
+    "variant": "A",
+    "image": "6ea5a675200797b70a48a11b0e27aae2.png",
+    "mpCost": 20,
+    "stats": "防禦 6~11抗魔 5~7耐久 350~400",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 2,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "helmet-1b",
+    "name": "銅製頭盔",
+    "category": "helmet",
+    "level": 1,
+    "variant": "B",
+    "image": "2cb8b30ca0ee9942d9e0e779d20618c9.png",
+    "mpCost": 20,
+    "stats": "防禦 9~17抗魔 3~5耐久 350~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 3,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 3,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "helmet-2a",
+    "name": "鐵板布盔",
+    "category": "helmet",
+    "level": 2,
+    "variant": "A",
+    "image": "415cf881d986387fcd334ed6c81282ad.png",
+    "mpCost": 40,
+    "stats": "防禦 12~22抗魔 10~14耐久 350~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 2,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "麻布",
+        "quantity": 3,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "helmet-2b",
+    "name": "銅鐵皮盔",
+    "category": "helmet",
+    "level": 2,
+    "variant": "B",
+    "image": "e26e8721ddb5c5bf0fcfa2a283405474.png",
+    "mpCost": 40,
+    "stats": "防禦 15~28抗魔 6~10耐久 350~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "麻布",
+        "quantity": 2,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 2,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "helmet-3a",
+    "name": "金屬護額",
+    "category": "helmet",
+    "level": 3,
+    "variant": "A",
+    "image": "7c98ce9bbb4b5fece086bfa5557f2e50.png",
+    "mpCost": 60,
+    "stats": "防禦 20~33抗魔 15~21耐久 350~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "木棉布",
+        "quantity": 2,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "helmet-3b",
+    "name": "鐵製頭盔",
+    "category": "helmet",
+    "level": 3,
+    "variant": "B",
+    "image": "2a852fa582f21b437735528a54316988.png",
+    "mpCost": 60,
+    "stats": "防禦 23~39抗魔 9~15耐久 350~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 3,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "毛氈",
+        "quantity": 1,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "helmet-4a",
+    "name": "霸葛頭盔",
+    "category": "helmet",
+    "level": 4,
+    "variant": "A",
+    "image": "23d547941426cd57f97402f4a2a7f22f.png",
+    "mpCost": 80,
+    "stats": "防禦 29~44抗魔 20~28耐久 350~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "helmet-4b",
+    "name": "角飾頭盔",
+    "category": "helmet",
+    "level": 4,
+    "variant": "B",
+    "image": "7b4549795b8c64be351095ee0a7cee33.png",
+    "mpCost": 80,
+    "stats": "防禦 33~50抗魔 12~20耐久 350~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 5,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "綿",
+        "quantity": 2,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "helmet-5a",
+    "name": "開放式頭盔",
+    "category": "helmet",
+    "level": 5,
+    "variant": "A",
+    "image": "855104bb7fd6d45792c600345fd144f8.png",
+    "mpCost": 100,
+    "stats": "防禦 39~55抗魔 25~35耐久 350~400",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 8,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "helmet-5b",
+    "name": "葛理克頭盔",
+    "category": "helmet",
+    "level": 5,
+    "variant": "B",
+    "image": "2214041ca152247315f39c8610a3e7ad.png",
+    "mpCost": 100,
+    "stats": "防禦 43~61抗魔 15~25耐久 350~400",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 5,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "helmet-5c",
+    "name": "聖騎士之盔",
+    "category": "helmet",
+    "level": 5,
+    "variant": "C",
+    "image": "30cea6347abb045b1510b2045866e351.png",
+    "mpCost": 100,
+    "stats": "防禦 42~51命中 +6閃躲 -5抗魔 35~40耐久 350~400",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 4,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 3,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "helmet-6a",
+    "name": "巴比克頭盔",
+    "category": "helmet",
+    "level": 6,
+    "variant": "A",
+    "image": "a4f71d0c6e4ddc02ceaaaa1c0be4dc92.png",
+    "mpCost": 120,
+    "stats": "防禦 50~66抗魔 30~42耐久 350~400",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 8,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 5,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "helmet-6b",
+    "name": "利刃頭盔",
+    "category": "helmet",
+    "level": 6,
+    "variant": "B",
+    "image": "5db7db2a44e6166a54025678c539786d.png",
+    "mpCost": 120,
+    "stats": "防禦 54~72抗魔 18~30耐久 350~400",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "細線",
+        "quantity": 5,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "helmet-7a",
+    "name": "騎士頭盔",
+    "category": "helmet",
+    "level": 7,
+    "variant": "A",
+    "image": "69634a25548cbef59738cb1fa65823dd.png",
+    "mpCost": 140,
+    "stats": "防禦 +60抗魔 28~42耐久 350~400護衛耗魔-25%",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 8,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 4,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "絹布",
+        "quantity": 4,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "helmet-7b",
+    "name": "鋼製頭盔",
+    "category": "helmet",
+    "level": 7,
+    "variant": "B",
+    "image": "34d6ca46535bbc657627cd107c67e559.png",
+    "mpCost": 140,
+    "stats": "防禦 62~83抗魔 24~38耐久 350~400",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "細線",
+        "quantity": 9,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-7c",
+    "name": "水龍之盔",
+    "category": "helmet",
+    "level": 7,
+    "variant": "C",
+    "image": "7c93a8117ced34a84a853b602d4f2eca.png",
+    "mpCost": 140,
+    "stats": "防禦 +110耐久 200護衛耗魔-50%",
+    "materials": [
+      {
+        "name": "生鏽的頭盔",
+        "quantity": 1,
+        "image": "274f307fa66e7912afaac91b0c6f5fed.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-8a",
+    "name": "博流蓋爾頭盔",
+    "category": "helmet",
+    "level": 8,
+    "variant": "A",
+    "image": "6a8e3c6730b5f8d1c3c40dee435ce402.png",
+    "mpCost": 160,
+    "stats": "防禦 +65命中 -5閃躲 +25抗魔 +10耐久 350~400",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 5,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-8b",
+    "name": "鉚釘頭盔",
+    "category": "helmet",
+    "level": 8,
+    "variant": "B",
+    "image": "287999cd84e8dac10a4f15c7582d53cc.png",
+    "mpCost": 160,
+    "stats": "防禦 71~94抗魔 32~48耐久 350~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 5,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "helmet-8c",
+    "name": "鋼製頭盔+",
+    "category": "helmet",
+    "level": 8,
+    "variant": "C",
+    "image": "34d6ca46535bbc657627cd107c67e559.png",
+    "mpCost": 160,
+    "stats": "防禦 65~85命中 -1閃躲 1~5抗魔 16~32耐久 350~400",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 7,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 20,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "helmet-9a",
+    "name": "羽毛頭盔",
+    "category": "helmet",
+    "level": 9,
+    "variant": "A",
+    "image": "17e9fdd3a0ab518c1ee5bb7d49d599c9.png",
+    "mpCost": 180,
+    "stats": "防禦 84~105抗魔 45~63耐久 350~400",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 3,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "朴",
+        "quantity": 20,
+        "image": "a06e3245709d24ebcb4ecaa2e80ea974.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 3,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-9b",
+    "name": "龍盔",
+    "category": "helmet",
+    "level": 9,
+    "variant": "B",
+    "image": "0b64f14a7fd45a30852bbb29954b62f3.png",
+    "mpCost": 180,
+    "stats": "防禦 +85命中 +3抗魔 24~36耐久 350~400護衛耗魔-25%",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 8,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 4,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "helmet-10a",
+    "name": "白金頭盔",
+    "category": "helmet",
+    "level": 10,
+    "variant": "A",
+    "image": "09073238ea0ad28ba4a2111612133083.png",
+    "mpCost": 200,
+    "stats": "防禦 99~116抗魔 50~70耐久 350~400",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 3,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 3,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "絲柏",
+        "quantity": 20,
+        "image": "56f33540871ff1af06e2983710fdc452.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 3,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-10b",
+    "name": "聖龍頭盔",
+    "category": "helmet",
+    "level": 10,
+    "variant": "B",
+    "image": "6ba3a8223a81f2231c3a8fc4f78d0acb.png",
+    "mpCost": 200,
+    "stats": "防禦 +130必殺 -5抗魔 40~60耐久 350~400",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "梣",
+        "quantity": 20,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 4,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 4,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-11a",
+    "name": "正義頭盔",
+    "category": "helmet",
+    "level": 11,
+    "variant": "A",
+    "image": "87baf8324c5f202215893198feb59277.png",
+    "mpCost": 220,
+    "stats": "防禦 +95必殺 +6閃躲 -5抗魔 77~87耐久 350~400",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 10,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 7,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 2,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-11b",
+    "name": "靈力頭盔",
+    "category": "helmet",
+    "level": 11,
+    "variant": "B",
+    "image": "05356391cd414fbb0fb6642ad2071dc1.png",
+    "mpCost": 220,
+    "stats": "防禦 105~111反擊 +8命中 +5閃躲 -5抗魔 74~77耐久 350~400",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 9,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 6,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 6,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "梣",
+        "quantity": 40,
+        "image": "8aa15eefdb53d36c744f823f7b0c112c.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 2,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "helmet-11c",
+    "name": "棗木盔",
+    "category": "helmet",
+    "level": 11,
+    "variant": "C",
+    "image": "c162fdc9c942f4f13854b0cadcf000e0.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 10,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 7,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 17,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "helmet-12a",
+    "name": "千羽盔",
+    "category": "helmet",
+    "level": 12,
+    "variant": "A",
+    "image": "bd61805385a6514a4d6f564273bbe794.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鵝絨",
+        "quantity": 8,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 15,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 5,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 9,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "helmet-12b",
+    "name": "天使頭盔",
+    "category": "helmet",
+    "level": 12,
+    "variant": "B",
+    "image": "7c98ce9bbb4b5fece086bfa5557f2e50.png",
+    "mpCost": 240,
+    "stats": "防禦 +147閃躲 -4生命 +300抗魔 +86",
+    "materials": [
+      {
+        "name": "細麻布",
+        "quantity": 7,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 6,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 15,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "石墨條",
+        "quantity": 17,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "helmet-12c",
+    "name": "碎藥之盔",
+    "category": "helmet",
+    "level": 12,
+    "variant": "C",
+    "image": "222b7198d5951b97d425fb17a58edc97.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "棗木",
+        "quantity": 7,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 12,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 15,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 20,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "helmet-13a",
+    "name": "流金盔",
+    "category": "helmet",
+    "level": 13,
+    "variant": "A",
+    "image": "23aa7f710c3bdaf623301631eb969b55.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "硬綢布",
+        "quantity": 9,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 7,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 11,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 11,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 7,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "helmet-13b",
+    "name": "武士道頭盔",
+    "category": "helmet",
+    "level": 13,
+    "variant": "B",
+    "image": "f60c42ef23f1d81a1fd4d7beaddeec6d.png",
+    "mpCost": 260,
+    "stats": "防禦 +169閃躲 -5生命 +300抗魔 +92耐久 300",
+    "materials": [
+      {
+        "name": "鵝絨",
+        "quantity": 4,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 13,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "石墨條",
+        "quantity": 14,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 9,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 9,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "helmet-14a",
+    "name": "綠玉盔",
+    "category": "helmet",
+    "level": 14,
+    "variant": "A",
+    "image": "22b02491934c4e41b871cb1cfa01feb5.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "寧麻布",
+        "quantity": 4,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 4,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 8,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 9,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 4,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "helmet-14b",
+    "name": "屠魔頭盔",
+    "category": "helmet",
+    "level": 14,
+    "variant": "B",
+    "image": "590f168abd4b1399fb51eb13967a5a57.png",
+    "mpCost": 280,
+    "stats": "防禦 +183閃躲 -6生命 +500抗魔 +112",
+    "materials": [
+      {
+        "name": "硬綢布",
+        "quantity": 11,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 10,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 7,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 11,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "helmet-15a",
+    "name": "飛螢盔",
+    "category": "helmet",
+    "level": 15,
+    "variant": "A",
+    "image": "eb22865c1125bd3954dce62621675fd0.png",
+    "mpCost": 300,
+    "stats": "防禦 +172必殺 7~10反擊 8~11生命 +500抗魔 139~145",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 3,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 11,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 9,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 7,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 7,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "helmet-15b",
+    "name": "瑪爾斯頭盔",
+    "category": "helmet",
+    "level": 15,
+    "variant": "B",
+    "image": "217969e891a159bed73b9c3bec111732.png",
+    "mpCost": 300,
+    "stats": "防禦 +205反擊 +10命中 -7生命 +500抗魔 +118",
+    "materials": [
+      {
+        "name": "冰龍石",
+        "quantity": 2,
+        "image": "69c2bd67643b6402897ec74bcfbde81c.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 10,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "紫英石",
+        "quantity": 12,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 18,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

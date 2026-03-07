@@ -1,0 +1,50 @@
+[
+  {
+    "id": "scroll-1a",
+    "name": "布德變身卷",
+    "category": "scroll",
+    "level": 1,
+    "variant": "A",
+    "image": "620e197fe87b39ed7e9c9dd481d0f0a5.png",
+    "mpCost": 20,
+    "stats": "耐久 1",
+    "materials": [
+      {
+        "name": "妖草的血",
+        "quantity": 1,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 1,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "scroll-2a",
+    "name": "傑變身卷",
+    "category": "scroll",
+    "level": 2,
+    "variant": "A",
+    "image": "620e197fe87b39ed7e9c9dd481d0f0a5.png",
+    "mpCost": 40,
+    "stats": "耐久 1",
+    "materials": [
+      {
+        "name": "妖草的血",
+        "quantity": 1,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 1,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      }
+    ]
+  }
+]

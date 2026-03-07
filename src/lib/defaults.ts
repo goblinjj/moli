@@ -20,9 +20,17 @@ export function generateDefaultConfig(recipes: Recipe[]): PriceConfig {
     recipeMpCosts[recipe.id] = recipe.mpCost;
   }
 
+  // Build default markup rates from all categories found in recipes
+  const markupRates: Record<string, number> = {};
+  for (const recipe of recipes) {
+    if (!(recipe.category in markupRates)) {
+      markupRates[recipe.category] = 20;
+    }
+  }
+
   return {
     materialPrices,
     recipeMpCosts,
-    markupRates: { bow: 20, cooking: 20 },
+    markupRates,
   };
 }

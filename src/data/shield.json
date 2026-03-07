@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "shield-1a",
+    "name": "小圓盾",
+    "category": "shield",
+    "level": 1,
+    "variant": "A",
+    "image": "bcd23e84e5ad8ead05dcaf6f76b7662a.png",
+    "mpCost": 20,
+    "stats": "防禦 6~11閃躲 -5抗魔 10~12耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 1,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "shield-1b",
+    "name": "小型盾",
+    "category": "shield",
+    "level": 1,
+    "variant": "B",
+    "image": "cf347ca874bf80e1a8a1ffecc60a6192.png",
+    "mpCost": 20,
+    "stats": "防禦 9~17閃躲 -5抗魔 8~10耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 6,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "shield-2a",
+    "name": "板盾",
+    "category": "shield",
+    "level": 2,
+    "variant": "A",
+    "image": "1e2faf4ffe7f269e264094e952f19ec8.png",
+    "mpCost": 40,
+    "stats": "防禦 12~22閃躲 -5抗魔 20~24耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 8,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "shield-2b",
+    "name": "鳶盾",
+    "category": "shield",
+    "level": 2,
+    "variant": "B",
+    "image": "11a92e8167a4202d833e5301a792124d.png",
+    "mpCost": 40,
+    "stats": "防禦 15~28閃躲 -5抗魔 16~20耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 7,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 3,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "shield-3a",
+    "name": "漩渦重盾",
+    "category": "shield",
+    "level": 3,
+    "variant": "A",
+    "image": "c626c0c129ac4f4a6e916db8e9bfbcd8.png",
+    "mpCost": 60,
+    "stats": "防禦 20~33閃躲 -5抗魔 30~36耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 7,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 20,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "樅",
+        "quantity": 20,
+        "image": "9e9fa61b2ea631f55ff7dd64dd07ae3a.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "shield-3b",
+    "name": "哥特盾",
+    "category": "shield",
+    "level": 3,
+    "variant": "B",
+    "image": "98a75b5018e0cfee942b8f88516d36aa.png",
+    "mpCost": 60,
+    "stats": "防禦 23~39閃躲 -5抗魔 24~30耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 3,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 4,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 3,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "黃月木",
+        "quantity": 20,
+        "image": "bc0830c01f7aad65ab6ae6b34aa2cf20.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "shield-4a",
+    "name": "士兵盾",
+    "category": "shield",
+    "level": 4,
+    "variant": "A",
+    "image": "b497a09c4fb0bf95a84b29016356650f.png",
+    "mpCost": 80,
+    "stats": "防禦 29~44閃躲 -5抗魔 40~48耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 4,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 4,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 4,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "鐵杉",
+        "quantity": 20,
+        "image": "ebeec15d53de8c54b536922683f1a4c7.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "shield-4b",
+    "name": "重盾",
+    "category": "shield",
+    "level": 4,
+    "variant": "B",
+    "image": "20cd22b774cf1c66653a2ef1d6e86a6c.png",
+    "mpCost": 80,
+    "stats": "防禦 33~50閃躲 -5抗魔 32~40耐久 200~250",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 2,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鐵條",
+        "quantity": 2,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "shield-5a",
+    "name": "蜥蝪盾",
+    "category": "shield",
+    "level": 5,
+    "variant": "A",
+    "image": "41cccf8d420e2218e99c92a64145142d.png",
+    "mpCost": 100,
+    "stats": "防禦 39~55閃躲 -5抗魔 50~60耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 6,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 4,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 3,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "shield-5b",
+    "name": "反光之盾",
+    "category": "shield",
+    "level": 5,
+    "variant": "B",
+    "image": "20964f9563bf0eddc77d8c0c783feaef.png",
+    "mpCost": 100,
+    "stats": "防禦 43~61閃躲 -5抗魔 40~50耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 6,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 6,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 4,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 3,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "shield-5c",
+    "name": "聖者之盾",
+    "category": "shield",
+    "level": 5,
+    "variant": "C",
+    "image": "be1b11c2894e0a9781434b71abc5d8b2.png",
+    "mpCost": 100,
+    "stats": "防禦 +28命中 -3閃躲 -5魔力 100~120抗魔 50~55耐久 200~250",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 2,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 2,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "金條",
+        "quantity": 2,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 3,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "shield-6a",
+    "name": "風之盾",
+    "category": "shield",
+    "level": 6,
+    "variant": "A",
+    "image": "5732faafb2d33f72130be1a0b99c4266.png",
+    "mpCost": 120,
+    "stats": "防禦 50~66閃躲 -5抗魔 60~72耐久 200~250",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 6,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 6,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 4,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "shield-6b",
+    "name": "獅子盾",
+    "category": "shield",
+    "level": 6,
+    "variant": "B",
+    "image": "999bbc89f8c6db9a7618b466cde8db8c.png",
+    "mpCost": 120,
+    "stats": "防禦 54~72閃躲 -5抗魔 48~60耐久 200~250",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 8,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "金條",
+        "quantity": 4,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 4,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "琵琶木",
+        "quantity": 20,
+        "image": "af0b3bb321741ef203c762505eefd206.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "赤松",
+        "quantity": 20,
+        "image": "731332ff7af036baaa5f30bdcbce680b.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "shield-7a",
+    "name": "防守之盾",
+    "category": "shield",
+    "level": 7,
+    "variant": "A",
+    "image": "b6749ade5915099d98e4f2f31055d7f0.png",
+    "mpCost": 140,
+    "stats": "防禦 58~77閃躲 -5抗魔 70~84耐久 200~250",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 5,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "shield-7b",
+    "name": "黃金之盾",
+    "category": "shield",
+    "level": 7,
+    "variant": "B",
+    "image": "49051a9c83d45d62a55d92f4894a068d.png",
+    "mpCost": 140,
+    "stats": "防禦 82~103命中 -10閃躲 -5抗魔 +70耐久 200~250",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 15,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      }
+    ]
+  },
+  {
+    "id": "shield-7c",
+    "name": "水龍之盾",
+    "category": "shield",
+    "level": 7,
+    "variant": "C",
+    "image": "8bde13e85cf85a211e4708f241493887.png",
+    "mpCost": 140,
+    "stats": "攻擊 +20防禦 +100耐久 200",
+    "materials": [
+      {
+        "name": "生鏽的盾",
+        "quantity": 1,
+        "image": "6ea895a11ca1a8b6b47ccd405b7d37c5.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 10,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "shield-8a",
+    "name": "鏡之盾",
+    "category": "shield",
+    "level": 8,
+    "variant": "A",
+    "image": "692245f762d24283c7f062fc070939b7.png",
+    "mpCost": 160,
+    "stats": "防禦 66~88閃躲 -5抗魔 80~96耐久 200~250",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 6,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "純銀條",
+        "quantity": 6,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "shield-8b",
+    "name": "力量之盾",
+    "category": "shield",
+    "level": 8,
+    "variant": "B",
+    "image": "f9f9c760784427a27ce96f79d14bde66.png",
+    "mpCost": 160,
+    "stats": "防禦 +60閃躲 +8抗魔 32~40耐久 200~250",
+    "materials": [
+      {
+        "name": "幻之銀條",
+        "quantity": 20,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "shield-8c",
+    "name": "防禦之盾+",
+    "category": "shield",
+    "level": 8,
+    "variant": "C",
+    "image": "b6749ade5915099d98e4f2f31055d7f0.png",
+    "mpCost": 160,
+    "stats": "攻擊 5~20防禦 59~79抗魔 64~80耐久 200~250",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 9,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 10,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "杉",
+        "quantity": 20,
+        "image": "c33b9fc931f175f894a4ee5a913cf3d8.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "永久冰石",
+        "quantity": 20,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "shield-9a",
+    "name": "漆黑之盾",
+    "category": "shield",
+    "level": 9,
+    "variant": "A",
+    "image": "9223ab800488b4753c33ee824c393e13.png",
+    "mpCost": 180,
+    "stats": "防禦 84~105閃躲 -5抗魔 90~108耐久 200~250",
+    "materials": [
+      {
+        "name": "純銀條",
+        "quantity": 5,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "shield-9b",
+    "name": "火龍之盾",
+    "category": "shield",
+    "level": 9,
+    "variant": "B",
+    "image": "a215b1c93186779bc85c3d44aab67a49.png",
+    "mpCost": 180,
+    "stats": "防禦 +60命中 +2閃躲 +10魔力 -50抗魔 36~45耐久 200~250",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 10,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 1,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 3,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "shield-10a",
+    "name": "黑暗之盾",
+    "category": "shield",
+    "level": 10,
+    "variant": "A",
+    "image": "0a76f9ed868516be742a01f425056839.png",
+    "mpCost": 200,
+    "stats": "防禦 99~116閃躲 -5抗魔 +115耐久 200~250聖盾耗魔-25%",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 5,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 5,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 3,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "shield-10b",
+    "name": "勇者之盾",
+    "category": "shield",
+    "level": 10,
+    "variant": "B",
+    "image": "fd612a51e73783098d23a98d0a43e986.png",
+    "mpCost": 200,
+    "stats": "防禦 +90抗石化 +20魔力 +80抗魔 +90耐久 200~250反擊耗魔-25%",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 10,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 8,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 5,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 3,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "shield-11a",
+    "name": "突猛盾",
+    "category": "shield",
+    "level": 11,
+    "variant": "A",
+    "image": "16cc3d8c49188784c0dc3ff02ff1dace.png",
+    "mpCost": 220,
+    "stats": "防禦 +118命中 +8閃躲 -10抗魔 +100耐久 200~250",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 7,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 3,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 6,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 6,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 2,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "shield-11b",
+    "name": "重型防禦盾",
+    "category": "shield",
+    "level": 11,
+    "variant": "B",
+    "image": "405760b66d69a09699d4f73389562fb9.png",
+    "mpCost": 220,
+    "stats": "防禦 +98必殺 +6閃躲 -5抗魔 +141耐久 200~250",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 5,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 4,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 3,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 6,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 2,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "shield-11c",
+    "name": "棗木盾",
+    "category": "shield",
+    "level": 11,
+    "variant": "C",
+    "image": "e17762b14528b9cffd5b90cba3fa40d4.png",
+    "mpCost": 220,
+    "stats": "",
+    "materials": [
+      {
+        "name": "棗木",
+        "quantity": 20,
+        "image": "a75379f30e1d50e7942a9a02d8c565e9.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 10,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 15,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 5,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "石墨條",
+        "quantity": 3,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "shield-12a",
+    "name": "烏金盾",
+    "category": "shield",
+    "level": 12,
+    "variant": "A",
+    "image": "185c00644a2e7b2ef5737838924a137f.png",
+    "mpCost": 240,
+    "stats": "",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 15,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 6,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 9,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "石墨條",
+        "quantity": 9,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 6,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "shield-12b",
+    "name": "天使盾牌",
+    "category": "shield",
+    "level": 12,
+    "variant": "B",
+    "image": "c8e1f8f0965f7452a054f6f8366705d6.png",
+    "mpCost": 240,
+    "stats": "防禦 174~183必殺 -5~-3反擊 3~5生命 +300抗魔 +190耐久 261",
+    "materials": [
+      {
+        "name": "達馬斯礦條",
+        "quantity": 10,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "萊姆騎士礦條",
+        "quantity": 13,
+        "image": "6113a56e5cc410669085721cf5de382b.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "石墨條",
+        "quantity": 9,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "雅達曼鎝條",
+        "quantity": 9,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 18,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "shield-12c",
+    "name": "碎藥之盾",
+    "category": "shield",
+    "level": 12,
+    "variant": "C",
+    "image": "1c56c09499fb0ce354709b21251a254b.png",
+    "mpCost": 240,
+    "stats": "防禦 167~168反擊 +15閃躲 +5生命 +600抗魔 +200耐久 250~300",
+    "materials": [
+      {
+        "name": "鋼騎之礦",
+        "quantity": 5,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 7,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "藤木",
+        "quantity": 12,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "石墨條",
+        "quantity": 15,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 20,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "shield-13a",
+    "name": "描金盾",
+    "category": "shield",
+    "level": 13,
+    "variant": "A",
+    "image": "f0742128a49dd127b5cab67c46f939e2.png",
+    "mpCost": 260,
+    "stats": "",
+    "materials": [
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "桃花心木",
+        "quantity": 20,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 7,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 4,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "shield-13b",
+    "name": "堅守大盾",
+    "category": "shield",
+    "level": 13,
+    "variant": "B",
+    "image": "f9f9c760784427a27ce96f79d14bde66.png",
+    "mpCost": 260,
+    "stats": "防禦 +197必殺 8~10反擊 4~6生命 +500抗魔 +245耐久 254",
+    "materials": [
+      {
+        "name": "桃花心木",
+        "quantity": 40,
+        "image": "b98c9cff71a9c2f032c57b132bd02990.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 9,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 9,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 13,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 4,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "shield-13c",
+    "name": "風虎之盾",
+    "category": "shield",
+    "level": 13,
+    "variant": "C",
+    "image": "3164e1b8fbead674a7a72fa9abfb210a.png",
+    "mpCost": 260,
+    "stats": "防禦 +197必殺 -9反擊 +20閃躲 +10生命 +800抗魔 +250耐久 326",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 40,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "火山岩石",
+        "quantity": 5,
+        "image": "8c9c5c4aeb443551b4b43ddc8869ef55.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "光輝結晶",
+        "quantity": 5,
+        "image": "971503002bee9a8df25fe0cdecc56762.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "塵封的鐵盾",
+        "quantity": 1,
+        "image": "11a92e8167a4202d833e5301a792124d.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "shield-14a",
+    "name": "玉石盾",
+    "category": "shield",
+    "level": 14,
+    "variant": "A",
+    "image": "ea86c8a76cacde65fc442d067afeb6f3.png",
+    "mpCost": 280,
+    "stats": "防禦 +162敏捷 -50必殺 +10抗魔 +156",
+    "materials": [
+      {
+        "name": "檜木",
+        "quantity": 20,
+        "image": "6a977090f320485109ba6b570ae30ca2.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "謝爾哈特礦條",
+        "quantity": 9,
+        "image": "cefb6dca088f219d76edc479c1b93b5e.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "石墨條",
+        "quantity": 11,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 10,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 6,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "shield-14b",
+    "name": "護城龍盾",
+    "category": "shield",
+    "level": 14,
+    "variant": "B",
+    "image": "6e8d57ca1eb66946c86acccfb83d02cd.png",
+    "mpCost": 280,
+    "stats": "防禦 +216反擊 +5命中 +10生命 +1000抗魔 +275",
+    "materials": [
+      {
+        "name": "冰龍石",
+        "quantity": 3,
+        "image": "69c2bd67643b6402897ec74bcfbde81c.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 20,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 16,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 6,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 16,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "shield-15a",
+    "name": "鬼面盾",
+    "category": "shield",
+    "level": 15,
+    "variant": "A",
+    "image": "e2c1e701fa2926cc7c46405e7d51f7f3.png",
+    "mpCost": 300,
+    "stats": "防禦 +210必殺 +5反擊 +6命中 +6閃躲 +6抗魔 +179",
+    "materials": [
+      {
+        "name": "妖草的血",
+        "quantity": 2,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 7,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 11,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "紫英石",
+        "quantity": 9,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 7,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  },
+  {
+    "id": "shield-15b",
+    "name": "薩圖爾努斯之盾",
+    "category": "shield",
+    "level": 15,
+    "variant": "B",
+    "image": "0a76f9ed868516be742a01f425056839.png",
+    "mpCost": 300,
+    "stats": "攻擊 97~100防禦 +283必殺 +5反擊 +15閃躲 +5抗魔 +290",
+    "materials": [
+      {
+        "name": "鋼鐵斷刃",
+        "quantity": 4,
+        "image": "27e270b7944ddb77d96ce8bfb19e35b3.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "冰龍石",
+        "quantity": 4,
+        "image": "69c2bd67643b6402897ec74bcfbde81c.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 10,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 8,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "石油",
+        "quantity": 6,
+        "image": "5cf1495397925eeb92a06df73d6f2fe0.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]

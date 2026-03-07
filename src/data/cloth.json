@@ -1,0 +1,1436 @@
+[
+  {
+    "id": "cloth-1a",
+    "name": "旅人之服",
+    "category": "cloth",
+    "level": 1,
+    "variant": "A",
+    "image": "da891bce6dcc1d75df635c4b41fb689c.png",
+    "mpCost": 20,
+    "stats": "防禦 7~14閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 4,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "印度輕木",
+        "quantity": 10,
+        "image": "7db530f21426d1e50efbd75e21f145d2.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cloth-1b",
+    "name": "保護衣",
+    "category": "cloth",
+    "level": 1,
+    "variant": "B",
+    "image": "3a61b7debe76f3096de510bed24385d4.png",
+    "mpCost": 20,
+    "stats": "防禦 11~21閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 3,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 3,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 2,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "cloth-2a",
+    "name": "羽毛裝",
+    "category": "cloth",
+    "level": 2,
+    "variant": "A",
+    "image": "18c6f75d8d2a558c101de5788c925ce2.png",
+    "mpCost": 40,
+    "stats": "防禦 15~28閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 11,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 2,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "cloth-2b",
+    "name": "皮裝",
+    "category": "cloth",
+    "level": 2,
+    "variant": "B",
+    "image": "1f2c21fd9ab5b3a15860be629f551768.png",
+    "mpCost": 40,
+    "stats": "防禦 19~35閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "銅條",
+        "quantity": 2,
+        "image": "f0f365d099852428840747a73a839216.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 5,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 5,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 4,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "cloth-3a",
+    "name": "硬皮服",
+    "category": "cloth",
+    "level": 3,
+    "variant": "A",
+    "image": "2501a4ac7c28a9e90e0d4244ced341c7.png",
+    "mpCost": 60,
+    "stats": "防禦 21~42閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 3,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "麻布",
+        "quantity": 5,
+        "image": "0008ed7898f3545ebec5cd41d729430a.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "木棉布",
+        "quantity": 5,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "毛氈",
+        "quantity": 6,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "cloth-3b",
+    "name": "鎖鏈裝",
+    "category": "cloth",
+    "level": 3,
+    "variant": "B",
+    "image": "b8b4de54f48aa6af4f567f48de58c58f.png",
+    "mpCost": 60,
+    "stats": "防禦 29~49閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 15,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 2,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "cloth-4a",
+    "name": "布甲",
+    "category": "cloth",
+    "level": 4,
+    "variant": "A",
+    "image": "1f2c21fd9ab5b3a15860be629f551768.png",
+    "mpCost": 80,
+    "stats": "防禦 36~56閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 7,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "cloth-4b",
+    "name": "襯甲",
+    "category": "cloth",
+    "level": 4,
+    "variant": "B",
+    "image": "6b1017f80c3cf7bb8b1a1077a4b6b7fc.png",
+    "mpCost": 80,
+    "stats": "防禦 41~63閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "金條",
+        "quantity": 4,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "毛氈",
+        "quantity": 10,
+        "image": "2a8b951b1d8b60d8b49826034559b49e.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "cloth-5a",
+    "name": "環服",
+    "category": "cloth",
+    "level": 5,
+    "variant": "A",
+    "image": "0e2dcd88a590e629df45891b697c2972.png",
+    "mpCost": 100,
+    "stats": "防禦 49~70閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 6,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 5,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cloth-5b",
+    "name": "士兵護衣",
+    "category": "cloth",
+    "level": 5,
+    "variant": "B",
+    "image": "b61be657d21cb2d581f4df41a54120fb.png",
+    "mpCost": 100,
+    "stats": "防禦 54~77閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "銀條",
+        "quantity": 5,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "細線",
+        "quantity": 5,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cloth-5c",
+    "name": "功夫裝",
+    "category": "cloth",
+    "level": 5,
+    "variant": "C",
+    "image": "35b8d68555365388b81575a6b366893b.png",
+    "mpCost": 100,
+    "stats": "防禦 +43抗魔 +18耐久 300~400",
+    "materials": [
+      {
+        "name": "茱萸木",
+        "quantity": 20,
+        "image": "2db5e666f9f536a162c8388456ebe94f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "絹布",
+        "quantity": 4,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "純銀條",
+        "quantity": 3,
+        "image": "6161dd546b552d38dab1dc26fefb3280.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "金條",
+        "quantity": 7,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "鋁條",
+        "quantity": 4,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "cloth-6a",
+    "name": "長索錐衣",
+    "category": "cloth",
+    "level": 6,
+    "variant": "A",
+    "image": "2501a4ac7c28a9e90e0d4244ced341c7.png",
+    "mpCost": 120,
+    "stats": "防禦 63~84閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "銀條",
+        "quantity": 7,
+        "image": "23cad856db0ab3dbcc4a058544b9921f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "cloth-6b",
+    "name": "索錐上衣",
+    "category": "cloth",
+    "level": 6,
+    "variant": "B",
+    "image": "a0245e04d6dbd626394f32c4e9490a42.png",
+    "mpCost": 120,
+    "stats": "防禦 68~91閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 15,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "金條",
+        "quantity": 5,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "鹿皮",
+        "quantity": 20,
+        "image": "e0246d61d5bb88e7a9230ad20a2105dc.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "cloth-7a",
+    "name": "骨衣",
+    "category": "cloth",
+    "level": 7,
+    "variant": "A",
+    "image": "7c6efff0f6efb9056c3288c85c2b1aa6.png",
+    "mpCost": 140,
+    "stats": "防禦 79~105閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "白金條",
+        "quantity": 5,
+        "image": "5c88e25621cef73c8a1753723aa0c500.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "綿",
+        "quantity": 5,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 5,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 10,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "cloth-7b",
+    "name": "超級衣服",
+    "category": "cloth",
+    "level": 7,
+    "variant": "B",
+    "image": "5f65adf5dda77fd4a24989424c12b12a.png",
+    "mpCost": 140,
+    "stats": "防禦 74~98抗毒 +8抗石化 +8閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "綿",
+        "quantity": 20,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "莎蓮娜線",
+        "quantity": 10,
+        "image": "da878f98432740926a53c8c380007ab7.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "妖草的血",
+        "quantity": 1,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "cloth-7c",
+    "name": "水龍之衣",
+    "category": "cloth",
+    "level": 7,
+    "variant": "C",
+    "image": "3e4f7a18f2deb1382687ad52cd64e461.png",
+    "mpCost": 140,
+    "stats": "防禦 +30閃躲 +80耐久 200",
+    "materials": [
+      {
+        "name": "破爛的衣服",
+        "quantity": 1,
+        "image": "c70f60023f6b6ddf3005d2d7246f35a2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "鋼騎之礦",
+        "quantity": 2,
+        "image": "9916acb98754c77d7b10581a128baa8e.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 2,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "百里香",
+        "quantity": 20,
+        "image": "0f9ec6833b5f9056b110768f9d323a87.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "cloth-8a",
+    "name": "疾風之衣",
+    "category": "cloth",
+    "level": 8,
+    "variant": "A",
+    "image": "c74e4f14e04d5bcaf5fa60cbbdb4d92a.png",
+    "mpCost": 160,
+    "stats": "防禦 100~112命中 +2閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "地的水晶碎片",
+        "quantity": 50,
+        "image": "cedf23d5208d579a6bca5e51c078fbd2.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "水的水晶碎片",
+        "quantity": 50,
+        "image": "a564860bb32d5fde60b40e4bc98dd3b7.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "火的水晶碎片",
+        "quantity": 50,
+        "image": "d2411a4a9747e6eb832840d55212a67b.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "風的水晶碎片",
+        "quantity": 50,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 20,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "cloth-8b",
+    "name": "步兵戰衣",
+    "category": "cloth",
+    "level": 8,
+    "variant": "B",
+    "image": "5907fc89c6f0bfba09be271d9e2ce64d.png",
+    "mpCost": 160,
+    "stats": "防禦 89~119閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "鐵條",
+        "quantity": 10,
+        "image": "020fbbab819db109a2be80482bb3fbab.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "幻之銀條",
+        "quantity": 5,
+        "image": "13be00ad0a1071626c19228a1291ce0f.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 5,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "cloth-8c",
+    "name": "獸骨之衣+",
+    "category": "cloth",
+    "level": 8,
+    "variant": "C",
+    "image": "7c6efff0f6efb9056c3288c85c2b1aa6.png",
+    "mpCost": 160,
+    "stats": "防禦 88~115敏捷 10~20閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "幻之鋼條",
+        "quantity": 13,
+        "image": "1bdbed440274ef61f9c39245a77db3d0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "絹布",
+        "quantity": 15,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "魔法紅蘿蔔",
+        "quantity": 20,
+        "image": "6a6cb752d3cf056e7a0d4d7f3f0720c4.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "藍龍之鱗",
+        "quantity": 20,
+        "image": "335d109371b6b0bf5221bd4193bde16e.png",
+        "materialLevel": 8
+      }
+    ]
+  },
+  {
+    "id": "cloth-9a",
+    "name": "勇者之衣",
+    "category": "cloth",
+    "level": 9,
+    "variant": "A",
+    "image": "fbd40ca0b3481fe99324d4f95f7f6a83.png",
+    "mpCost": 180,
+    "stats": "防禦 116~133閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 1,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "木棉布",
+        "quantity": 10,
+        "image": "928ce949d4b6a8cd9bae2277b1db8125.png",
+        "materialLevel": 2
+      },
+      {
+        "name": "細線",
+        "quantity": 10,
+        "image": "35e08b4f659d2f2237aa2e28fbfa1461.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 5,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "細麻布",
+        "quantity": 10,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "cloth-9b",
+    "name": "女神之衣",
+    "category": "cloth",
+    "level": 9,
+    "variant": "B",
+    "image": "898c93820af064d6fa3a829afb4bf0f5.png",
+    "mpCost": 180,
+    "stats": "防禦 +95命中 +2閃躲 +15耐久 300~400",
+    "materials": [
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 10,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "細麻布",
+        "quantity": 15,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 1,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      },
+      {
+        "name": "誓言之證",
+        "quantity": 1,
+        "image": "cfe3c86eb715dc53723f32394813a5fd.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "cloth-10a",
+    "name": "不死鳥之服",
+    "category": "cloth",
+    "level": 10,
+    "variant": "A",
+    "image": "d498d9479c8cb849d774a8bf7cf38919.png",
+    "mpCost": 200,
+    "stats": "防禦 135~147閃躲 +5耐久 300~400",
+    "materials": [
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 1,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "綿",
+        "quantity": 10,
+        "image": "f13e51d22647b4120147e60fe2f109cf.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "絹布",
+        "quantity": 10,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "傑諾瓦線",
+        "quantity": 10,
+        "image": "fa66645fa9c018d10e3926c4c54cf8bb.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 10,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "cloth-10b",
+    "name": "靈魂之服",
+    "category": "cloth",
+    "level": 10,
+    "variant": "B",
+    "image": "5ea73739fede500271da2b662fd816b2.png",
+    "mpCost": 200,
+    "stats": "防禦 +120命中 +2閃躲 +5耐久 300~400氣功彈耗魔-10%",
+    "materials": [
+      {
+        "name": "絹布",
+        "quantity": 20,
+        "image": "2ed3c5d77940fac00c3c92866dd1ff3d.png",
+        "materialLevel": 6
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 15,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "神眼",
+        "quantity": 1,
+        "image": "432199df98c5d6427fe5194ee2fddc6f.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "妖草的血",
+        "quantity": 1,
+        "image": "ca94f02885bd53acae7239e596cdbeba.png",
+        "materialLevel": 4
+      },
+      {
+        "name": "魔族的水晶",
+        "quantity": 4,
+        "image": "675a22ddc04352bba00b004024ad0cf0.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "cloth-11a",
+    "name": "海洋之服",
+    "category": "cloth",
+    "level": 11,
+    "variant": "A",
+    "image": "4a71bff26d1b1b3bfe81982a386b55bb.png",
+    "mpCost": 220,
+    "stats": "攻擊 +20防禦 163~181命中 +5閃躲 -5耐久 200~250",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 5,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "達馬斯礦條",
+        "quantity": 6,
+        "image": "fa9af7e50ce4f6640df5b932e5ce50ef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 6,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "阿巴尼斯製的線",
+        "quantity": 10,
+        "image": "fbedf4987f91895adeb20819e1401650.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "風龍蜥的甲殼",
+        "quantity": 2,
+        "image": "938d8c65612c2d110bd062a4b6f27795.png",
+        "materialLevel": 7
+      }
+    ]
+  },
+  {
+    "id": "cloth-11b",
+    "name": "幻想之服",
+    "category": "cloth",
+    "level": 11,
+    "variant": "B",
+    "image": "6f89455a883fd2329f7b5b805bcf3774.png",
+    "mpCost": 220,
+    "stats": "防禦 90~92回復 +10必殺 +5耐久 200~250",
+    "materials": [
+      {
+        "name": "鋁條",
+        "quantity": 9,
+        "image": "0f5422268fde687fdca49375dcc98fed.png",
+        "materialLevel": 3
+      },
+      {
+        "name": "勒格耐席鉧條",
+        "quantity": 13,
+        "image": "6031d52c387ddf3e2bc189e09fd908e0.png",
+        "materialLevel": 9
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 20,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "單木",
+        "quantity": 40,
+        "image": "bda8769c577aa5382b41576ff309adef.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "火焰之魂",
+        "quantity": 2,
+        "image": "681950d48b2bf2f1a84c8348d8a675a5.png",
+        "materialLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "cloth-11c",
+    "name": "紫綢服",
+    "category": "cloth",
+    "level": 11,
+    "variant": "C",
+    "image": "a34fe41d36674656b1904719a7daead6.png",
+    "mpCost": 220,
+    "stats": "防禦 159~170敏捷 10~18抗酒醉 +10必殺 5~10耐久 200~250",
+    "materials": [
+      {
+        "name": "鴨絨",
+        "quantity": 7,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "阿巴尼斯製的布",
+        "quantity": 5,
+        "image": "38908a4f47f001578a0c9894d7b9ca75.png",
+        "materialLevel": 8
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 12,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "細麻布",
+        "quantity": 6,
+        "image": "36e4b9bfc4ba1ef05f5e9fbf82f01abf.png",
+        "materialLevel": 9
+      }
+    ]
+  },
+  {
+    "id": "cloth-12a",
+    "name": "彩絲裳",
+    "category": "cloth",
+    "level": 12,
+    "variant": "A",
+    "image": "94976ebcf5310d8236477dba819232f2.png",
+    "mpCost": 240,
+    "stats": "命中 +6閃躲 +10",
+    "materials": [
+      {
+        "name": "石墨條",
+        "quantity": 3,
+        "image": "7e3a2be7b3736c36c6e96df34bfba167.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "喜馬拉斯礦條",
+        "quantity": 6,
+        "image": "2584d51b624fb38a552ca7eb50300caa.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 6,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 7,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 12,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      }
+    ]
+  },
+  {
+    "id": "cloth-12b",
+    "name": "天使背心",
+    "category": "cloth",
+    "level": 12,
+    "variant": "B",
+    "image": "d2e1cf031ff3b2d6ac7aeeb216a1031d.png",
+    "mpCost": 240,
+    "stats": "防禦 148~150回復 20~23命中 8~10耐久 255",
+    "materials": [
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "奧利哈鋼條",
+        "quantity": 7,
+        "image": "e201d15f5931df5bc01862677819a46b.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鉛錠",
+        "quantity": 7,
+        "image": "2f9366968b691a312cfb732240572c83.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 11,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 13,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "cloth-12c",
+    "name": "碎藥之衣",
+    "category": "cloth",
+    "level": 12,
+    "variant": "C",
+    "image": "6b1017f80c3cf7bb8b1a1077a4b6b7fc.png",
+    "mpCost": 240,
+    "stats": "防禦 106~124必殺 +10閃躲 +80魔力 +500耐久 250~300",
+    "materials": [
+      {
+        "name": "德特家的布",
+        "quantity": 5,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "紫茉莉",
+        "quantity": 7,
+        "image": "48a296200a5113e49ec8fad2e99585c1.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 12,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 15,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "藤木",
+        "quantity": 20,
+        "image": "d84f757202b241e619f5a5440e616744.png",
+        "materialLevel": 12
+      }
+    ]
+  },
+  {
+    "id": "cloth-13a",
+    "name": "描金服",
+    "category": "cloth",
+    "level": 13,
+    "variant": "A",
+    "image": "16e7562dfce02a9be9a43321a4bd847c.png",
+    "mpCost": 260,
+    "stats": "精神 +50",
+    "materials": [
+      {
+        "name": "朱砂錠",
+        "quantity": 5,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "金條",
+        "quantity": 20,
+        "image": "2b75d0eda9657063a2f248de36cb942b.png",
+        "materialLevel": 5
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 4,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 8,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 8,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      }
+    ]
+  },
+  {
+    "id": "cloth-13b",
+    "name": "仿古衣衫",
+    "category": "cloth",
+    "level": 13,
+    "variant": "B",
+    "image": "2918da6bf3b93b44e97e8bac8e5848fb.png",
+    "mpCost": 260,
+    "stats": "防禦 +184命中 +5閃躲 +18",
+    "materials": [
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "朱砂錠",
+        "quantity": 6,
+        "image": "d31721129426e8a2dde626b0de5eec2f.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "開米士毛線",
+        "quantity": 6,
+        "image": "845fce77378a9eea832bc44205640c56.png",
+        "materialLevel": 10
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 4,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 19,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      }
+    ]
+  },
+  {
+    "id": "cloth-13c",
+    "name": "風虎之衣",
+    "category": "cloth",
+    "level": 13,
+    "variant": "C",
+    "image": "8c8066efd121923159454230d3abe958.png",
+    "mpCost": 260,
+    "stats": "防禦 +149必殺 +2命中 +10閃躲 +80魔力 +1000",
+    "materials": [
+      {
+        "name": "風的水晶碎片",
+        "quantity": 100,
+        "image": "3b83bd86e5d438b933729706de1e9516.png",
+        "materialLevel": 1
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 40,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "銀絲綿線",
+        "quantity": 5,
+        "image": "61b70c318dedc9ec2e59e087daec4d7e.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "黯淡的獸皮",
+        "quantity": 5,
+        "image": "fd0fa67703d8b08be68cd7bf524b9a01.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "塵封的衣服",
+        "quantity": 1,
+        "image": "e2337f23580bb1846b46604028d22835.png",
+        "materialLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "cloth-14a",
+    "name": "絲縷玉衣",
+    "category": "cloth",
+    "level": 14,
+    "variant": "A",
+    "image": "73087b9361f408fbbb3cb614a3681e6c.png",
+    "mpCost": 280,
+    "stats": "",
+    "materials": [
+      {
+        "name": "紫英石",
+        "quantity": 4,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "鴨絨",
+        "quantity": 3,
+        "image": "187e6240e6187de914b4ea8d0642405f.png",
+        "materialLevel": 11
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 6,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 7,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 6,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "cloth-14b",
+    "name": "突擊裝",
+    "category": "cloth",
+    "level": 14,
+    "variant": "B",
+    "image": "030545101136a2f707ed841d5d9ca5c0.png",
+    "mpCost": 280,
+    "stats": "攻擊 +20防禦 162~164閃躲 7~15生命 304~310耐久 315",
+    "materials": [
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "紫英石",
+        "quantity": 12,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "鵝絨",
+        "quantity": 9,
+        "image": "0cd3cae018c6bfccf8826291baa72389.png",
+        "materialLevel": 12
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 9,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 10,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      }
+    ]
+  },
+  {
+    "id": "cloth-15a",
+    "name": "流螢服",
+    "category": "cloth",
+    "level": 15,
+    "variant": "A",
+    "image": "990e0ab76fd5e4474a825c859d2d42c2.png",
+    "mpCost": 300,
+    "stats": "陽炎耗魔-25%",
+    "materials": [
+      {
+        "name": "紫英石",
+        "quantity": 8,
+        "image": "ecc6b5785d412a5b05443442620182c6.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 12,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 8,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 6,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      },
+      {
+        "name": "德特家的布",
+        "quantity": 3,
+        "image": "8cbddbff7f94b02a74d7f156f7ee31a6.png",
+        "materialLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "cloth-15b",
+    "name": "尼普頓緊身背心",
+    "category": "cloth",
+    "level": 15,
+    "variant": "B",
+    "image": "b2c85c533f8d3823f38ae3d02b9a4999.png",
+    "mpCost": 300,
+    "stats": "防禦 +256敏捷 +68必殺 +5命中 +6閃躲 +6",
+    "materials": [
+      {
+        "name": "冰龍石",
+        "quantity": 4,
+        "image": "69c2bd67643b6402897ec74bcfbde81c.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "炎獸皮",
+        "quantity": 40,
+        "image": "ed0ea95ce4aaff5b3265d190b263fb16.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "硬綢布",
+        "quantity": 9,
+        "image": "42ecd6e1bff1be79426d4442a076d950.png",
+        "materialLevel": 13
+      },
+      {
+        "name": "寧麻布",
+        "quantity": 17,
+        "image": "dfecd4763e908c9a8dd95c514be206b7.png",
+        "materialLevel": 14
+      },
+      {
+        "name": "水鳥羽絨",
+        "quantity": 6,
+        "image": "27adc9e3f52d8078fd99120a1f5469c4.png",
+        "materialLevel": 15
+      }
+    ]
+  }
+]
