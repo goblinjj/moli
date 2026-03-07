@@ -1,12 +1,14 @@
 import { useState } from "react";
-import type { Recipe, CostBreakdown } from "../lib/types";
+import type { Recipe, CostBreakdown, PriceConfig } from "../lib/types";
 
 interface RecipeCardProps {
   recipe: Recipe;
   breakdown: CostBreakdown;
+  config: PriceConfig;
+  onConfigChange: (config: PriceConfig) => void;
 }
 
-export default function RecipeCard({ recipe, breakdown }: RecipeCardProps) {
+export default function RecipeCard({ recipe, breakdown, config, onConfigChange }: RecipeCardProps) {
   const [expanded, setExpanded] = useState(false);
 
   const markup =
@@ -69,7 +71,24 @@ export default function RecipeCard({ recipe, breakdown }: RecipeCardProps) {
                 />
                 <span className="truncate text-xs">{mat.name}</span>
                 <span className="text-gray-400 flex-shrink-0 text-xs font-mono">x{mat.quantity}</span>
-                <span className="text-gray-300 text-xs flex-shrink-0 font-mono">@{mat.unitPrice}</span>
+                <span className="flex-shrink-0 text-xs font-mono text-gray-300">@</span>
+                <input
+                  type="number"
+                  className="w-16 bg-gray-50 border border-gray-200 rounded px-1.5 py-0.5 text-right text-gray-700 text-xs font-mono focus:outline-none focus:border-accent-400 focus:bg-white flex-shrink-0"
+                  value={config.materialPrices[mat.name] ?? 0}
+                  min={0}
+                  onClick={(e) => e.stopPropagation()}
+                  onChange={(e) => {
+                    e.stopPropagation();
+                    onConfigChange({
+                      ...config,
+                      materialPrices: {
+                        ...config.materialPrices,
+                        [mat.name]: Number(e.target.value) || 0,
+                      },
+                    });
+                  }}
+                />
                 <span className="ml-auto font-medium flex-shrink-0 text-xs font-mono tabular-nums">{mat.total}元</span>
               </div>
           ))}

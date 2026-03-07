@@ -150,7 +150,7 @@ export default function Calculator({ recipes }: CalculatorProps) {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
               {breakdowns.map(({ recipe, breakdown }) => (
-                <RecipeCard key={recipe.id} recipe={recipe} breakdown={breakdown} />
+                <RecipeCard key={recipe.id} recipe={recipe} breakdown={breakdown} config={config} onConfigChange={handleConfigChange} />
               ))}
             </div>
           )}
