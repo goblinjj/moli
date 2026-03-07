@@ -74,6 +74,7 @@ for (const g of CATEGORY_GROUPS) {
 }
 
 export default function Calculator({ recipes }: CalculatorProps) {
+  const [activeGroup, setActiveGroup] = useState(0);
   const [activeCategory, setActiveCategory] = useState<Category>("sword");
   const [searchQuery, setSearchQuery] = useState("");
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
@@ -140,27 +141,43 @@ export default function Calculator({ recipes }: CalculatorProps) {
         </h1>
       </header>
 
-      {/* Category navigation */}
-      <nav className="bg-white border-b border-gray-200 px-5 lg:px-6 py-2.5 overflow-x-auto scrollbar-hide">
-        <div className="flex items-center gap-4">
-          {CATEGORY_GROUPS.map((group) => (
-            <div key={group.group} className="flex items-center gap-1 flex-shrink-0">
-              <span className="text-[11px] text-gray-400 font-medium mr-0.5">{group.group}</span>
-              {group.items.map((cat) => (
-                <button
-                  key={cat.id}
-                  type="button"
-                  onClick={() => handleCategoryChange(cat.id)}
-                  className={`px-3 py-1 rounded-md text-xs font-medium whitespace-nowrap transition-all duration-150 ${
-                    activeCategory === cat.id
-                      ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
-                      : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
+      {/* Category navigation - two level */}
+      <nav className="bg-white border-b border-gray-200">
+        {/* Level 1: group tabs */}
+        <div className="flex px-5 lg:px-6 gap-0 border-b border-gray-100">
+          {CATEGORY_GROUPS.map((group, idx) => (
+            <button
+              key={group.group}
+              type="button"
+              onClick={() => {
+                setActiveGroup(idx);
+                handleCategoryChange(group.items[0].id);
+              }}
+              className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
+                activeGroup === idx
+                  ? "border-accent-500 text-accent-600"
+                  : "border-transparent text-gray-500 hover:text-gray-700"
+              }`}
+            >
+              {group.group}
+            </button>
+          ))}
+        </div>
+        {/* Level 2: sub-category pills */}
+        <div className="flex items-center gap-1.5 px-5 lg:px-6 py-2 overflow-x-auto scrollbar-hide">
+          {CATEGORY_GROUPS[activeGroup].items.map((cat) => (
+            <button
+              key={cat.id}
+              type="button"
+              onClick={() => handleCategoryChange(cat.id)}
+              className={`px-3.5 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-150 ${
+                activeCategory === cat.id
+                  ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+              }`}
+            >
+              {cat.label}
+            </button>
           ))}
         </div>
       </nav>
