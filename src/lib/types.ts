@@ -20,7 +20,6 @@ export interface Recipe {
 
 export interface PriceConfig {
   materialPrices: Record<string, number>;
-  mpPrice: number;
   recipeMpCosts: Record<string, number>;
   markupRates: Record<Category, number>;
 }

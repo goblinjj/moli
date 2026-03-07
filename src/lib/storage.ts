@@ -11,7 +11,6 @@ export function loadConfig(defaultConfig: PriceConfig): PriceConfig {
     // Merge with defaults so new materials get default prices
     return {
       materialPrices: { ...defaultConfig.materialPrices, ...parsed.materialPrices },
-      mpPrice: parsed.mpPrice ?? defaultConfig.mpPrice,
       recipeMpCosts: { ...defaultConfig.recipeMpCosts, ...parsed.recipeMpCosts },
       markupRates: { ...defaultConfig.markupRates, ...parsed.markupRates },
     };

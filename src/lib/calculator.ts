@@ -7,7 +7,7 @@ export function calculateCost(
   visited: Set<string> = new Set()
 ): CostBreakdown {
   const mpCostPoints = config.recipeMpCosts[recipe.id] ?? recipe.mpCost;
-  const mpTotal = mpCostPoints * config.mpPrice;
+  const mpTotal = mpCostPoints;
 
   // Build a map of product names → recipes for recursive lookup
   const recipeByName = new Map<string, Recipe>();

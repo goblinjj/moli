@@ -75,69 +75,53 @@ export default function Calculator({ recipes }: CalculatorProps) {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
       <header className="bg-slate-900 text-white px-6 py-3.5 shadow-lg">
-        <div className="flex items-center justify-between">
-          <h1 className="text-lg font-bold tracking-wide select-none">
-            <span className="text-accent-500">MR</span>
-            <span className="mx-1.5 text-slate-400">|</span>
-            魔力宝贝生产计算器
-          </h1>
-          <div className="flex items-center gap-1.5">
-            {(["bow", "cooking"] as Category[]).map((cat) => (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => handleCategoryChange(cat)}
-                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-all duration-150 ${
-                  activeCategory === cat
-                    ? "bg-accent-500 text-white shadow-sm shadow-accent-500/30"
-                    : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-slate-200"
-                }`}
-              >
-                {CATEGORY_LABELS[cat]}
-              </button>
-            ))}
-          </div>
-        </div>
-        {/* Global settings bar */}
-        <div className="flex items-center gap-6 mt-2.5 text-sm">
-          <div className="flex items-center gap-2">
-            <span className="text-slate-400 text-xs">补魔单价</span>
-            <input
-              type="number"
-              className="w-16 bg-slate-700 border border-slate-600 rounded px-2 py-1 text-right text-slate-100 text-xs font-mono focus:outline-none focus:border-accent-400"
-              value={config.mpPrice || ''}
-              min={0}
-              onChange={(e) =>
-                handleConfigChange({ ...config, mpPrice: Number(e.target.value) || 0 })
-              }
-            />
-          </div>
-          {(["bow", "cooking"] as Category[]).map((cat) => (
-            <div key={cat} className="flex items-center gap-2">
-              <span className="text-slate-400 text-xs">{CATEGORY_LABELS[cat]}加价</span>
-              <input
-                type="number"
-                className="w-16 bg-slate-700 border border-slate-600 rounded px-2 py-1 text-right text-slate-100 text-xs font-mono focus:outline-none focus:border-accent-400"
-                value={config.markupRates[cat] || ''}
-                min={0}
-                onChange={(e) =>
-                  handleConfigChange({
-                    ...config,
-                    markupRates: {
-                      ...config.markupRates,
-                      [cat]: Number(e.target.value) || 0,
-                    },
-                  })
-                }
-              />
-              <span className="text-slate-500 text-xs">%</span>
-            </div>
-          ))}
-        </div>
+        <h1 className="text-lg font-bold tracking-wide select-none">
+          <span className="text-accent-500">MR</span>
+          <span className="mx-1.5 text-slate-400">|</span>
+          魔力宝贝生产计算器
+        </h1>
       </header>
 
       {/* Main content */}
       <main className="flex-1 overflow-y-auto p-5 lg:p-6">
+        {/* Category tabs */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-3 -mx-1 px-1 scrollbar-hide">
+          {(["bow", "cooking"] as Category[]).map((cat) => (
+            <button
+              key={cat}
+              type="button"
+              onClick={() => handleCategoryChange(cat)}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-150 ${
+                activeCategory === cat
+                  ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:text-gray-900 shadow-sm"
+              }`}
+            >
+              {CATEGORY_LABELS[cat]}
+            </button>
+          ))}
+          <span className="w-px h-5 bg-gray-200 mx-1 flex-shrink-0" />
+          <div className="flex items-center gap-1.5 flex-shrink-0">
+            <span className="text-gray-400 text-xs">加价</span>
+            <input
+              type="number"
+              className="w-16 bg-white border border-gray-200 rounded-lg px-2 py-1.5 text-right text-gray-700 text-xs font-mono shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500"
+              value={config.markupRates[activeCategory] || ''}
+              min={0}
+              onChange={(e) =>
+                handleConfigChange({
+                  ...config,
+                  markupRates: {
+                    ...config.markupRates,
+                    [activeCategory]: Number(e.target.value) || 0,
+                  },
+                })
+              }
+            />
+            <span className="text-gray-400 text-xs">%</span>
+          </div>
+        </div>
+
         <SearchFilter
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}

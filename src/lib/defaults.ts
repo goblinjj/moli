@@ -22,7 +22,6 @@ export function generateDefaultConfig(recipes: Recipe[]): PriceConfig {
 
   return {
     materialPrices,
-    mpPrice: 1,
     recipeMpCosts,
     markupRates: { bow: 20, cooking: 20 },
   };
