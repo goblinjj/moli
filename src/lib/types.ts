@@ -26,7 +26,7 @@ export interface PriceConfig {
 }
 
 export interface CostBreakdown {
-  materialCosts: { name: string; quantity: number; unitPrice: number; total: number; image: string }[];
+  materialCosts: { name: string; quantity: number; unitPrice: number; total: number; image: string; isSubRecipe: boolean }[];
   mpCost: number;
   mpTotal: number;
   totalCost: number;

@@ -57,12 +57,10 @@ export default function RecipeCard({ recipe, breakdown }: RecipeCardProps) {
       >
         <div className="border-t border-gray-100 px-4 py-3 text-sm space-y-2">
           {/* Material breakdown */}
-          {breakdown.materialCosts.map((mat) => {
-            const isSubRecipe = mat.unitPrice !== Math.round(mat.unitPrice) || mat.total !== mat.unitPrice * mat.quantity;
-            return (
+          {breakdown.materialCosts.map((mat) => (
               <div
                 key={mat.name}
-                className={`flex items-center gap-2 ${isSubRecipe ? "text-accent-700 italic" : "text-gray-600"}`}
+                className={`flex items-center gap-2 ${mat.isSubRecipe ? "text-accent-700 italic" : "text-gray-600"}`}
               >
                 <img
                   src={`/items/${mat.image}`}
@@ -74,8 +72,7 @@ export default function RecipeCard({ recipe, breakdown }: RecipeCardProps) {
                 <span className="text-gray-300 text-xs flex-shrink-0 font-mono">@{mat.unitPrice}</span>
                 <span className="ml-auto font-medium flex-shrink-0 text-xs font-mono tabular-nums">{mat.total}元</span>
               </div>
-            );
-          })}
+          ))}
 
           {/* MP cost row */}
           <div className="flex items-center gap-2 text-gray-600">

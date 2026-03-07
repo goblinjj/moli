@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import type { PriceConfig, Recipe, Category } from "../lib/types";
+import { generateDefaultConfig } from "../lib/defaults";
 
 interface PriceSettingsProps {
   config: PriceConfig;
@@ -11,27 +12,6 @@ const CATEGORY_LABELS: Record<Category, string> = {
   bow: "造弓",
   cooking: "料理",
 };
-
-function getDefaultConfig(recipes: Recipe[]): PriceConfig {
-  const materialPrices: Record<string, number> = {};
-  for (const recipe of recipes) {
-    for (const mat of recipe.materials) {
-      if (!(mat.name in materialPrices)) {
-        materialPrices[mat.name] = 0;
-      }
-    }
-  }
-  const recipeMpCosts: Record<string, number> = {};
-  for (const recipe of recipes) {
-    recipeMpCosts[recipe.id] = recipe.mpCost;
-  }
-  return {
-    mpPrice: 1,
-    markupRates: { bow: 0, cooking: 0 },
-    materialPrices,
-    recipeMpCosts,
-  };
-}
 
 interface CollapsibleSectionProps {
   title: string;
@@ -101,7 +81,7 @@ export default function PriceSettings({ config, recipes, onChange }: PriceSettin
   }
 
   const handleReset = () => {
-    onChange(getDefaultConfig(recipes));
+    onChange(generateDefaultConfig(recipes));
   };
 
   return (

@@ -21,10 +21,12 @@ export function calculateCost(
     let unitPrice: number;
     const subRecipe = recipeByName.get(mat.name);
 
+    let isSubRecipe = false;
     if (subRecipe && !visited.has(subRecipe.id)) {
       // Recursive: material is a product in the recipe list
       const subCost = calculateCost(subRecipe, allRecipes, config, new Set(visited));
       unitPrice = subCost.totalCost;
+      isSubRecipe = true;
     } else {
       // Base material or circular dependency fallback
       unitPrice = config.materialPrices[mat.name] ?? 1;
@@ -36,6 +38,7 @@ export function calculateCost(
       unitPrice,
       total: unitPrice * mat.quantity,
       image: mat.image,
+      isSubRecipe,
     };
   });
 
