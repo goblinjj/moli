@@ -1,16 +1,20 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import type { Recipe, PriceConfig, Category } from "../lib/types";
+import type { Recipe, PriceConfig, Category, Gem, GemCategory } from "../lib/types";
 import { calculateCost } from "../lib/calculator";
 import { generateDefaultConfig } from "../lib/defaults";
 import { loadConfig, saveConfig } from "../lib/storage";
 import SearchFilter from "./SearchFilter";
 import RecipeCard from "./RecipeCard";
+import GemCard from "./GemCard";
 
 interface CalculatorProps {
   recipes: Recipe[];
+  gems: Gem[];
 }
 
-const CATEGORY_GROUPS: { group: string; items: { id: Category; label: string }[] }[] = [
+type SubCategory = Category | GemCategory;
+
+const CATEGORY_GROUPS: { group: string; isGem?: boolean; items: { id: SubCategory; label: string }[] }[] = [
   {
     group: "武器",
     items: [
@@ -63,6 +67,16 @@ const CATEGORY_GROUPS: { group: string; items: { id: Category; label: string }[]
       { id: "petCloth", label: "服裝" },
     ],
   },
+  {
+    group: "寶石",
+    isGem: true,
+    items: [
+      { id: "generalGem", label: "一般寶石" },
+      { id: "taskGem", label: "任務寶石" },
+      { id: "rubyGem", label: "紅寶石" },
+      { id: "petGem", label: "寵物寶石" },
+    ],
+  },
 ];
 
 // Flat lookup for label by category id
@@ -73,15 +87,17 @@ for (const g of CATEGORY_GROUPS) {
   }
 }
 
-export default function Calculator({ recipes }: CalculatorProps) {
+export default function Calculator({ recipes, gems }: CalculatorProps) {
   const [activeGroup, setActiveGroup] = useState(0);
-  const [activeCategory, setActiveCategory] = useState<Category>("sword");
+  const [activeCategory, setActiveCategory] = useState<SubCategory>("sword");
   const [searchQuery, setSearchQuery] = useState("");
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
   const [config, setConfig] = useState<PriceConfig>(() => {
     const defaults = generateDefaultConfig(recipes);
     return loadConfig(defaults);
   });
+
+  const isGemMode = CATEGORY_GROUPS[activeGroup]?.isGem === true;
 
   // Persist config to localStorage whenever it changes
   useEffect(() => {
@@ -94,6 +110,7 @@ export default function Calculator({ recipes }: CalculatorProps) {
 
   // Filter recipes: category -> search -> level
   const filteredRecipes = useMemo(() => {
+    if (isGemMode) return [];
     let result = recipes.filter((r) => r.category === activeCategory);
 
     if (searchQuery.trim()) {
@@ -106,14 +123,32 @@ export default function Calculator({ recipes }: CalculatorProps) {
     }
 
     return result;
-  }, [recipes, activeCategory, searchQuery, levelFilter]);
+  }, [recipes, activeCategory, searchQuery, levelFilter, isGemMode]);
+
+  // Filter gems
+  const filteredGems = useMemo(() => {
+    if (!isGemMode) return [];
+    let result = gems.filter((g) => g.category === activeCategory);
+
+    if (searchQuery.trim()) {
+      const q = searchQuery.trim().toLowerCase();
+      result = result.filter((g) => g.name.toLowerCase().includes(q));
+    }
+
+    return result;
+  }, [gems, activeCategory, searchQuery, isGemMode]);
 
   // Max level for the current category
   const maxLevel = useMemo(() => {
+    if (isGemMode) {
+      const categoryGems = gems.filter((g) => g.category === activeCategory);
+      if (categoryGems.length === 0) return 1;
+      return Math.max(...categoryGems.flatMap((g) => g.levels.map((l) => l.level)));
+    }
     const categoryRecipes = recipes.filter((r) => r.category === activeCategory);
     if (categoryRecipes.length === 0) return 1;
     return Math.max(...categoryRecipes.map((r) => r.level));
-  }, [recipes, activeCategory]);
+  }, [recipes, gems, activeCategory, isGemMode]);
 
   // Cost breakdowns for all filtered recipes
   const breakdowns = useMemo(() => {
@@ -124,7 +159,7 @@ export default function Calculator({ recipes }: CalculatorProps) {
   }, [filteredRecipes, recipes, config]);
 
   // Reset level filter when switching categories
-  const handleCategoryChange = useCallback((cat: Category) => {
+  const handleCategoryChange = useCallback((cat: SubCategory) => {
     setActiveCategory(cat);
     setLevelFilter(null);
     setSearchQuery("");
@@ -184,46 +219,64 @@ export default function Calculator({ recipes }: CalculatorProps) {
 
       {/* Main content */}
       <main className="flex-1 overflow-y-auto p-5 lg:p-6">
-        {/* Toolbar: search + level filter + markup */}
+        {/* Toolbar: search + level filter + markup (markup hidden in gem mode) */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 pb-2">
           <SearchFilter
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
             levelFilter={levelFilter}
             onLevelChange={setLevelFilter}
-            maxLevel={maxLevel}
+            maxLevel={isGemMode ? 0 : maxLevel}
           />
-          <div className="flex items-center gap-1.5 flex-shrink-0">
-            <span className="text-gray-400 text-xs">加价</span>
-            <input
-              type="number"
-              className="w-16 bg-white border border-gray-200 rounded-lg px-2 py-1.5 text-right text-gray-700 text-xs font-mono shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500"
-              value={config.markupRates[activeCategory] || ''}
-              min={0}
-              onChange={(e) =>
-                handleConfigChange({
-                  ...config,
-                  markupRates: {
-                    ...config.markupRates,
-                    [activeCategory]: Number(e.target.value) || 0,
-                  },
-                })
-              }
-            />
-            <span className="text-gray-400 text-xs">%</span>
-          </div>
+          {!isGemMode && (
+            <div className="flex items-center gap-1.5 flex-shrink-0">
+              <span className="text-gray-400 text-xs">加价</span>
+              <input
+                type="number"
+                className="w-16 bg-white border border-gray-200 rounded-lg px-2 py-1.5 text-right text-gray-700 text-xs font-mono shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500"
+                value={config.markupRates[activeCategory] || ''}
+                min={0}
+                onChange={(e) =>
+                  handleConfigChange({
+                    ...config,
+                    markupRates: {
+                      ...config.markupRates,
+                      [activeCategory]: Number(e.target.value) || 0,
+                    },
+                  })
+                }
+              />
+              <span className="text-gray-400 text-xs">%</span>
+            </div>
+          )}
         </div>
 
-        {breakdowns.length === 0 ? (
-          <div className="text-center text-slate-400 mt-16 text-sm">
-            没有找到匹配的配方
-          </div>
+        {isGemMode ? (
+          // Gem mode
+          filteredGems.length === 0 ? (
+            <div className="text-center text-slate-400 mt-16 text-sm">
+              没有找到匹配的宝石
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+              {filteredGems.map((gem) => (
+                <GemCard key={gem.id} gem={gem} />
+              ))}
+            </div>
+          )
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
-            {breakdowns.map(({ recipe, breakdown }) => (
-              <RecipeCard key={recipe.id} recipe={recipe} breakdown={breakdown} config={config} onConfigChange={handleConfigChange} />
-            ))}
-          </div>
+          // Recipe mode
+          breakdowns.length === 0 ? (
+            <div className="text-center text-slate-400 mt-16 text-sm">
+              没有找到匹配的配方
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+              {breakdowns.map(({ recipe, breakdown }) => (
+                <RecipeCard key={recipe.id} recipe={recipe} breakdown={breakdown} config={config} onConfigChange={handleConfigChange} />
+              ))}
+            </div>
+          )
         )}
       </main>
     </div>

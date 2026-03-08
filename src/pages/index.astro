@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Calculator from "../components/Calculator";
-import type { Recipe } from "../lib/types";
+import type { Recipe, Gem } from "../lib/types";
 
 import swordData from "../data/sword.json";
 import axeData from "../data/axe.json";
@@ -31,6 +31,11 @@ import petArmorData from "../data/petArmor.json";
 import petAccessoryData from "../data/petAccessory.json";
 import petClothData from "../data/petCloth.json";
 
+import generalGemData from "../data/gems/generalGem.json";
+import taskGemData from "../data/gems/taskGem.json";
+import rubyGemData from "../data/gems/rubyGem.json";
+import petGemData from "../data/gems/petGem.json";
+
 const recipes = [
   ...swordData, ...axeData, ...spearData, ...bowData, ...staffData,
   ...daggerData, ...throwData, ...bombData,
@@ -40,8 +45,12 @@ const recipes = [
   ...dragonData, ...fiveCData, ...scrollData,
   ...collarData, ...crystalData, ...petArmorData, ...petAccessoryData, ...petClothData,
 ] as Recipe[];
+
+const gems = [
+  ...generalGemData, ...taskGemData, ...rubyGemData, ...petGemData,
+] as Gem[];
 ---
 
 <Layout>
-  <Calculator client:load recipes={recipes} />
+  <Calculator client:load recipes={recipes} gems={gems} />
 </Layout>
