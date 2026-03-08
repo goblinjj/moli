@@ -27,6 +27,7 @@ const TYPE_COLORS: Record<string, string> = {
   "香草": "bg-emerald-100 text-emerald-700",
   "布料": "bg-blue-100 text-blue-700",
   "布料成品": "bg-indigo-100 text-indigo-700",
+  "食材": "bg-yellow-100 text-yellow-700",
 };
 
 function LocationList({ locations }: { locations: LocationEntry[] }) {
