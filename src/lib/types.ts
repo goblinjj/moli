@@ -37,3 +37,24 @@ export interface CostBreakdown {
   totalCost: number;
   sellingPrice: number;
 }
+
+export type GemCategory = "generalGem" | "taskGem" | "rubyGem" | "petGem";
+
+export interface GemEffect {
+  target: "weapon" | "armor" | "accessory";
+  description: string;
+}
+
+export interface GemLevel {
+  level: number;
+  grade: string;
+  effects: GemEffect[];
+}
+
+export interface Gem {
+  id: string;
+  name: string;
+  category: GemCategory;
+  image: string;
+  levels: GemLevel[];
+}
