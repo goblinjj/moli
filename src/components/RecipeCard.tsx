@@ -20,11 +20,10 @@ export default function RecipeCard({ recipe, breakdown, config, onConfigChange }
 
   return (
     <div
-      className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-200 cursor-pointer select-none"
-      onClick={() => setExpanded((prev) => !prev)}
+      className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-200 select-none"
     >
       {/* Collapsed header */}
-      <div className="flex items-center gap-3 p-3.5">
+      <div className="flex items-center gap-3 p-3.5 cursor-pointer" onClick={() => setExpanded((prev) => !prev)}>
         <div className="w-12 h-12 rounded-lg bg-gray-50 flex items-center justify-center flex-shrink-0">
           <img
             src={`/items/${recipe.image}`}
