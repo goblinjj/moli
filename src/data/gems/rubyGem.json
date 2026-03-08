@@ -3,96 +3,186 @@
     "id": "rubyGem-ruby",
     "name": "紅寶石",
     "category": "rubyGem",
-    "image": "gem-ruby.png",
+    "image": "15395.gif",
     "levels": [
       {
         "level": 1,
         "grade": "碎片",
         "effects": [
-          { "target": "weapon", "description": "回復+1, 耐久-1%" },
-          { "target": "armor", "description": "回復+1, 耐久-1%" },
-          { "target": "accessory", "description": "回復+1, 耐久-5" }
+          {
+            "target": "weapon",
+            "description": "回復+1, 耐久-1%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+1, 耐久-1%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+1, 耐久-5"
+          }
         ]
       },
       {
         "level": 2,
         "grade": "嚴重損壞",
         "effects": [
-          { "target": "weapon", "description": "回復+2, 耐久-2%" },
-          { "target": "armor", "description": "回復+2, 耐久-2%" },
-          { "target": "accessory", "description": "回復+2, 耐久-7" }
+          {
+            "target": "weapon",
+            "description": "回復+2, 耐久-2%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+2, 耐久-2%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+2, 耐久-7"
+          }
         ]
       },
       {
         "level": 3,
         "grade": "損壞",
         "effects": [
-          { "target": "weapon", "description": "回復+3, 耐久-3%" },
-          { "target": "armor", "description": "回復+3, 耐久-3%" },
-          { "target": "accessory", "description": "回復+3, 耐久-9" }
+          {
+            "target": "weapon",
+            "description": "回復+3, 耐久-3%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+3, 耐久-3%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+3, 耐久-9"
+          }
         ]
       },
       {
         "level": 4,
         "grade": "稍微損壞",
         "effects": [
-          { "target": "weapon", "description": "回復+4, 耐久-4%" },
-          { "target": "armor", "description": "回復+4, 耐久-4%" },
-          { "target": "accessory", "description": "回復+4, 耐久-11" }
+          {
+            "target": "weapon",
+            "description": "回復+4, 耐久-4%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+4, 耐久-4%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+4, 耐久-11"
+          }
         ]
       },
       {
         "level": 5,
         "grade": "完美寶石",
         "effects": [
-          { "target": "weapon", "description": "回復+5, 耐久-5%" },
-          { "target": "armor", "description": "回復+5, 耐久-5%" },
-          { "target": "accessory", "description": "回復+5, 耐久-13" }
+          {
+            "target": "weapon",
+            "description": "回復+5, 耐久-5%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+5, 耐久-5%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+5, 耐久-13"
+          }
         ]
       },
       {
         "level": 6,
         "grade": "稍微損壞結晶",
         "effects": [
-          { "target": "weapon", "description": "回復+6, 耐久-6%" },
-          { "target": "armor", "description": "回復+6, 耐久-6%" },
-          { "target": "accessory", "description": "回復+6, 耐久-15" }
+          {
+            "target": "weapon",
+            "description": "回復+6, 耐久-6%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+6, 耐久-6%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+6, 耐久-15"
+          }
         ]
       },
       {
         "level": 7,
         "grade": "損壞結晶",
         "effects": [
-          { "target": "weapon", "description": "回復+7, 耐久-7%" },
-          { "target": "armor", "description": "回復+7, 耐久-7%" },
-          { "target": "accessory", "description": "回復+7, 耐久-17" }
+          {
+            "target": "weapon",
+            "description": "回復+7, 耐久-7%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+7, 耐久-7%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+7, 耐久-17"
+          }
         ]
       },
       {
         "level": 8,
         "grade": "嚴重損壞結晶",
         "effects": [
-          { "target": "weapon", "description": "回復+8, 耐久-8%" },
-          { "target": "armor", "description": "回復+8, 耐久-8%" },
-          { "target": "accessory", "description": "回復+8, 耐久-19" }
+          {
+            "target": "weapon",
+            "description": "回復+8, 耐久-8%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+8, 耐久-8%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+8, 耐久-19"
+          }
         ]
       },
       {
         "level": 9,
         "grade": "結晶",
         "effects": [
-          { "target": "weapon", "description": "回復+9, 耐久-9%" },
-          { "target": "armor", "description": "回復+9, 耐久-9%" },
-          { "target": "accessory", "description": "回復+9, 耐久-21" }
+          {
+            "target": "weapon",
+            "description": "回復+9, 耐久-9%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+9, 耐久-9%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+9, 耐久-21"
+          }
         ]
       },
       {
         "level": 10,
         "grade": "完整結晶",
         "effects": [
-          { "target": "weapon", "description": "回復+10, 耐久-10%" },
-          { "target": "armor", "description": "回復+10, 耐久-10%" },
-          { "target": "accessory", "description": "回復+10, 耐久-23" }
+          {
+            "target": "weapon",
+            "description": "回復+10, 耐久-10%"
+          },
+          {
+            "target": "armor",
+            "description": "回復+10, 耐久-10%"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+10, 耐久-23"
+          }
         ]
       }
     ]

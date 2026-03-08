@@ -3,15 +3,24 @@
     "id": "taskGem-desert-star",
     "name": "砂漠紅星",
     "category": "taskGem",
-    "image": "gem-desert-star.png",
+    "image": "15394.gif",
     "levels": [
       {
         "level": 4,
         "grade": "稍微損壞",
         "effects": [
-          { "target": "weapon", "description": "必殺-1~+5, 反擊-1~+5, 耐久降低" },
-          { "target": "armor", "description": "命中-1~+3, 閃躲-1~+3, 耐久降低" },
-          { "target": "accessory", "description": "必殺-1~+5, 反擊-1~+5" }
+          {
+            "target": "weapon",
+            "description": "必殺-1~+5, 反擊-1~+5, 耐久降低"
+          },
+          {
+            "target": "armor",
+            "description": "命中-1~+3, 閃躲-1~+3, 耐久降低"
+          },
+          {
+            "target": "accessory",
+            "description": "必殺-1~+5, 反擊-1~+5"
+          }
         ]
       }
     ]
@@ -20,15 +29,24 @@
     "id": "taskGem-meteor",
     "name": "流星",
     "category": "taskGem",
-    "image": "gem-meteor.png",
+    "image": "15398.gif",
     "levels": [
       {
         "level": 5,
         "grade": "完美寶石",
         "effects": [
-          { "target": "weapon", "description": "必殺+3, 攻擊減少" },
-          { "target": "armor", "description": "閃躲+3, 防禦減少" },
-          { "target": "accessory", "description": "攻擊+3, 必殺+3" }
+          {
+            "target": "weapon",
+            "description": "必殺+3, 攻擊減少"
+          },
+          {
+            "target": "armor",
+            "description": "閃躲+3, 防禦減少"
+          },
+          {
+            "target": "accessory",
+            "description": "攻擊+3, 必殺+3"
+          }
         ]
       }
     ]
@@ -37,15 +55,24 @@
     "id": "taskGem-ice-crystal",
     "name": "冰原之晶",
     "category": "taskGem",
-    "image": "gem-ice-crystal.png",
+    "image": "15434.gif",
     "levels": [
       {
         "level": 4,
         "grade": "稍微損壞",
         "effects": [
-          { "target": "weapon", "description": "回復+3~10, 耐久降低" },
-          { "target": "armor", "description": "精神+3, 耐久降低" },
-          { "target": "accessory", "description": "回復+3~10, 耐久-10%" }
+          {
+            "target": "weapon",
+            "description": "回復+3~10, 耐久降低"
+          },
+          {
+            "target": "armor",
+            "description": "精神+3, 耐久降低"
+          },
+          {
+            "target": "accessory",
+            "description": "回復+3~10, 耐久-10%"
+          }
         ]
       }
     ]
@@ -54,15 +81,24 @@
     "id": "taskGem-holy-magic",
     "name": "聖魔石",
     "category": "taskGem",
-    "image": "gem-holy-magic.png",
+    "image": "15397.gif",
     "levels": [
       {
         "level": 5,
         "grade": "完美寶石",
         "effects": [
-          { "target": "weapon", "description": "生命+15, 魔力+15" },
-          { "target": "armor", "description": "生命+10, 魔力+10, 敏捷+1~+2, 命中+1~+3" },
-          { "target": "accessory", "description": "生命+15, 魔力+15" }
+          {
+            "target": "weapon",
+            "description": "生命+15, 魔力+15"
+          },
+          {
+            "target": "armor",
+            "description": "生命+10, 魔力+10, 敏捷+1~+2, 命中+1~+3"
+          },
+          {
+            "target": "accessory",
+            "description": "生命+15, 魔力+15"
+          }
         ]
       }
     ]

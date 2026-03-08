@@ -3,30 +3,48 @@
     "id": "petGem-earth",
     "name": "地之寶石",
     "category": "petGem",
-    "image": "gem-earth.png",
+    "image": "200000115.gif",
     "levels": [
       {
         "level": 1,
         "grade": "小顆",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "防禦-, 命中-, 耐久-" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "防禦-, 命中-, 耐久-"
+          }
         ]
       },
       {
         "level": 3,
         "grade": "中型",
         "effects": [
-          { "target": "weapon", "description": "少量攻擊+" },
-          { "target": "armor", "description": "防禦-, 命中-" }
+          {
+            "target": "weapon",
+            "description": "少量攻擊+"
+          },
+          {
+            "target": "armor",
+            "description": "防禦-, 命中-"
+          }
         ]
       },
       {
         "level": 6,
         "grade": "大型",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "防禦-5, 命中-" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "防禦-5, 命中-"
+          }
         ]
       }
     ]
@@ -35,30 +53,48 @@
     "id": "petGem-water",
     "name": "水之寶石",
     "category": "petGem",
-    "image": "gem-water.png",
+    "image": "200000118.gif",
     "levels": [
       {
         "level": 1,
         "grade": "小顆",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "防禦-, 耐久-" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "防禦-, 耐久-"
+          }
         ]
       },
       {
         "level": 3,
         "grade": "中型",
         "effects": [
-          { "target": "weapon", "description": "攻擊-, 耐久-" },
-          { "target": "armor", "description": "防禦-, 耐久-" }
+          {
+            "target": "weapon",
+            "description": "攻擊-, 耐久-"
+          },
+          {
+            "target": "armor",
+            "description": "防禦-, 耐久-"
+          }
         ]
       },
       {
         "level": 6,
         "grade": "大型",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "未知" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "未知"
+          }
         ]
       }
     ]
@@ -67,30 +103,48 @@
     "id": "petGem-fire",
     "name": "火之寶石",
     "category": "petGem",
-    "image": "gem-fire.png",
+    "image": "200000121.gif",
     "levels": [
       {
         "level": 1,
         "grade": "小顆",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "耐久+" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "耐久+"
+          }
         ]
       },
       {
         "level": 3,
         "grade": "中型",
         "effects": [
-          { "target": "weapon", "description": "耐久+" },
-          { "target": "armor", "description": "耐久+" }
+          {
+            "target": "weapon",
+            "description": "耐久+"
+          },
+          {
+            "target": "armor",
+            "description": "耐久+"
+          }
         ]
       },
       {
         "level": 6,
         "grade": "大型",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "未知" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "未知"
+          }
         ]
       }
     ]
@@ -99,30 +153,48 @@
     "id": "petGem-wind",
     "name": "風之寶石",
     "category": "petGem",
-    "image": "gem-wind.png",
+    "image": "200000124.gif",
     "levels": [
       {
         "level": 1,
         "grade": "小顆",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "無效果" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "無效果"
+          }
         ]
       },
       {
         "level": 3,
         "grade": "中型",
         "effects": [
-          { "target": "weapon", "description": "少量必殺+, 攻擊-" },
-          { "target": "armor", "description": "少量反擊+, 防禦-" }
+          {
+            "target": "weapon",
+            "description": "少量必殺+, 攻擊-"
+          },
+          {
+            "target": "armor",
+            "description": "少量反擊+, 防禦-"
+          }
         ]
       },
       {
         "level": 6,
         "grade": "大型",
         "effects": [
-          { "target": "weapon", "description": "未知" },
-          { "target": "armor", "description": "未知" }
+          {
+            "target": "weapon",
+            "description": "未知"
+          },
+          {
+            "target": "armor",
+            "description": "未知"
+          }
         ]
       }
     ]

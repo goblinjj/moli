@@ -19,5 +19,8 @@
     "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
   }
 }

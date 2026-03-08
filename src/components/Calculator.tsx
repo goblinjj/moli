@@ -258,7 +258,7 @@ export default function Calculator({ recipes, gems }: CalculatorProps) {
               没有找到匹配的宝石
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
               {filteredGems.map((gem) => (
                 <GemCard key={gem.id} gem={gem} />
               ))}
