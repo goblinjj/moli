@@ -1,0 +1,2060 @@
+[
+  {
+    "id": "generalGem-garnet",
+    "name": "石榴石",
+    "category": "generalGem",
+    "image": "gem-garnet.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "耐久+5%" },
+          { "target": "armor", "description": "耐久+5%" },
+          { "target": "accessory", "description": "耐久+1, 必殺-10%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "耐久+7%" },
+          { "target": "armor", "description": "耐久+7%" },
+          { "target": "accessory", "description": "耐久+3, 必殺-15%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "耐久+9%" },
+          { "target": "armor", "description": "耐久+9%" },
+          { "target": "accessory", "description": "耐久+5, 必殺-20%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "耐久+11%" },
+          { "target": "armor", "description": "耐久+11%" },
+          { "target": "accessory", "description": "耐久+7, 必殺-25%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "耐久+13%" },
+          { "target": "armor", "description": "耐久+13%" },
+          { "target": "accessory", "description": "耐久+9, 必殺-30%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "耐久+15%" },
+          { "target": "armor", "description": "耐久+15%" },
+          { "target": "accessory", "description": "耐久+11, 必殺-35%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "耐久+17%" },
+          { "target": "armor", "description": "耐久+17%" },
+          { "target": "accessory", "description": "耐久+13, 必殺-40%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "耐久+19%" },
+          { "target": "armor", "description": "耐久+19%" },
+          { "target": "accessory", "description": "耐久+15, 必殺-45%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "耐久+21%" },
+          { "target": "armor", "description": "耐久+21%" },
+          { "target": "accessory", "description": "耐久+17, 必殺-50%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "耐久+23%" },
+          { "target": "armor", "description": "耐久+23%" },
+          { "target": "accessory", "description": "耐久+19, 必殺-55%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-topaz",
+    "name": "黃寶石",
+    "category": "generalGem",
+    "image": "gem-topaz.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "必殺+1, 攻擊-2%" },
+          { "target": "armor", "description": "反擊+1, 防禦-2%" },
+          { "target": "accessory", "description": "反擊+1, 防禦-2%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "必殺+2, 攻擊-4%" },
+          { "target": "armor", "description": "反擊+2, 防禦-4%" },
+          { "target": "accessory", "description": "反擊+2, 防禦-4%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "必殺+3, 攻擊-6%" },
+          { "target": "armor", "description": "反擊+3, 防禦-6%" },
+          { "target": "accessory", "description": "反擊+3, 防禦-6%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "必殺+4, 攻擊-8%" },
+          { "target": "armor", "description": "反擊+4, 防禦-8%" },
+          { "target": "accessory", "description": "反擊+4, 防禦-8%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "必殺+5, 攻擊-10%" },
+          { "target": "armor", "description": "反擊+5, 防禦-10%" },
+          { "target": "accessory", "description": "反擊+5, 防禦-10%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+6, 攻擊-12%" },
+          { "target": "armor", "description": "反擊+6, 防禦-12%" },
+          { "target": "accessory", "description": "反擊+6, 防禦-12%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+7, 攻擊-14%" },
+          { "target": "armor", "description": "反擊+7, 防禦-14%" },
+          { "target": "accessory", "description": "反擊+7, 防禦-14%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+8, 攻擊-16%" },
+          { "target": "armor", "description": "反擊+8, 防禦-16%" },
+          { "target": "accessory", "description": "反擊+8, 防禦-16%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+9, 攻擊-18%" },
+          { "target": "armor", "description": "反擊+9, 防禦-18%" },
+          { "target": "accessory", "description": "反擊+9, 防禦-18%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+10, 攻擊-20%" },
+          { "target": "armor", "description": "反擊+10, 防禦-20%" },
+          { "target": "accessory", "description": "反擊+10, 防禦-20%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-emerald",
+    "name": "綠寶石",
+    "category": "generalGem",
+    "image": "gem-emerald.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "必殺+1, 反擊-1" },
+          { "target": "armor", "description": "必殺-1, 反擊+1" },
+          { "target": "accessory", "description": "必殺-1, 反擊+1" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "必殺+2, 反擊-2" },
+          { "target": "armor", "description": "必殺-2, 反擊+2" },
+          { "target": "accessory", "description": "必殺-2, 反擊+2" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "必殺+3, 反擊-3" },
+          { "target": "armor", "description": "必殺-3, 反擊+3" },
+          { "target": "accessory", "description": "必殺-3, 反擊+3" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "必殺+4, 反擊-4" },
+          { "target": "armor", "description": "必殺-4, 反擊+4" },
+          { "target": "accessory", "description": "必殺-4, 反擊+4" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "必殺+5, 反擊-5" },
+          { "target": "armor", "description": "必殺-5, 反擊+5" },
+          { "target": "accessory", "description": "必殺-5, 反擊+5" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+6, 反擊-6" },
+          { "target": "armor", "description": "必殺-6, 反擊+6" },
+          { "target": "accessory", "description": "必殺-6, 反擊+6" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+7, 反擊-7" },
+          { "target": "armor", "description": "必殺-7, 反擊+7" },
+          { "target": "accessory", "description": "必殺-7, 反擊+7" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+8, 反擊-8" },
+          { "target": "armor", "description": "必殺-8, 反擊+8" },
+          { "target": "accessory", "description": "必殺-8, 反擊+8" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+9, 反擊-9" },
+          { "target": "armor", "description": "必殺-9, 反擊+9" },
+          { "target": "accessory", "description": "必殺-9, 反擊+9" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "必殺+10, 反擊-10" },
+          { "target": "armor", "description": "必殺-10, 反擊+10" },
+          { "target": "accessory", "description": "必殺-10, 反擊+10" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-sapphire",
+    "name": "藍寶石",
+    "category": "generalGem",
+    "image": "gem-sapphire.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+3%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-1, 防禦+3%" },
+          { "target": "accessory", "description": "攻擊+1, 閃躲-1" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+5%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-2, 防禦+5%" },
+          { "target": "accessory", "description": "攻擊+3, 閃躲-3" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+7%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-3, 防禦+7%" },
+          { "target": "accessory", "description": "攻擊+5, 閃躲-5" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+9%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-4, 防禦+9%" },
+          { "target": "accessory", "description": "攻擊+7, 閃躲-7" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+11%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-5, 防禦+11%" },
+          { "target": "accessory", "description": "攻擊+9, 閃躲-9" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+13%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-6, 防禦+13%" },
+          { "target": "accessory", "description": "攻擊+11, 閃躲-11" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+15%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-7, 防禦+15%" },
+          { "target": "accessory", "description": "攻擊+13, 閃躲-13" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+17%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-8, 防禦+17%" },
+          { "target": "accessory", "description": "攻擊+15, 閃躲-15" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+19%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-9, 防禦+19%" },
+          { "target": "accessory", "description": "攻擊+17, 閃躲-17" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+21%, 閃躲值x0.9" },
+          { "target": "armor", "description": "命中-10, 防禦+21%" },
+          { "target": "accessory", "description": "攻擊+19, 閃躲-19" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-adventure-star",
+    "name": "冒險之星",
+    "category": "generalGem",
+    "image": "gem-adventure-star.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+10%, 耐久-20%" },
+          { "target": "armor", "description": "防禦+10%, 耐久-20%" },
+          { "target": "accessory", "description": "防禦+1, 耐久-3%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+12%, 耐久-24%" },
+          { "target": "armor", "description": "防禦+12%, 耐久-24%" },
+          { "target": "accessory", "description": "防禦+3, 耐久-6%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+14%, 耐久-28%" },
+          { "target": "armor", "description": "防禦+14%, 耐久-28%" },
+          { "target": "accessory", "description": "防禦+5, 耐久-9%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+16%, 耐久-32%" },
+          { "target": "armor", "description": "防禦+16%, 耐久-32%" },
+          { "target": "accessory", "description": "防禦+7, 耐久-12%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+18%, 耐久-36%" },
+          { "target": "armor", "description": "防禦+18%, 耐久-36%" },
+          { "target": "accessory", "description": "防禦+9, 耐久-15%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+20%, 耐久-40%" },
+          { "target": "armor", "description": "防禦+20%, 耐久-40%" },
+          { "target": "accessory", "description": "防禦+11, 耐久-18%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+22%, 耐久-44%" },
+          { "target": "armor", "description": "防禦+22%, 耐久-44%" },
+          { "target": "accessory", "description": "防禦+13, 耐久-21%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+24%, 耐久-48%" },
+          { "target": "armor", "description": "防禦+24%, 耐久-48%" },
+          { "target": "accessory", "description": "防禦+15, 耐久-24%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+26%, 耐久-52%" },
+          { "target": "armor", "description": "防禦+26%, 耐久-52%" },
+          { "target": "accessory", "description": "防禦+17, 耐久-27%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+28%, 耐久-56%" },
+          { "target": "armor", "description": "防禦+28%, 耐久-56%" },
+          { "target": "accessory", "description": "防禦+19, 耐久-30%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-amethyst",
+    "name": "紫水晶",
+    "category": "generalGem",
+    "image": "gem-amethyst.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "防禦+8, 攻擊+1%" },
+          { "target": "armor", "description": "攻擊+4, 防禦+1%" },
+          { "target": "accessory", "description": "攻擊+4, 防禦+4" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "防禦+16, 攻擊+2%" },
+          { "target": "armor", "description": "攻擊+8, 防禦+2%" },
+          { "target": "accessory", "description": "攻擊+8, 防禦+8" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "防禦+24, 攻擊+3%" },
+          { "target": "armor", "description": "攻擊+12, 防禦+3%" },
+          { "target": "accessory", "description": "攻擊+12, 防禦+12" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "防禦+32, 攻擊+4%" },
+          { "target": "armor", "description": "攻擊+16, 防禦+4%" },
+          { "target": "accessory", "description": "攻擊+16, 防禦+16" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "防禦+40, 攻擊+5%" },
+          { "target": "armor", "description": "攻擊+20, 防禦+5%" },
+          { "target": "accessory", "description": "攻擊+20, 防禦+20" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "防禦+48, 攻擊+6%" },
+          { "target": "armor", "description": "攻擊+24, 防禦+6%" },
+          { "target": "accessory", "description": "攻擊+24, 防禦+24" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "防禦+56, 攻擊+7%" },
+          { "target": "armor", "description": "攻擊+28, 防禦+7%" },
+          { "target": "accessory", "description": "攻擊+28, 防禦+28" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "防禦+64, 攻擊+9%" },
+          { "target": "armor", "description": "攻擊+32, 防禦+8%" },
+          { "target": "accessory", "description": "攻擊+32, 防禦+32" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "防禦+72, 攻擊+9%" },
+          { "target": "armor", "description": "攻擊+36, 防禦+9%" },
+          { "target": "accessory", "description": "攻擊+36, 防禦+36" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "防禦+80, 攻擊+10%" },
+          { "target": "armor", "description": "攻擊+40, 防禦+10%" },
+          { "target": "accessory", "description": "攻擊+40, 防禦+40" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-knight",
+    "name": "騎士寶石",
+    "category": "generalGem",
+    "image": "gem-knight.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "命中+1, 攻擊-2%" },
+          { "target": "armor", "description": "閃躲+1, 防禦-2%" },
+          { "target": "accessory", "description": "命中+1, 攻擊-2" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "命中+2, 攻擊-4%" },
+          { "target": "armor", "description": "閃躲+2, 防禦-4%" },
+          { "target": "accessory", "description": "命中+2, 攻擊-4" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "命中+3, 攻擊-6%" },
+          { "target": "armor", "description": "閃躲+3, 防禦-6%" },
+          { "target": "accessory", "description": "命中+3, 攻擊-6" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "命中+4, 攻擊-8%" },
+          { "target": "armor", "description": "閃躲+4, 防禦-8%" },
+          { "target": "accessory", "description": "命中+4, 攻擊-8" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "命中+5, 攻擊-10%" },
+          { "target": "armor", "description": "閃躲+5, 防禦-10%" },
+          { "target": "accessory", "description": "命中+5, 攻擊-10" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "命中+6, 攻擊-12%" },
+          { "target": "armor", "description": "閃躲+6, 防禦-12%" },
+          { "target": "accessory", "description": "命中+6, 攻擊-12" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "命中+7, 攻擊-14%" },
+          { "target": "armor", "description": "閃躲+7, 防禦-14%" },
+          { "target": "accessory", "description": "命中+7, 攻擊-14" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "命中+8, 攻擊-16%" },
+          { "target": "armor", "description": "閃躲+8, 防禦-16%" },
+          { "target": "accessory", "description": "命中+8, 攻擊-16" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "命中+9, 攻擊-18%" },
+          { "target": "armor", "description": "閃躲+9, 防禦-18%" },
+          { "target": "accessory", "description": "命中+9, 攻擊-18" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "命中+10, 攻擊-20%" },
+          { "target": "armor", "description": "閃躲+10, 防禦-20%" },
+          { "target": "accessory", "description": "命中+10, 攻擊-20" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-meteorite",
+    "name": "玻隕石",
+    "category": "generalGem",
+    "image": "gem-meteorite.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+4, 抗混亂-4" },
+          { "target": "armor", "description": "抗遺忘+2, 抗酒醉-2" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+8, 抗混亂-8" },
+          { "target": "armor", "description": "抗遺忘+4, 抗酒醉-4" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+12, 抗混亂-12" },
+          { "target": "armor", "description": "抗遺忘+6, 抗酒醉-6" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+16, 抗混亂-16" },
+          { "target": "armor", "description": "抗遺忘+8, 抗酒醉-8" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+20, 抗混亂-20" },
+          { "target": "armor", "description": "抗遺忘+10, 抗酒醉-10" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+24, 抗混亂-24" },
+          { "target": "armor", "description": "抗遺忘+12, 抗酒醉-12" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+28, 抗混亂-28" },
+          { "target": "armor", "description": "抗遺忘+14, 抗酒醉-14" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+32, 抗混亂-32" },
+          { "target": "armor", "description": "抗遺忘+16, 抗酒醉-16" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+36, 抗混亂-36" },
+          { "target": "armor", "description": "抗遺忘+18, 抗酒醉-18" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗昏睡+40, 抗混亂-40" },
+          { "target": "armor", "description": "抗遺忘+20, 抗酒醉-20" },
+          { "target": "accessory", "description": "未知" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-cassiterite",
+    "name": "錫石",
+    "category": "generalGem",
+    "image": "gem-cassiterite.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+4, 抗昏睡-4" },
+          { "target": "armor", "description": "抗酒醉+2, 抗毒-2" },
+          { "target": "accessory", "description": "抗石化+4, 抗昏睡-4" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+8, 抗昏睡-8" },
+          { "target": "armor", "description": "抗酒醉+4, 抗毒-4" },
+          { "target": "accessory", "description": "抗石化+8, 抗昏睡-8" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+12, 抗昏睡-12" },
+          { "target": "armor", "description": "抗酒醉+6, 抗毒-6" },
+          { "target": "accessory", "description": "抗石化+12, 抗昏睡-12" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+16, 抗昏睡-16" },
+          { "target": "armor", "description": "抗酒醉+8, 抗毒-8" },
+          { "target": "accessory", "description": "抗石化+16, 抗昏睡-16" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+20, 抗昏睡-20" },
+          { "target": "armor", "description": "抗酒醉+10, 抗毒-10" },
+          { "target": "accessory", "description": "抗石化+20, 抗昏睡-20" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+24, 抗昏睡-24" },
+          { "target": "armor", "description": "抗酒醉+12, 抗毒-12" },
+          { "target": "accessory", "description": "抗石化+24, 抗昏睡-24" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+28, 抗昏睡-28" },
+          { "target": "armor", "description": "抗酒醉+14, 抗毒-14" },
+          { "target": "accessory", "description": "抗石化+28, 抗昏睡-28" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+32, 抗昏睡-32" },
+          { "target": "armor", "description": "抗酒醉+16, 抗毒-16" },
+          { "target": "accessory", "description": "抗石化+32, 抗昏睡-32" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+36, 抗昏睡-36" },
+          { "target": "armor", "description": "抗酒醉+18, 抗毒-18" },
+          { "target": "accessory", "description": "抗石化+36, 抗昏睡-36" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗石化+40, 抗昏睡-40" },
+          { "target": "armor", "description": "抗酒醉+20, 抗毒-20" },
+          { "target": "accessory", "description": "抗石化+40, 抗昏睡-40" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-black-jade",
+    "name": "黑玉",
+    "category": "generalGem",
+    "image": "gem-black-jade.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+4, 抗石化-4" },
+          { "target": "armor", "description": "抗毒+2, 抗遺忘-2" },
+          { "target": "accessory", "description": "抗混亂+4, 抗石化-4" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+8, 抗石化-8" },
+          { "target": "armor", "description": "抗毒+4, 抗遺忘-4" },
+          { "target": "accessory", "description": "抗混亂+8, 抗石化-8" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+12, 抗石化-12" },
+          { "target": "armor", "description": "抗毒+6, 抗遺忘-6" },
+          { "target": "accessory", "description": "抗混亂+12, 抗石化-12" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+16, 抗石化-16" },
+          { "target": "armor", "description": "抗毒+8, 抗遺忘-8" },
+          { "target": "accessory", "description": "抗混亂+16, 抗石化-16" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+20, 抗石化-20" },
+          { "target": "armor", "description": "抗毒+10, 抗遺忘-10" },
+          { "target": "accessory", "description": "抗混亂+20, 抗石化-20" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+24, 抗石化-24" },
+          { "target": "armor", "description": "抗毒+12, 抗遺忘-12" },
+          { "target": "accessory", "description": "抗混亂+24, 抗石化-24" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+28, 抗石化-28" },
+          { "target": "armor", "description": "抗毒+14, 抗遺忘-14" },
+          { "target": "accessory", "description": "抗混亂+28, 抗石化-28" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+32, 抗石化-32" },
+          { "target": "armor", "description": "抗毒+16, 抗遺忘-16" },
+          { "target": "accessory", "description": "抗混亂+32, 抗石化-32" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+36, 抗石化-36" },
+          { "target": "armor", "description": "抗毒+18, 抗遺忘-18" },
+          { "target": "accessory", "description": "抗混亂+36, 抗石化-36" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "抗混亂+40, 抗石化-40" },
+          { "target": "armor", "description": "抗毒+20, 抗遺忘-20" },
+          { "target": "accessory", "description": "抗混亂+40, 抗石化-40" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-iolite",
+    "name": "菫青石",
+    "category": "generalGem",
+    "image": "gem-iolite.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+1, 命中-1" },
+          { "target": "armor", "description": "命中+1, 閃躲-1" },
+          { "target": "accessory", "description": "閃躲+1%, 命中-1%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+2, 命中-2" },
+          { "target": "armor", "description": "命中+2, 閃躲-2" },
+          { "target": "accessory", "description": "閃躲+2%, 命中-2%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+3, 命中-3" },
+          { "target": "armor", "description": "命中+3, 閃躲-3" },
+          { "target": "accessory", "description": "閃躲+3%, 命中-3%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+4, 命中-4" },
+          { "target": "armor", "description": "命中+4, 閃躲-4" },
+          { "target": "accessory", "description": "閃躲+4%, 命中-4%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+5, 命中-5" },
+          { "target": "armor", "description": "命中+5, 閃躲-5" },
+          { "target": "accessory", "description": "閃躲+5%, 命中-5%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+6, 命中-6" },
+          { "target": "armor", "description": "命中+6, 閃躲-6" },
+          { "target": "accessory", "description": "閃躲+6%, 命中-6%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+7, 命中-7" },
+          { "target": "armor", "description": "命中+7, 閃躲-7" },
+          { "target": "accessory", "description": "閃躲+7%, 命中-7%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+8, 命中-8" },
+          { "target": "armor", "description": "命中+8, 閃躲-8" },
+          { "target": "accessory", "description": "閃躲+8%, 命中-8%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+9, 命中-9" },
+          { "target": "armor", "description": "命中+9, 閃躲-9" },
+          { "target": "accessory", "description": "閃躲+9%, 命中-9%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+10, 命中-10" },
+          { "target": "armor", "description": "命中+10, 閃躲-10" },
+          { "target": "accessory", "description": "閃躲+10%, 命中-10%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-deep-sapphire",
+    "name": "深藍寶石",
+    "category": "generalGem",
+    "image": "gem-deep-sapphire.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+5, 敏捷-3" },
+          { "target": "armor", "description": "防禦+1, 敏捷-1" },
+          { "target": "accessory", "description": "攻擊+3, 敏捷-3" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+8, 敏捷-6" },
+          { "target": "armor", "description": "防禦+2, 敏捷-2" },
+          { "target": "accessory", "description": "攻擊+6, 敏捷-6" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+11, 敏捷-9" },
+          { "target": "armor", "description": "防禦+3, 敏捷-3" },
+          { "target": "accessory", "description": "攻擊+9, 敏捷-9" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+14, 敏捷-12" },
+          { "target": "armor", "description": "防禦+4, 敏捷-4" },
+          { "target": "accessory", "description": "攻擊+12, 敏捷-12" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+17, 敏捷-15" },
+          { "target": "armor", "description": "防禦+5, 敏捷-5" },
+          { "target": "accessory", "description": "攻擊+15, 敏捷-15" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+20, 敏捷-18" },
+          { "target": "armor", "description": "防禦+6, 敏捷-6" },
+          { "target": "accessory", "description": "攻擊+18, 敏捷-18" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+23, 敏捷-21" },
+          { "target": "armor", "description": "防禦+7, 敏捷-7" },
+          { "target": "accessory", "description": "攻擊+21, 敏捷-21" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+26, 敏捷-24" },
+          { "target": "armor", "description": "防禦+8, 敏捷-8" },
+          { "target": "accessory", "description": "攻擊+24, 敏捷-24" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+29, 敏捷-27" },
+          { "target": "armor", "description": "防禦+9, 敏捷-9" },
+          { "target": "accessory", "description": "攻擊+27, 敏捷-27" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "攻擊+32, 敏捷-30" },
+          { "target": "armor", "description": "防禦+10, 敏捷-10" },
+          { "target": "accessory", "description": "攻擊+30, 敏捷-30" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-spinel",
+    "name": "尖晶石",
+    "category": "generalGem",
+    "image": "gem-spinel.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+3, 耐久-2%" },
+          { "target": "armor", "description": "敏捷+1, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+3%, 耐久-1%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+6, 耐久-4%" },
+          { "target": "armor", "description": "敏捷+2, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+6%, 耐久-2%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+9, 耐久-6%" },
+          { "target": "armor", "description": "敏捷+3, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+9%, 耐久-3%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+12, 耐久-8%" },
+          { "target": "armor", "description": "敏捷+4, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+12%, 耐久-4%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+15, 耐久-10%" },
+          { "target": "armor", "description": "敏捷+5, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+15%, 耐久-5%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+18, 耐久-12%" },
+          { "target": "armor", "description": "敏捷+6, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+18%, 耐久-6%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+21, 耐久-14%" },
+          { "target": "armor", "description": "敏捷+7, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+21%, 耐久-7%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+24, 耐久-16%" },
+          { "target": "armor", "description": "敏捷+8, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+24%, 耐久-8%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+27, 耐久-18%" },
+          { "target": "armor", "description": "敏捷+9, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+27%, 耐久-9%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "敏捷+30, 耐久-20%" },
+          { "target": "armor", "description": "敏捷+10, 耐久-?" },
+          { "target": "accessory", "description": "敏捷+30%, 耐久-10%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-citrine-race",
+    "name": "賽黃晶",
+    "category": "generalGem",
+    "image": "gem-citrine-race.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+1, 攻擊-3" },
+          { "target": "armor", "description": "閃躲+1, 命中-1" },
+          { "target": "accessory", "description": "閃躲+1, 攻擊-2" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+2, 攻擊-6" },
+          { "target": "armor", "description": "閃躲+2, 命中-2" },
+          { "target": "accessory", "description": "閃躲+2, 攻擊-4" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+3, 攻擊-9" },
+          { "target": "armor", "description": "閃躲+3, 命中-3" },
+          { "target": "accessory", "description": "閃躲+3, 攻擊-6" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+4, 攻擊-12" },
+          { "target": "armor", "description": "閃躲+4, 命中-4" },
+          { "target": "accessory", "description": "閃躲+4, 攻擊-8" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+5, 攻擊-15" },
+          { "target": "armor", "description": "閃躲+5, 命中-5" },
+          { "target": "accessory", "description": "閃躲+5, 攻擊-10" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+6, 攻擊-18" },
+          { "target": "armor", "description": "閃躲+6, 命中-6" },
+          { "target": "accessory", "description": "閃躲+6, 攻擊-12" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+7, 攻擊-21" },
+          { "target": "armor", "description": "閃躲+7, 命中-7" },
+          { "target": "accessory", "description": "閃躲+7, 攻擊-14" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+8, 攻擊-24" },
+          { "target": "armor", "description": "閃躲+8, 命中-8" },
+          { "target": "accessory", "description": "閃躲+8, 攻擊-16" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+9, 攻擊-27" },
+          { "target": "armor", "description": "閃躲+9, 命中-9" },
+          { "target": "accessory", "description": "閃躲+9, 攻擊-18" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "閃躲+10, 攻擊-30" },
+          { "target": "armor", "description": "閃躲+10, 命中-10" },
+          { "target": "accessory", "description": "閃躲+10, 攻擊-20" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-citrine",
+    "name": "黃水晶",
+    "category": "generalGem",
+    "image": "gem-citrine.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "精神+4, 敏捷-3" },
+          { "target": "armor", "description": "精神+3, 防禦-?" },
+          { "target": "accessory", "description": "精神+1, 敏捷-3" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "精神+6, 敏捷-6" },
+          { "target": "armor", "description": "精神+4, 防禦-?" },
+          { "target": "accessory", "description": "精神+2, 敏捷-6" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "精神+8, 敏捷-9" },
+          { "target": "armor", "description": "精神+5, 防禦-?" },
+          { "target": "accessory", "description": "精神+3, 敏捷-9" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "精神+10, 敏捷-12" },
+          { "target": "armor", "description": "精神+6, 防禦-?" },
+          { "target": "accessory", "description": "精神+4, 敏捷-12" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "精神+12, 敏捷-15" },
+          { "target": "armor", "description": "精神+7, 防禦-?" },
+          { "target": "accessory", "description": "精神+5, 敏捷-15" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "精神+14, 敏捷-18" },
+          { "target": "armor", "description": "精神+8, 防禦-?" },
+          { "target": "accessory", "description": "精神+6, 敏捷-18" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "精神+16, 敏捷-21" },
+          { "target": "armor", "description": "精神+9, 防禦-?" },
+          { "target": "accessory", "description": "精神+7, 敏捷-21" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "精神+18, 敏捷-24" },
+          { "target": "armor", "description": "精神+10, 防禦-?" },
+          { "target": "accessory", "description": "精神+8, 敏捷-24" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "精神+20, 敏捷-27" },
+          { "target": "armor", "description": "精神+11, 防禦-?" },
+          { "target": "accessory", "description": "精神+9, 敏捷-27" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "精神+22, 敏捷-30" },
+          { "target": "armor", "description": "精神+12, 防禦-?" },
+          { "target": "accessory", "description": "精神+10, 敏捷-30" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-tourmaline",
+    "name": "錳紅柱石",
+    "category": "generalGem",
+    "image": "gem-tourmaline.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "反擊+1, 攻擊-1%" },
+          { "target": "armor", "description": "必殺+1, 敏捷-4" },
+          { "target": "accessory", "description": "反擊+1, 攻擊-1%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "反擊+2, 攻擊-2%" },
+          { "target": "armor", "description": "必殺+2, 敏捷-8" },
+          { "target": "accessory", "description": "反擊+2, 攻擊-2%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "反擊+3, 攻擊-3%" },
+          { "target": "armor", "description": "必殺+3, 敏捷-12" },
+          { "target": "accessory", "description": "反擊+3, 攻擊-3%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "反擊+4, 攻擊-4%" },
+          { "target": "armor", "description": "必殺+4, 敏捷-16" },
+          { "target": "accessory", "description": "反擊+4, 攻擊-4%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "反擊+5, 攻擊-5%" },
+          { "target": "armor", "description": "必殺+5, 敏捷-20" },
+          { "target": "accessory", "description": "反擊+5, 攻擊-5%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+6, 攻擊-6%" },
+          { "target": "armor", "description": "必殺+6, 敏捷-24" },
+          { "target": "accessory", "description": "反擊+6, 攻擊-6%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+7, 攻擊-7%" },
+          { "target": "armor", "description": "必殺+7, 敏捷-28" },
+          { "target": "accessory", "description": "反擊+7, 攻擊-7%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+8, 攻擊-8%" },
+          { "target": "armor", "description": "必殺+8, 敏捷-32" },
+          { "target": "accessory", "description": "反擊+8, 攻擊-8%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+9, 攻擊-9%" },
+          { "target": "armor", "description": "必殺+9, 敏捷-36" },
+          { "target": "accessory", "description": "反擊+9, 攻擊-9%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+10, 攻擊-10%" },
+          { "target": "armor", "description": "必殺+10, 敏捷-40" },
+          { "target": "accessory", "description": "反擊+10, 攻擊-10%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-olivine",
+    "name": "橄欖石",
+    "category": "generalGem",
+    "image": "gem-olivine.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "反擊+1, 必殺-1" },
+          { "target": "armor", "description": "必殺+1, 命中-1" },
+          { "target": "accessory", "description": "反擊+1, 必殺-1" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "反擊+2, 必殺-2" },
+          { "target": "armor", "description": "必殺+2, 命中-2" },
+          { "target": "accessory", "description": "反擊+2, 必殺-2" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "反擊+3, 必殺-3" },
+          { "target": "armor", "description": "必殺+3, 命中-3" },
+          { "target": "accessory", "description": "反擊+3, 必殺-3" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "反擊+4, 必殺-4" },
+          { "target": "armor", "description": "必殺+4, 命中-4" },
+          { "target": "accessory", "description": "反擊+4, 必殺-4" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "反擊+5, 必殺-5" },
+          { "target": "armor", "description": "必殺+5, 命中-5" },
+          { "target": "accessory", "description": "反擊+5, 必殺-5" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+6, 必殺-6" },
+          { "target": "armor", "description": "必殺+6, 命中-6" },
+          { "target": "accessory", "description": "反擊+6, 必殺-6" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+7, 必殺-7" },
+          { "target": "armor", "description": "必殺+7, 命中-7" },
+          { "target": "accessory", "description": "反擊+7, 必殺-7" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+8, 必殺-8" },
+          { "target": "armor", "description": "必殺+8, 命中-8" },
+          { "target": "accessory", "description": "反擊+8, 必殺-8" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+9, 必殺-9" },
+          { "target": "armor", "description": "必殺+9, 命中-9" },
+          { "target": "accessory", "description": "反擊+9, 必殺-9" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "反擊+10, 必殺-10" },
+          { "target": "armor", "description": "必殺+10, 命中-10" },
+          { "target": "accessory", "description": "反擊+10, 必殺-10" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-quartz",
+    "name": "石英",
+    "category": "generalGem",
+    "image": "gem-quartz.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "魅力+1" },
+          { "target": "armor", "description": "魅力+1" },
+          { "target": "accessory", "description": "魅力+1" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "魅力+2" },
+          { "target": "armor", "description": "魅力+2" },
+          { "target": "accessory", "description": "魅力+2" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "魅力+3" },
+          { "target": "armor", "description": "魅力+3" },
+          { "target": "accessory", "description": "魅力+3" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "魅力+4" },
+          { "target": "armor", "description": "魅力+4" },
+          { "target": "accessory", "description": "魅力+4" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "魅力+5" },
+          { "target": "armor", "description": "魅力+5" },
+          { "target": "accessory", "description": "魅力+5" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魅力+6" },
+          { "target": "armor", "description": "魅力+6" },
+          { "target": "accessory", "description": "魅力+6" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魅力+7" },
+          { "target": "armor", "description": "魅力+7" },
+          { "target": "accessory", "description": "魅力+7" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魅力+8" },
+          { "target": "armor", "description": "魅力+8" },
+          { "target": "accessory", "description": "魅力+8" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "魅力+9" },
+          { "target": "armor", "description": "魅力+9" },
+          { "target": "accessory", "description": "魅力+9" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "魅力+10" },
+          { "target": "armor", "description": "魅力+10" },
+          { "target": "accessory", "description": "魅力+10" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-pearl",
+    "name": "珍珠",
+    "category": "generalGem",
+    "image": "gem-pearl.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "生命+30" },
+          { "target": "armor", "description": "生命+15" },
+          { "target": "accessory", "description": "生命+30, 耐久-5%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "生命+40" },
+          { "target": "armor", "description": "生命+20" },
+          { "target": "accessory", "description": "生命+40, 耐久-10%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "生命+50" },
+          { "target": "armor", "description": "生命+25" },
+          { "target": "accessory", "description": "生命+50, 耐久-15%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "生命+60" },
+          { "target": "armor", "description": "生命+30" },
+          { "target": "accessory", "description": "生命+60, 耐久-20%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "生命+70" },
+          { "target": "armor", "description": "生命+35" },
+          { "target": "accessory", "description": "生命+70, 耐久-25%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "生命+80" },
+          { "target": "armor", "description": "生命+40" },
+          { "target": "accessory", "description": "生命+80, 耐久-30%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "生命+90" },
+          { "target": "armor", "description": "生命+45" },
+          { "target": "accessory", "description": "生命+90, 耐久-35%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "生命+100" },
+          { "target": "armor", "description": "生命+50" },
+          { "target": "accessory", "description": "生命+100, 耐久-40%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "生命+110" },
+          { "target": "armor", "description": "生命+55" },
+          { "target": "accessory", "description": "生命+110, 耐久-45%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "生命+120" },
+          { "target": "armor", "description": "生命+60" },
+          { "target": "accessory", "description": "生命+120, 耐久-50%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-opal",
+    "name": "蛋白石",
+    "category": "generalGem",
+    "image": "gem-opal.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "魔力+30" },
+          { "target": "armor", "description": "魔力+30" },
+          { "target": "accessory", "description": "魔力+30, 耐久-5%" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "魔力+40" },
+          { "target": "armor", "description": "魔力+35" },
+          { "target": "accessory", "description": "魔力+40, 耐久-10%" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "魔力+50" },
+          { "target": "armor", "description": "魔力+40" },
+          { "target": "accessory", "description": "魔力+50, 耐久-15%" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "魔力+60" },
+          { "target": "armor", "description": "魔力+45" },
+          { "target": "accessory", "description": "魔力+60, 耐久-20%" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "魔力+70" },
+          { "target": "armor", "description": "魔力+50" },
+          { "target": "accessory", "description": "魔力+70, 耐久-25%" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+80" },
+          { "target": "armor", "description": "魔力+55" },
+          { "target": "accessory", "description": "魔力+80, 耐久-30%" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+90" },
+          { "target": "armor", "description": "魔力+60" },
+          { "target": "accessory", "description": "魔力+90, 耐久-35%" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+100" },
+          { "target": "armor", "description": "魔力+65" },
+          { "target": "accessory", "description": "魔力+100, 耐久-40%" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+110" },
+          { "target": "armor", "description": "魔力+70" },
+          { "target": "accessory", "description": "魔力+110, 耐久-45%" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+120" },
+          { "target": "armor", "description": "魔力+75" },
+          { "target": "accessory", "description": "魔力+120, 耐久-50%" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generalGem-cats-eye",
+    "name": "貓眼石",
+    "category": "generalGem",
+    "image": "gem-cats-eye.png",
+    "levels": [
+      {
+        "level": 1,
+        "grade": "碎片",
+        "effects": [
+          { "target": "weapon", "description": "魔力+30" },
+          { "target": "armor", "description": "魔力+30" },
+          { "target": "accessory", "description": "魔力+30" }
+        ]
+      },
+      {
+        "level": 2,
+        "grade": "嚴重損壞",
+        "effects": [
+          { "target": "weapon", "description": "魔力+60" },
+          { "target": "armor", "description": "魔力+60" },
+          { "target": "accessory", "description": "魔力+60" }
+        ]
+      },
+      {
+        "level": 3,
+        "grade": "損壞",
+        "effects": [
+          { "target": "weapon", "description": "魔力+90" },
+          { "target": "armor", "description": "魔力+90" },
+          { "target": "accessory", "description": "魔力+90" }
+        ]
+      },
+      {
+        "level": 4,
+        "grade": "稍微損壞",
+        "effects": [
+          { "target": "weapon", "description": "魔力+120" },
+          { "target": "armor", "description": "魔力+120" },
+          { "target": "accessory", "description": "魔力+120" }
+        ]
+      },
+      {
+        "level": 5,
+        "grade": "完美寶石",
+        "effects": [
+          { "target": "weapon", "description": "魔力+150" },
+          { "target": "armor", "description": "魔力+150" },
+          { "target": "accessory", "description": "魔力+150" }
+        ]
+      },
+      {
+        "level": 6,
+        "grade": "稍微損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+180" },
+          { "target": "armor", "description": "魔力+180" },
+          { "target": "accessory", "description": "魔力+180" }
+        ]
+      },
+      {
+        "level": 7,
+        "grade": "損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+210" },
+          { "target": "armor", "description": "魔力+210" },
+          { "target": "accessory", "description": "魔力+210" }
+        ]
+      },
+      {
+        "level": 8,
+        "grade": "嚴重損壞結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+240" },
+          { "target": "armor", "description": "魔力+240" },
+          { "target": "accessory", "description": "魔力+240" }
+        ]
+      },
+      {
+        "level": 9,
+        "grade": "結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+270" },
+          { "target": "armor", "description": "魔力+270" },
+          { "target": "accessory", "description": "魔力+270" }
+        ]
+      },
+      {
+        "level": 10,
+        "grade": "完整結晶",
+        "effects": [
+          { "target": "weapon", "description": "魔力+300" },
+          { "target": "armor", "description": "魔力+300" },
+          { "target": "accessory", "description": "魔力+300" }
+        ]
+      }
+    ]
+  }
+]
