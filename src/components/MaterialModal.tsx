@@ -9,6 +9,7 @@ interface MaterialModalProps {
 interface LocationEntry {
   name: string;
   coord: string;
+  pure?: boolean;
 }
 
 interface MaterialSource {
@@ -35,11 +36,14 @@ function LocationList({ locations }: { locations: LocationEntry[] }) {
     <div className="space-y-1">
       {locations.map((loc, i) => (
         <div key={i} className="flex items-start gap-2 text-sm">
-          <span className="text-accent-500 mt-0.5 flex-shrink-0">•</span>
+          <span className={`mt-0.5 flex-shrink-0 ${loc.pure ? "text-red-500" : "text-accent-500"}`}>•</span>
           <div className="min-w-0">
             <span className="text-gray-700">{loc.name}</span>
             {loc.coord && (
               <span className="ml-1.5 text-xs text-gray-400 font-mono">({loc.coord})</span>
+            )}
+            {loc.pure && (
+              <span className="ml-1.5 text-[10px] px-1 py-0.5 rounded bg-red-50 text-red-600 font-medium">純</span>
             )}
           </div>
         </div>
