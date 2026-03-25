@@ -22,6 +22,7 @@ export interface Recipe {
   materials: Material[];
   mpCost: number;
   stats?: string;
+  recoveryValue?: number;
 }
 
 export interface PriceConfig {

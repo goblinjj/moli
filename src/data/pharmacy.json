@@ -21,7 +21,8 @@
         "image": "44f1c917f34ec79a01d073502a0c09da.png",
         "materialLevel": 2
       }
-    ]
+    ],
+    "recoveryValue": 100
   },
   {
     "id": "pharmacy-2a",
@@ -45,7 +46,8 @@
         "image": "44f1c917f34ec79a01d073502a0c09da.png",
         "materialLevel": 2
       }
-    ]
+    ],
+    "recoveryValue": 150
   },
   {
     "id": "pharmacy-2b",
@@ -129,7 +131,8 @@
         "image": "0e09bcf45c6e4f1149ffbd883da0ce80.png",
         "materialLevel": 3
       }
-    ]
+    ],
+    "recoveryValue": 200
   },
   {
     "id": "pharmacy-4a",
@@ -159,7 +162,8 @@
         "image": "6e22b5c44bc4ea518e2aafa51484b6a7.png",
         "materialLevel": 4
       }
-    ]
+    ],
+    "recoveryValue": 250
   },
   {
     "id": "pharmacy-4b",
@@ -267,7 +271,8 @@
         "image": "31cff60130c2cf89f0acb7e64164005b.png",
         "materialLevel": 5
       }
-    ]
+    ],
+    "recoveryValue": 300
   },
   {
     "id": "pharmacy-6a",
@@ -297,7 +302,8 @@
         "image": "a21a24ca60d29c77f4838bda846565b9.png",
         "materialLevel": 6
       }
-    ]
+    ],
+    "recoveryValue": 400
   },
   {
     "id": "pharmacy-7a",
@@ -333,7 +339,8 @@
         "image": "0f9ec6833b5f9056b110768f9d323a87.png",
         "materialLevel": 7
       }
-    ]
+    ],
+    "recoveryValue": 500
   },
   {
     "id": "pharmacy-7b",
@@ -399,7 +406,8 @@
         "image": "9a3db37de1d19deeaa5426b221780f47.png",
         "materialLevel": 8
       }
-    ]
+    ],
+    "recoveryValue": 600
   },
   {
     "id": "pharmacy-8b",
@@ -483,7 +491,8 @@
         "image": "ab962a2d0c46c0daef413a6977e26b81.png",
         "materialLevel": 10
       }
-    ]
+    ],
+    "recoveryValue": 800
   },
   {
     "id": "pharmacy-10a",
@@ -525,7 +534,8 @@
         "image": "ab962a2d0c46c0daef413a6977e26b81.png",
         "materialLevel": 10
       }
-    ]
+    ],
+    "recoveryValue": 1000
   },
   {
     "id": "pharmacy-11a",

@@ -21,7 +21,8 @@
         "image": "70620fd2c8b23c205fe106470a402d1c.png",
         "materialLevel": 1
       }
-    ]
+    ],
+    "recoveryValue": 30
   },
   {
     "id": "cooking-1b",
@@ -51,7 +52,8 @@
         "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
         "materialLevel": 3
       }
-    ]
+    ],
+    "recoveryValue": 100
   },
   {
     "id": "cooking-1c",
@@ -87,7 +89,8 @@
         "image": "0898fe7c20631883736376cf7168de2d.png",
         "materialLevel": 1
       }
-    ]
+    ],
+    "recoveryValue": 50
   },
   {
     "id": "cooking-1d",
@@ -111,7 +114,8 @@
         "image": "e9e4896ebaaff38db3f2b8617917fc07.png",
         "materialLevel": 1
       }
-    ]
+    ],
+    "recoveryValue": 30
   },
   {
     "id": "cooking-1e",
@@ -141,7 +145,8 @@
         "image": "4bb832503d87f280096b41c8a316eea3.png",
         "materialLevel": 1
       }
-    ]
+    ],
+    "recoveryValue": 300
   },
   {
     "id": "cooking-1f",
@@ -165,7 +170,8 @@
         "image": "0898fe7c20631883736376cf7168de2d.png",
         "materialLevel": 1
       }
-    ]
+    ],
+    "recoveryValue": 50
   },
   {
     "id": "cooking-2a",
@@ -207,7 +213,8 @@
         "image": "b560764824fe5a301591d589a3bab960.png",
         "materialLevel": 1
       }
-    ]
+    ],
+    "recoveryValue": 150
   },
   {
     "id": "cooking-2b",
@@ -237,7 +244,8 @@
         "image": "063dc3ba5c17a99686b8ff28e52b61a2.png",
         "materialLevel": 3
       }
-    ]
+    ],
+    "recoveryValue": 200
   },
   {
     "id": "cooking-3a",
@@ -273,7 +281,8 @@
         "image": "277f1120fd89f968aec48796ef89c23a.png",
         "materialLevel": 5
       }
-    ]
+    ],
+    "recoveryValue": 250
   },
   {
     "id": "cooking-3b",
@@ -309,7 +318,8 @@
         "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
         "materialLevel": 5
       }
-    ]
+    ],
+    "recoveryValue": 300
   },
   {
     "id": "cooking-3c",
@@ -369,7 +379,8 @@
         "image": "44f1c917f34ec79a01d073502a0c09da.png",
         "materialLevel": 2
       }
-    ]
+    ],
+    "recoveryValue": 350
   },
   {
     "id": "cooking-4b",
@@ -411,7 +422,8 @@
         "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
         "materialLevel": 6
       }
-    ]
+    ],
+    "recoveryValue": 400
   },
   {
     "id": "cooking-5a",
@@ -447,7 +459,8 @@
         "image": "eb166856e4cc55d9f63c37a93c09a45f.png",
         "materialLevel": 5
       }
-    ]
+    ],
+    "recoveryValue": 450
   },
   {
     "id": "cooking-5b",
@@ -489,7 +502,8 @@
         "image": "f7d9a398fc22b1f714f375cf0a7168d3.png",
         "materialLevel": 6
       }
-    ]
+    ],
+    "recoveryValue": 500
   },
   {
     "id": "cooking-5c",
@@ -531,7 +545,8 @@
         "image": "f9f814337691841f18a750416dbae036.png",
         "materialLevel": 5
       }
-    ]
+    ],
+    "recoveryValue": 400
   },
   {
     "id": "cooking-6a",
@@ -555,7 +570,8 @@
         "image": "4d110e4faa9ec5f457b20d9fad9600a9.png",
         "materialLevel": 3
       }
-    ]
+    ],
+    "recoveryValue": 550
   },
   {
     "id": "cooking-6b",
@@ -597,7 +613,8 @@
         "image": "86dd6a652fc6c126cf7b70f5b73e447a.png",
         "materialLevel": 6
       }
-    ]
+    ],
+    "recoveryValue": 600
   },
   {
     "id": "cooking-7a",
@@ -639,7 +656,8 @@
         "image": "531dedd74617b2df1a5bef6e77677b48.png",
         "materialLevel": 7
       }
-    ]
+    ],
+    "recoveryValue": 650
   },
   {
     "id": "cooking-7b",
@@ -681,7 +699,8 @@
         "image": "a8ab9f244462269568596a3165d17b03.png",
         "materialLevel": 7
       }
-    ]
+    ],
+    "recoveryValue": 700
   },
   {
     "id": "cooking-7c",
@@ -741,7 +760,8 @@
         "image": "91bec443f9f92d9f5874a51086dcb18b.png",
         "materialLevel": 8
       }
-    ]
+    ],
+    "recoveryValue": 750
   },
   {
     "id": "cooking-8b",
@@ -783,7 +803,8 @@
         "image": "4dff4d2cf989e076e14139b48103efd0.png",
         "materialLevel": 8
       }
-    ]
+    ],
+    "recoveryValue": 800
   },
   {
     "id": "cooking-8c",
@@ -867,7 +888,8 @@
         "image": "9f185fea79573507366043d3b15e8b01.png",
         "materialLevel": 9
       }
-    ]
+    ],
+    "recoveryValue": 850
   },
   {
     "id": "cooking-9b",
@@ -909,7 +931,8 @@
         "image": "cb4307ea265c54831087058e3b121cff.png",
         "materialLevel": 9
       }
-    ]
+    ],
+    "recoveryValue": 900
   },
   {
     "id": "cooking-10a",
@@ -951,7 +974,8 @@
         "image": "a30844b6d503be58a65aa7ebeb7c4d93.png",
         "materialLevel": 10
       }
-    ]
+    ],
+    "recoveryValue": 1000
   },
   {
     "id": "cooking-10b",
@@ -993,7 +1017,8 @@
         "image": "86b24c9b7b4c7644baa3854d54fec76b.png",
         "materialLevel": 10
       }
-    ]
+    ],
+    "recoveryValue": 1200
   },
   {
     "id": "cooking-11a",
