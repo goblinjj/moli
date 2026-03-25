@@ -6,12 +6,14 @@ import { loadConfig, saveConfig } from "../lib/storage";
 import SearchFilter from "./SearchFilter";
 import RecipeCard from "./RecipeCard";
 import GemCard from "./GemCard";
+import SupplyPricing from "./SupplyPricing";
 
 interface CalculatorProps {
   recipes: Recipe[];
   gems: Gem[];
 }
 
+type Section = "production" | "tools";
 type SubCategory = Category | GemCategory;
 
 const CATEGORY_GROUPS: { group: string; isGem?: boolean; items: { id: SubCategory; label: string }[] }[] = [
@@ -88,6 +90,7 @@ for (const g of CATEGORY_GROUPS) {
 }
 
 export default function Calculator({ recipes, gems }: CalculatorProps) {
+  const [activeSection, setActiveSection] = useState<Section>("production");
   const [activeGroup, setActiveGroup] = useState(0);
   const [activeCategory, setActiveCategory] = useState<SubCategory>("sword");
   const [searchQuery, setSearchQuery] = useState("");
@@ -176,6 +179,31 @@ export default function Calculator({ recipes, gems }: CalculatorProps) {
         </h1>
       </header>
 
+      {/* Top-level section navigation */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="flex px-5 lg:px-6 gap-0">
+          {([
+            { id: "production" as Section, label: "生产系资料" },
+            { id: "tools" as Section, label: "工具" },
+          ]).map((section) => (
+            <button
+              key={section.id}
+              type="button"
+              onClick={() => setActiveSection(section.id)}
+              className={`px-4 py-2.5 text-sm font-semibold border-b-2 transition-colors ${
+                activeSection === section.id
+                  ? "border-accent-500 text-accent-600"
+                  : "border-transparent text-gray-500 hover:text-gray-700"
+              }`}
+            >
+              {section.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {activeSection === "production" && (
+        <>
       {/* Category navigation - two level */}
       <nav className="bg-white border-b border-gray-200">
         {/* Level 1: group tabs */}
@@ -279,6 +307,26 @@ export default function Calculator({ recipes, gems }: CalculatorProps) {
           )
         )}
       </main>
+        </>
+      )}
+
+      {activeSection === "tools" && (
+        <>
+          <nav className="bg-white border-b border-gray-200">
+            <div className="flex items-center gap-1.5 px-5 lg:px-6 py-2">
+              <button
+                type="button"
+                className="px-3.5 py-1 rounded-full text-xs font-medium bg-accent-500 text-white shadow-sm shadow-accent-500/20"
+              >
+                补给估价
+              </button>
+            </div>
+          </nav>
+          <main className="flex-1 overflow-y-auto p-5 lg:p-6">
+            <SupplyPricing recipes={recipes} />
+          </main>
+        </>
+      )}
     </div>
   );
 }
