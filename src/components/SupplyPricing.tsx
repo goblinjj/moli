@@ -126,11 +126,11 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
               <tr className="text-left text-gray-500 text-xs border-b border-gray-200 sticky top-0 bg-white">
                 <th className="py-2 px-2 font-medium">图标</th>
                 <th className="py-2 px-2 font-medium">名称</th>
-                <th className="py-2 px-2 font-medium text-center">等级</th>
-                <th className="py-2 px-2 font-medium text-right">回复值</th>
+                <th className="py-2 px-2 font-medium text-center hidden md:table-cell">等级</th>
+                <th className="py-2 px-2 font-medium text-right hidden md:table-cell">回复值</th>
                 <th className="py-2 px-2 font-medium text-center">比例</th>
                 <th className="py-2 px-2 font-medium text-right">单价</th>
-                <th className="py-2 px-2 font-medium text-right">一组(×5)</th>
+                <th className="py-2 px-2 font-medium text-right hidden md:table-cell">一组(×5)</th>
                 <th className="py-2 px-2 font-medium text-right">一箱(×50)</th>
                 <th className="py-2 px-2 font-medium text-right">血魔池每点成本</th>
               </tr>
@@ -154,8 +154,8 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
                       />
                     </td>
                     <td className="py-2 px-2 font-medium text-gray-800">{item.name}</td>
-                    <td className="py-2 px-2 text-center text-gray-600">{item.level}</td>
-                    <td className="py-2 px-2 text-right tabular-nums text-gray-700">
+                    <td className="py-2 px-2 text-center text-gray-600 hidden md:table-cell">{item.level}</td>
+                    <td className="py-2 px-2 text-right tabular-nums text-gray-700 hidden md:table-cell">
                       {item.recoveryValue!.toLocaleString()}
                     </td>
                     <td className="py-2 px-2 text-center">
@@ -173,7 +173,7 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
                     <td className="py-2 px-2 text-right tabular-nums text-gray-700">
                       {formatNumber(unitPrice)}
                     </td>
-                    <td className="py-2 px-2 text-right tabular-nums text-gray-700">
+                    <td className="py-2 px-2 text-right tabular-nums text-gray-700 hidden md:table-cell">
                       {formatNumber(groupPrice)}
                     </td>
                     <td className="py-2 px-2 text-right tabular-nums text-gray-700">
