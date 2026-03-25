@@ -88,7 +88,7 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
       </div>
 
       {/* Level filter */}
-      <div className="flex items-center gap-1.5 mb-4">
+      <div className="flex items-center gap-1.5 mb-4 overflow-x-auto scrollbar-hide">
         <button
           type="button"
           onClick={() => setLevelFilter(null)}
