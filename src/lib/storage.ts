@@ -23,3 +23,21 @@ export function saveConfig(config: PriceConfig): void {
   if (typeof window === "undefined") return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(config));
 }
+
+const RATIO_STORAGE_KEY = "moli-supply-pricing-ratios";
+
+export function loadPricingRatios(): Record<string, number> {
+  if (typeof window === "undefined") return {};
+  try {
+    const saved = localStorage.getItem(RATIO_STORAGE_KEY);
+    if (!saved) return {};
+    return JSON.parse(saved);
+  } catch {
+    return {};
+  }
+}
+
+export function savePricingRatios(ratios: Record<string, number>): void {
+  if (typeof window === "undefined") return;
+  localStorage.setItem(RATIO_STORAGE_KEY, JSON.stringify(ratios));
+}
