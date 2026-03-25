@@ -18,13 +18,20 @@ type Tab = "cooking" | "pharmacy";
 
 export default function SupplyPricing({ recipes }: SupplyPricingProps) {
   const [activeTab, setActiveTab] = useState<Tab>("cooking");
+  const [levelFilter, setLevelFilter] = useState<number | null>(null);
   const [ratios, setRatios] = useState<Record<string, number>>(() => loadPricingRatios());
 
   useEffect(() => {
     savePricingRatios(ratios);
   }, [ratios]);
 
-  const items = useMemo(() => {
+  // Reset level filter when switching tabs
+  const handleTabChange = useCallback((tab: Tab) => {
+    setActiveTab(tab);
+    setLevelFilter(null);
+  }, []);
+
+  const allItems = useMemo(() => {
     return recipes.filter(
       (r) =>
         r.category === activeTab &&
@@ -34,6 +41,16 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
         r.recoveryValue > 0
     ).sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
   }, [recipes, activeTab]);
+
+  const items = useMemo(() => {
+    if (levelFilter === null) return allItems;
+    return allItems.filter((r) => r.level === levelFilter);
+  }, [allItems, levelFilter]);
+
+  const availableLevels = useMemo(() => {
+    const levels = new Set(allItems.map((r) => r.level));
+    return Array.from(levels).sort((a, b) => a - b);
+  }, [allItems]);
 
   const getRatio = useCallback(
     (id: string) => ratios[id] ?? DEFAULT_RATIO,
@@ -58,7 +75,7 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
           <button
             key={tab.id}
             type="button"
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabChange(tab.id)}
             className={`px-3.5 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-150 ${
               activeTab === tab.id
                 ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
@@ -70,6 +87,35 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
         ))}
       </div>
 
+      {/* Level filter */}
+      <div className="flex items-center gap-1.5 mb-4">
+        <button
+          type="button"
+          onClick={() => setLevelFilter(null)}
+          className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all duration-150 ${
+            levelFilter === null
+              ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
+              : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+          }`}
+        >
+          全部
+        </button>
+        {availableLevels.map((lv) => (
+          <button
+            key={lv}
+            type="button"
+            onClick={() => setLevelFilter(lv === levelFilter ? null : lv)}
+            className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all duration-150 ${
+              levelFilter === lv
+                ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+            }`}
+          >
+            Lv.{lv}
+          </button>
+        ))}
+      </div>
+
       {/* Pricing table */}
       {items.length === 0 ? (
         <div className="text-center text-slate-400 mt-16 text-sm">没有找到数据</div>
@@ -77,7 +123,7 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="text-left text-gray-500 text-xs border-b border-gray-200">
+              <tr className="text-left text-gray-500 text-xs border-b border-gray-200 sticky top-0 bg-white">
                 <th className="py-2 px-2 font-medium">图标</th>
                 <th className="py-2 px-2 font-medium">名称</th>
                 <th className="py-2 px-2 font-medium text-center">等级</th>
@@ -102,7 +148,7 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
                   <tr key={item.id} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="py-2 px-2">
                       <img
-                        src={`/images/${item.image}`}
+                        src={`/items/${item.image}`}
                         alt={item.name}
                         className="w-8 h-8 object-contain"
                       />

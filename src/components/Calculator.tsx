@@ -89,8 +89,15 @@ for (const g of CATEGORY_GROUPS) {
   }
 }
 
+function getSectionFromHash(): Section {
+  if (typeof window === "undefined") return "production";
+  const hash = window.location.hash.replace("#", "");
+  if (hash === "tools") return "tools";
+  return "production";
+}
+
 export default function Calculator({ recipes, gems }: CalculatorProps) {
-  const [activeSection, setActiveSection] = useState<Section>("production");
+  const [activeSection, setActiveSection] = useState<Section>(getSectionFromHash);
   const [activeGroup, setActiveGroup] = useState(0);
   const [activeCategory, setActiveCategory] = useState<SubCategory>("sword");
   const [searchQuery, setSearchQuery] = useState("");
@@ -101,6 +108,13 @@ export default function Calculator({ recipes, gems }: CalculatorProps) {
   });
 
   const isGemMode = CATEGORY_GROUPS[activeGroup]?.isGem === true;
+
+  // Sync section with URL hash
+  useEffect(() => {
+    const onHashChange = () => setActiveSection(getSectionFromHash());
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
 
   // Persist config to localStorage whenever it changes
   useEffect(() => {
@@ -189,7 +203,10 @@ export default function Calculator({ recipes, gems }: CalculatorProps) {
             <button
               key={section.id}
               type="button"
-              onClick={() => setActiveSection(section.id)}
+              onClick={() => {
+                setActiveSection(section.id);
+                window.location.hash = section.id === "tools" ? "tools" : "";
+              }}
               className={`px-4 py-2.5 text-sm font-semibold border-b-2 transition-colors ${
                 activeSection === section.id
                   ? "border-accent-500 text-accent-600"
