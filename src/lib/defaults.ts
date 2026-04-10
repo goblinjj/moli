@@ -26,9 +26,9 @@ export function generateDefaultConfig(recipes: Recipe[]): PriceConfig {
       if (mat.name in CLOTH_SHOP_PRICES) {
         materialPrices[mat.name] = CLOTH_SHOP_PRICES[mat.name];
       } else if (mat.name.endsWith("條")) {
-        materialPrices[mat.name] = mat.materialLevel * 20;
+        materialPrices[mat.name] = mat.materialLevel * 10;
       } else {
-        materialPrices[mat.name] = mat.materialLevel * 1;
+        materialPrices[mat.name] = mat.materialLevel / 2;
       }
     }
   }
