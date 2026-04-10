@@ -3,9 +3,12 @@ import '../styles/global.css'
 
 interface Props {
   title?: string;
+  description?: string;
 }
 
-const { title = "魔力宝贝资料站" } = Astro.props;
+const { title = "魔力宝贝生产计算器 - 装备制作成本与材料采集攻略", description = "魔力宝贝生产计算器，支持装备制作成本计算、材料价格设置、采集点查询。涵盖武器、防具、料理、药品、饰品等全品类生产配方，帮助玩家精确计算生产利润。" } = Astro.props;
+const siteUrl = "https://moli.goblin.top";
+const ogImage = `${siteUrl}/favicon.svg`;
 ---
 
 <!doctype html>
@@ -16,8 +19,29 @@ const { title = "魔力宝贝资料站" } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="魔力宝贝,生产计算器,装备制作,材料采集,成本计算,魔力宝贝攻略,Cross Gate,制作配方,采集点,魔力宝贝工具,生产利润,武器制作,防具制作,料理,药品,饰品" />
+    <link rel="canonical" href={siteUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="魔力宝贝资料站" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body class="bg-gray-50 font-sans antialiased text-gray-900">
     <slot />
+    <footer class="border-t border-gray-200 bg-white py-4 text-center text-xs text-gray-400">
+      <p>魔力宝贝生产计算器 · 联系邮箱：<a href="mailto:goblinjj@aliyun.com" class="text-gray-500 hover:text-accent-500 underline">goblinjj@aliyun.com</a></p>
+    </footer>
   </body>
 </html>
