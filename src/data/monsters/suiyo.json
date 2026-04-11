@@ -3,6 +3,110 @@
   "name": "水曜之域",
   "subMaps": [
     {
+      "name": "水曜之域",
+      "areas": [
+        {
+          "id": "irg5t",
+          "name": "水曜之域",
+          "crystals": [
+            "風地(121%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
+            {
+              "name": "沼澤樹精",
+              "levelMin": 35,
+              "levelMax": 40,
+              "earth": 7,
+              "water": 3,
+              "fire": 0,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101405400.png",
+              "frameWidth": 112,
+              "frameHeight": 147,
+              "frameCount": 66,
+              "animTime": 4000
+            },
+            {
+              "name": "水之妖精",
+              "levelMin": 35,
+              "levelMax": 40,
+              "earth": 0,
+              "water": 7,
+              "fire": 3,
+              "wind": 0,
+              "type": "人形系",
+              "typeDetail": "+野獸 昆蟲,-不死 金屬",
+              "cardGrade": "1級普卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104335400.png",
+              "frameWidth": 48,
+              "frameHeight": 82,
+              "frameCount": 8,
+              "animTime": 1000
+            }
+          ]
+        },
+        {
+          "id": "irg5t",
+          "name": "清波村南方通道後",
+          "crystals": [
+            "地水(124%)",
+            "純地(124%)",
+            "純水(124%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
+            {
+              "name": "幻歌妖",
+              "levelMin": 45,
+              "levelMax": 50,
+              "earth": 1,
+              "water": 9,
+              "fire": 0,
+              "wind": 0,
+              "type": "人形系",
+              "typeDetail": "+野獸 昆蟲,-不死 金屬",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101831400.png",
+              "frameWidth": 68,
+              "frameHeight": 109,
+              "frameCount": 6,
+              "animTime": 800
+            },
+            {
+              "name": "金檸雲傘",
+              "levelMin": 40,
+              "levelMax": 45,
+              "earth": 0,
+              "water": 0,
+              "fire": 9,
+              "wind": 1,
+              "type": "特殊系",
+              "typeDetail": "+金屬 龍系,-昆蟲 植物",
+              "cardGrade": "",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104550400.png",
+              "frameWidth": 84,
+              "frameHeight": 79,
+              "frameCount": 6,
+              "animTime": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "通道",
       "areas": [
         {
@@ -777,7 +881,7 @@
       "areas": [
         {
           "id": "e89h4",
-          "name": "",
+          "name": "水曜之域",
           "crystals": [
             "火風(145%)",
             "純火(148%)"
@@ -1219,110 +1323,6 @@
               "image": "104614400.png",
               "frameWidth": 58,
               "frameHeight": 76,
-              "frameCount": 6,
-              "animTime": 1000
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "水曜之域",
-      "areas": [
-        {
-          "id": "irg5t",
-          "name": "",
-          "crystals": [
-            "風地(121%)",
-            "純地(130%)"
-          ],
-          "encounterCount": "1-6",
-          "monsters": [
-            {
-              "name": "沼澤樹精",
-              "levelMin": 35,
-              "levelMax": 40,
-              "earth": 7,
-              "water": 3,
-              "fire": 0,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "4級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101405400.png",
-              "frameWidth": 112,
-              "frameHeight": 147,
-              "frameCount": 66,
-              "animTime": 4000
-            },
-            {
-              "name": "水之妖精",
-              "levelMin": 35,
-              "levelMax": 40,
-              "earth": 0,
-              "water": 7,
-              "fire": 3,
-              "wind": 0,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "1級普卡",
-              "sealable": false,
-              "isBoss": false,
-              "image": "104335400.png",
-              "frameWidth": 48,
-              "frameHeight": 82,
-              "frameCount": 8,
-              "animTime": 1000
-            }
-          ]
-        },
-        {
-          "id": "irg5t",
-          "name": "清波村南方通道後",
-          "crystals": [
-            "地水(124%)",
-            "純地(124%)",
-            "純水(124%)"
-          ],
-          "encounterCount": "1-6",
-          "monsters": [
-            {
-              "name": "幻歌妖",
-              "levelMin": 45,
-              "levelMax": 50,
-              "earth": 1,
-              "water": 9,
-              "fire": 0,
-              "wind": 0,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "4級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101831400.png",
-              "frameWidth": 68,
-              "frameHeight": 109,
-              "frameCount": 6,
-              "animTime": 800
-            },
-            {
-              "name": "金檸雲傘",
-              "levelMin": 40,
-              "levelMax": 45,
-              "earth": 0,
-              "water": 0,
-              "fire": 9,
-              "wind": 1,
-              "type": "特殊系",
-              "typeDetail": "+金屬 龍系,-昆蟲 植物",
-              "cardGrade": "",
-              "sealable": false,
-              "isBoss": false,
-              "image": "104550400.png",
-              "frameWidth": 84,
-              "frameHeight": 79,
               "frameCount": 6,
               "animTime": 1000
             }

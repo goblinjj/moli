@@ -394,13 +394,26 @@ async function main() {
     const subMaps = [];
 
     const subMapEntries = [...island.subMaps.values()];
-    subMapEntries.sort((a, b) => (a.priority || 1) - (b.priority || 1));
+    subMapEntries.sort((a, b) => {
+      const aIsIsland = a.name === islandName ? 0 : 1;
+      const bIsIsland = b.name === islandName ? 0 : 1;
+      if (aIsIsland !== bIsIsland) return aIsIsland - bIsIsland;
+      return (a.priority || 1) - (b.priority || 1);
+    });
 
     for (const subMap of subMapEntries) {
       const areas = [];
       for (const [, area] of subMap.areas) {
+        if (!area.name || !area.name.trim()) {
+          area.name = islandName;
+        }
         areas.push(area);
       }
+      areas.sort((a, b) => {
+        const aIsIsland = a.name === islandName ? 0 : 1;
+        const bIsIsland = b.name === islandName ? 0 : 1;
+        return aIsIsland - bIsIsland;
+      });
       if (areas.length > 0) {
         subMaps.push({ name: subMap.name, areas });
       }

@@ -3,6 +3,340 @@
   "name": "芙蕾雅島",
   "subMaps": [
     {
+      "name": "芙蕾雅島",
+      "areas": [
+        {
+          "id": "dhstx",
+          "name": "芙蕾雅島",
+          "crystals": [
+            "地水(121%)",
+            "純水(139%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
+            {
+              "name": "樹精",
+              "levelMin": 5,
+              "levelMax": 7,
+              "earth": 0,
+              "water": 4,
+              "fire": 6,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101400400.png",
+              "frameWidth": 120,
+              "frameHeight": 145,
+              "frameCount": 45,
+              "animTime": 2000
+            },
+            {
+              "name": "黃蜂",
+              "levelMin": 5,
+              "levelMax": 8,
+              "earth": 0,
+              "water": 0,
+              "fire": 7,
+              "wind": 3,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101313400.png",
+              "frameWidth": 50,
+              "frameHeight": 102,
+              "frameCount": 10,
+              "animTime": 600
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "法蘭城外圍",
+          "crystals": [
+            "火風(103%)",
+            "純火(103%)",
+            "純風(103%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
+            {
+              "name": "哥布林",
+              "levelMin": 1,
+              "levelMax": 5,
+              "earth": 7,
+              "water": 3,
+              "fire": 0,
+              "wind": 0,
+              "type": "人形系",
+              "typeDetail": "+野獸 昆蟲,-不死 金屬",
+              "cardGrade": "1級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101800400.png",
+              "frameWidth": 49,
+              "frameHeight": 56,
+              "frameCount": 6,
+              "animTime": 1500
+            },
+            {
+              "name": "迷你蝙蝠",
+              "levelMin": 1,
+              "levelMax": 5,
+              "earth": 0,
+              "water": 0,
+              "fire": 6,
+              "wind": 4,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "1級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101242400.png",
+              "frameWidth": 55,
+              "frameHeight": 98,
+              "frameCount": 6,
+              "animTime": 700
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "維諾亞村外圍",
+          "crystals": [
+            "水火(106%)",
+            "純火(106%)",
+            "純水(106%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
+            {
+              "name": "紅帽哥布林",
+              "levelMin": 12,
+              "levelMax": 14,
+              "earth": 0,
+              "water": 7,
+              "fire": 3,
+              "wind": 0,
+              "type": "人形系",
+              "typeDetail": "+野獸 昆蟲,-不死 金屬",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101801400.png",
+              "frameWidth": 57,
+              "frameHeight": 66,
+              "frameCount": 6,
+              "animTime": 1500
+            },
+            {
+              "name": "黃色口臭鬼",
+              "levelMin": 12,
+              "levelMax": 14,
+              "earth": 1,
+              "water": 0,
+              "fire": 0,
+              "wind": 9,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "4級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101421400.png",
+              "frameWidth": 91,
+              "frameHeight": 93,
+              "frameCount": 34,
+              "animTime": 5000
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "維諾亞洞窟外圍(維村側)",
+          "crystals": [
+            "火風(109%)",
+            "純火(109%)",
+            "純風(109%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
+            {
+              "name": "異型蜂",
+              "levelMin": 11,
+              "levelMax": 13,
+              "earth": 0,
+              "water": 0,
+              "fire": 5,
+              "wind": 5,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "3級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101311400.png",
+              "frameWidth": 69,
+              "frameHeight": 106,
+              "frameCount": 10,
+              "animTime": 1000
+            },
+            {
+              "name": "妖草",
+              "levelMin": 11,
+              "levelMax": 13,
+              "earth": 8,
+              "water": 2,
+              "fire": 0,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101410400.png",
+              "frameWidth": 45,
+              "frameHeight": 72,
+              "frameCount": 48,
+              "animTime": 12000
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "佈滿青苔的洞窟外",
+          "crystals": [
+            "水火(115%)",
+            "純火(115%)",
+            "純水(115%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
+            {
+              "name": "盜賊",
+              "levelMin": 10,
+              "levelMax": 12,
+              "earth": 0,
+              "water": 0,
+              "fire": 5,
+              "wind": 5,
+              "type": "人形系",
+              "typeDetail": "+野獸 昆蟲,-不死 金屬",
+              "cardGrade": "3級",
+              "sealable": false,
+              "isBoss": false,
+              "image": "101820400.png",
+              "frameWidth": 62,
+              "frameHeight": 76,
+              "frameCount": 6,
+              "animTime": 1200
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "聖拉魯卡村後山(西邊)",
+          "crystals": [
+            "風地(124%)",
+            "純地(133%)"
+          ],
+          "encounterCount": "4-6",
+          "monsters": [
+            {
+              "name": "水晶螃蟹",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 0,
+              "water": 8,
+              "fire": 2,
+              "wind": 0,
+              "type": "金屬系",
+              "typeDetail": "+龍系 人形,-特殊 不死",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101631400.png",
+              "frameWidth": 80,
+              "frameHeight": 64,
+              "frameCount": 10,
+              "animTime": 1500
+            },
+            {
+              "name": "海芋小妖",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 7,
+              "water": 3,
+              "fire": 0,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "8級銀卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104340400.png",
+              "frameWidth": 50,
+              "frameHeight": 135,
+              "frameCount": 6,
+              "animTime": 1000
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "聖拉魯卡村後山(東邊)",
+          "crystals": [
+            "水火(109%)",
+            "純火(109%)",
+            "純水(109%)"
+          ],
+          "encounterCount": "4-6",
+          "monsters": [
+            {
+              "name": "獨角仙",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 2,
+              "water": 0,
+              "fire": 0,
+              "wind": 8,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107303400.png",
+              "frameWidth": 92,
+              "frameHeight": 90,
+              "frameCount": 50,
+              "animTime": 9000
+            },
+            {
+              "name": "靈芝小妖",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 0,
+              "water": 5,
+              "fire": 5,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "8級銀卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104343400.png",
+              "frameWidth": 69,
+              "frameHeight": 104,
+              "frameCount": 6,
+              "animTime": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "法蘭城",
       "areas": [
         {
@@ -2311,340 +2645,6 @@
               "frameHeight": 115,
               "frameCount": 6,
               "animTime": 900
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "芙蕾雅島",
-      "areas": [
-        {
-          "id": "dhstx",
-          "name": "法蘭城外圍",
-          "crystals": [
-            "火風(103%)",
-            "純火(103%)",
-            "純風(103%)"
-          ],
-          "encounterCount": "1-4",
-          "monsters": [
-            {
-              "name": "哥布林",
-              "levelMin": 1,
-              "levelMax": 5,
-              "earth": 7,
-              "water": 3,
-              "fire": 0,
-              "wind": 0,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "1級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101800400.png",
-              "frameWidth": 49,
-              "frameHeight": 56,
-              "frameCount": 6,
-              "animTime": 1500
-            },
-            {
-              "name": "迷你蝙蝠",
-              "levelMin": 1,
-              "levelMax": 5,
-              "earth": 0,
-              "water": 0,
-              "fire": 6,
-              "wind": 4,
-              "type": "飛行系",
-              "typeDetail": "+昆蟲 不死,-龍系 野獸",
-              "cardGrade": "1級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101242400.png",
-              "frameWidth": 55,
-              "frameHeight": 98,
-              "frameCount": 6,
-              "animTime": 700
-            }
-          ]
-        },
-        {
-          "id": "dhstx",
-          "name": "",
-          "crystals": [
-            "地水(121%)",
-            "純水(139%)"
-          ],
-          "encounterCount": "1-4",
-          "monsters": [
-            {
-              "name": "樹精",
-              "levelMin": 5,
-              "levelMax": 7,
-              "earth": 0,
-              "water": 4,
-              "fire": 6,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101400400.png",
-              "frameWidth": 120,
-              "frameHeight": 145,
-              "frameCount": 45,
-              "animTime": 2000
-            },
-            {
-              "name": "黃蜂",
-              "levelMin": 5,
-              "levelMax": 8,
-              "earth": 0,
-              "water": 0,
-              "fire": 7,
-              "wind": 3,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101313400.png",
-              "frameWidth": 50,
-              "frameHeight": 102,
-              "frameCount": 10,
-              "animTime": 600
-            }
-          ]
-        },
-        {
-          "id": "dhstx",
-          "name": "維諾亞村外圍",
-          "crystals": [
-            "水火(106%)",
-            "純火(106%)",
-            "純水(106%)"
-          ],
-          "encounterCount": "1-4",
-          "monsters": [
-            {
-              "name": "紅帽哥布林",
-              "levelMin": 12,
-              "levelMax": 14,
-              "earth": 0,
-              "water": 7,
-              "fire": 3,
-              "wind": 0,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101801400.png",
-              "frameWidth": 57,
-              "frameHeight": 66,
-              "frameCount": 6,
-              "animTime": 1500
-            },
-            {
-              "name": "黃色口臭鬼",
-              "levelMin": 12,
-              "levelMax": 14,
-              "earth": 1,
-              "water": 0,
-              "fire": 0,
-              "wind": 9,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "4級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101421400.png",
-              "frameWidth": 91,
-              "frameHeight": 93,
-              "frameCount": 34,
-              "animTime": 5000
-            }
-          ]
-        },
-        {
-          "id": "dhstx",
-          "name": "維諾亞洞窟外圍(維村側)",
-          "crystals": [
-            "火風(109%)",
-            "純火(109%)",
-            "純風(109%)"
-          ],
-          "encounterCount": "1-4",
-          "monsters": [
-            {
-              "name": "異型蜂",
-              "levelMin": 11,
-              "levelMax": 13,
-              "earth": 0,
-              "water": 0,
-              "fire": 5,
-              "wind": 5,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "3級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101311400.png",
-              "frameWidth": 69,
-              "frameHeight": 106,
-              "frameCount": 10,
-              "animTime": 1000
-            },
-            {
-              "name": "妖草",
-              "levelMin": 11,
-              "levelMax": 13,
-              "earth": 8,
-              "water": 2,
-              "fire": 0,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101410400.png",
-              "frameWidth": 45,
-              "frameHeight": 72,
-              "frameCount": 48,
-              "animTime": 12000
-            }
-          ]
-        },
-        {
-          "id": "dhstx",
-          "name": "佈滿青苔的洞窟外",
-          "crystals": [
-            "水火(115%)",
-            "純火(115%)",
-            "純水(115%)"
-          ],
-          "encounterCount": "1-8",
-          "monsters": [
-            {
-              "name": "盜賊",
-              "levelMin": 10,
-              "levelMax": 12,
-              "earth": 0,
-              "water": 0,
-              "fire": 5,
-              "wind": 5,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "3級",
-              "sealable": false,
-              "isBoss": false,
-              "image": "101820400.png",
-              "frameWidth": 62,
-              "frameHeight": 76,
-              "frameCount": 6,
-              "animTime": 1200
-            }
-          ]
-        },
-        {
-          "id": "dhstx",
-          "name": "聖拉魯卡村後山(西邊)",
-          "crystals": [
-            "風地(124%)",
-            "純地(133%)"
-          ],
-          "encounterCount": "4-6",
-          "monsters": [
-            {
-              "name": "水晶螃蟹",
-              "levelMin": 30,
-              "levelMax": 33,
-              "earth": 0,
-              "water": 8,
-              "fire": 2,
-              "wind": 0,
-              "type": "金屬系",
-              "typeDetail": "+龍系 人形,-特殊 不死",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101631400.png",
-              "frameWidth": 80,
-              "frameHeight": 64,
-              "frameCount": 10,
-              "animTime": 1500
-            },
-            {
-              "name": "海芋小妖",
-              "levelMin": 30,
-              "levelMax": 33,
-              "earth": 7,
-              "water": 3,
-              "fire": 0,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "8級銀卡",
-              "sealable": false,
-              "isBoss": false,
-              "image": "104340400.png",
-              "frameWidth": 50,
-              "frameHeight": 135,
-              "frameCount": 6,
-              "animTime": 1000
-            }
-          ]
-        },
-        {
-          "id": "dhstx",
-          "name": "聖拉魯卡村後山(東邊)",
-          "crystals": [
-            "水火(109%)",
-            "純火(109%)",
-            "純水(109%)"
-          ],
-          "encounterCount": "4-6",
-          "monsters": [
-            {
-              "name": "獨角仙",
-              "levelMin": 30,
-              "levelMax": 33,
-              "earth": 2,
-              "water": 0,
-              "fire": 0,
-              "wind": 8,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "5級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "107303400.png",
-              "frameWidth": 92,
-              "frameHeight": 90,
-              "frameCount": 50,
-              "animTime": 9000
-            },
-            {
-              "name": "靈芝小妖",
-              "levelMin": 30,
-              "levelMax": 33,
-              "earth": 0,
-              "water": 5,
-              "fire": 5,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "8級銀卡",
-              "sealable": false,
-              "isBoss": false,
-              "image": "104343400.png",
-              "frameWidth": 69,
-              "frameHeight": 104,
-              "frameCount": 6,
-              "animTime": 1000
             }
           ]
         }

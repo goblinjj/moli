@@ -3,6 +3,221 @@
   "name": "米內葛爾島",
   "subMaps": [
     {
+      "name": "米內葛爾島",
+      "areas": [
+        {
+          "id": "9osgg",
+          "name": "米內葛爾島",
+          "crystals": [
+            "火風(103%)",
+            "純火(103%)",
+            "純風(103%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
+            {
+              "name": "水藍菇",
+              "levelMin": 11,
+              "levelMax": 13,
+              "earth": 4,
+              "water": 6,
+              "fire": 0,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "4級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107401400.png",
+              "frameWidth": 41,
+              "frameHeight": 60,
+              "frameCount": 7,
+              "animTime": 730
+            },
+            {
+              "name": "迷你石像怪",
+              "levelMin": 11,
+              "levelMax": 13,
+              "earth": 0,
+              "water": 0,
+              "fire": 3,
+              "wind": 7,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "3級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101204400.png",
+              "frameWidth": 78,
+              "frameHeight": 93,
+              "frameCount": 6,
+              "animTime": 1200
+            }
+          ]
+        },
+        {
+          "id": "9osgg",
+          "name": "坎那貝拉村外",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
+            {
+              "name": "樹精",
+              "levelMin": 40,
+              "levelMax": 42,
+              "earth": 0,
+              "water": 4,
+              "fire": 6,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101400400.png",
+              "frameWidth": 120,
+              "frameHeight": 145,
+              "frameCount": 45,
+              "animTime": 2000
+            },
+            {
+              "name": "翠綠菇",
+              "levelMin": 40,
+              "levelMax": 42,
+              "earth": 6,
+              "water": 0,
+              "fire": 0,
+              "wind": 4,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107400400.png",
+              "frameWidth": 32,
+              "frameHeight": 53,
+              "frameCount": 7,
+              "animTime": 500
+            }
+          ]
+        },
+        {
+          "id": "9osgg",
+          "name": "坎那貝拉村遠處",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
+            {
+              "name": "堀地蟲",
+              "levelMin": 44,
+              "levelMax": 45,
+              "earth": 0,
+              "water": 8,
+              "fire": 2,
+              "wind": 0,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107301400.png",
+              "frameWidth": 80,
+              "frameHeight": 78,
+              "frameCount": 50,
+              "animTime": 11000
+            },
+            {
+              "name": "獨角仙",
+              "levelMin": 44,
+              "levelMax": 45,
+              "earth": 2,
+              "water": 0,
+              "fire": 0,
+              "wind": 8,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107303400.png",
+              "frameWidth": 92,
+              "frameHeight": 90,
+              "frameCount": 50,
+              "animTime": 9000
+            }
+          ]
+        },
+        {
+          "id": "9osgg",
+          "name": "米內葛爾島中部",
+          "crystals": [
+            "風地(112%)",
+            "純地(112%)",
+            "純風(112%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
+            {
+              "name": "殺人蜂",
+              "levelMin": 36,
+              "levelMax": 38,
+              "earth": 5,
+              "water": 0,
+              "fire": 0,
+              "wind": 5,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101310400.png",
+              "frameWidth": 69,
+              "frameHeight": 106,
+              "frameCount": 10,
+              "animTime": 1000
+            },
+            {
+              "name": "藍色口臭鬼",
+              "levelMin": 36,
+              "levelMax": 38,
+              "earth": 0,
+              "water": 9,
+              "fire": 1,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101422400.png",
+              "frameWidth": 79,
+              "frameHeight": 96,
+              "frameCount": 6,
+              "animTime": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "南恰拉山第一通道",
       "areas": [
         {
@@ -828,221 +1043,6 @@
               "frameHeight": 84,
               "frameCount": 4,
               "animTime": 1200
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "米內葛爾島",
-      "areas": [
-        {
-          "id": "9osgg",
-          "name": "",
-          "crystals": [
-            "火風(103%)",
-            "純火(103%)",
-            "純風(103%)"
-          ],
-          "encounterCount": "1-4",
-          "monsters": [
-            {
-              "name": "水藍菇",
-              "levelMin": 11,
-              "levelMax": 13,
-              "earth": 4,
-              "water": 6,
-              "fire": 0,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "4級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "107401400.png",
-              "frameWidth": 41,
-              "frameHeight": 60,
-              "frameCount": 7,
-              "animTime": 730
-            },
-            {
-              "name": "迷你石像怪",
-              "levelMin": 11,
-              "levelMax": 13,
-              "earth": 0,
-              "water": 0,
-              "fire": 3,
-              "wind": 7,
-              "type": "飛行系",
-              "typeDetail": "+昆蟲 不死,-龍系 野獸",
-              "cardGrade": "3級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101204400.png",
-              "frameWidth": 78,
-              "frameHeight": 93,
-              "frameCount": 6,
-              "animTime": 1200
-            }
-          ]
-        },
-        {
-          "id": "9osgg",
-          "name": "坎那貝拉村外",
-          "crystals": [
-            "地水(100%)",
-            "水火(100%)",
-            "火風(100%)",
-            "風地(100%)",
-            "純地(100%)",
-            "純水(100%)",
-            "純火(100%)",
-            "純風(100%)"
-          ],
-          "encounterCount": "1-6",
-          "monsters": [
-            {
-              "name": "樹精",
-              "levelMin": 40,
-              "levelMax": 42,
-              "earth": 0,
-              "water": 4,
-              "fire": 6,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101400400.png",
-              "frameWidth": 120,
-              "frameHeight": 145,
-              "frameCount": 45,
-              "animTime": 2000
-            },
-            {
-              "name": "翠綠菇",
-              "levelMin": 40,
-              "levelMax": 42,
-              "earth": 6,
-              "water": 0,
-              "fire": 0,
-              "wind": 4,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "5級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "107400400.png",
-              "frameWidth": 32,
-              "frameHeight": 53,
-              "frameCount": 7,
-              "animTime": 500
-            }
-          ]
-        },
-        {
-          "id": "9osgg",
-          "name": "坎那貝拉村遠處",
-          "crystals": [
-            "地水(100%)",
-            "水火(100%)",
-            "火風(100%)",
-            "風地(100%)",
-            "純地(100%)",
-            "純水(100%)",
-            "純火(100%)",
-            "純風(100%)"
-          ],
-          "encounterCount": "1-6",
-          "monsters": [
-            {
-              "name": "堀地蟲",
-              "levelMin": 44,
-              "levelMax": 45,
-              "earth": 0,
-              "water": 8,
-              "fire": 2,
-              "wind": 0,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "5級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "107301400.png",
-              "frameWidth": 80,
-              "frameHeight": 78,
-              "frameCount": 50,
-              "animTime": 11000
-            },
-            {
-              "name": "獨角仙",
-              "levelMin": 44,
-              "levelMax": 45,
-              "earth": 2,
-              "water": 0,
-              "fire": 0,
-              "wind": 8,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "5級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "107303400.png",
-              "frameWidth": 92,
-              "frameHeight": 90,
-              "frameCount": 50,
-              "animTime": 9000
-            }
-          ]
-        },
-        {
-          "id": "9osgg",
-          "name": "米內葛爾島中部",
-          "crystals": [
-            "風地(112%)",
-            "純地(112%)",
-            "純風(112%)"
-          ],
-          "encounterCount": "1-8",
-          "monsters": [
-            {
-              "name": "殺人蜂",
-              "levelMin": 36,
-              "levelMax": 38,
-              "earth": 5,
-              "water": 0,
-              "fire": 0,
-              "wind": 5,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "4級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101310400.png",
-              "frameWidth": 69,
-              "frameHeight": 106,
-              "frameCount": 10,
-              "animTime": 1000
-            },
-            {
-              "name": "藍色口臭鬼",
-              "levelMin": 36,
-              "levelMax": 38,
-              "earth": 0,
-              "water": 9,
-              "fire": 1,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "5級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101422400.png",
-              "frameWidth": 79,
-              "frameHeight": 96,
-              "frameCount": 6,
-              "animTime": 1000
             }
           ]
         }

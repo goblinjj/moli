@@ -3,66 +3,6 @@
   "name": "傑諾姆島",
   "subMaps": [
     {
-      "name": "貝力斯遺跡",
-      "areas": [
-        {
-          "id": "gqa7m",
-          "name": "貝力斯遺跡",
-          "crystals": [
-            "地水(100%)",
-            "水火(100%)",
-            "火風(100%)",
-            "風地(100%)",
-            "純地(100%)",
-            "純水(100%)",
-            "純火(100%)",
-            "純風(100%)"
-          ],
-          "encounterCount": "1-10",
-          "monsters": [
-            {
-              "name": "大蝙蝠",
-              "levelMin": 40,
-              "levelMax": 42,
-              "earth": 7,
-              "water": 3,
-              "fire": 0,
-              "wind": 0,
-              "type": "飛行系",
-              "typeDetail": "+昆蟲 不死,-龍系 野獸",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101250400.png",
-              "frameWidth": 100,
-              "frameHeight": 141,
-              "frameCount": 4,
-              "animTime": 400
-            },
-            {
-              "name": "血骷髏",
-              "levelMin": 40,
-              "levelMax": 42,
-              "earth": 0,
-              "water": 0,
-              "fire": 7,
-              "wind": 3,
-              "type": "不死系",
-              "typeDetail": "+人形 金屬,-植物 飛行",
-              "cardGrade": "4級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101111400.png",
-              "frameWidth": 64,
-              "frameHeight": 86,
-              "frameCount": 12,
-              "animTime": 2000
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "傑諾姆島",
       "areas": [
         {
@@ -149,6 +89,66 @@
               "frameHeight": 68,
               "frameCount": 22,
               "animTime": 6000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "貝力斯遺跡",
+      "areas": [
+        {
+          "id": "gqa7m",
+          "name": "貝力斯遺跡",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
+            {
+              "name": "大蝙蝠",
+              "levelMin": 40,
+              "levelMax": 42,
+              "earth": 7,
+              "water": 3,
+              "fire": 0,
+              "wind": 0,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101250400.png",
+              "frameWidth": 100,
+              "frameHeight": 141,
+              "frameCount": 4,
+              "animTime": 400
+            },
+            {
+              "name": "血骷髏",
+              "levelMin": 40,
+              "levelMax": 42,
+              "earth": 0,
+              "water": 0,
+              "fire": 7,
+              "wind": 3,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101111400.png",
+              "frameWidth": 64,
+              "frameHeight": 86,
+              "frameCount": 12,
+              "animTime": 2000
             }
           ]
         }
