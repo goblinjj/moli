@@ -1,5 +1,5 @@
 import * as cheerio from 'cheerio';
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import https from 'https';
 
@@ -28,58 +28,21 @@ function delay(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-function parseIndex(html) {
+// Collect ALL unique location hrefs from the entire menu
+function collectAllLocations(html) {
   const $ = cheerio.load(html);
-  const regions = [];
-  const seen = new Set();
-
-  $('#menuroot > li.sub').each((_, regionLi) => {
-    const regionLink = $(regionLi).find('> a');
-    const regionName = regionLink.text().trim();
-    const regionHref = regionLink.attr('href') || '';
-    const regionId = regionHref.replace('/bm/', '').split('-')[0];
-
-    if (!regionName || !regionId) return;
-
-    const locations = [];
-
-    function collectLinks(parentEl) {
-      $(parentEl).find('> ul > li').each((_, li) => {
-        const link = $(li).find('> a');
-        const href = link.attr('href') || '';
-        const name = link.text().trim();
-        if (href.startsWith('/bm/') && name) {
-          const id = href.replace('/bm/', '').split('-')[0];
-          const key = `${id}-${name}`;
-          if (!seen.has(key)) {
-            seen.add(key);
-            locations.push({ id, name, href });
-          }
-        }
-        if ($(li).hasClass('sub')) {
-          collectLinks(li);
-        }
-      });
-    }
-
-    collectLinks(regionLi);
-
-    const regionSelfKey = `${regionId}-${regionName}`;
-    if (!seen.has(regionSelfKey)) {
-      seen.add(regionSelfKey);
-      locations.push({ id: regionId, name: regionName, href: regionHref });
-    }
-
-    if (locations.length > 0) {
-      regions.push({
-        id: regionId,
-        name: regionName,
-        locations,
-      });
+  const locations = new Map();
+  $('#menuroot a[href^="/bm/"]').each((_, el) => {
+    const href = $(el).attr('href');
+    const name = $(el).text().trim();
+    if (href && name) {
+      const id = href.replace('/bm/', '').split('-')[0];
+      if (!locations.has(href)) {
+        locations.set(href, { id, name, href });
+      }
     }
   });
-
-  return regions;
+  return [...locations.values()];
 }
 
 function parseElements(text) {
@@ -95,9 +58,32 @@ function parseElements(text) {
   return elements;
 }
 
+function fixCrystals(crystalArr) {
+  const fixed = [];
+  for (const c of crystalArr) {
+    const parts = c.match(/[^\s(]+\(\d+%\)/g);
+    if (parts) fixed.push(...parts);
+    else if (c.trim()) fixed.push(c.trim());
+  }
+  return fixed;
+}
+
 function parseLocationPage(html) {
   const $ = cheerio.load(html);
-  const monsters = [];
+
+  // Parse breadcrumb to get hierarchy path
+  const breadcrumbLinks = [];
+  const firstPath = $('div.path').first();
+  firstPath.find('a[itemprop="url"]').each((_, el) => {
+    const href = $(el).attr('href') || '';
+    const title = $(el).find('span[itemprop="title"]').text().trim() || $(el).text().trim();
+    if (href && title) {
+      breadcrumbLinks.push({ href, name: title });
+    }
+  });
+
+  // Parse encounter groups (the yellow sections)
+  const areas = [];
 
   $('div[style*="background:#FFFFDD"]').each((_, section) => {
     const $section = $(section);
@@ -116,10 +102,11 @@ function parseLocationPage(html) {
 
       const crystalMatch = infoText.match(/建議水晶:\s*(.*)/);
       if (crystalMatch) {
-        crystals = crystalMatch[1].trim().split(/\s+/).filter(c => c && c.includes('('));
+        crystals = fixCrystals(crystalMatch[1].trim().split(/\s+/).filter(c => c && c.includes('(')));
       }
     }
 
+    const monsters = [];
     const monsterDivs = $section.find('.beastCell');
 
     monsterDivs.each((_, cellDiv) => {
@@ -137,7 +124,6 @@ function parseLocationPage(html) {
       const $info = $container.next();
       if (!$info.length) return;
 
-      const infoHtml = $info.html() || '';
       const infoText = $info.text();
 
       const levelMatch = infoText.match(/Lv(\d+)(?:-(\d+))?/);
@@ -161,116 +147,224 @@ function parseLocationPage(html) {
       const cardGrade = cardMatch ? cardMatch[1].trim() : '';
 
       const sealable = $info.find('span.catch').length > 0;
-
       const isBoss = isBossSection && $cell.hasClass('expand');
 
+      // Sprite animation data
       const imageDiv = $cell.find('.imageparty, .beastImg');
       let image = '';
+      let frameWidth = 0;
+      let frameHeight = 0;
+      let frameCount = 1;
+      let animTime = 1000;
+
       if (imageDiv.length) {
         const bgStyle = imageDiv.attr('style') || '';
         const imgMatch = bgStyle.match(/url\(([^)]+)\)/);
         if (imgMatch) {
           image = imgMatch[1].replace(/^\/\//, 'https://').replace(/['"]/g, '');
         }
+        const wMatch = bgStyle.match(/width:(\d+)px/);
+        const hMatch = bgStyle.match(/height:(\d+)px/);
+        if (wMatch) frameWidth = parseInt(wMatch[1]);
+        if (hMatch) frameHeight = parseInt(hMatch[1]);
+
+        const fc = imageDiv.attr('data-frame');
+        const at = imageDiv.attr('data-time');
+        if (fc) frameCount = parseInt(fc);
+        if (at) animTime = parseInt(at);
       }
 
       monsters.push({
-        name,
-        levelMin,
-        levelMax,
+        name, levelMin, levelMax,
         ...elements,
-        type,
-        typeDetail,
-        cardGrade,
-        sealable,
-        encounterCount,
-        crystals: isBoss ? [] : crystals,
-        isBoss,
-        image,
+        type, typeDetail, cardGrade, sealable, isBoss,
+        image, frameWidth, frameHeight, frameCount, animTime,
       });
     });
+
+    if (monsters.length > 0) {
+      areas.push({ encounterCount, crystals, isBoss: isBossSection, monsters });
+    }
   });
 
-  return monsters;
+  // Merge all encounter groups into one area with combined crystals
+  const allMonsters = [];
+  let mainCrystals = [];
+  let mainEncounterCount = '';
+
+  for (const group of areas) {
+    allMonsters.push(...group.monsters);
+    if (!group.isBoss && group.crystals.length > 0 && mainCrystals.length === 0) {
+      mainCrystals = group.crystals;
+    }
+    if (!group.isBoss && group.encounterCount && !mainEncounterCount) {
+      mainEncounterCount = group.encounterCount;
+    }
+  }
+
+  return {
+    breadcrumb: breadcrumbLinks,
+    crystals: mainCrystals,
+    encounterCount: mainEncounterCount,
+    monsters: allMonsters,
+  };
 }
 
 function slugify(name) {
   const map = {
-    '芙蕾雅島': 'fureya',
-    '索奇亞島': 'sochia',
-    '莎蓮娜島': 'shalena',
-    '米內葛爾島': 'minegl',
-    '庫魯克斯島': 'kruks',
-    '德威特島': 'dewitt',
-    '傑諾姆島': 'genom',
-    '弗利德島': 'fried',
-    '樂園之卵': 'paradise',
-    '辛梅爾': 'simmel',
-    '諾斯菲拉特': 'nospherat',
-    '哈那可半島': 'hanako',
-    '逆星': 'gyaku',
-    '日耀之域': 'nichiyo',
-    '水曜之域': 'suiyo',
+    '芙蕾雅島': 'fureya', '索奇亞島': 'sochia', '莎蓮娜島': 'shalena',
+    '米內葛爾島': 'minegl', '庫魯克斯島': 'kruks', '德威特島': 'dewitt',
+    '傑諾姆島': 'genom', '弗利德島': 'fried', '樂園之卵': 'paradise',
+    '辛梅爾': 'simmel', '諾斯菲拉特': 'nospherat', '哈那可半島': 'hanako',
+    '逆星': 'gyaku', '日耀之域': 'nichiyo', '水曜之域': 'suiyo',
   };
   return map[name] || name;
 }
 
+function downloadImage(url, filepath) {
+  return new Promise((resolve) => {
+    https.get(url, res => {
+      if (res.statusCode !== 200) { resolve(false); return; }
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
+      res.on('end', () => { writeFileSync(filepath, Buffer.concat(chunks)); resolve(true); });
+      res.on('error', () => resolve(false));
+    }).on('error', () => resolve(false));
+  });
+}
+
 async function main() {
   const outDir = join(process.cwd(), 'src/data/monsters');
+  const imgDir = join(process.cwd(), 'public/monsters');
   mkdirSync(outDir, { recursive: true });
+  mkdirSync(imgDir, { recursive: true });
 
   console.log('Fetching index page...');
   const indexHtml = await fetchPage(`${BASE_URL}/bm`);
-  const regions = parseIndex(indexHtml);
-  console.log(`Found ${regions.length} regions`);
+  const allLocations = collectAllLocations(indexHtml);
+  console.log(`Found ${allLocations.length} unique locations`);
 
-  for (const region of regions) {
-    const slug = slugify(region.name);
-    console.log(`\n=== ${region.name} (${slug}) - ${region.locations.length} locations ===`);
+  // Scrape every location and collect breadcrumb-based hierarchy
+  // Structure: island -> subMap -> area
+  const islands = new Map();
+  const imageUrls = new Map(); // filename -> url
 
-    const regionData = {
-      id: slug,
-      name: region.name,
-      locations: [],
-    };
+  for (let i = 0; i < allLocations.length; i++) {
+    const loc = allLocations[i];
+    console.log(`[${i + 1}/${allLocations.length}] ${loc.name}...`);
 
-    for (const loc of region.locations) {
-      console.log(`  Fetching ${loc.name}...`);
-      try {
-        const html = await fetchPage(`${BASE_URL}${loc.href}`);
-        const monsters = parseLocationPage(html);
-        console.log(`    Found ${monsters.length} monsters`);
+    try {
+      const html = await fetchPage(`${BASE_URL}${loc.href}`);
+      const result = parseLocationPage(html);
 
-        if (monsters.length > 0) {
-          regionData.locations.push({
-            id: loc.id,
-            name: loc.name,
-            monsters,
-          });
-        }
-      } catch (err) {
-        console.error(`    Error: ${err.message}`);
+      if (result.monsters.length === 0) {
+        console.log(`  (no monsters)`);
+        await delay(200);
+        continue;
       }
-      await delay(300);
-    }
 
-    if (regionData.locations.length > 0) {
-      const filePath = join(outDir, `${slug}.json`);
-      writeFileSync(filePath, JSON.stringify(regionData, null, 2));
-      console.log(`  Wrote ${filePath}`);
+      // Collect image URLs and convert to local filenames
+      for (const m of result.monsters) {
+        if (m.image) {
+          const filename = m.image.split('/').pop();
+          imageUrls.set(filename, m.image);
+          m.image = filename;
+        }
+      }
+
+      // Determine hierarchy from breadcrumb
+      // breadcrumb = [island, ...subMaps, currentPage]
+      const bc = result.breadcrumb;
+      let islandName, subMapName, areaName;
+
+      if (bc.length >= 3) {
+        islandName = bc[0].name;
+        subMapName = bc[1].name;
+        areaName = bc[bc.length - 1].name;
+      } else if (bc.length === 2) {
+        islandName = bc[0].name;
+        subMapName = bc[1].name;
+        areaName = bc[1].name;
+      } else {
+        islandName = loc.name;
+        subMapName = loc.name;
+        areaName = loc.name;
+      }
+
+      if (!islands.has(islandName)) {
+        islands.set(islandName, { name: islandName, subMaps: new Map() });
+      }
+      const island = islands.get(islandName);
+
+      if (!island.subMaps.has(subMapName)) {
+        island.subMaps.set(subMapName, { name: subMapName, areas: new Map() });
+      }
+      const subMap = island.subMaps.get(subMapName);
+
+      const areaKey = `${loc.id}-${areaName}`;
+      if (!subMap.areas.has(areaKey)) {
+        subMap.areas.set(areaKey, {
+          id: loc.id,
+          name: areaName,
+          crystals: result.crystals,
+          encounterCount: result.encounterCount,
+          monsters: result.monsters,
+        });
+      }
+
+      console.log(`  ${islandName} > ${subMapName} > ${areaName} (${result.monsters.length} monsters)`);
+    } catch (err) {
+      console.error(`  Error: ${err.message}`);
     }
+    await delay(300);
   }
 
-  const indexData = regions
-    .map(r => ({
-      id: slugify(r.name),
-      name: r.name,
-      locationCount: r.locations.length,
-    }))
-    .filter(r => r.locationCount > 0);
+  // Write JSON files per island
+  for (const [islandName, island] of islands) {
+    const slug = slugify(islandName);
+    const subMaps = [];
 
+    for (const [, subMap] of island.subMaps) {
+      const areas = [];
+      for (const [, area] of subMap.areas) {
+        areas.push(area);
+      }
+      if (areas.length > 0) {
+        subMaps.push({ name: subMap.name, areas });
+      }
+    }
+
+    if (subMaps.length === 0) continue;
+
+    const data = { id: slug, name: islandName, subMaps };
+    const filePath = join(outDir, `${slug}.json`);
+    writeFileSync(filePath, JSON.stringify(data, null, 2));
+    console.log(`Wrote ${slug}.json (${subMaps.length} sub-maps)`);
+  }
+
+  // Write index
+  const indexData = [...islands.entries()].map(([name, island]) => ({
+    id: slugify(name),
+    name,
+    subMapCount: island.subMaps.size,
+  }));
   writeFileSync(join(outDir, 'index.json'), JSON.stringify(indexData, null, 2));
-  console.log('\nDone! Wrote index.json');
+
+  // Download images
+  console.log(`\nDownloading ${imageUrls.size} images...`);
+  let downloaded = 0, skipped = 0;
+  const entries = [...imageUrls.entries()];
+  for (let i = 0; i < entries.length; i += 10) {
+    const batch = entries.slice(i, i + 10);
+    await Promise.all(batch.map(async ([filename, url]) => {
+      const filepath = join(imgDir, filename);
+      if (existsSync(filepath)) { skipped++; return; }
+      const ok = await downloadImage(url, filepath);
+      if (ok) downloaded++;
+    }));
+    if ((i + 10) % 100 === 0) console.log(`  Progress: ${Math.min(i + 10, entries.length)}/${entries.length}`);
+  }
+  console.log(`Done! Downloaded: ${downloaded}, Skipped: ${skipped}`);
 }
 
 main().catch(console.error);

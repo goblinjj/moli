@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Calculator from "../components/Calculator";
-import type { Recipe, Gem, MonsterRegion } from "../lib/types";
+import type { Recipe, Gem, MonsterIsland } from "../lib/types";
 
 import swordData from "../data/sword.json";
 import axeData from "../data/axe.json";
@@ -66,14 +66,14 @@ const gems = [
   ...generalGemData, ...taskGemData, ...rubyGemData, ...petGemData,
 ] as Gem[];
 
-const monsterRegions = [
+const monsterIslands = [
   fureyaMonsters, sochiaMonsters, shalenaMonsters, mineglMonsters,
   kruksMonsters, dewittMonsters, genomMonsters, friedMonsters,
   paradiseMonsters, simmelMonsters, nospheratMonsters, hanakoMonsters,
   gyakuMonsters, nichiyoMonsters, suiyoMonsters,
-] as MonsterRegion[];
+] as MonsterIsland[];
 ---
 
 <Layout>
-  <Calculator client:load recipes={recipes} gems={gems} monsterRegions={monsterRegions} />
+  <Calculator client:load recipes={recipes} gems={gems} monsterIslands={monsterIslands} />
 </Layout>

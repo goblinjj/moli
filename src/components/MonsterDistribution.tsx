@@ -1,68 +1,116 @@
 import { useState, useMemo, useCallback } from "react";
-import type { MonsterRegion } from "../lib/types";
+import type { MonsterIsland, MonsterArea } from "../lib/types";
 import MonsterCard from "./MonsterCard";
 
-interface MonsterDistributionProps {
-  regions: MonsterRegion[];
+interface Props {
+  islands: MonsterIsland[];
 }
 
-type MonsterMode = "browse" | "levelGuide";
+type Mode = "browse" | "levelGuide";
 
-export default function MonsterDistribution({ regions }: MonsterDistributionProps) {
-  const [mode, setMode] = useState<MonsterMode>("browse");
-  const [activeRegionIdx, setActiveRegionIdx] = useState(0);
-  const [activeLocationId, setActiveLocationId] = useState<string | null>(null);
+function AreaCard({ area, showLocation }: { area: MonsterArea & { islandName?: string; subMapName?: string }; showLocation?: boolean }) {
+  const nonBoss = area.monsters.filter(m => !m.isBoss);
+  const bosses = area.monsters.filter(m => m.isBoss);
+  const levelMin = nonBoss.length > 0 ? Math.min(...nonBoss.map(m => m.levelMin)) : 0;
+  const levelMax = nonBoss.length > 0 ? Math.max(...nonBoss.map(m => m.levelMax)) : 0;
+  const levelText = levelMin === levelMax ? `Lv${levelMin}` : `Lv${levelMin}-${levelMax}`;
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+      <div className="px-3 pt-3 pb-2 border-b border-gray-100">
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="font-semibold text-sm text-gray-900">{area.name}</span>
+          {levelMin > 0 && (
+            <span className="px-1.5 py-0.5 text-[10px] font-medium bg-slate-100 text-slate-600 rounded tabular-nums">{levelText}</span>
+          )}
+          {area.encounterCount && (
+            <span className="text-[10px] text-gray-400">出現 {area.encounterCount}隻</span>
+          )}
+        </div>
+        {showLocation && area.islandName && (
+          <div className="text-[10px] text-gray-400 mt-0.5">
+            {area.islandName}{area.subMapName && area.subMapName !== area.islandName ? ` · ${area.subMapName}` : ''}
+          </div>
+        )}
+        {area.crystals.length > 0 && (
+          <div className="flex flex-wrap gap-1 mt-1.5">
+            <span className="text-[10px] text-gray-400">推荐水晶:</span>
+            {area.crystals.map((c, i) => (
+              <span key={i} className="px-1.5 py-0.5 text-[10px] bg-purple-50 text-purple-600 rounded font-medium">{c}</span>
+            ))}
+          </div>
+        )}
+      </div>
+      <div className="px-3 py-1">
+        {nonBoss.map((monster, idx) => (
+          <MonsterCard key={`${monster.name}-${idx}`} monster={monster} />
+        ))}
+        {bosses.length > 0 && (
+          <>
+            <div className="text-[10px] font-bold text-red-500 mt-1 mb-0.5 border-t border-red-100 pt-1">BOSS</div>
+            {bosses.map((monster, idx) => (
+              <MonsterCard key={`boss-${monster.name}-${idx}`} monster={monster} />
+            ))}
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default function MonsterDistribution({ islands }: Props) {
+  const [mode, setMode] = useState<Mode>("browse");
+  const [islandIdx, setIslandIdx] = useState(0);
+  const [subMapIdx, setSubMapIdx] = useState(0);
+  const [areaIdx, setAreaIdx] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
   const [playerLevel, setPlayerLevel] = useState<number>(1);
 
-  const activeRegion = regions[activeRegionIdx];
+  const island = islands[islandIdx];
+  const subMap = island?.subMaps[subMapIdx];
+  const area = subMap?.areas[areaIdx];
 
-  const activeLocation = useMemo(() => {
-    if (!activeRegion) return null;
-    if (activeLocationId) {
-      return activeRegion.locations.find((l) => l.id === activeLocationId) || activeRegion.locations[0] || null;
-    }
-    return activeRegion.locations[0] || null;
-  }, [activeRegion, activeLocationId]);
-
-  const handleRegionChange = useCallback((idx: number) => {
-    setActiveRegionIdx(idx);
-    setActiveLocationId(null);
+  const handleIslandChange = useCallback((idx: number) => {
+    setIslandIdx(idx);
+    setSubMapIdx(0);
+    setAreaIdx(0);
     setSearchQuery("");
   }, []);
 
-  const filteredMonsters = useMemo(() => {
-    if (!activeLocation) return [];
-    if (!searchQuery.trim()) return activeLocation.monsters;
-    const q = searchQuery.trim().toLowerCase();
-    return activeLocation.monsters.filter((m) => m.name.toLowerCase().includes(q));
-  }, [activeLocation, searchQuery]);
+  const handleSubMapChange = useCallback((idx: number) => {
+    setSubMapIdx(idx);
+    setAreaIdx(0);
+    setSearchQuery("");
+  }, []);
 
+  // For browse mode: search across all areas of current subMap
+  const filteredAreas = useMemo(() => {
+    if (!subMap) return [];
+    if (!searchQuery.trim()) return subMap.areas;
+    const q = searchQuery.trim().toLowerCase();
+    return subMap.areas.filter(a =>
+      a.name.toLowerCase().includes(q) ||
+      a.monsters.some(m => m.name.toLowerCase().includes(q))
+    );
+  }, [subMap, searchQuery]);
+
+  // For level guide: collect all areas across all islands
   const levelRecommendations = useMemo(() => {
     if (mode !== "levelGuide") return [];
     const lv = playerLevel;
-    const results: {
-      monster: { name: string; levelMin: number; levelMax: number; earth: number; water: number; fire: number; wind: number; type: string; typeDetail: string; cardGrade: string; sealable: boolean; encounterCount: string; crystals: string[]; isBoss: boolean; image: string };
-      locationName: string;
-      regionName: string;
-      avgLevel: number;
-      diff: number;
-    }[] = [];
+    const results: (MonsterArea & { islandName: string; subMapName: string; avgLevel: number; diff: number })[] = [];
 
-    for (const region of regions) {
-      for (const loc of region.locations) {
-        for (const m of loc.monsters) {
-          if (m.isBoss) continue;
-          const avgLevel = Math.round((m.levelMin + m.levelMax) / 2);
+    for (const isl of islands) {
+      for (const sm of isl.subMaps) {
+        for (const a of sm.areas) {
+          const nonBoss = a.monsters.filter(m => !m.isBoss);
+          if (nonBoss.length === 0) continue;
+          const avgLevel = Math.round(
+            nonBoss.reduce((sum, m) => sum + (m.levelMin + m.levelMax) / 2, 0) / nonBoss.length
+          );
           const diff = avgLevel - lv;
           if (diff >= -10 && diff <= 10) {
-            results.push({
-              monster: m,
-              locationName: loc.name,
-              regionName: region.name,
-              avgLevel,
-              diff,
-            });
+            results.push({ ...a, islandName: isl.name, subMapName: sm.name, avgLevel, diff });
           }
         }
       }
@@ -75,14 +123,8 @@ export default function MonsterDistribution({ regions }: MonsterDistributionProp
       return Math.abs(a.diff - 5) - Math.abs(b.diff - 5);
     });
 
-    const seen = new Set<string>();
-    return results.filter((r) => {
-      const key = `${r.monster.name}-${r.locationName}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-  }, [mode, playerLevel, regions]);
+    return results;
+  }, [mode, playerLevel, islands]);
 
   return (
     <>
@@ -116,39 +158,57 @@ export default function MonsterDistribution({ regions }: MonsterDistributionProp
       {mode === "browse" && (
         <>
           <nav className="bg-white border-b border-gray-200">
+            {/* Level 1: Islands */}
             <div className="flex px-5 lg:px-6 gap-0 border-b border-gray-100 overflow-x-auto scrollbar-hide">
-              {regions.map((region, idx) => (
+              {islands.map((isl, idx) => (
                 <button
-                  key={region.id}
+                  key={isl.id}
                   type="button"
-                  onClick={() => handleRegionChange(idx)}
+                  onClick={() => handleIslandChange(idx)}
                   className={`px-3 lg:px-4 py-2 text-xs lg:text-sm font-medium border-b-2 transition-colors whitespace-nowrap ${
-                    activeRegionIdx === idx
+                    islandIdx === idx
                       ? "border-accent-500 text-accent-600"
                       : "border-transparent text-gray-500 hover:text-gray-700"
                   }`}
                 >
-                  {region.name}
+                  {isl.name}
                 </button>
               ))}
             </div>
-            {activeRegion && (
-              <div className="flex items-center gap-1.5 px-5 lg:px-6 py-2 overflow-x-auto scrollbar-hide">
-                {activeRegion.locations.map((loc) => (
+            {/* Level 2: SubMaps */}
+            {island && (
+              <div className="flex items-center gap-1.5 px-5 lg:px-6 py-2 overflow-x-auto scrollbar-hide border-b border-gray-100">
+                {island.subMaps.map((sm, idx) => (
                   <button
-                    key={loc.id}
+                    key={`${sm.name}-${idx}`}
                     type="button"
-                    onClick={() => {
-                      setActiveLocationId(loc.id);
-                      setSearchQuery("");
-                    }}
+                    onClick={() => handleSubMapChange(idx)}
                     className={`px-3.5 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-150 ${
-                      activeLocation?.id === loc.id
+                      subMapIdx === idx
                         ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
                         : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
                     }`}
                   >
-                    {loc.name}
+                    {sm.name}
+                  </button>
+                ))}
+              </div>
+            )}
+            {/* Level 3: Areas (only if subMap has >1 area) */}
+            {subMap && subMap.areas.length > 1 && (
+              <div className="flex items-center gap-1.5 px-5 lg:px-6 py-2 overflow-x-auto scrollbar-hide">
+                {subMap.areas.map((a, idx) => (
+                  <button
+                    key={`${a.id}-${idx}`}
+                    type="button"
+                    onClick={() => { setAreaIdx(idx); setSearchQuery(""); }}
+                    className={`px-3 py-0.5 rounded-full text-[11px] font-medium whitespace-nowrap transition-all duration-150 ${
+                      areaIdx === idx
+                        ? "bg-slate-700 text-white"
+                        : "bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                    }`}
+                  >
+                    {a.name}
                   </button>
                 ))}
               </div>
@@ -156,11 +216,11 @@ export default function MonsterDistribution({ regions }: MonsterDistributionProp
           </nav>
 
           <main className="flex-1 overflow-y-auto p-5 lg:p-6">
-            <div className="flex items-center gap-3 pb-2">
+            <div className="flex items-center gap-3 pb-3">
               <div className="relative flex-1 max-w-xs">
                 <input
                   type="text"
-                  placeholder="搜索魔物名称..."
+                  placeholder="搜索魔物或区域名称..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full bg-white border border-gray-200 rounded-lg pl-8 pr-3 py-1.5 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500"
@@ -169,21 +229,24 @@ export default function MonsterDistribution({ regions }: MonsterDistributionProp
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
-              {activeLocation && (
-                <span className="text-xs text-gray-400">{filteredMonsters.length} 个魔物</span>
-              )}
             </div>
 
-            {filteredMonsters.length === 0 ? (
-              <div className="text-center text-slate-400 mt-16 text-sm">
-                该地点没有魔物数据
+            {searchQuery.trim() ? (
+              filteredAreas.length === 0 ? (
+                <div className="text-center text-slate-400 mt-16 text-sm">没有找到匹配的魔物或区域</div>
+              ) : (
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+                  {filteredAreas.map((a, idx) => (
+                    <AreaCard key={`${a.id}-${idx}`} area={a} />
+                  ))}
+                </div>
+              )
+            ) : area ? (
+              <div className="max-w-2xl">
+                <AreaCard area={area} />
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-2">
-                {filteredMonsters.map((monster, idx) => (
-                  <MonsterCard key={`${monster.name}-${idx}`} monster={monster} />
-                ))}
-              </div>
+              <div className="text-center text-slate-400 mt-16 text-sm">该地点没有魔物数据</div>
             )}
           </main>
         </>
@@ -201,7 +264,7 @@ export default function MonsterDistribution({ regions }: MonsterDistributionProp
               onChange={(e) => setPlayerLevel(Math.max(1, Math.min(160, Number(e.target.value) || 1)))}
               className="w-20 bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-sm text-center font-mono shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500"
             />
-            <span className="text-xs text-gray-400">推荐怪物等级高于自身5级可获最高经验</span>
+            <span className="text-xs text-gray-400">击杀高于自身5级的怪物可获最高经验</span>
           </div>
 
           <div className="flex items-center gap-2 mb-4">
@@ -220,19 +283,17 @@ export default function MonsterDistribution({ regions }: MonsterDistributionProp
           </div>
 
           {levelRecommendations.length === 0 ? (
-            <div className="text-center text-slate-400 mt-16 text-sm">
-              没有找到适合当前等级的魔物
-            </div>
+            <div className="text-center text-slate-400 mt-16 text-sm">没有找到适合当前等级的区域</div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {levelRecommendations.slice(0, 60).map((rec, idx) => {
-                const diffColor =
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+              {levelRecommendations.slice(0, 40).map((rec, idx) => {
+                const borderColor =
                   rec.diff >= 3 && rec.diff <= 7 ? "border-green-300 ring-1 ring-green-200" :
                   rec.diff >= 1 ? "border-yellow-300 ring-1 ring-yellow-200" :
                   "border-gray-200";
                 return (
-                  <div key={`${rec.monster.name}-${rec.locationName}-${idx}`} className={`bg-white rounded-xl shadow-sm border overflow-hidden ${diffColor}`}>
-                    <div className="px-3 pt-2 flex items-center justify-between">
+                  <div key={`${rec.id}-${rec.islandName}-${idx}`} className={`rounded-xl overflow-hidden ${borderColor}`}>
+                    <div className="bg-white px-3 py-1.5 flex items-center justify-between border-b border-gray-100">
                       <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
                         rec.diff >= 3 && rec.diff <= 7 ? "bg-green-100 text-green-700" :
                         rec.diff >= 1 ? "bg-yellow-100 text-yellow-700" :
@@ -240,9 +301,9 @@ export default function MonsterDistribution({ regions }: MonsterDistributionProp
                       }`}>
                         {rec.diff > 0 ? `+${rec.diff}` : rec.diff} 级
                       </span>
-                      <span className="text-[10px] text-gray-400">{rec.regionName} · {rec.locationName}</span>
+                      <span className="text-[10px] text-gray-400">平均 Lv{rec.avgLevel}</span>
                     </div>
-                    <MonsterCard monster={rec.monster} />
+                    <AreaCard area={rec} showLocation />
                   </div>
                 );
               })}

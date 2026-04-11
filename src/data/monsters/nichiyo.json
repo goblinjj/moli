@@ -1,866 +1,938 @@
 {
   "id": "nichiyo",
   "name": "日耀之域",
-  "locations": [
+  "subMaps": [
     {
-      "id": "dko4c",
       "name": "旭日山",
-      "monsters": [
+      "areas": [
         {
-          "name": "布拉茲",
-          "levelMin": 75,
-          "levelMax": 75,
-          "earth": 7,
-          "water": 3,
-          "fire": 0,
-          "wind": 0,
-          "type": "飛行系",
-          "typeDetail": "+昆蟲 不死,-龍系 野獸",
-          "cardGrade": "普卡",
-          "sealable": true,
-          "encounterCount": "",
+          "id": "dko4c",
+          "name": "旭日山",
           "crystals": [
             "地水(124%)",
             "純地(133%)"
           ],
-          "isBoss": false,
-          "image": "104303400.png"
-        },
-        {
-          "name": "果凍史萊姆",
-          "levelMin": 75,
-          "levelMax": 75,
-          "earth": 0,
-          "water": 1,
-          "fire": 9,
-          "wind": 0,
-          "type": "特殊系",
-          "typeDetail": "+金屬 龍系,-昆蟲 植物",
-          "cardGrade": "3級銀卡",
-          "sealable": true,
           "encounterCount": "",
-          "crystals": [
-            "地水(124%)",
-            "純地(133%)"
-          ],
-          "isBoss": false,
-          "image": "101502400.png"
-        },
-        {
-          "name": "迷你龍",
-          "levelMin": 75,
-          "levelMax": 75,
-          "earth": 5,
-          "water": 5,
-          "fire": 0,
-          "wind": 0,
-          "type": "龍系",
-          "typeDetail": "+飛行 野獸,-金屬 特殊",
-          "cardGrade": "5級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "地水(124%)",
-            "純地(133%)"
-          ],
-          "isBoss": false,
-          "image": "107711400.png"
-        },
-        {
-          "name": "卡爾克",
-          "levelMin": 75,
-          "levelMax": 75,
-          "earth": 0,
-          "water": 2,
-          "fire": 8,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "1級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "地水(124%)",
-            "純地(133%)"
-          ],
-          "isBoss": false,
-          "image": "104308400.png"
+          "monsters": [
+            {
+              "name": "布拉茲",
+              "levelMin": 75,
+              "levelMax": 75,
+              "earth": 7,
+              "water": 3,
+              "fire": 0,
+              "wind": 0,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104303400.png",
+              "frameWidth": 78,
+              "frameHeight": 141,
+              "frameCount": 6,
+              "animTime": 1100
+            },
+            {
+              "name": "果凍史萊姆",
+              "levelMin": 75,
+              "levelMax": 75,
+              "earth": 0,
+              "water": 1,
+              "fire": 9,
+              "wind": 0,
+              "type": "特殊系",
+              "typeDetail": "+金屬 龍系,-昆蟲 植物",
+              "cardGrade": "3級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101502400.png",
+              "frameWidth": 50,
+              "frameHeight": 44,
+              "frameCount": 8,
+              "animTime": 1300
+            },
+            {
+              "name": "迷你龍",
+              "levelMin": 75,
+              "levelMax": 75,
+              "earth": 5,
+              "water": 5,
+              "fire": 0,
+              "wind": 0,
+              "type": "龍系",
+              "typeDetail": "+飛行 野獸,-金屬 特殊",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107711400.png",
+              "frameWidth": 64,
+              "frameHeight": 67,
+              "frameCount": 69,
+              "animTime": 6000
+            },
+            {
+              "name": "卡爾克",
+              "levelMin": 75,
+              "levelMax": 75,
+              "earth": 0,
+              "water": 2,
+              "fire": 8,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "1級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104308400.png",
+              "frameWidth": 100,
+              "frameHeight": 107,
+              "frameCount": 38,
+              "animTime": 8000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "k87om",
       "name": "蝕日之洞",
-      "monsters": [
+      "areas": [
         {
-          "name": "翠綠菇",
-          "levelMin": 85,
-          "levelMax": 95,
-          "earth": 6,
-          "water": 0,
-          "fire": 0,
-          "wind": 4,
-          "type": "植物系",
-          "typeDetail": "+不死 特殊,-野獸 昆蟲",
-          "cardGrade": "5級銀卡",
-          "sealable": true,
-          "encounterCount": "",
+          "id": "k87om",
+          "name": "蝕日之洞",
           "crystals": [
             "水火(103%)",
             "純火(103%)",
             "純水(103%)"
           ],
-          "isBoss": false,
-          "image": "107400400.png"
-        },
-        {
-          "name": "煙羅",
-          "levelMin": 85,
-          "levelMax": 95,
-          "earth": 0,
-          "water": 3,
-          "fire": 7,
-          "wind": 0,
-          "type": "特殊系",
-          "typeDetail": "+金屬 龍系,-昆蟲 植物",
-          "cardGrade": "5級銀卡",
-          "sealable": true,
           "encounterCount": "",
-          "crystals": [
-            "水火(103%)",
-            "純火(103%)",
-            "純水(103%)"
-          ],
-          "isBoss": false,
-          "image": "107502400.png"
+          "monsters": [
+            {
+              "name": "翠綠菇",
+              "levelMin": 85,
+              "levelMax": 95,
+              "earth": 6,
+              "water": 0,
+              "fire": 0,
+              "wind": 4,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107400400.png",
+              "frameWidth": 32,
+              "frameHeight": 53,
+              "frameCount": 7,
+              "animTime": 500
+            },
+            {
+              "name": "煙羅",
+              "levelMin": 85,
+              "levelMax": 95,
+              "earth": 0,
+              "water": 3,
+              "fire": 7,
+              "wind": 0,
+              "type": "特殊系",
+              "typeDetail": "+金屬 龍系,-昆蟲 植物",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107502400.png",
+              "frameWidth": 80,
+              "frameHeight": 120,
+              "frameCount": 4,
+              "animTime": 1200
+            }
+          ]
         }
       ]
     },
     {
-      "id": "51xn4",
       "name": "往朝日村通道",
-      "monsters": [
+      "areas": [
         {
-          "name": "巴拉斯",
-          "levelMin": 80,
-          "levelMax": 85,
-          "earth": 3,
-          "water": 0,
-          "fire": 0,
-          "wind": 7,
-          "type": "飛行系",
-          "typeDetail": "+昆蟲 不死,-龍系 野獸",
-          "cardGrade": "1級銀卡",
-          "sealable": false,
-          "encounterCount": "",
+          "id": "51xn4",
+          "name": "往朝日村通道",
           "crystals": [
             "風地(109%)",
             "純風(112%)"
           ],
-          "isBoss": false,
-          "image": "104302400.png"
-        },
-        {
-          "name": "顎牙",
-          "levelMin": 80,
-          "levelMax": 85,
-          "earth": 1,
-          "water": 9,
-          "fire": 0,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "4級銀卡",
-          "sealable": true,
           "encounterCount": "",
-          "crystals": [
-            "風地(109%)",
-            "純風(112%)"
-          ],
-          "isBoss": false,
-          "image": "107111400.png"
+          "monsters": [
+            {
+              "name": "巴拉斯",
+              "levelMin": 80,
+              "levelMax": 85,
+              "earth": 3,
+              "water": 0,
+              "fire": 0,
+              "wind": 7,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "1級銀卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104302400.png",
+              "frameWidth": 79,
+              "frameHeight": 142,
+              "frameCount": 6,
+              "animTime": 1100
+            },
+            {
+              "name": "顎牙",
+              "levelMin": 80,
+              "levelMax": 85,
+              "earth": 1,
+              "water": 9,
+              "fire": 0,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107111400.png",
+              "frameWidth": 94,
+              "frameHeight": 69,
+              "frameCount": 4,
+              "animTime": 1050
+            }
+          ]
         }
       ]
     },
     {
-      "id": "fltiy",
       "name": "神廟",
-      "monsters": [
+      "areas": [
         {
-          "name": "迷你龍",
-          "levelMin": 60,
-          "levelMax": 65,
-          "earth": 5,
-          "water": 5,
-          "fire": 0,
-          "wind": 0,
-          "type": "龍系",
-          "typeDetail": "+飛行 野獸,-金屬 特殊",
-          "cardGrade": "5級銀卡",
-          "sealable": true,
-          "encounterCount": "",
+          "id": "fltiy",
+          "name": "神廟",
           "crystals": [
             "地水(115%)",
             "純地(121%)"
           ],
-          "isBoss": false,
-          "image": "107711400.png"
-        },
-        {
-          "name": "卡爾克",
-          "levelMin": 60,
-          "levelMax": 65,
-          "earth": 0,
-          "water": 2,
-          "fire": 8,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "1級銀卡",
-          "sealable": true,
           "encounterCount": "",
-          "crystals": [
-            "地水(115%)",
-            "純地(121%)"
-          ],
-          "isBoss": false,
-          "image": "104308400.png"
+          "monsters": [
+            {
+              "name": "迷你龍",
+              "levelMin": 60,
+              "levelMax": 65,
+              "earth": 5,
+              "water": 5,
+              "fire": 0,
+              "wind": 0,
+              "type": "龍系",
+              "typeDetail": "+飛行 野獸,-金屬 特殊",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107711400.png",
+              "frameWidth": 64,
+              "frameHeight": 67,
+              "frameCount": 69,
+              "animTime": 6000
+            },
+            {
+              "name": "卡爾克",
+              "levelMin": 60,
+              "levelMax": 65,
+              "earth": 0,
+              "water": 2,
+              "fire": 8,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "1級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104308400.png",
+              "frameWidth": 100,
+              "frameHeight": 107,
+              "frameCount": 38,
+              "animTime": 8000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "al5ri",
       "name": "闇月之洞",
-      "monsters": [
+      "areas": [
         {
-          "name": "迷你龍",
-          "levelMin": 60,
-          "levelMax": 65,
-          "earth": 5,
-          "water": 5,
-          "fire": 0,
-          "wind": 0,
-          "type": "龍系",
-          "typeDetail": "+飛行 野獸,-金屬 特殊",
-          "cardGrade": "5級銀卡",
-          "sealable": true,
-          "encounterCount": "",
+          "id": "al5ri",
+          "name": "闇月之洞",
           "crystals": [
             "地水(115%)",
             "純地(121%)"
           ],
-          "isBoss": false,
-          "image": "107711400.png"
-        },
-        {
-          "name": "卡爾克",
-          "levelMin": 60,
-          "levelMax": 65,
-          "earth": 0,
-          "water": 2,
-          "fire": 8,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "1級銀卡",
-          "sealable": true,
           "encounterCount": "",
-          "crystals": [
-            "地水(115%)",
-            "純地(121%)"
-          ],
-          "isBoss": false,
-          "image": "104308400.png"
+          "monsters": [
+            {
+              "name": "迷你龍",
+              "levelMin": 60,
+              "levelMax": 65,
+              "earth": 5,
+              "water": 5,
+              "fire": 0,
+              "wind": 0,
+              "type": "龍系",
+              "typeDetail": "+飛行 野獸,-金屬 特殊",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107711400.png",
+              "frameWidth": 64,
+              "frameHeight": 67,
+              "frameCount": 69,
+              "animTime": 6000
+            },
+            {
+              "name": "卡爾克",
+              "levelMin": 60,
+              "levelMax": 65,
+              "earth": 0,
+              "water": 2,
+              "fire": 8,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "1級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104308400.png",
+              "frameWidth": 100,
+              "frameHeight": 107,
+              "frameCount": 38,
+              "animTime": 8000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "zk2xg",
       "name": "朝日山",
-      "monsters": [
+      "areas": [
         {
-          "name": "死亡樹精",
-          "levelMin": 75,
-          "levelMax": 75,
-          "earth": 6,
-          "water": 4,
-          "fire": 0,
-          "wind": 0,
-          "type": "植物系",
-          "typeDetail": "+不死 特殊,-野獸 昆蟲",
-          "cardGrade": "4級銀卡",
-          "sealable": true,
-          "encounterCount": "4-6",
+          "id": "zk2xg",
+          "name": "朝日山",
           "crystals": [
             "火風(118%)",
             "純火(118%)",
             "純風(118%)"
           ],
-          "isBoss": false,
-          "image": "101401400.png"
-        },
-        {
-          "name": "烈風翼龍",
-          "levelMin": 75,
-          "levelMax": 75,
-          "earth": 0,
-          "water": 0,
-          "fire": 0,
-          "wind": 10,
-          "type": "龍系",
-          "typeDetail": "+飛行 野獸,-金屬 特殊",
-          "cardGrade": "6級銀卡",
-          "sealable": true,
           "encounterCount": "4-6",
-          "crystals": [
-            "火風(118%)",
-            "純火(118%)",
-            "純風(118%)"
-          ],
-          "isBoss": false,
-          "image": "101713400.png"
+          "monsters": [
+            {
+              "name": "死亡樹精",
+              "levelMin": 75,
+              "levelMax": 75,
+              "earth": 6,
+              "water": 4,
+              "fire": 0,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101401400.png",
+              "frameWidth": 120,
+              "frameHeight": 145,
+              "frameCount": 45,
+              "animTime": 2000
+            },
+            {
+              "name": "烈風翼龍",
+              "levelMin": 75,
+              "levelMax": 75,
+              "earth": 0,
+              "water": 0,
+              "fire": 0,
+              "wind": 10,
+              "type": "龍系",
+              "typeDetail": "+飛行 野獸,-金屬 特殊",
+              "cardGrade": "6級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101713400.png",
+              "frameWidth": 142,
+              "frameHeight": 199,
+              "frameCount": 6,
+              "animTime": 1100
+            }
+          ]
         }
       ]
     },
     {
-      "id": "4h521",
-      "name": "沙夜���吧",
-      "monsters": [
+      "name": "沙夜酒吧",
+      "areas": [
         {
-          "name": "舞蹈花妖",
-          "levelMin": 30,
-          "levelMax": 33,
-          "earth": 0,
-          "water": 7,
-          "fire": 3,
-          "wind": 0,
-          "type": "植物系",
-          "typeDetail": "+不死 特殊,-野獸 昆蟲",
-          "cardGrade": "3級普卡",
-          "sealable": true,
-          "encounterCount": "4-6",
+          "id": "4h521",
+          "name": "沙夜酒吧",
           "crystals": [
             "風地(121%)",
             "純地(139%)"
           ],
-          "isBoss": false,
-          "image": "110390400.png"
-        },
-        {
-          "name": "鬧鐘小滴",
-          "levelMin": 30,
-          "levelMax": 33,
-          "earth": 4,
-          "water": 6,
-          "fire": 0,
-          "wind": 0,
-          "type": "金屬系",
-          "typeDetail": "+龍系 人形,-特殊 不死",
-          "cardGrade": "8級銀卡",
-          "sealable": false,
           "encounterCount": "4-6",
-          "crystals": [
-            "風地(121%)",
-            "純地(139%)"
-          ],
-          "isBoss": false,
-          "image": "104350400.png"
+          "monsters": [
+            {
+              "name": "舞蹈花妖",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 0,
+              "water": 7,
+              "fire": 3,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "3級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "110390400.png",
+              "frameWidth": 88,
+              "frameHeight": 83,
+              "frameCount": 8,
+              "animTime": 1000
+            },
+            {
+              "name": "鬧鐘小滴",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 4,
+              "water": 6,
+              "fire": 0,
+              "wind": 0,
+              "type": "金屬系",
+              "typeDetail": "+龍系 人形,-特殊 不死",
+              "cardGrade": "8級銀卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104350400.png",
+              "frameWidth": 49,
+              "frameHeight": 78,
+              "frameCount": 4,
+              "animTime": 1000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "lglm3",
       "name": "大地鼠的農場",
-      "monsters": [
+      "areas": [
         {
-          "name": "大地鼠",
-          "levelMin": 21,
-          "levelMax": 27,
-          "earth": 10,
-          "water": 0,
-          "fire": 0,
-          "wind": 0,
-          "type": "野獸系",
-          "typeDetail": "+植物 飛行,-人形 龍系",
-          "cardGrade": "1級普卡",
-          "sealable": true,
-          "encounterCount": "1-6",
+          "id": "lglm3",
+          "name": "大地鼠的農場",
           "crystals": [
             "風地(139%)",
             "純風(154%)"
           ],
-          "isBoss": false,
-          "image": "101020400.png"
-        },
-        {
-          "name": "大地瓜鼠",
-          "levelMin": 21,
-          "levelMax": 27,
-          "earth": 10,
-          "water": 0,
-          "fire": 0,
-          "wind": 0,
-          "type": "野獸系",
-          "typeDetail": "+植物 飛行,-人形 龍系",
-          "cardGrade": "",
-          "sealable": false,
           "encounterCount": "1-6",
-          "crystals": [
-            "風地(139%)",
-            "純風(154%)"
-          ],
-          "isBoss": false,
-          "image": "101020400.png"
-        },
-        {
-          "name": "人魔草",
-          "levelMin": 21,
-          "levelMax": 27,
-          "earth": 0,
-          "water": 8,
-          "fire": 2,
-          "wind": 0,
-          "type": "植物系",
-          "typeDetail": "+不死 特殊,-野獸 昆蟲",
-          "cardGrade": "3級銀卡",
-          "sealable": true,
-          "encounterCount": "1-6",
-          "crystals": [
-            "風地(139%)",
-            "純風(154%)"
-          ],
-          "isBoss": false,
-          "image": "101413400.png"
+          "monsters": [
+            {
+              "name": "大地鼠",
+              "levelMin": 21,
+              "levelMax": 27,
+              "earth": 10,
+              "water": 0,
+              "fire": 0,
+              "wind": 0,
+              "type": "野獸系",
+              "typeDetail": "+植物 飛行,-人形 龍系",
+              "cardGrade": "1級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101020400.png",
+              "frameWidth": 51,
+              "frameHeight": 60,
+              "frameCount": 51,
+              "animTime": 5000
+            },
+            {
+              "name": "大地瓜鼠",
+              "levelMin": 21,
+              "levelMax": 27,
+              "earth": 10,
+              "water": 0,
+              "fire": 0,
+              "wind": 0,
+              "type": "野獸系",
+              "typeDetail": "+植物 飛行,-人形 龍系",
+              "cardGrade": "",
+              "sealable": false,
+              "isBoss": false,
+              "image": "101020400.png",
+              "frameWidth": 51,
+              "frameHeight": 60,
+              "frameCount": 51,
+              "animTime": 5000
+            },
+            {
+              "name": "人魔草",
+              "levelMin": 21,
+              "levelMax": 27,
+              "earth": 0,
+              "water": 8,
+              "fire": 2,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "3級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101413400.png",
+              "frameWidth": 45,
+              "frameHeight": 72,
+              "frameCount": 16,
+              "animTime": 4000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "3rvbg",
       "name": "種苗培育所",
-      "monsters": [
+      "areas": [
         {
-          "name": "異型蜂",
-          "levelMin": 25,
-          "levelMax": 28,
-          "earth": 0,
-          "water": 0,
-          "fire": 5,
-          "wind": 5,
-          "type": "昆蟲系",
-          "typeDetail": "+特殊 植物,-飛行 人形",
-          "cardGrade": "3級普卡",
-          "sealable": true,
-          "encounterCount": "1-6",
+          "id": "3rvbg",
+          "name": "種苗培育所",
           "crystals": [
             "火風(124%)",
             "純火(139%)"
           ],
-          "isBoss": false,
-          "image": "101311400.png"
-        },
-        {
-          "name": "風蜘蛛",
-          "levelMin": 25,
-          "levelMax": 28,
-          "earth": 0,
-          "water": 0,
-          "fire": 0,
-          "wind": 10,
-          "type": "昆蟲系",
-          "typeDetail": "+特殊 植物,-飛行 人形",
-          "cardGrade": "3級銀卡",
-          "sealable": true,
           "encounterCount": "1-6",
-          "crystals": [
-            "火風(124%)",
-            "純火(139%)"
-          ],
-          "isBoss": false,
-          "image": "101333400.png"
-        },
-        {
-          "name": "妖草",
-          "levelMin": 25,
-          "levelMax": 28,
-          "earth": 8,
-          "water": 2,
-          "fire": 0,
-          "wind": 0,
-          "type": "植物系",
-          "typeDetail": "+不死 特殊,-野獸 昆蟲",
-          "cardGrade": "2級普卡",
-          "sealable": true,
-          "encounterCount": "1-6",
-          "crystals": [
-            "火風(124%)",
-            "純火(139%)"
-          ],
-          "isBoss": false,
-          "image": "101410400.png"
+          "monsters": [
+            {
+              "name": "異型蜂",
+              "levelMin": 25,
+              "levelMax": 28,
+              "earth": 0,
+              "water": 0,
+              "fire": 5,
+              "wind": 5,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "3級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101311400.png",
+              "frameWidth": 69,
+              "frameHeight": 106,
+              "frameCount": 10,
+              "animTime": 1000
+            },
+            {
+              "name": "風蜘蛛",
+              "levelMin": 25,
+              "levelMax": 28,
+              "earth": 0,
+              "water": 0,
+              "fire": 0,
+              "wind": 10,
+              "type": "昆蟲系",
+              "typeDetail": "+特殊 植物,-飛行 人形",
+              "cardGrade": "3級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101333400.png",
+              "frameWidth": 96,
+              "frameHeight": 64,
+              "frameCount": 48,
+              "animTime": 5500
+            },
+            {
+              "name": "妖草",
+              "levelMin": 25,
+              "levelMax": 28,
+              "earth": 8,
+              "water": 2,
+              "fire": 0,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "2級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101410400.png",
+              "frameWidth": 45,
+              "frameHeight": 72,
+              "frameCount": 48,
+              "animTime": 12000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "7q3aw",
       "name": "神秘地宮",
-      "monsters": [
+      "areas": [
         {
-          "name": "幽石燈",
-          "levelMin": 43,
-          "levelMax": 45,
-          "earth": 3,
-          "water": 0,
-          "fire": 0,
-          "wind": 7,
-          "type": "特殊系",
-          "typeDetail": "+金屬 龍系,-昆蟲 植物",
-          "cardGrade": "6級銀卡",
-          "sealable": false,
-          "encounterCount": "1-6",
+          "id": "7q3aw",
+          "name": "神秘地宮",
           "crystals": [
             "水火(121%)",
             "純火(121%)",
             "純水(121%)"
           ],
-          "isBoss": false,
-          "image": "104611400.png"
-        },
-        {
-          "name": "僵屍王爺",
-          "levelMin": 43,
-          "levelMax": 45,
-          "earth": 0,
-          "water": 0,
-          "fire": 10,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "5級普卡",
-          "sealable": true,
           "encounterCount": "1-6",
-          "crystals": [
-            "水火(121%)",
-            "純火(121%)",
-            "純水(121%)"
-          ],
-          "isBoss": false,
-          "image": "104383400.png"
+          "monsters": [
+            {
+              "name": "幽石燈",
+              "levelMin": 43,
+              "levelMax": 45,
+              "earth": 3,
+              "water": 0,
+              "fire": 0,
+              "wind": 7,
+              "type": "特殊系",
+              "typeDetail": "+金屬 龍系,-昆蟲 植物",
+              "cardGrade": "6級銀卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104611400.png",
+              "frameWidth": 58,
+              "frameHeight": 76,
+              "frameCount": 6,
+              "animTime": 1000
+            },
+            {
+              "name": "僵屍王爺",
+              "levelMin": 43,
+              "levelMax": 45,
+              "earth": 0,
+              "water": 0,
+              "fire": 10,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "5級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104383400.png",
+              "frameWidth": 56,
+              "frameHeight": 102,
+              "frameCount": 10,
+              "animTime": 1000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "b96j6",
       "name": "古墓",
-      "monsters": [
+      "areas": [
         {
-          "name": "桃紅小丑",
-          "levelMin": 30,
-          "levelMax": 33,
-          "earth": 0,
-          "water": 0,
-          "fire": 0,
-          "wind": 0,
-          "type": "人形系",
-          "typeDetail": "+野獸 昆蟲,-不死 金屬",
-          "cardGrade": "3級銀卡",
-          "sealable": false,
-          "encounterCount": "1-5",
+          "id": "b96j6",
+          "name": "古墓",
           "crystals": [
             "火風(145%)",
             "風地(145%)",
             "純風(160%)"
           ],
-          "isBoss": false,
-          "image": "104595400.png"
-        },
-        {
-          "name": "僵屍格格",
-          "levelMin": 30,
-          "levelMax": 33,
-          "earth": 10,
-          "water": 0,
-          "fire": 0,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "4級普卡",
-          "sealable": true,
           "encounterCount": "1-5",
-          "crystals": [
-            "火風(145%)",
-            "風地(145%)",
-            "純風(160%)"
-          ],
-          "isBoss": false,
-          "image": "104385400.png"
+          "monsters": [
+            {
+              "name": "桃紅小丑",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 0,
+              "water": 0,
+              "fire": 0,
+              "wind": 0,
+              "type": "人形系",
+              "typeDetail": "+野獸 昆蟲,-不死 金屬",
+              "cardGrade": "3級銀卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104595400.png",
+              "frameWidth": 61,
+              "frameHeight": 75,
+              "frameCount": 4,
+              "animTime": 1000
+            },
+            {
+              "name": "僵屍格格",
+              "levelMin": 30,
+              "levelMax": 33,
+              "earth": 10,
+              "water": 0,
+              "fire": 0,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "4級普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104385400.png",
+              "frameWidth": 40,
+              "frameHeight": 71,
+              "frameCount": 8,
+              "animTime": 1000
+            }
+          ]
         }
       ]
     },
     {
-      "id": "4viz3",
       "name": "日耀之域",
-      "monsters": [
+      "areas": [
         {
-          "name": "巴拉斯",
-          "levelMin": 80,
-          "levelMax": 85,
-          "earth": 3,
-          "water": 0,
-          "fire": 0,
-          "wind": 7,
-          "type": "飛行系",
-          "typeDetail": "+昆蟲 不死,-龍系 野獸",
-          "cardGrade": "1級銀卡",
-          "sealable": false,
+          "id": "4viz3",
+          "name": "日耀之域",
+          "crystals": [],
           "encounterCount": "",
-          "crystals": [
-            "風地(109%)",
-            "純風(112%)"
-          ],
-          "isBoss": false,
-          "image": "104302400.png"
-        },
-        {
-          "name": "顎牙",
-          "levelMin": 80,
-          "levelMax": 85,
-          "earth": 1,
-          "water": 9,
-          "fire": 0,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "4級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "風地(109%)",
-            "純風(112%)"
-          ],
-          "isBoss": false,
-          "image": "107111400.png"
-        },
-        {
-          "name": "果凍史萊姆",
-          "levelMin": 90,
-          "levelMax": 95,
-          "earth": 0,
-          "water": 1,
-          "fire": 9,
-          "wind": 0,
-          "type": "特殊系",
-          "typeDetail": "+金屬 龍系,-昆蟲 植物",
-          "cardGrade": "3級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "地水(109%)",
-            "純地(112%)"
-          ],
-          "isBoss": false,
-          "image": "101502400.png"
-        },
-        {
-          "name": "布拉茲",
-          "levelMin": 90,
-          "levelMax": 95,
-          "earth": 7,
-          "water": 3,
-          "fire": 0,
-          "wind": 0,
-          "type": "飛行系",
-          "typeDetail": "+昆蟲 不死,-龍系 野獸",
-          "cardGrade": "普卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "地水(109%)",
-            "純地(112%)"
-          ],
-          "isBoss": false,
-          "image": "104303400.png"
-        },
-        {
-          "name": "大炸彈",
-          "levelMin": 90,
-          "levelMax": 95,
-          "earth": 0,
-          "water": 0,
-          "fire": 8,
-          "wind": 2,
-          "type": "特殊系",
-          "typeDetail": "+金屬 龍系,-昆蟲 植物",
-          "cardGrade": "2級銀卡",
-          "sealable": true,
-          "encounterCount": "3-6",
-          "crystals": [
-            "地水(127%)",
-            "純地(142%)"
-          ],
-          "isBoss": false,
-          "image": "101522400.png"
-        },
-        {
-          "name": "卡卡特",
-          "levelMin": 90,
-          "levelMax": 95,
-          "earth": 2,
-          "water": 8,
-          "fire": 0,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "普卡",
-          "sealable": false,
-          "encounterCount": "3-6",
-          "crystals": [
-            "地水(127%)",
-            "純地(142%)"
-          ],
-          "isBoss": false,
-          "image": "104306400.png"
-        },
-        {
-          "name": "卡卡特",
-          "levelMin": 90,
-          "levelMax": 95,
-          "earth": 2,
-          "water": 8,
-          "fire": 0,
-          "wind": 0,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "普卡",
-          "sealable": false,
-          "encounterCount": "3-6",
-          "crystals": [
-            "地水(127%)",
-            "純地(142%)"
-          ],
-          "isBoss": false,
-          "image": "104306400.png"
-        },
-        {
-          "name": "死亡樹精",
-          "levelMin": 90,
-          "levelMax": 92,
-          "earth": 6,
-          "water": 4,
-          "fire": 0,
-          "wind": 0,
-          "type": "植物系",
-          "typeDetail": "+不死 特殊,-野獸 昆蟲",
-          "cardGrade": "4級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "火風(118%)",
-            "純火(118%)",
-            "純風(118%)"
-          ],
-          "isBoss": false,
-          "image": "101401400.png"
-        },
-        {
-          "name": "烈風翼龍",
-          "levelMin": 90,
-          "levelMax": 110,
-          "earth": 0,
-          "water": 0,
-          "fire": 0,
-          "wind": 10,
-          "type": "龍系",
-          "typeDetail": "+飛行 野獸,-金屬 特殊",
-          "cardGrade": "6級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "火風(118%)",
-            "純火(118%)",
-            "純風(118%)"
-          ],
-          "isBoss": false,
-          "image": "101713400.png"
-        },
-        {
-          "name": "亞特拉斯巨神",
-          "levelMin": 90,
-          "levelMax": 92,
-          "earth": 0,
-          "water": 0,
-          "fire": 10,
-          "wind": 0,
-          "type": "人形系",
-          "typeDetail": "+野獸 昆蟲,-不死 金屬",
-          "cardGrade": "6級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "水火(130%)",
-            "純水(154%)"
-          ],
-          "isBoss": false,
-          "image": "101813400.png"
-        },
-        {
-          "name": "鬼靈",
-          "levelMin": 85,
-          "levelMax": 87,
-          "earth": 0,
-          "water": 0,
-          "fire": 8,
-          "wind": 2,
-          "type": "不死系",
-          "typeDetail": "+人形 金屬,-植物 飛行",
-          "cardGrade": "5級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "水火(130%)",
-            "純水(154%)"
-          ],
-          "isBoss": false,
-          "image": "101121400.png"
-        },
-        {
-          "name": "布特拉",
-          "levelMin": 90,
-          "levelMax": 95,
-          "earth": 0,
-          "water": 7,
-          "fire": 3,
-          "wind": 0,
-          "type": "飛行系",
-          "typeDetail": "+昆蟲 不死,-龍系 野獸",
-          "cardGrade": "1級銀卡",
-          "sealable": true,
-          "encounterCount": "",
-          "crystals": [
-            "風地(121%)",
-            "純地(130%)"
-          ],
-          "isBoss": false,
-          "image": "104301400.png"
-        },
-        {
-          "name": "蕃茄咩",
-          "levelMin": 90,
-          "levelMax": 95,
-          "earth": 7,
-          "water": 3,
-          "fire": 0,
-          "wind": 0,
-          "type": "特殊系",
-          "typeDetail": "+金屬 龍系,-昆蟲 植物",
-          "cardGrade": "",
-          "sealable": false,
-          "encounterCount": "",
-          "crystals": [
-            "風地(121%)",
-            "純地(130%)"
-          ],
-          "isBoss": false,
-          "image": "104332400.png"
+          "monsters": [
+            {
+              "name": "巴拉斯",
+              "levelMin": 80,
+              "levelMax": 85,
+              "earth": 3,
+              "water": 0,
+              "fire": 0,
+              "wind": 7,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "1級銀卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104302400.png",
+              "frameWidth": 79,
+              "frameHeight": 142,
+              "frameCount": 6,
+              "animTime": 1100
+            },
+            {
+              "name": "顎牙",
+              "levelMin": 80,
+              "levelMax": 85,
+              "earth": 1,
+              "water": 9,
+              "fire": 0,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "107111400.png",
+              "frameWidth": 94,
+              "frameHeight": 69,
+              "frameCount": 4,
+              "animTime": 1050
+            },
+            {
+              "name": "果凍史萊姆",
+              "levelMin": 90,
+              "levelMax": 95,
+              "earth": 0,
+              "water": 1,
+              "fire": 9,
+              "wind": 0,
+              "type": "特殊系",
+              "typeDetail": "+金屬 龍系,-昆蟲 植物",
+              "cardGrade": "3級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101502400.png",
+              "frameWidth": 50,
+              "frameHeight": 44,
+              "frameCount": 8,
+              "animTime": 1300
+            },
+            {
+              "name": "布拉茲",
+              "levelMin": 90,
+              "levelMax": 95,
+              "earth": 7,
+              "water": 3,
+              "fire": 0,
+              "wind": 0,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "普卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104303400.png",
+              "frameWidth": 78,
+              "frameHeight": 141,
+              "frameCount": 6,
+              "animTime": 1100
+            },
+            {
+              "name": "大炸彈",
+              "levelMin": 90,
+              "levelMax": 95,
+              "earth": 0,
+              "water": 0,
+              "fire": 8,
+              "wind": 2,
+              "type": "特殊系",
+              "typeDetail": "+金屬 龍系,-昆蟲 植物",
+              "cardGrade": "2級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101522400.png",
+              "frameWidth": 75,
+              "frameHeight": 89,
+              "frameCount": 16,
+              "animTime": 3000
+            },
+            {
+              "name": "卡卡特",
+              "levelMin": 90,
+              "levelMax": 95,
+              "earth": 2,
+              "water": 8,
+              "fire": 0,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "普卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104306400.png",
+              "frameWidth": 100,
+              "frameHeight": 107,
+              "frameCount": 38,
+              "animTime": 8000
+            },
+            {
+              "name": "卡卡特",
+              "levelMin": 90,
+              "levelMax": 95,
+              "earth": 2,
+              "water": 8,
+              "fire": 0,
+              "wind": 0,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "普卡",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104306400.png",
+              "frameWidth": 100,
+              "frameHeight": 107,
+              "frameCount": 38,
+              "animTime": 8000
+            },
+            {
+              "name": "死亡樹精",
+              "levelMin": 90,
+              "levelMax": 92,
+              "earth": 6,
+              "water": 4,
+              "fire": 0,
+              "wind": 0,
+              "type": "植物系",
+              "typeDetail": "+不死 特殊,-野獸 昆蟲",
+              "cardGrade": "4級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101401400.png",
+              "frameWidth": 120,
+              "frameHeight": 145,
+              "frameCount": 45,
+              "animTime": 2000
+            },
+            {
+              "name": "烈風翼龍",
+              "levelMin": 90,
+              "levelMax": 110,
+              "earth": 0,
+              "water": 0,
+              "fire": 0,
+              "wind": 10,
+              "type": "龍系",
+              "typeDetail": "+飛行 野獸,-金屬 特殊",
+              "cardGrade": "6級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101713400.png",
+              "frameWidth": 142,
+              "frameHeight": 199,
+              "frameCount": 6,
+              "animTime": 1100
+            },
+            {
+              "name": "亞特拉斯巨神",
+              "levelMin": 90,
+              "levelMax": 92,
+              "earth": 0,
+              "water": 0,
+              "fire": 10,
+              "wind": 0,
+              "type": "人形系",
+              "typeDetail": "+野獸 昆蟲,-不死 金屬",
+              "cardGrade": "6級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101813400.png",
+              "frameWidth": 110,
+              "frameHeight": 164,
+              "frameCount": 72,
+              "animTime": 12000
+            },
+            {
+              "name": "鬼靈",
+              "levelMin": 85,
+              "levelMax": 87,
+              "earth": 0,
+              "water": 0,
+              "fire": 8,
+              "wind": 2,
+              "type": "不死系",
+              "typeDetail": "+人形 金屬,-植物 飛行",
+              "cardGrade": "5級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "101121400.png",
+              "frameWidth": 62,
+              "frameHeight": 61,
+              "frameCount": 6,
+              "animTime": 1000
+            },
+            {
+              "name": "布特拉",
+              "levelMin": 90,
+              "levelMax": 95,
+              "earth": 0,
+              "water": 7,
+              "fire": 3,
+              "wind": 0,
+              "type": "飛行系",
+              "typeDetail": "+昆蟲 不死,-龍系 野獸",
+              "cardGrade": "1級銀卡",
+              "sealable": true,
+              "isBoss": false,
+              "image": "104301400.png",
+              "frameWidth": 78,
+              "frameHeight": 141,
+              "frameCount": 6,
+              "animTime": 1100
+            },
+            {
+              "name": "蕃茄咩",
+              "levelMin": 90,
+              "levelMax": 95,
+              "earth": 7,
+              "water": 3,
+              "fire": 0,
+              "wind": 0,
+              "type": "特殊系",
+              "typeDetail": "+金屬 龍系,-昆蟲 植物",
+              "cardGrade": "",
+              "sealable": false,
+              "isBoss": false,
+              "image": "104332400.png",
+              "frameWidth": 80,
+              "frameHeight": 96,
+              "frameCount": 8,
+              "animTime": 1000
+            }
+          ]
         }
       ]
     }

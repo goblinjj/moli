@@ -72,20 +72,29 @@ export interface Monster {
   typeDetail: string;
   cardGrade: string;
   sealable: boolean;
-  encounterCount: string;
-  crystals: string[];
   isBoss: boolean;
   image: string;
+  frameWidth: number;
+  frameHeight: number;
+  frameCount: number;
+  animTime: number;
 }
 
-export interface MonsterLocation {
+export interface MonsterArea {
   id: string;
   name: string;
+  crystals: string[];
+  encounterCount: string;
   monsters: Monster[];
 }
 
-export interface MonsterRegion {
+export interface MonsterSubMap {
+  name: string;
+  areas: MonsterArea[];
+}
+
+export interface MonsterIsland {
   id: string;
   name: string;
-  locations: MonsterLocation[];
+  subMaps: MonsterSubMap[];
 }

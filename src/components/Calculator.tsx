@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import type { Recipe, PriceConfig, Category, Gem, GemCategory, MonsterRegion } from "../lib/types";
+import type { Recipe, PriceConfig, Category, Gem, GemCategory, MonsterIsland } from "../lib/types";
 import { calculateCost } from "../lib/calculator";
 import { generateDefaultConfig } from "../lib/defaults";
 import { loadConfig, saveConfig } from "../lib/storage";
@@ -12,7 +12,7 @@ import MonsterDistribution from "./MonsterDistribution";
 interface CalculatorProps {
   recipes: Recipe[];
   gems: Gem[];
-  monsterRegions: MonsterRegion[];
+  monsterIslands: MonsterIsland[];
 }
 
 type Section = "production" | "tools" | "monsters";
@@ -99,7 +99,7 @@ function getSectionFromHash(): Section {
   return "production";
 }
 
-export default function Calculator({ recipes, gems, monsterRegions }: CalculatorProps) {
+export default function Calculator({ recipes, gems, monsterIslands }: CalculatorProps) {
   const [activeSection, setActiveSection] = useState<Section>(getSectionFromHash);
   const [activeGroup, setActiveGroup] = useState(0);
   const [activeCategory, setActiveCategory] = useState<SubCategory>("sword");
@@ -350,7 +350,7 @@ export default function Calculator({ recipes, gems, monsterRegions }: Calculator
       )}
 
       {activeSection === "monsters" && (
-        <MonsterDistribution regions={monsterRegions} />
+        <MonsterDistribution islands={monsterIslands} />
       )}
     </div>
   );

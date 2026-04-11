@@ -21,78 +21,81 @@ function ElementBar({ element, value }: { element: string; value: number }) {
   );
 }
 
-interface MonsterCardProps {
-  monster: Monster;
-  locationName?: string;
-  regionName?: string;
+function SpriteAnimation({ image, frameWidth, frameHeight, frameCount, animTime }: {
+  image: string; frameWidth: number; frameHeight: number; frameCount: number; animTime: number;
+}) {
+  if (!image || !frameWidth || !frameHeight) return null;
+
+  const totalWidth = frameWidth * frameCount;
+  const animName = `sprite-${image.replace('.png', '')}`;
+  const duration = animTime / 1000;
+
+  return (
+    <div
+      className="flex-shrink-0 overflow-hidden"
+      style={{ width: frameWidth, height: frameHeight, maxWidth: 64, maxHeight: 64 }}
+    >
+      <div
+        style={{
+          width: frameWidth,
+          height: frameHeight,
+          backgroundImage: `url(/monsters/${image})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: `${totalWidth}px ${frameHeight}px`,
+          animation: `${animName} ${duration}s steps(${frameCount}) infinite`,
+          transform: frameWidth > 64 ? `scale(${64 / frameWidth})` : undefined,
+          transformOrigin: 'top left',
+        }}
+      />
+      <style>{`@keyframes ${animName} { from { background-position: 0 0; } to { background-position: -${totalWidth}px 0; } }`}</style>
+    </div>
+  );
 }
 
-export default function MonsterCard({ monster, locationName, regionName }: MonsterCardProps) {
+export default function MonsterCard({ monster }: { monster: Monster }) {
   const m = monster;
   const levelText = m.levelMin === m.levelMax ? `Lv${m.levelMin}` : `Lv${m.levelMin}-${m.levelMax}`;
 
   return (
-    <div className={`bg-white rounded-xl shadow-sm border overflow-hidden ${m.isBoss ? "border-red-300 ring-1 ring-red-200" : "border-gray-100"}`}>
-      <div className="flex gap-3 p-3">
-        {m.image && (
-          <div className={`flex-shrink-0 ${m.isBoss ? "w-16 h-16" : "w-12 h-12"} bg-gray-50 rounded-lg flex items-center justify-center overflow-hidden`}>
-            <img
-              src={`/monsters/${m.image}`}
-              alt={m.name}
-              className="max-w-full max-h-full object-contain"
-              loading="lazy"
-            />
-          </div>
-        )}
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="font-semibold text-sm text-gray-900">{m.name}</span>
-            {m.isBoss && (
-              <span className="px-1.5 py-0.5 text-[10px] font-bold bg-red-100 text-red-600 rounded">BOSS</span>
-            )}
-            <span className="px-1.5 py-0.5 text-[10px] font-medium bg-slate-100 text-slate-600 rounded tabular-nums">{levelText}</span>
-          </div>
-          {(locationName || regionName) && (
-            <div className="text-[10px] text-gray-400 mt-0.5">
-              {regionName && <span>{regionName}</span>}
-              {regionName && locationName && <span> · </span>}
-              {locationName && <span>{locationName}</span>}
-            </div>
+    <div className="flex gap-2.5 py-2 border-b border-gray-50 last:border-0">
+      <div className="w-16 h-16 bg-gray-50 rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0">
+        <SpriteAnimation
+          image={m.image}
+          frameWidth={m.frameWidth}
+          frameHeight={m.frameHeight}
+          frameCount={m.frameCount}
+          animTime={m.animTime}
+        />
+      </div>
+      <div className="flex-1 min-w-0">
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="font-semibold text-sm text-gray-900">{m.name}</span>
+          {m.isBoss && (
+            <span className="px-1.5 py-0.5 text-[10px] font-bold bg-red-100 text-red-600 rounded">BOSS</span>
           )}
-          <div className="mt-1.5 space-y-0.5">
-            <ElementBar element="earth" value={m.earth} />
-            <ElementBar element="water" value={m.water} />
-            <ElementBar element="fire" value={m.fire} />
-            <ElementBar element="wind" value={m.wind} />
-          </div>
+          <span className="px-1.5 py-0.5 text-[10px] font-medium bg-slate-100 text-slate-600 rounded tabular-nums">{levelText}</span>
         </div>
-      </div>
-
-      <div className="px-3 pb-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-gray-500">
-        {m.type && (
-          <span>
-            <span className="text-gray-700 font-medium">{m.type}</span>
-            {m.typeDetail && <span className="text-gray-400 ml-0.5">({m.typeDetail})</span>}
-          </span>
-        )}
-        {m.cardGrade && <span>卡片: {m.cardGrade}</span>}
-        {m.sealable ? (
-          <span className="text-green-600">可封印</span>
-        ) : m.cardGrade ? (
-          <span className="text-red-500">不可封印</span>
-        ) : null}
-        {m.encounterCount && <span>出現: {m.encounterCount}隻</span>}
-      </div>
-
-      {m.crystals.length > 0 && (
-        <div className="px-3 pb-3 flex flex-wrap gap-1">
-          {m.crystals.map((c, i) => (
-            <span key={i} className="px-1.5 py-0.5 text-[10px] bg-purple-50 text-purple-600 rounded font-medium">
-              {c}
+        <div className="mt-1 space-y-0.5">
+          <ElementBar element="earth" value={m.earth} />
+          <ElementBar element="water" value={m.water} />
+          <ElementBar element="fire" value={m.fire} />
+          <ElementBar element="wind" value={m.wind} />
+        </div>
+        <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-gray-500">
+          {m.type && (
+            <span>
+              <span className="text-gray-700 font-medium">{m.type}</span>
+              {m.typeDetail && <span className="text-gray-400 ml-0.5">({m.typeDetail})</span>}
             </span>
-          ))}
+          )}
+          {m.cardGrade && <span>卡片: {m.cardGrade}</span>}
+          {m.sealable ? (
+            <span className="text-green-600">可封印</span>
+          ) : m.cardGrade ? (
+            <span className="text-red-500">不可封印</span>
+          ) : null}
         </div>
-      )}
+      </div>
     </div>
   );
 }
