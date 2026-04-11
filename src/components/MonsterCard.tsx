@@ -29,11 +29,15 @@ function SpriteAnimation({ image, frameWidth, frameHeight, frameCount, animTime 
   const totalWidth = frameWidth * frameCount;
   const animName = `sprite-${image.replace('.png', '')}`;
   const duration = animTime / 1000;
+  const maxSize = 64;
+  const scale = Math.min(maxSize / frameWidth, maxSize / frameHeight, 1);
+  const displayW = Math.round(frameWidth * scale);
+  const displayH = Math.round(frameHeight * scale);
 
   return (
     <div
       className="flex-shrink-0 overflow-hidden"
-      style={{ width: frameWidth, height: frameHeight, maxWidth: 64, maxHeight: 64 }}
+      style={{ width: displayW, height: displayH }}
     >
       <div
         style={{
@@ -43,7 +47,7 @@ function SpriteAnimation({ image, frameWidth, frameHeight, frameCount, animTime 
           backgroundRepeat: 'no-repeat',
           backgroundSize: `${totalWidth}px ${frameHeight}px`,
           animation: `${animName} ${duration}s steps(${frameCount}) infinite`,
-          transform: frameWidth > 64 ? `scale(${64 / frameWidth})` : undefined,
+          transform: scale < 1 ? `scale(${scale})` : undefined,
           transformOrigin: 'top left',
         }}
       />

@@ -469,12 +469,13 @@
       "areas": [
         {
           "id": "2c4mj",
-          "name": "弗利德島",
+          "name": "神殿外",
           "crystals": [
-            "水火(130%)",
-            "純水(136%)"
+            "地水(109%)",
+            "純地(109%)",
+            "純水(109%)"
           ],
-          "encounterCount": "1-8",
+          "encounterCount": "1-10",
           "monsters": [
             {
               "name": "單眼巨人",
@@ -513,7 +514,18 @@
               "frameHeight": 147,
               "frameCount": 66,
               "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "2c4mj",
+          "name": "死樹區",
+          "crystals": [
+            "火風(118%)",
+            "純風(127%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "死亡樹精",
               "levelMin": 90,
@@ -551,7 +563,18 @@
               "frameHeight": 84,
               "frameCount": 4,
               "animTime": 1200
-            },
+            }
+          ]
+        },
+        {
+          "id": "2c4mj",
+          "name": "",
+          "crystals": [
+            "水火(130%)",
+            "純水(136%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "黃蜂",
               "levelMin": 85,
@@ -589,7 +612,19 @@
               "frameHeight": 123,
               "frameCount": 32,
               "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "2c4mj",
+          "name": "漢米頓商城外",
+          "crystals": [
+            "風地(109%)",
+            "純地(109%)",
+            "純風(109%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "托羅帝鳥",
               "levelMin": 70,
@@ -627,7 +662,18 @@
               "frameHeight": 67,
               "frameCount": 69,
               "animTime": 3500
-            },
+            }
+          ]
+        },
+        {
+          "id": "2c4mj",
+          "name": "虎螳區",
+          "crystals": [
+            "火風(130%)",
+            "純火(133%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "虎人",
               "levelMin": 80,

@@ -68,10 +68,86 @@ function fixCrystals(crystalArr) {
   return fixed;
 }
 
+function parseMonsters($, $section) {
+  const monsters = [];
+  $section.find('.beastCell').each((_, cellDiv) => {
+    const $cell = $(cellDiv);
+    const $container = $cell.parent();
+
+    const nameLink = $container.find('a[href^="/bm/"]');
+    let name = nameLink.text().trim();
+    if (!name) {
+      const nameDiv = $container.find('div[style*="text-align:center"]');
+      name = nameDiv.text().trim();
+    }
+    if (!name) return;
+
+    const $info = $container.next();
+    if (!$info.length) return;
+
+    const infoText = $info.text();
+
+    const levelMatch = infoText.match(/Lv(\d+)(?:-(\d+))?/);
+    const levelMin = levelMatch ? parseInt(levelMatch[1]) : 0;
+    const levelMax = levelMatch ? parseInt(levelMatch[2] || levelMatch[1]) : 0;
+
+    const elemSpans = $info.find('span.earth, span.water, span.fire, span.wind');
+    let elemText = '';
+    elemSpans.each((_, el) => { elemText += $(el).text(); });
+    const elements = parseElements(elemText);
+
+    const typeMatch = infoText.match(/([\u4e00-\u9fff]+系)\(([^)]+)\)/);
+    let type = typeMatch ? typeMatch[1] : '';
+    let typeDetail = typeMatch ? typeMatch[2] : '';
+    if (!type) {
+      const simpleTypeMatch = infoText.match(/([\u4e00-\u9fff]+系)/);
+      if (simpleTypeMatch) type = simpleTypeMatch[1];
+    }
+
+    const cardMatch = infoText.match(/卡片:\s*([^\s　]+(?:普卡)?)/);
+    const cardGrade = cardMatch ? cardMatch[1].trim() : '';
+
+    const sealable = $info.find('span.catch').length > 0;
+    const isBoss = $cell.hasClass('expand');
+
+    const imageDiv = $cell.find('.imageparty, .beastImg');
+    let image = '';
+    let frameWidth = 0;
+    let frameHeight = 0;
+    let frameCount = 1;
+    let animTime = 1000;
+
+    if (imageDiv.length) {
+      const bgStyle = imageDiv.attr('style') || '';
+      const imgMatch = bgStyle.match(/url\(([^)]+)\)/);
+      if (imgMatch) {
+        image = imgMatch[1].replace(/^\/\//, 'https://').replace(/['"]/g, '');
+      }
+      const wMatch = bgStyle.match(/width:(\d+)px/);
+      const hMatch = bgStyle.match(/height:(\d+)px/);
+      if (wMatch) frameWidth = parseInt(wMatch[1]);
+      if (hMatch) frameHeight = parseInt(hMatch[1]);
+
+      const fc = imageDiv.attr('data-frame');
+      const at = imageDiv.attr('data-time');
+      if (fc) frameCount = parseInt(fc);
+      if (at) animTime = parseInt(at);
+    }
+
+    monsters.push({
+      name, levelMin, levelMax,
+      ...elements,
+      type, typeDetail, cardGrade, sealable, isBoss,
+      image, frameWidth, frameHeight, frameCount, animTime,
+    });
+  });
+  return monsters;
+}
+
 function parseLocationPage(html) {
   const $ = cheerio.load(html);
 
-  // Parse breadcrumb to get hierarchy path
+  // Parse breadcrumb
   const breadcrumbLinks = [];
   const firstPath = $('div.path').first();
   firstPath.find('a[itemprop="url"]').each((_, el) => {
@@ -82,14 +158,22 @@ function parseLocationPage(html) {
     }
   });
 
-  // Parse encounter groups (the yellow sections)
-  const areas = [];
+  // Parse encounter groups (yellow sections)
+  const groups = [];
 
   $('div[style*="background:#FFFFDD"]').each((_, section) => {
     const $section = $(section);
 
-    const bossHeader = $section.find('div[style*="position: absolute"][style*="margin-top: -34px"]');
-    const isBossSection = bossHeader.length > 0;
+    // Check for header label (could be BOSS or area name)
+    const headerDiv = $section.find('div[style*="position: absolute"][style*="margin-top: -34px"]');
+    let headerText = headerDiv.length ? headerDiv.text().trim() : '';
+    const isBoss = headerText.startsWith('BOSS');
+
+    // If it's a named area (not BOSS, not empty), use it as area name
+    let areaName = '';
+    if (headerText && !isBoss) {
+      areaName = headerText;
+    }
 
     const infoBox = $section.find('div[style*="background-color: #FFE"]');
     let encounterCount = '';
@@ -106,93 +190,53 @@ function parseLocationPage(html) {
       }
     }
 
-    const monsters = [];
-    const monsterDivs = $section.find('.beastCell');
-
-    monsterDivs.each((_, cellDiv) => {
-      const $cell = $(cellDiv);
-      const $container = $cell.parent();
-
-      const nameLink = $container.find('a[href^="/bm/"]');
-      let name = nameLink.text().trim();
-      if (!name) {
-        const nameDiv = $container.find('div[style*="text-align:center"]');
-        name = nameDiv.text().trim();
-      }
-      if (!name) return;
-
-      const $info = $container.next();
-      if (!$info.length) return;
-
-      const infoText = $info.text();
-
-      const levelMatch = infoText.match(/Lv(\d+)(?:-(\d+))?/);
-      const levelMin = levelMatch ? parseInt(levelMatch[1]) : 0;
-      const levelMax = levelMatch ? parseInt(levelMatch[2] || levelMatch[1]) : 0;
-
-      const elemSpans = $info.find('span.earth, span.water, span.fire, span.wind');
-      let elemText = '';
-      elemSpans.each((_, el) => { elemText += $(el).text(); });
-      const elements = parseElements(elemText);
-
-      const typeMatch = infoText.match(/([\u4e00-\u9fff]+系)\(([^)]+)\)/);
-      let type = typeMatch ? typeMatch[1] : '';
-      let typeDetail = typeMatch ? typeMatch[2] : '';
-      if (!type) {
-        const simpleTypeMatch = infoText.match(/([\u4e00-\u9fff]+系)/);
-        if (simpleTypeMatch) type = simpleTypeMatch[1];
-      }
-
-      const cardMatch = infoText.match(/卡片:\s*([^\s　]+(?:普卡)?)/);
-      const cardGrade = cardMatch ? cardMatch[1].trim() : '';
-
-      const sealable = $info.find('span.catch').length > 0;
-      const isBoss = isBossSection && $cell.hasClass('expand');
-
-      // Sprite animation data
-      const imageDiv = $cell.find('.imageparty, .beastImg');
-      let image = '';
-      let frameWidth = 0;
-      let frameHeight = 0;
-      let frameCount = 1;
-      let animTime = 1000;
-
-      if (imageDiv.length) {
-        const bgStyle = imageDiv.attr('style') || '';
-        const imgMatch = bgStyle.match(/url\(([^)]+)\)/);
-        if (imgMatch) {
-          image = imgMatch[1].replace(/^\/\//, 'https://').replace(/['"]/g, '');
-        }
-        const wMatch = bgStyle.match(/width:(\d+)px/);
-        const hMatch = bgStyle.match(/height:(\d+)px/);
-        if (wMatch) frameWidth = parseInt(wMatch[1]);
-        if (hMatch) frameHeight = parseInt(hMatch[1]);
-
-        const fc = imageDiv.attr('data-frame');
-        const at = imageDiv.attr('data-time');
-        if (fc) frameCount = parseInt(fc);
-        if (at) animTime = parseInt(at);
-      }
-
-      monsters.push({
-        name, levelMin, levelMax,
-        ...elements,
-        type, typeDetail, cardGrade, sealable, isBoss,
-        image, frameWidth, frameHeight, frameCount, animTime,
-      });
-    });
+    const monsters = parseMonsters($, $section);
 
     if (monsters.length > 0) {
-      areas.push({ encounterCount, crystals, isBoss: isBossSection, monsters });
+      groups.push({ areaName, encounterCount, crystals, isBoss, monsters });
     }
   });
 
-  // Merge all encounter groups into one area with combined crystals
+  // Check if this page has named sub-areas (island overview pages)
+  const hasNamedAreas = groups.some(g => g.areaName && !g.isBoss);
+
+  if (hasNamedAreas) {
+    // Return multiple areas - each named group + attach boss groups to previous area
+    const resultAreas = [];
+    let currentArea = null;
+
+    for (const group of groups) {
+      if (group.areaName && !group.isBoss) {
+        currentArea = {
+          name: group.areaName,
+          crystals: group.crystals,
+          encounterCount: group.encounterCount,
+          monsters: [...group.monsters],
+        };
+        resultAreas.push(currentArea);
+      } else if (group.isBoss && currentArea) {
+        currentArea.monsters.push(...group.monsters);
+      } else if (!group.areaName && !group.isBoss) {
+        // Unnamed non-boss group before any named area
+        currentArea = {
+          name: '',
+          crystals: group.crystals,
+          encounterCount: group.encounterCount,
+          monsters: [...group.monsters],
+        };
+        resultAreas.push(currentArea);
+      }
+    }
+
+    return { breadcrumb: breadcrumbLinks, multiArea: true, areas: resultAreas };
+  }
+
+  // Single area page - merge all groups
   const allMonsters = [];
   let mainCrystals = [];
   let mainEncounterCount = '';
 
-  for (const group of areas) {
+  for (const group of groups) {
     allMonsters.push(...group.monsters);
     if (!group.isBoss && group.crystals.length > 0 && mainCrystals.length === 0) {
       mainCrystals = group.crystals;
@@ -204,6 +248,7 @@ function parseLocationPage(html) {
 
   return {
     breadcrumb: breadcrumbLinks,
+    multiArea: false,
     crystals: mainCrystals,
     encounterCount: mainEncounterCount,
     monsters: allMonsters,
@@ -257,14 +302,18 @@ async function main() {
       const html = await fetchPage(`${BASE_URL}${loc.href}`);
       const result = parseLocationPage(html);
 
-      if (result.monsters.length === 0) {
+      // Collect all monsters for image processing
+      const allMonstersInResult = result.multiArea
+        ? result.areas.flatMap(a => a.monsters)
+        : (result.monsters || []);
+
+      if (allMonstersInResult.length === 0) {
         console.log(`  (no monsters)`);
         await delay(200);
         continue;
       }
 
-      // Collect image URLs and convert to local filenames
-      for (const m of result.monsters) {
+      for (const m of allMonstersInResult) {
         if (m.image) {
           const filename = m.image.split('/').pop();
           imageUrls.set(filename, m.image);
@@ -272,23 +321,18 @@ async function main() {
         }
       }
 
-      // Determine hierarchy from breadcrumb
-      // breadcrumb = [island, ...subMaps, currentPage]
       const bc = result.breadcrumb;
-      let islandName, subMapName, areaName;
+      let islandName, subMapName;
 
-      if (bc.length >= 3) {
+      if (bc.length >= 2) {
         islandName = bc[0].name;
-        subMapName = bc[1].name;
-        areaName = bc[bc.length - 1].name;
-      } else if (bc.length === 2) {
+        subMapName = bc.length >= 3 ? bc[1].name : bc[1].name;
+      } else if (bc.length === 1) {
         islandName = bc[0].name;
-        subMapName = bc[1].name;
-        areaName = bc[1].name;
+        subMapName = bc[0].name;
       } else {
         islandName = loc.name;
         subMapName = loc.name;
-        areaName = loc.name;
       }
 
       if (!islands.has(islandName)) {
@@ -296,23 +340,48 @@ async function main() {
       }
       const island = islands.get(islandName);
 
-      if (!island.subMaps.has(subMapName)) {
-        island.subMaps.set(subMapName, { name: subMapName, areas: new Map() });
-      }
-      const subMap = island.subMaps.get(subMapName);
+      if (result.multiArea) {
+        // Island overview page with named sub-areas
+        if (!island.subMaps.has(subMapName)) {
+          island.subMaps.set(subMapName, { name: subMapName, areas: new Map(), priority: 0 });
+        }
+        const subMap = island.subMaps.get(subMapName);
+        subMap.priority = 0; // Island self-page gets highest priority
 
-      const areaKey = `${loc.id}-${areaName}`;
-      if (!subMap.areas.has(areaKey)) {
-        subMap.areas.set(areaKey, {
-          id: loc.id,
-          name: areaName,
-          crystals: result.crystals,
-          encounterCount: result.encounterCount,
-          monsters: result.monsters,
-        });
-      }
+        for (const area of result.areas) {
+          const areaKey = `${loc.id}-${area.name}`;
+          if (!subMap.areas.has(areaKey)) {
+            subMap.areas.set(areaKey, {
+              id: loc.id,
+              name: area.name,
+              crystals: area.crystals,
+              encounterCount: area.encounterCount,
+              monsters: area.monsters,
+            });
+          }
+        }
+        console.log(`  ${islandName} > ${subMapName} (${result.areas.length} sub-areas, ${allMonstersInResult.length} monsters)`);
+      } else {
+        const areaName = bc.length >= 3 ? bc[bc.length - 1].name : bc.length >= 2 ? bc[1].name : loc.name;
 
-      console.log(`  ${islandName} > ${subMapName} > ${areaName} (${result.monsters.length} monsters)`);
+        if (!island.subMaps.has(subMapName)) {
+          island.subMaps.set(subMapName, { name: subMapName, areas: new Map(), priority: 1 });
+        }
+        const subMap = island.subMaps.get(subMapName);
+
+        const areaKey = `${loc.id}-${areaName}`;
+        if (!subMap.areas.has(areaKey)) {
+          subMap.areas.set(areaKey, {
+            id: loc.id,
+            name: areaName,
+            crystals: result.crystals,
+            encounterCount: result.encounterCount,
+            monsters: result.monsters,
+          });
+        }
+
+        console.log(`  ${islandName} > ${subMapName} > ${areaName} (${result.monsters.length} monsters)`);
+      }
     } catch (err) {
       console.error(`  Error: ${err.message}`);
     }
@@ -324,7 +393,10 @@ async function main() {
     const slug = slugify(islandName);
     const subMaps = [];
 
-    for (const [, subMap] of island.subMaps) {
+    const subMapEntries = [...island.subMaps.values()];
+    subMapEntries.sort((a, b) => (a.priority || 1) - (b.priority || 1));
+
+    for (const subMap of subMapEntries) {
       const areas = [];
       for (const [, area] of subMap.areas) {
         areas.push(area);

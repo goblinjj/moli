@@ -145,9 +145,18 @@
         },
         {
           "id": "pbfbm",
-          "name": "黃金通道",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "1-49F(1)",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-10",
           "monsters": [
             {
               "name": "哥布林挖礦工",
@@ -186,7 +195,19 @@
               "frameHeight": 102,
               "frameCount": 10,
               "animTime": 600
-            },
+            }
+          ]
+        },
+        {
+          "id": "pbfbm",
+          "name": "1-49F(2)",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "巨狼",
               "levelMin": 1,
@@ -224,7 +245,18 @@
               "frameHeight": 86,
               "frameCount": 12,
               "animTime": 2000
-            },
+            }
+          ]
+        },
+        {
+          "id": "pbfbm",
+          "name": "50F+(1)",
+          "crystals": [
+            "火風(121%)",
+            "純風(133%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "哥布林",
               "levelMin": 51,
@@ -262,7 +294,19 @@
               "frameHeight": 101,
               "frameCount": 44,
               "animTime": 6500
-            },
+            }
+          ]
+        },
+        {
+          "id": "pbfbm",
+          "name": "50F+(2)",
+          "crystals": [
+            "風地(130%)",
+            "純地(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "單眼巨人",
               "levelMin": 51,
@@ -431,7 +475,7 @@
               "typeDetail": "+金屬 龍系,-昆蟲 植物",
               "cardGrade": "6級",
               "sealable": false,
-              "isBoss": false,
+              "isBoss": true,
               "image": "101530400.png",
               "frameWidth": 100,
               "frameHeight": 108,
@@ -603,8 +647,17 @@
         },
         {
           "id": "ncavg",
-          "name": "競技場",
-          "crystals": [],
+          "name": "史萊姆王",
+          "crystals": [
+            "地水(220%)",
+            "水火(220%)",
+            "火風(220%)",
+            "風地(220%)",
+            "純地(220%)",
+            "純水(220%)",
+            "純火(220%)",
+            "純風(220%)"
+          ],
           "encounterCount": "",
           "monsters": [
             {
@@ -687,8 +740,12 @@
         },
         {
           "id": "391io",
-          "name": "伏月之街",
-          "crystals": [],
+          "name": "伏月之街(第一層)",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
           "encounterCount": "",
           "monsters": [
             {
@@ -728,7 +785,18 @@
               "frameHeight": 88,
               "frameCount": 8,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "391io",
+          "name": "綠樹(9.5)(31.17)",
+          "crystals": [
+            "地水(130%)",
+            "純地(151%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "瑪莉花",
               "levelMin": 70,
@@ -2253,10 +2321,11 @@
       "areas": [
         {
           "id": "dhstx",
-          "name": "芙蕾雅島",
+          "name": "法蘭城外圍",
           "crystals": [
-            "地水(121%)",
-            "純水(139%)"
+            "火風(103%)",
+            "純火(103%)",
+            "純風(103%)"
           ],
           "encounterCount": "1-4",
           "monsters": [
@@ -2297,7 +2366,18 @@
               "frameHeight": 98,
               "frameCount": 6,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "",
+          "crystals": [
+            "地水(121%)",
+            "純水(139%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "樹精",
               "levelMin": 5,
@@ -2335,26 +2415,19 @@
               "frameHeight": 102,
               "frameCount": 10,
               "animTime": 600
-            },
-            {
-              "name": "盜賊",
-              "levelMin": 1,
-              "levelMax": 5,
-              "earth": 0,
-              "water": 0,
-              "fire": 5,
-              "wind": 5,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "3級",
-              "sealable": false,
-              "isBoss": false,
-              "image": "101820400.png",
-              "frameWidth": 62,
-              "frameHeight": 76,
-              "frameCount": 6,
-              "animTime": 1200
-            },
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "維諾亞村外圍",
+          "crystals": [
+            "水火(106%)",
+            "純火(106%)",
+            "純水(106%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "紅帽哥布林",
               "levelMin": 12,
@@ -2392,7 +2465,19 @@
               "frameHeight": 93,
               "frameCount": 34,
               "animTime": 5000
-            },
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "維諾亞洞窟外圍(維村側)",
+          "crystals": [
+            "火風(109%)",
+            "純火(109%)",
+            "純風(109%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "異型蜂",
               "levelMin": 11,
@@ -2430,7 +2515,19 @@
               "frameHeight": 72,
               "frameCount": 48,
               "animTime": 12000
-            },
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "佈滿青苔的洞窟外",
+          "crystals": [
+            "水火(115%)",
+            "純火(115%)",
+            "純水(115%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "盜賊",
               "levelMin": 10,
@@ -2449,7 +2546,18 @@
               "frameHeight": 76,
               "frameCount": 6,
               "animTime": 1200
-            },
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "聖拉魯卡村後山(西邊)",
+          "crystals": [
+            "風地(124%)",
+            "純地(133%)"
+          ],
+          "encounterCount": "4-6",
+          "monsters": [
             {
               "name": "水晶螃蟹",
               "levelMin": 30,
@@ -2487,7 +2595,19 @@
               "frameHeight": 135,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "dhstx",
+          "name": "聖拉魯卡村後山(東邊)",
+          "crystals": [
+            "水火(109%)",
+            "純火(109%)",
+            "純水(109%)"
+          ],
+          "encounterCount": "4-6",
+          "monsters": [
             {
               "name": "獨角仙",
               "levelMin": 30,

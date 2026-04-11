@@ -8,6 +8,89 @@ interface Props {
 
 type Mode = "browse" | "levelGuide";
 
+function LevelGuideCard({ area, diff, avgLevel }: { area: MonsterArea & { islandName?: string; subMapName?: string }; diff: number; avgLevel: number }) {
+  const [expanded, setExpanded] = useState(false);
+  const nonBoss = area.monsters.filter(m => !m.isBoss);
+  const bosses = area.monsters.filter(m => m.isBoss);
+  const levelMin = nonBoss.length > 0 ? Math.min(...nonBoss.map(m => m.levelMin)) : 0;
+  const levelMax = nonBoss.length > 0 ? Math.max(...nonBoss.map(m => m.levelMax)) : 0;
+  const levelText = levelMin === levelMax ? `Lv${levelMin}` : `Lv${levelMin}-${levelMax}`;
+
+  const borderColor =
+    diff >= 3 && diff <= 7 ? "border-green-300 ring-1 ring-green-200" :
+    diff >= 1 ? "border-yellow-300 ring-1 ring-yellow-200" :
+    "border-gray-200";
+  const badgeClass =
+    diff >= 3 && diff <= 7 ? "bg-green-100 text-green-700" :
+    diff >= 1 ? "bg-yellow-100 text-yellow-700" :
+    "bg-gray-100 text-gray-500";
+
+  return (
+    <div className={`bg-white rounded-xl shadow-sm overflow-hidden ${borderColor}`}>
+      <button
+        type="button"
+        onClick={() => setExpanded(!expanded)}
+        className="w-full text-left px-3 py-2.5"
+      >
+        <div className="flex items-center justify-between gap-2">
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${badgeClass}`}>
+                {diff > 0 ? `+${diff}` : diff} 级
+              </span>
+              <span className="font-semibold text-sm text-gray-900 truncate">{area.name}</span>
+              {levelMin > 0 && (
+                <span className="px-1.5 py-0.5 text-[10px] font-medium bg-slate-100 text-slate-600 rounded tabular-nums">{levelText}</span>
+              )}
+            </div>
+            <div className="text-[10px] text-gray-400 mt-0.5">
+              {area.islandName}{area.subMapName && area.subMapName !== area.islandName ? ` · ${area.subMapName}` : ''}
+              <span className="ml-2">平均 Lv{avgLevel}</span>
+              <span className="ml-2">{nonBoss.length}只魔物{bosses.length > 0 ? ` + ${bosses.length} BOSS` : ''}</span>
+            </div>
+          </div>
+          <svg className={`w-4 h-4 text-gray-400 flex-shrink-0 transition-transform ${expanded ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        {!expanded && area.crystals.length > 0 && (
+          <div className="flex flex-wrap gap-1 mt-1.5">
+            <span className="text-[10px] text-gray-400">推荐水晶:</span>
+            {area.crystals.map((c, i) => (
+              <span key={i} className="px-1.5 py-0.5 text-[10px] bg-purple-50 text-purple-600 rounded font-medium">{c}</span>
+            ))}
+          </div>
+        )}
+      </button>
+      {expanded && (
+        <div className="border-t border-gray-100">
+          <div className="px-3 py-1">
+            {area.crystals.length > 0 && (
+              <div className="flex flex-wrap gap-1 py-1.5 border-b border-gray-50">
+                <span className="text-[10px] text-gray-400">推荐水晶:</span>
+                {area.crystals.map((c, i) => (
+                  <span key={i} className="px-1.5 py-0.5 text-[10px] bg-purple-50 text-purple-600 rounded font-medium">{c}</span>
+                ))}
+              </div>
+            )}
+            {nonBoss.map((monster, idx) => (
+              <MonsterCard key={`${monster.name}-${idx}`} monster={monster} />
+            ))}
+            {bosses.length > 0 && (
+              <>
+                <div className="text-[10px] font-bold text-red-500 mt-1 mb-0.5 border-t border-red-100 pt-1">BOSS</div>
+                {bosses.map((monster, idx) => (
+                  <MonsterCard key={`boss-${monster.name}-${idx}`} monster={monster} />
+                ))}
+              </>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function AreaCard({ area, showLocation }: { area: MonsterArea & { islandName?: string; subMapName?: string }; showLocation?: boolean }) {
   const nonBoss = area.monsters.filter(m => !m.isBoss);
   const bosses = area.monsters.filter(m => m.isBoss);
@@ -285,28 +368,15 @@ export default function MonsterDistribution({ islands }: Props) {
           {levelRecommendations.length === 0 ? (
             <div className="text-center text-slate-400 mt-16 text-sm">没有找到适合当前等级的区域</div>
           ) : (
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-              {levelRecommendations.slice(0, 40).map((rec, idx) => {
-                const borderColor =
-                  rec.diff >= 3 && rec.diff <= 7 ? "border-green-300 ring-1 ring-green-200" :
-                  rec.diff >= 1 ? "border-yellow-300 ring-1 ring-yellow-200" :
-                  "border-gray-200";
-                return (
-                  <div key={`${rec.id}-${rec.islandName}-${idx}`} className={`rounded-xl overflow-hidden ${borderColor}`}>
-                    <div className="bg-white px-3 py-1.5 flex items-center justify-between border-b border-gray-100">
-                      <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
-                        rec.diff >= 3 && rec.diff <= 7 ? "bg-green-100 text-green-700" :
-                        rec.diff >= 1 ? "bg-yellow-100 text-yellow-700" :
-                        "bg-gray-100 text-gray-500"
-                      }`}>
-                        {rec.diff > 0 ? `+${rec.diff}` : rec.diff} 级
-                      </span>
-                      <span className="text-[10px] text-gray-400">平均 Lv{rec.avgLevel}</span>
-                    </div>
-                    <AreaCard area={rec} showLocation />
-                  </div>
-                );
-              })}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+              {levelRecommendations.slice(0, 40).map((rec, idx) => (
+                <LevelGuideCard
+                  key={`${rec.id}-${rec.islandName}-${idx}`}
+                  area={rec}
+                  diff={rec.diff}
+                  avgLevel={rec.avgLevel}
+                />
+              ))}
             </div>
           )}
         </main>

@@ -111,7 +111,7 @@
         },
         {
           "id": "pwoc5",
-          "name": "司雲崖洞窟",
+          "name": "",
           "crystals": [
             "風地(130%)",
             "純地(133%)"
@@ -155,7 +155,18 @@
               "frameHeight": 141,
               "frameCount": 4,
               "animTime": 400
-            },
+            }
+          ]
+        },
+        {
+          "id": "pwoc5",
+          "name": "半導體史萊姆",
+          "crystals": [
+            "火風(121%)",
+            "純火(130%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "史萊姆",
               "levelMin": 38,
@@ -247,9 +258,12 @@
         },
         {
           "id": "2r1fy",
-          "name": "司雲崖",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "崖底",
+          "crystals": [
+            "水火(106%)",
+            "純火(109%)"
+          ],
+          "encounterCount": "2-6",
           "monsters": [
             {
               "name": "板龍",
@@ -288,7 +302,19 @@
               "frameHeight": 70,
               "frameCount": 26,
               "animTime": 6000
-            },
+            }
+          ]
+        },
+        {
+          "id": "2r1fy",
+          "name": "守衛後迷宮",
+          "crystals": [
+            "風地(106%)",
+            "純地(106%)",
+            "純風(106%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "稜背龍",
               "levelMin": 44,
@@ -326,7 +352,19 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "2r1fy",
+          "name": "守衛後崖頂",
+          "crystals": [
+            "風地(106%)",
+            "純地(106%)",
+            "純風(106%)"
+          ],
+          "encounterCount": "2-6",
+          "monsters": [
             {
               "name": "稜背龍",
               "levelMin": 55,
@@ -364,7 +402,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "2r1fy",
+          "name": "迷宮",
+          "crystals": [
+            "風地(112%)",
+            "純地(118%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "掃把蝙蝠",
               "levelMin": 39,
@@ -440,7 +489,18 @@
               "frameHeight": 107,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "2r1fy",
+          "name": "崖頂後山內",
+          "crystals": [
+            "風地(130%)",
+            "純地(133%)"
+          ],
+          "encounterCount": "2-6",
+          "monsters": [
             {
               "name": "巨狼",
               "levelMin": 35,
@@ -669,9 +729,12 @@
       "areas": [
         {
           "id": "7x4gr",
-          "name": "樂遊原",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "西北外圍域",
+          "crystals": [
+            "水火(118%)",
+            "純火(124%)"
+          ],
+          "encounterCount": "1-6",
           "monsters": [
             {
               "name": "赤猴",
@@ -710,7 +773,19 @@
               "frameHeight": 66,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "7x4gr",
+          "name": "中間域",
+          "crystals": [
+            "風地(145%)",
+            "純地(145%)",
+            "純風(145%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "葉靈",
               "levelMin": 50,
@@ -748,7 +823,19 @@
               "frameHeight": 89,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "7x4gr",
+          "name": "東南域",
+          "crystals": [
+            "火風(109%)",
+            "風地(109%)",
+            "純風(118%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "青蛙",
               "levelMin": 50,
@@ -796,11 +883,11 @@
       "areas": [
         {
           "id": "1uvk0",
-          "name": "哈那可半島",
+          "name": "絲米村外",
           "crystals": [
-            "地水(109%)",
-            "純地(109%)",
-            "純水(109%)"
+            "水火(127%)",
+            "純火(127%)",
+            "純水(127%)"
           ],
           "encounterCount": "1-4",
           "monsters": [
@@ -841,7 +928,18 @@
               "frameHeight": 64,
               "frameCount": 48,
               "animTime": 5500
-            },
+            }
+          ]
+        },
+        {
+          "id": "1uvk0",
+          "name": "絲米村外遠處",
+          "crystals": [
+            "火風(127%)",
+            "純風(145%)"
+          ],
+          "encounterCount": "1-5",
+          "monsters": [
             {
               "name": "殺手蠍",
               "levelMin": 33,
@@ -879,7 +977,19 @@
               "frameHeight": 75,
               "frameCount": 38,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "1uvk0",
+          "name": "優紀斷堐亞紀側外",
+          "crystals": [
+            "風地(100%)",
+            "地水(97%)",
+            "純地(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "鐵剪螃蟹",
               "levelMin": 52,
@@ -917,7 +1027,19 @@
               "frameHeight": 88,
               "frameCount": 30,
               "animTime": 6000
-            },
+            }
+          ]
+        },
+        {
+          "id": "1uvk0",
+          "name": "亞紀城西門外",
+          "crystals": [
+            "水火(109%)",
+            "純火(109%)",
+            "純水(109%)"
+          ],
+          "encounterCount": "1-5",
+          "monsters": [
             {
               "name": "刀雞",
               "levelMin": 38,
@@ -955,7 +1077,18 @@
               "frameHeight": 83,
               "frameCount": 8,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "1uvk0",
+          "name": "亞紀城南門外",
+          "crystals": [
+            "風地(130%)",
+            "純風(133%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "沼澤樹精",
               "levelMin": 57,
@@ -993,7 +1126,19 @@
               "frameHeight": 94,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "1uvk0",
+          "name": "",
+          "crystals": [
+            "地水(109%)",
+            "純地(109%)",
+            "純水(109%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "小兔子",
               "levelMin": 40,

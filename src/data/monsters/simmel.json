@@ -7,9 +7,13 @@
       "areas": [
         {
           "id": "glz86",
-          "name": "光之路",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "辛梅爾附近",
+          "crystals": [
+            "風地(106%)",
+            "純地(106%)",
+            "純風(106%)"
+          ],
+          "encounterCount": "1-5",
           "monsters": [
             {
               "name": "歐比爾蝙蝠",
@@ -48,7 +52,19 @@
               "frameHeight": 70,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "glz86",
+          "name": "愛莉西雅後",
+          "crystals": [
+            "地水(121%)",
+            "純地(121%)",
+            "純水(121%)"
+          ],
+          "encounterCount": "1-5",
+          "monsters": [
             {
               "name": "歐比爾蝙蝠",
               "levelMin": 0,
@@ -86,7 +102,19 @@
               "frameHeight": 97,
               "frameCount": 4,
               "animTime": 800
-            },
+            }
+          ]
+        },
+        {
+          "id": "glz86",
+          "name": "白之迷宮石碑附近",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "第七星阿爾多拉",
               "levelMin": 0,
@@ -124,7 +152,19 @@
               "frameHeight": 70,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "glz86",
+          "name": "10M區",
+          "crystals": [
+            "火風(103%)",
+            "純火(103%)",
+            "純風(103%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "魟怪",
               "levelMin": 40,
@@ -162,7 +202,19 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "glz86",
+          "name": "白之迷宮石碑後風車區",
+          "crystals": [
+            "地水(121%)",
+            "純地(121%)",
+            "純水(121%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "歐比爾蝙蝠",
               "levelMin": 36,
@@ -336,8 +388,11 @@
         },
         {
           "id": "sbe8i",
-          "name": "白迷宮",
-          "crystals": [],
+          "name": "綠線第1層(製造系)",
+          "crystals": [
+            "風地(118%)",
+            "純風(130%)"
+          ],
           "encounterCount": "",
           "monsters": [
             {
@@ -377,7 +432,18 @@
               "frameHeight": 175,
               "frameCount": 79,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "綠線第2層(製造系)",
+          "crystals": [
+            "水火(118%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "布雷歐",
               "levelMin": 42,
@@ -415,7 +481,19 @@
               "frameHeight": 203,
               "frameCount": 79,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "綠線第3層(製造系)",
+          "crystals": [
+            "風地(130%)",
+            "純地(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "巨人",
               "levelMin": 42,
@@ -453,7 +531,19 @@
               "frameHeight": 164,
               "frameCount": 54,
               "animTime": 12000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "綠線第4層(製造系)",
+          "crystals": [
+            "水火(130%)",
+            "純火(130%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "亞特拉斯巨神",
               "levelMin": 42,
@@ -491,7 +581,19 @@
               "frameHeight": 164,
               "frameCount": 66,
               "animTime": 12000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "黃線第1層(採集系)",
+          "crystals": [
+            "地水(130%)",
+            "純地(130%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "幻影",
               "levelMin": 42,
@@ -529,7 +631,19 @@
               "frameHeight": 112,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "黃線第2層(採集系)",
+          "crystals": [
+            "火風(130%)",
+            "純火(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "闇影",
               "levelMin": 42,
@@ -567,7 +681,18 @@
               "frameHeight": 117,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "黃線第3層(採集系)",
+          "crystals": [
+            "風地(118%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "達哈卡",
               "levelMin": 42,
@@ -605,7 +730,18 @@
               "frameHeight": 149,
               "frameCount": 41,
               "animTime": 3200
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "黃線第4層(採集系)",
+          "crystals": [
+            "水火(118%)",
+            "純火(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "埃及眼鏡蛇",
               "levelMin": 42,
@@ -643,7 +779,19 @@
               "frameHeight": 170,
               "frameCount": 41,
               "animTime": 3200
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "紅線第1層(戰鬥系)",
+          "crystals": [
+            "風地(130%)",
+            "純地(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "鐮刀魔",
               "levelMin": 95,
@@ -681,7 +829,19 @@
               "frameHeight": 151,
               "frameCount": 6,
               "animTime": 1250
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "紅線第2層(戰鬥系)",
+          "crystals": [
+            "水火(130%)",
+            "純火(130%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "斬首者",
               "levelMin": 95,
@@ -719,7 +879,18 @@
               "frameHeight": 194,
               "frameCount": 6,
               "animTime": 1100
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "紅線第3層(戰鬥系)",
+          "crystals": [
+            "風地(118%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "山飛甲",
               "levelMin": 95,
@@ -757,7 +928,18 @@
               "frameHeight": 125,
               "frameCount": 32,
               "animTime": 3000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "紅線第4層(戰鬥系)",
+          "crystals": [
+            "水火(118%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "天馬",
               "levelMin": 95,
@@ -795,7 +977,18 @@
               "frameHeight": 148,
               "frameCount": 32,
               "animTime": 5000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "藍線第1層(輔助系)",
+          "crystals": [
+            "火風(130%)",
+            "純風(148%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "牙骨",
               "levelMin": 95,
@@ -833,7 +1026,18 @@
               "frameHeight": 102,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "藍線第2層(輔助系)",
+          "crystals": [
+            "水火(121%)",
+            "純水(124%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "利牙",
               "levelMin": 95,
@@ -871,7 +1075,18 @@
               "frameHeight": 136,
               "frameCount": 6,
               "animTime": 1300
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "藍線第3層(輔助系)",
+          "crystals": [
+            "地水(106%)",
+            "純水(109%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "赤目黑熊",
               "levelMin": 95,
@@ -909,7 +1124,19 @@
               "frameHeight": 86,
               "frameCount": 10,
               "animTime": 2000
-            },
+            }
+          ]
+        },
+        {
+          "id": "sbe8i",
+          "name": "藍線第4層(輔助系)",
+          "crystals": [
+            "風地(106%)",
+            "純地(106%)",
+            "純風(106%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "人魔草",
               "levelMin": 95,

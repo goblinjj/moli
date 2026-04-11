@@ -681,8 +681,11 @@
       "areas": [
         {
           "id": "4viz3",
-          "name": "日耀之域",
-          "crystals": [],
+          "name": "旭日村區",
+          "crystals": [
+            "風地(109%)",
+            "純風(112%)"
+          ],
           "encounterCount": "",
           "monsters": [
             {
@@ -722,7 +725,18 @@
               "frameHeight": 69,
               "frameCount": 4,
               "animTime": 1050
-            },
+            }
+          ]
+        },
+        {
+          "id": "4viz3",
+          "name": "朝日村區",
+          "crystals": [
+            "地水(109%)",
+            "純地(112%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "果凍史萊姆",
               "levelMin": 90,
@@ -760,7 +774,18 @@
               "frameHeight": 141,
               "frameCount": 6,
               "animTime": 1100
-            },
+            }
+          ]
+        },
+        {
+          "id": "4viz3",
+          "name": "種苗培育所外",
+          "crystals": [
+            "地水(127%)",
+            "純地(142%)"
+          ],
+          "encounterCount": "3-6",
+          "monsters": [
             {
               "name": "大炸彈",
               "levelMin": 90,
@@ -817,7 +842,19 @@
               "frameHeight": 107,
               "frameCount": 38,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "4viz3",
+          "name": "傳送點區",
+          "crystals": [
+            "火風(118%)",
+            "純火(118%)",
+            "純風(118%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "死亡樹精",
               "levelMin": 90,
@@ -855,7 +892,18 @@
               "frameHeight": 199,
               "frameCount": 6,
               "animTime": 1100
-            },
+            }
+          ]
+        },
+        {
+          "id": "4viz3",
+          "name": "碧波鎮區",
+          "crystals": [
+            "水火(130%)",
+            "純水(154%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "亞特拉斯巨神",
               "levelMin": 90,
@@ -893,7 +941,18 @@
               "frameHeight": 61,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "4viz3",
+          "name": "蝕日之洞外",
+          "crystals": [
+            "風地(121%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "布特拉",
               "levelMin": 90,

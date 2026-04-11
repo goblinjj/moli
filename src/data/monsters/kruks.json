@@ -1257,13 +1257,13 @@
       "areas": [
         {
           "id": "z3ip4",
-          "name": "庫魯克斯島",
+          "name": "哥拉爾域東面",
           "crystals": [
-            "水火(106%)",
-            "純火(106%)",
-            "純水(106%)"
+            "風地(103%)",
+            "純地(103%)",
+            "純風(103%)"
           ],
-          "encounterCount": "1-7",
+          "encounterCount": "1-5",
           "monsters": [
             {
               "name": "紅帽哥布林",
@@ -1302,7 +1302,19 @@
               "frameHeight": 101,
               "frameCount": 44,
               "animTime": 6500
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "哥拉爾域北面",
+          "crystals": [
+            "地水(106%)",
+            "純地(106%)",
+            "純水(106%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "潛盾",
               "levelMin": 12,
@@ -1340,7 +1352,19 @@
               "frameHeight": 90,
               "frameCount": 85,
               "animTime": 5000
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "世外桃源入口附近",
+          "crystals": [
+            "地水(106%)",
+            "純地(106%)",
+            "純水(106%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "水藍鳥魔",
               "levelMin": 12,
@@ -1378,7 +1402,19 @@
               "frameHeight": 67,
               "frameCount": 69,
               "animTime": 5000
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "橋後小怪",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "大型半獸人",
               "levelMin": 45,
@@ -1416,7 +1452,19 @@
               "frameHeight": 66,
               "frameCount": 6,
               "animTime": 1500
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "",
+          "crystals": [
+            "水火(106%)",
+            "純火(106%)",
+            "純水(106%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "水果蝙蝠",
               "levelMin": 45,
@@ -1454,45 +1502,19 @@
               "frameHeight": 75,
               "frameCount": 38,
               "animTime": 5500
-            },
-            {
-              "name": "口袋龍",
-              "levelMin": 45,
-              "levelMax": 46,
-              "earth": 5,
-              "water": 0,
-              "fire": 0,
-              "wind": 5,
-              "type": "龍系",
-              "typeDetail": "+飛行 野獸,-金屬 特殊",
-              "cardGrade": "4級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "107710400.png",
-              "frameWidth": 64,
-              "frameHeight": 67,
-              "frameCount": 69,
-              "animTime": 4000
-            },
-            {
-              "name": "地獄看門犬",
-              "levelMin": 45,
-              "levelMax": 46,
-              "earth": 0,
-              "water": 6,
-              "fire": 4,
-              "wind": 0,
-              "type": "野獸系",
-              "typeDetail": "+植物 飛行,-人形 龍系",
-              "cardGrade": "4級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101030400.png",
-              "frameWidth": 69,
-              "frameHeight": 90,
-              "frameCount": 57,
-              "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "米諾基亞村附近",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "小石像怪",
               "levelMin": 45,
@@ -1530,7 +1552,19 @@
               "frameHeight": 96,
               "frameCount": 44,
               "animTime": 5500
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "米諾基亞村外北方",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "煙霧",
               "levelMin": 46,
@@ -1568,7 +1602,19 @@
               "frameHeight": 100,
               "frameCount": 20,
               "animTime": 2000
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "貝尼恰斯火山外",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "岩怪",
               "levelMin": 47,
@@ -1606,7 +1652,19 @@
               "frameHeight": 89,
               "frameCount": 16,
               "animTime": 3000
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "岬之神殿附近",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "海蝙蝠",
               "levelMin": 46,
@@ -1644,7 +1702,24 @@
               "frameHeight": 75,
               "frameCount": 38,
               "animTime": 5000
-            },
+            }
+          ]
+        },
+        {
+          "id": "z3ip4",
+          "name": "雷克塔爾村附近",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "豬鬼",
               "levelMin": 47,

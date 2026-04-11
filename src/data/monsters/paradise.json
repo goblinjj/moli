@@ -1480,9 +1480,12 @@
         },
         {
           "id": "ov3h5",
-          "name": "布拉基姆高地",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "東南部",
+          "crystals": [
+            "火風(124%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "4-7",
           "monsters": [
             {
               "name": "走路花妖",
@@ -1540,7 +1543,19 @@
               "frameHeight": 94,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "ov3h5",
+          "name": "西北部",
+          "crystals": [
+            "火風(130%)",
+            "純火(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "4-7",
+          "monsters": [
             {
               "name": "刀雞",
               "levelMin": 25,
@@ -1578,7 +1593,18 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "ov3h5",
+          "name": "西北部2",
+          "crystals": [
+            "風地(130%)",
+            "純風(145%)"
+          ],
+          "encounterCount": "4-7",
+          "monsters": [
             {
               "name": "咚咚靴怪",
               "levelMin": 30,
@@ -1635,7 +1661,18 @@
               "frameHeight": 62,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "ov3h5",
+          "name": "西北部3",
+          "crystals": [
+            "火風(151%)",
+            "純火(157%)"
+          ],
+          "encounterCount": "2-7",
+          "monsters": [
             {
               "name": "銀獅",
               "levelMin": 40,
@@ -1692,7 +1729,18 @@
               "frameHeight": 101,
               "frameCount": 1,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "ov3h5",
+          "name": "東北部",
+          "crystals": [
+            "火風(160%)",
+            "純風(175%)"
+          ],
+          "encounterCount": "4-7",
+          "monsters": [
             {
               "name": "黃金龍骨",
               "levelMin": 35,
@@ -1759,9 +1807,13 @@
       "areas": [
         {
           "id": "eg19t",
-          "name": "1-10",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "1F",
+          "crystals": [
+            "地水(115%)",
+            "水火(115%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "1-3",
           "monsters": [
             {
               "name": "韋伯蝙蝠",
@@ -1781,7 +1833,19 @@
               "frameHeight": 147,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "2F",
+          "crystals": [
+            "地水(115%)",
+            "水火(115%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "韋伯蝙蝠",
               "levelMin": 5,
@@ -1800,7 +1864,24 @@
               "frameHeight": 147,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "3F",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "韋伯蝙蝠",
               "levelMin": 6,
@@ -1838,7 +1919,24 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "4F",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "韋伯蝙蝠",
               "levelMin": 7,
@@ -1876,7 +1974,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "5F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 7,
@@ -1914,7 +2024,19 @@
               "frameHeight": 147,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "6F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 7,
@@ -1952,7 +2074,19 @@
               "frameHeight": 147,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "7F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 9,
@@ -1990,7 +2124,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "8F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 9,
@@ -2028,7 +2174,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "eg19t",
+          "name": "9F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 9,
@@ -2071,9 +2229,12 @@
         },
         {
           "id": "8i9iz",
-          "name": "11-20",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "11F",
+          "crystals": [
+            "水火(118%)",
+            "純火(133%)"
+          ],
+          "encounterCount": "1-7",
           "monsters": [
             {
               "name": "布卡",
@@ -2131,7 +2292,18 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "12F",
+          "crystals": [
+            "水火(118%)",
+            "純火(133%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 12,
@@ -2188,7 +2360,18 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "13F",
+          "crystals": [
+            "地水(115%)",
+            "純地(127%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 13,
@@ -2245,7 +2428,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "14F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 2,
@@ -2359,7 +2554,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "15F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 15,
@@ -2473,7 +2680,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "16F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 15,
@@ -2587,7 +2806,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "17F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 15,
@@ -2701,7 +2932,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "18F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 15,
@@ -2815,7 +3058,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "19F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 15,
@@ -2929,7 +3184,19 @@
               "frameHeight": 47,
               "frameCount": 7,
               "animTime": 750
-            },
+            }
+          ]
+        },
+        {
+          "id": "8i9iz",
+          "name": "20F",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "布卡",
               "levelMin": 15,
@@ -3048,9 +3315,13 @@
         },
         {
           "id": "xhzyt",
-          "name": "21-30",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "21F",
+          "crystals": [
+            "地水(115%)",
+            "水火(115%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "1-8",
           "monsters": [
             {
               "name": "火蜥蝪",
@@ -3070,7 +3341,18 @@
               "frameHeight": 51,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "22F",
+          "crystals": [
+            "水火(130%)",
+            "純水(148%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "火蜥蝪",
               "levelMin": 22,
@@ -3127,7 +3409,18 @@
               "frameHeight": 85,
               "frameCount": 3,
               "animTime": 400
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "23F",
+          "crystals": [
+            "水火(130%)",
+            "純水(148%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "火蜥蝪",
               "levelMin": 23,
@@ -3184,7 +3477,18 @@
               "frameHeight": 85,
               "frameCount": 3,
               "animTime": 400
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "24F",
+          "crystals": [
+            "水火(130%)",
+            "純水(148%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "火蜥蝪",
               "levelMin": 24,
@@ -3241,7 +3545,18 @@
               "frameHeight": 85,
               "frameCount": 3,
               "animTime": 400
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "25F",
+          "crystals": [
+            "水火(130%)",
+            "純水(148%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "火蜥蝪",
               "levelMin": 25,
@@ -3298,7 +3613,19 @@
               "frameHeight": 85,
               "frameCount": 3,
               "animTime": 400
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "26F",
+          "crystals": [
+            "地水(115%)",
+            "風地(115%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "羅查",
               "levelMin": 26,
@@ -3317,7 +3644,19 @@
               "frameHeight": 88,
               "frameCount": 30,
               "animTime": 6000
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "27F",
+          "crystals": [
+            "地水(115%)",
+            "風地(115%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "羅查",
               "levelMin": 27,
@@ -3336,7 +3675,24 @@
               "frameHeight": 88,
               "frameCount": 30,
               "animTime": 6000
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "28F",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "羅查",
               "levelMin": 28,
@@ -3374,7 +3730,24 @@
               "frameHeight": 97,
               "frameCount": 4,
               "animTime": 800
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "29F",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "羅查",
               "levelMin": 29,
@@ -3412,7 +3785,24 @@
               "frameHeight": 97,
               "frameCount": 4,
               "animTime": 800
-            },
+            }
+          ]
+        },
+        {
+          "id": "xhzyt",
+          "name": "30F",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "羅查",
               "levelMin": 30,
@@ -3455,9 +3845,13 @@
         },
         {
           "id": "45to8",
-          "name": "31-40",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "31F",
+          "crystals": [
+            "火風(115%)",
+            "風地(115%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "1-8",
           "monsters": [
             {
               "name": "玫瑰粉怪",
@@ -3477,7 +3871,24 @@
               "frameHeight": 56,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "32F",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "玫瑰粉怪",
               "levelMin": 32,
@@ -3515,7 +3926,19 @@
               "frameHeight": 51,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "33F",
+          "crystals": [
+            "火風(127%)",
+            "純火(127%)",
+            "純風(127%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "玫瑰粉怪",
               "levelMin": 33,
@@ -3553,7 +3976,19 @@
               "frameHeight": 44,
               "frameCount": 40,
               "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "34F",
+          "crystals": [
+            "風地(130%)",
+            "純地(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "玫瑰粉怪",
               "levelMin": 34,
@@ -3591,7 +4026,19 @@
               "frameHeight": 88,
               "frameCount": 30,
               "animTime": 6000
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "35F",
+          "crystals": [
+            "火風(130%)",
+            "純火(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "玫瑰粉怪",
               "levelMin": 35,
@@ -3629,7 +4076,18 @@
               "frameHeight": 97,
               "frameCount": 4,
               "animTime": 800
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "36F",
+          "crystals": [
+            "火風(109%)",
+            "純火(115%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "大炸彈",
               "levelMin": 36,
@@ -3705,7 +4163,18 @@
               "frameHeight": 80,
               "frameCount": 8,
               "animTime": 70000
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "37F",
+          "crystals": [
+            "火風(109%)",
+            "純火(115%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "大炸彈",
               "levelMin": 37,
@@ -3781,7 +4250,18 @@
               "frameHeight": 80,
               "frameCount": 8,
               "animTime": 70000
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "38F",
+          "crystals": [
+            "火風(109%)",
+            "純火(115%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "大炸彈",
               "levelMin": 38,
@@ -3857,7 +4337,18 @@
               "frameHeight": 80,
               "frameCount": 8,
               "animTime": 70000
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "39F",
+          "crystals": [
+            "火風(109%)",
+            "純火(115%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "大炸彈",
               "levelMin": 39,
@@ -3933,7 +4424,18 @@
               "frameHeight": 80,
               "frameCount": 8,
               "animTime": 70000
-            },
+            }
+          ]
+        },
+        {
+          "id": "45to8",
+          "name": "40F",
+          "crystals": [
+            "火風(109%)",
+            "純火(115%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "大炸彈",
               "levelMin": 40,
@@ -4014,9 +4516,12 @@
         },
         {
           "id": "j01zn",
-          "name": "41-55",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "41F",
+          "crystals": [
+            "風地(115%)",
+            "純風(118%)"
+          ],
+          "encounterCount": "1-8",
           "monsters": [
             {
               "name": "紅寶石怪",
@@ -4036,7 +4541,18 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "42F",
+          "crystals": [
+            "風地(130%)",
+            "純地(142%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "紅寶石怪",
               "levelMin": 42,
@@ -4074,7 +4590,18 @@
               "frameHeight": 51,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "43F",
+          "crystals": [
+            "風地(130%)",
+            "純地(142%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "紅寶石怪",
               "levelMin": 43,
@@ -4112,7 +4639,18 @@
               "frameHeight": 51,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "44F",
+          "crystals": [
+            "風地(118%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "紅寶石怪",
               "levelMin": 44,
@@ -4150,7 +4688,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "45F",
+          "crystals": [
+            "風地(118%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "紅寶石怪",
               "levelMin": 45,
@@ -4188,7 +4737,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "46F",
+          "crystals": [
+            "風地(133%)",
+            "純地(160%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "紅寶石怪",
               "levelMin": 46,
@@ -4245,7 +4805,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "47F",
+          "crystals": [
+            "地水(115%)",
+            "純地(127%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "寄生布卡",
               "levelMin": 47,
@@ -4264,7 +4835,18 @@
               "frameHeight": 44,
               "frameCount": 40,
               "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "48F",
+          "crystals": [
+            "風地(127%)",
+            "純地(139%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "寄生布卡",
               "levelMin": 48,
@@ -4302,7 +4884,18 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "49F",
+          "crystals": [
+            "地水(130%)",
+            "純地(157%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "寄生布卡",
               "levelMin": 49,
@@ -4340,7 +4933,18 @@
               "frameHeight": 51,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "50F",
+          "crystals": [
+            "地水(130%)",
+            "純地(145%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "寄生布卡",
               "levelMin": 50,
@@ -4378,7 +4982,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "51F",
+          "crystals": [
+            "風地(142%)",
+            "純地(169%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "寄生布卡",
               "levelMin": 51,
@@ -4435,7 +5050,18 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "52F",
+          "crystals": [
+            "風地(130%)",
+            "純地(157%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "寄生布卡",
               "levelMin": 52,
@@ -4492,7 +5118,18 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "53F",
+          "crystals": [
+            "地水(145%)",
+            "純地(175%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "寄生布卡",
               "levelMin": 53,
@@ -4549,7 +5186,18 @@
               "frameHeight": 51,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "54F",
+          "crystals": [
+            "水火(115%)",
+            "純水(124%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 54,
@@ -4568,7 +5216,19 @@
               "frameHeight": 70,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "j01zn",
+          "name": "55F",
+          "crystals": [
+            "地水(106%)",
+            "純地(106%)",
+            "純水(106%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 55,
@@ -4649,9 +5309,13 @@
         },
         {
           "id": "5h75f",
-          "name": "56-70",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "56F",
+          "crystals": [
+            "地水(124%)",
+            "純地(124%)",
+            "純水(124%)"
+          ],
+          "encounterCount": "1-10",
           "monsters": [
             {
               "name": "籃尾龍",
@@ -4690,7 +5354,18 @@
               "frameHeight": 51,
               "frameCount": 3,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "57F",
+          "crystals": [
+            "地水(124%)",
+            "純水(136%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 57,
@@ -4728,7 +5403,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "58F",
+          "crystals": [
+            "地水(124%)",
+            "純水(127%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 58,
@@ -4766,7 +5452,18 @@
               "frameHeight": 44,
               "frameCount": 40,
               "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "59F",
+          "crystals": [
+            "地水(121%)",
+            "純地(133%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 59,
@@ -4823,7 +5520,19 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "60F",
+          "crystals": [
+            "地水(139%)",
+            "純地(139%)",
+            "純水(139%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 60,
@@ -4880,7 +5589,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "61F",
+          "crystals": [
+            "地水(139%)",
+            "純地(142%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 61,
@@ -4937,7 +5657,18 @@
               "frameHeight": 91,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "62F",
+          "crystals": [
+            "地水(121%)",
+            "純地(136%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 62,
@@ -4994,7 +5725,18 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "63F",
+          "crystals": [
+            "地水(121%)",
+            "純地(124%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 63,
@@ -5051,7 +5793,19 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "64F",
+          "crystals": [
+            "水火(160%)",
+            "純火(160%)",
+            "純水(160%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "木乃伊",
               "levelMin": 64,
@@ -5146,7 +5900,19 @@
               "frameHeight": 100,
               "frameCount": 86,
               "animTime": 5999
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "65F",
+          "crystals": [
+            "水火(160%)",
+            "純火(160%)",
+            "純水(160%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "木乃伊",
               "levelMin": 65,
@@ -5241,7 +6007,19 @@
               "frameHeight": 100,
               "frameCount": 86,
               "animTime": 5999
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "66F",
+          "crystals": [
+            "水火(160%)",
+            "純火(160%)",
+            "純水(160%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "木乃伊",
               "levelMin": 66,
@@ -5336,7 +6114,19 @@
               "frameHeight": 100,
               "frameCount": 86,
               "animTime": 5999
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "67F",
+          "crystals": [
+            "水火(160%)",
+            "純火(160%)",
+            "純水(160%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "木乃伊",
               "levelMin": 67,
@@ -5431,7 +6221,18 @@
               "frameHeight": 100,
               "frameCount": 86,
               "animTime": 5999
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "68F",
+          "crystals": [
+            "風地(115%)",
+            "純地(127%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "風蜘蛛",
               "levelMin": 68,
@@ -5507,7 +6308,18 @@
               "frameHeight": 45,
               "frameCount": 3,
               "animTime": 500
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "69F",
+          "crystals": [
+            "地水(124%)",
+            "純水(142%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 69,
@@ -5583,7 +6395,18 @@
               "frameHeight": 44,
               "frameCount": 40,
               "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "5h75f",
+          "name": "70F",
+          "crystals": [
+            "水火(133%)",
+            "純水(148%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "籃尾龍",
               "levelMin": 70,
@@ -5721,9 +6544,13 @@
         },
         {
           "id": "nl90c",
-          "name": "71-94",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "71F-79F",
+          "crystals": [
+            "火風(103%)",
+            "水火(103%)",
+            "純火(106%)"
+          ],
+          "encounterCount": "1-10",
           "monsters": [
             {
               "name": "巨狼",
@@ -5781,7 +6608,18 @@
               "frameHeight": 54,
               "frameCount": 7,
               "animTime": 510
-            },
+            }
+          ]
+        },
+        {
+          "id": "nl90c",
+          "name": "80F-89F",
+          "crystals": [
+            "水火(124%)",
+            "純水(133%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "樹精布卡",
               "levelMin": 80,
@@ -5838,7 +6676,18 @@
               "frameHeight": 75,
               "frameCount": 38,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "nl90c",
+          "name": "90F-94F",
+          "crystals": [
+            "風地(115%)",
+            "純風(118%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "單眼巨人",
               "levelMin": 90,

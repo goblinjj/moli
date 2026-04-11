@@ -7,9 +7,12 @@
       "areas": [
         {
           "id": "2x3n6",
-          "name": "里歐波多的洞窟",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "入口",
+          "crystals": [
+            "風地(121%)",
+            "純地(130%)"
+          ],
+          "encounterCount": "1-10",
           "monsters": [
             {
               "name": "哥布林",
@@ -48,7 +51,19 @@
               "frameHeight": 66,
               "frameCount": 6,
               "animTime": 1500
-            },
+            }
+          ]
+        },
+        {
+          "id": "2x3n6",
+          "name": "迷宮組別1",
+          "crystals": [
+            "水火(103%)",
+            "純火(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "地獄看門犬",
               "levelMin": 20,
@@ -86,7 +101,19 @@
               "frameHeight": 76,
               "frameCount": 19,
               "animTime": 3000
-            },
+            }
+          ]
+        },
+        {
+          "id": "2x3n6",
+          "name": "迷宮組別2",
+          "crystals": [
+            "風地(106%)",
+            "純地(106%)",
+            "純風(106%)"
+          ],
+          "encounterCount": "1-10",
+          "monsters": [
             {
               "name": "寶貝炸彈",
               "levelMin": 20,
@@ -1022,9 +1049,12 @@
       "areas": [
         {
           "id": "vf9d9",
-          "name": "彩葉原",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "彩外(吊橋後)",
+          "crystals": [
+            "火風(130%)",
+            "純火(139%)"
+          ],
+          "encounterCount": "1-8",
           "monsters": [
             {
               "name": "綠煙",
@@ -1063,7 +1093,18 @@
               "frameHeight": 199,
               "frameCount": 6,
               "animTime": 1100
-            },
+            }
+          ]
+        },
+        {
+          "id": "vf9d9",
+          "name": "迷宮",
+          "crystals": [
+            "火風(130%)",
+            "純火(139%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "綠煙",
               "levelMin": 119,
@@ -1436,13 +1477,13 @@
       "areas": [
         {
           "id": "hs3yb",
-          "name": "浮空島",
+          "name": "時之塔外",
           "crystals": [
             "風地(124%)",
             "純地(124%)",
             "純風(124%)"
           ],
-          "encounterCount": "1-5",
+          "encounterCount": "",
           "monsters": [
             {
               "name": "小鴨子",
@@ -1481,7 +1522,19 @@
               "frameHeight": 70,
               "frameCount": 4,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "hs3yb",
+          "name": "",
+          "crystals": [
+            "風地(124%)",
+            "純地(124%)",
+            "純風(124%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "鴨嘴獸",
               "levelMin": 60,
@@ -1517,82 +1570,6 @@
               "image": "110572400.png",
               "frameWidth": 124,
               "frameHeight": 70,
-              "frameCount": 4,
-              "animTime": 1000
-            },
-            {
-              "name": "貓隊長",
-              "levelMin": 60,
-              "levelMax": 65,
-              "earth": 0,
-              "water": 0,
-              "fire": 10,
-              "wind": 0,
-              "type": "不死系",
-              "typeDetail": "+人形 金屬,-植物 飛行",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "110558400.png",
-              "frameWidth": 44,
-              "frameHeight": 63,
-              "frameCount": 4,
-              "animTime": 1000
-            },
-            {
-              "name": "綠色口臭鬼",
-              "levelMin": 60,
-              "levelMax": 65,
-              "earth": 9,
-              "water": 0,
-              "fire": 0,
-              "wind": 1,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "4級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101420400.png",
-              "frameWidth": 79,
-              "frameHeight": 96,
-              "frameCount": 13,
-              "animTime": 2000
-            },
-            {
-              "name": "舞蹈花妖",
-              "levelMin": 60,
-              "levelMax": 65,
-              "earth": 0,
-              "water": 7,
-              "fire": 3,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "3級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "110390400.png",
-              "frameWidth": 88,
-              "frameHeight": 83,
-              "frameCount": 8,
-              "animTime": 1000
-            },
-            {
-              "name": "獅面女神",
-              "levelMin": 60,
-              "levelMax": 65,
-              "earth": 10,
-              "water": 0,
-              "fire": 0,
-              "wind": 0,
-              "type": "不死系",
-              "typeDetail": "+人形 金屬,-植物 飛行",
-              "cardGrade": "2級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "110561400.png",
-              "frameWidth": 44,
-              "frameHeight": 63,
               "frameCount": 4,
               "animTime": 1000
             }
@@ -1973,8 +1950,12 @@
         },
         {
           "id": "t69iz",
-          "name": "時之塔",
-          "crystals": [],
+          "name": "1-9F",
+          "crystals": [
+            "火風(109%)",
+            "純火(109%)",
+            "純風(109%)"
+          ],
           "encounterCount": "",
           "monsters": [
             {
@@ -2014,7 +1995,19 @@
               "frameHeight": 110,
               "frameCount": 4,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "t69iz",
+          "name": "10F",
+          "crystals": [
+            "火風(109%)",
+            "純火(109%)",
+            "純風(109%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "絲諾波波",
               "levelMin": 60,
@@ -2052,7 +2045,19 @@
               "frameHeight": 110,
               "frameCount": 4,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "t69iz",
+          "name": "11-19F",
+          "crystals": [
+            "水火(109%)",
+            "純火(109%)",
+            "純水(109%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "雪兒波波",
               "levelMin": 70,
@@ -2090,7 +2095,19 @@
               "frameHeight": 110,
               "frameCount": 4,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "t69iz",
+          "name": "20F",
+          "crystals": [
+            "水火(109%)",
+            "純火(109%)",
+            "純水(109%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "雪兒波波",
               "levelMin": 60,
@@ -2128,7 +2145,18 @@
               "frameHeight": 110,
               "frameCount": 4,
               "animTime": 700
-            },
+            }
+          ]
+        },
+        {
+          "id": "t69iz",
+          "name": "21-29F",
+          "crystals": [
+            "火風(115%)",
+            "純火(127%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "聖誕波波",
               "levelMin": 80,
@@ -2166,7 +2194,18 @@
               "frameHeight": 88,
               "frameCount": 30,
               "animTime": 6000
-            },
+            }
+          ]
+        },
+        {
+          "id": "t69iz",
+          "name": "30F",
+          "crystals": [
+            "火風(115%)",
+            "純火(127%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "聖誕波波",
               "levelMin": 60,
@@ -3029,9 +3068,12 @@
       "areas": [
         {
           "id": "9ifmq",
-          "name": "克瑞村‧東南",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "北方",
+          "crystals": [
+            "火風(106%)",
+            "純火(109%)"
+          ],
+          "encounterCount": "2-6",
           "monsters": [
             {
               "name": "國王企鵝",
@@ -3070,7 +3112,18 @@
               "frameHeight": 79,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "9ifmq",
+          "name": "南方",
+          "crystals": [
+            "水火(118%)",
+            "純火(121%)"
+          ],
+          "encounterCount": "2-6",
+          "monsters": [
             {
               "name": "朱紅跑車",
               "levelMin": 30,
@@ -3118,9 +3171,13 @@
       "areas": [
         {
           "id": "wqawm",
-          "name": "聖誕迷宮",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "1-9F",
+          "crystals": [
+            "水火(130%)",
+            "純火(130%)",
+            "純水(130%)"
+          ],
+          "encounterCount": "2-10",
           "monsters": [
             {
               "name": "紅炎聖誕花妖",
@@ -3235,7 +3292,19 @@
               "frameHeight": 67,
               "frameCount": 69,
               "animTime": 5000
-            },
+            }
+          ]
+        },
+        {
+          "id": "wqawm",
+          "name": "11-19F",
+          "crystals": [
+            "風地(130%)",
+            "純地(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "4-9",
+          "monsters": [
             {
               "name": "銀白聖誕花妖",
               "levelMin": 69,
@@ -3349,7 +3418,19 @@
               "frameHeight": 96,
               "frameCount": 6,
               "animTime": 2000
-            },
+            }
+          ]
+        },
+        {
+          "id": "wqawm",
+          "name": "21-29F",
+          "crystals": [
+            "水火(145%)",
+            "純火(145%)",
+            "純水(145%)"
+          ],
+          "encounterCount": "4-6",
+          "monsters": [
             {
               "name": "聖誕波波",
               "levelMin": 100,
@@ -3387,7 +3468,24 @@
               "frameHeight": 98,
               "frameCount": 9,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "wqawm",
+          "name": "聖誕麋鹿",
+          "crystals": [
+            "地水(40%)",
+            "水火(40%)",
+            "火風(40%)",
+            "風地(40%)",
+            "純地(40%)",
+            "純水(40%)",
+            "純火(40%)",
+            "純風(40%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "聖誕麋鹿",
               "levelMin": 130,
@@ -3473,12 +3571,12 @@
       "areas": [
         {
           "id": "lstf7",
-          "name": "德威特島",
+          "name": "亞諾曼城東邊附近",
           "crystals": [
-            "火風(118%)",
-            "純風(124%)"
+            "風地(121%)",
+            "純風(139%)"
           ],
-          "encounterCount": "",
+          "encounterCount": "1-6",
           "monsters": [
             {
               "name": "小惡魔",
@@ -3517,7 +3615,18 @@
               "frameHeight": 98,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "亞諾曼城南邊附近",
+          "crystals": [
+            "水火(118%)",
+            "純水(127%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "樹精",
               "levelMin": 6,
@@ -3555,7 +3664,19 @@
               "frameHeight": 147,
               "frameCount": 66,
               "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "亞諾曼城西邊附近",
+          "crystals": [
+            "水火(106%)",
+            "純火(106%)",
+            "純水(106%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "小惡魔",
               "levelMin": 5,
@@ -3593,7 +3714,18 @@
               "frameHeight": 109,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "亞諾曼城東邊平原",
+          "crystals": [
+            "地水(127%)",
+            "純地(145%)"
+          ],
+          "encounterCount": "1-7",
+          "monsters": [
             {
               "name": "小蝙蝠",
               "levelMin": 5,
@@ -3650,7 +3782,18 @@
               "frameHeight": 113,
               "frameCount": 20,
               "animTime": 2000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "亞諾曼城南邊平原",
+          "crystals": [
+            "地水(112%)",
+            "純水(115%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "藍色口臭鬼",
               "levelMin": 5,
@@ -3688,7 +3831,19 @@
               "frameHeight": 100,
               "frameCount": 20,
               "animTime": 2000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "克奴冰原",
+          "crystals": [
+            "風地(106%)",
+            "純地(106%)",
+            "純風(106%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "冰冷樹精",
               "levelMin": 0,
@@ -3726,7 +3881,18 @@
               "frameHeight": 76,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "",
+          "crystals": [
+            "火風(118%)",
+            "純風(124%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "魔術機己",
               "levelMin": 36,
@@ -3764,7 +3930,18 @@
               "frameHeight": 145,
               "frameCount": 45,
               "animTime": 2000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "冰原",
+          "crystals": [
+            "地水(130%)",
+            "純水(133%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "侯爵花妖",
               "levelMin": 40,
@@ -3802,45 +3979,18 @@
               "frameHeight": 73,
               "frameCount": 10,
               "animTime": 1000
-            },
-            {
-              "name": "強盾",
-              "levelMin": 40,
-              "levelMax": 42,
-              "earth": 0,
-              "water": 4,
-              "fire": 6,
-              "wind": 0,
-              "type": "金屬系",
-              "typeDetail": "+龍系 人形,-特殊 不死",
-              "cardGrade": "5級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "107602400.png",
-              "frameWidth": 68,
-              "frameHeight": 75,
-              "frameCount": 38,
-              "animTime": 5500
-            },
-            {
-              "name": "教皇企鵝",
-              "levelMin": 40,
-              "levelMax": 42,
-              "earth": 8,
-              "water": 2,
-              "fire": 0,
-              "wind": 0,
-              "type": "野獸系",
-              "typeDetail": "+植物 飛行,-人形 龍系",
-              "cardGrade": "3級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "104529400.png",
-              "frameWidth": 45,
-              "frameHeight": 73,
-              "frameCount": 10,
-              "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "亞諾曼城西北區",
+          "crystals": [
+            "水火(112%)",
+            "純火(121%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "碧玉瓢蟲",
               "levelMin": 25,
@@ -3878,83 +4028,19 @@
               "frameHeight": 111,
               "frameCount": 6,
               "animTime": 1000
-            },
-            {
-              "name": "南瓜公主",
-              "levelMin": 25,
-              "levelMax": 30,
-              "earth": 0,
-              "water": 0,
-              "fire": 2,
-              "wind": 8,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "9級銀卡",
-              "sealable": false,
-              "isBoss": false,
-              "image": "104379400.png",
-              "frameWidth": 76,
-              "frameHeight": 133,
-              "frameCount": 8,
-              "animTime": 1300
-            },
-            {
-              "name": "藍天瓢蟲",
-              "levelMin": 25,
-              "levelMax": 30,
-              "earth": 4,
-              "water": 6,
-              "fire": 0,
-              "wind": 0,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "2級普卡",
-              "sealable": false,
-              "isBoss": false,
-              "image": "104521400.png",
-              "frameWidth": 68,
-              "frameHeight": 44,
-              "frameCount": 10,
-              "animTime": 1000
-            },
-            {
-              "name": "紫霧瓢蟲",
-              "levelMin": 25,
-              "levelMax": 30,
-              "earth": 0,
-              "water": 7,
-              "fire": 3,
-              "wind": 0,
-              "type": "昆蟲系",
-              "typeDetail": "+特殊 植物,-飛行 人形",
-              "cardGrade": "2級普卡",
-              "sealable": false,
-              "isBoss": false,
-              "image": "104524400.png",
-              "frameWidth": 68,
-              "frameHeight": 44,
-              "frameCount": 10,
-              "animTime": 1000
-            },
-            {
-              "name": "慘白樹精",
-              "levelMin": 25,
-              "levelMax": 30,
-              "earth": 0,
-              "water": 0,
-              "fire": 3,
-              "wind": 7,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "4級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101403400.png",
-              "frameWidth": 112,
-              "frameHeight": 147,
-              "frameCount": 66,
-              "animTime": 4000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "尼維爾海村門口附近",
+          "crystals": [
+            "地水(112%)",
+            "純地(112%)",
+            "純水(112%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "小蝙蝠",
               "levelMin": 10,
@@ -3992,7 +4078,19 @@
               "frameHeight": 71,
               "frameCount": 59,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "尼維爾海村北方海灣",
+          "crystals": [
+            "地水(103%)",
+            "純地(103%)",
+            "純水(103%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "哥布林",
               "levelMin": 10,
@@ -4030,45 +4128,18 @@
               "frameHeight": 96,
               "frameCount": 6,
               "animTime": 2000
-            },
-            {
-              "name": "綠色口臭鬼",
-              "levelMin": 0,
-              "levelMax": 0,
-              "earth": 9,
-              "water": 0,
-              "fire": 0,
-              "wind": 1,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "4級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101420400.png",
-              "frameWidth": 79,
-              "frameHeight": 96,
-              "frameCount": 13,
-              "animTime": 2000
-            },
-            {
-              "name": "紅色口臭鬼",
-              "levelMin": 0,
-              "levelMax": 0,
-              "earth": 0,
-              "water": 1,
-              "fire": 9,
-              "wind": 0,
-              "type": "植物系",
-              "typeDetail": "+不死 特殊,-野獸 昆蟲",
-              "cardGrade": "5級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101423400.png",
-              "frameWidth": 79,
-              "frameHeight": 100,
-              "frameCount": 41,
-              "animTime": 7000
-            },
+            }
+          ]
+        },
+        {
+          "id": "lstf7",
+          "name": "摩頓村西北門外",
+          "crystals": [
+            "地水(115%)",
+            "純水(121%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "異型蜂",
               "levelMin": 25,

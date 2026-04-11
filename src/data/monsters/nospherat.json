@@ -393,8 +393,11 @@
         },
         {
           "id": "kpshc",
-          "name": "夕之湖",
-          "crystals": [],
+          "name": "第一層",
+          "crystals": [
+            "地水(115%)",
+            "純水(124%)"
+          ],
           "encounterCount": "",
           "monsters": [
             {
@@ -434,7 +437,18 @@
               "frameHeight": 71,
               "frameCount": 55,
               "animTime": 11998
-            },
+            }
+          ]
+        },
+        {
+          "id": "kpshc",
+          "name": "第二層",
+          "crystals": [
+            "水火(121%)",
+            "純水(127%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "狂奔鳥",
               "levelMin": 48,

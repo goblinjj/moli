@@ -7,9 +7,18 @@
       "areas": [
         {
           "id": "6gi6m",
-          "name": "流星山丘",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "山丘外部",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-4",
           "monsters": [
             {
               "name": "大地鼠",
@@ -48,7 +57,24 @@
               "frameHeight": 71,
               "frameCount": 59,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "6gi6m",
+          "name": "山丘內部",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "1-4",
+          "monsters": [
             {
               "name": "土蜘蛛",
               "levelMin": 18,
@@ -151,9 +177,18 @@
       "areas": [
         {
           "id": "vye9d",
-          "name": "風之洞窟",
-          "crystals": [],
-          "encounterCount": "",
+          "name": "1-9F",
+          "crystals": [
+            "地水(220%)",
+            "水火(220%)",
+            "火風(220%)",
+            "風地(220%)",
+            "純地(220%)",
+            "純水(220%)",
+            "純火(220%)",
+            "純風(220%)"
+          ],
+          "encounterCount": "1-8",
           "monsters": [
             {
               "name": "虎人",
@@ -230,7 +265,24 @@
               "frameHeight": 82,
               "frameCount": 16,
               "animTime": 2300
-            },
+            }
+          ]
+        },
+        {
+          "id": "vye9d",
+          "name": "10F",
+          "crystals": [
+            "地水(130%)",
+            "水火(130%)",
+            "火風(130%)",
+            "風地(130%)",
+            "純地(130%)",
+            "純水(130%)",
+            "純火(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "黃蜂",
               "levelMin": 30,
@@ -249,7 +301,24 @@
               "frameHeight": 102,
               "frameCount": 10,
               "animTime": 600
-            },
+            }
+          ]
+        },
+        {
+          "id": "vye9d",
+          "name": "11-19F",
+          "crystals": [
+            "地水(220%)",
+            "水火(220%)",
+            "火風(220%)",
+            "風地(220%)",
+            "純地(220%)",
+            "純水(220%)",
+            "純火(220%)",
+            "純風(220%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "虎人",
               "levelMin": 29,
@@ -325,7 +394,24 @@
               "frameHeight": 82,
               "frameCount": 16,
               "animTime": 2300
-            },
+            }
+          ]
+        },
+        {
+          "id": "vye9d",
+          "name": "20F",
+          "crystals": [
+            "地水(130%)",
+            "水火(130%)",
+            "火風(130%)",
+            "風地(130%)",
+            "純地(130%)",
+            "純水(130%)",
+            "純火(130%)",
+            "純風(130%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "風蜘蛛",
               "levelMin": 30,
@@ -903,7 +989,7 @@
       "areas": [
         {
           "id": "iht6o",
-          "name": "沙漠之祠",
+          "name": "",
           "crystals": [
             "火風(112%)",
             "純火(112%)",
@@ -948,7 +1034,18 @@
               "frameHeight": 66,
               "frameCount": 67,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "iht6o",
+          "name": "狂戰將軍",
+          "crystals": [
+            "風地(115%)",
+            "純風(121%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "狂戰將軍",
               "levelMin": 28,
@@ -1015,18 +1112,13 @@
       "areas": [
         {
           "id": "ccth9",
-          "name": "索奇亞島",
+          "name": "奇利村外",
           "crystals": [
-            "地水(100%)",
-            "水火(100%)",
-            "火風(100%)",
-            "風地(100%)",
-            "純地(100%)",
-            "純水(100%)",
-            "純火(100%)",
-            "純風(100%)"
+            "水火(109%)",
+            "純火(109%)",
+            "純水(109%)"
           ],
-          "encounterCount": "",
+          "encounterCount": "1-6",
           "monsters": [
             {
               "name": "小惡魔",
@@ -1065,7 +1157,19 @@
               "frameHeight": 71,
               "frameCount": 59,
               "animTime": 8000
-            },
+            }
+          ]
+        },
+        {
+          "id": "ccth9",
+          "name": "馮奴的家外",
+          "crystals": [
+            "風地(103%)",
+            "純地(103%)",
+            "純風(103%)"
+          ],
+          "encounterCount": "1-8",
+          "monsters": [
             {
               "name": "螳螂",
               "levelMin": 16,
@@ -1103,7 +1207,19 @@
               "frameHeight": 112,
               "frameCount": 8,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "ccth9",
+          "name": "角笛大風穴外",
+          "crystals": [
+            "火風(115%)",
+            "水火(115%)",
+            "純火(130%)"
+          ],
+          "encounterCount": "1-6",
+          "monsters": [
             {
               "name": "盜賊",
               "levelMin": 17,
@@ -1141,7 +1257,24 @@
               "frameHeight": 76,
               "frameCount": 6,
               "animTime": 1000
-            },
+            }
+          ]
+        },
+        {
+          "id": "ccth9",
+          "name": "加納村外",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "黃蠍",
               "levelMin": 19,
@@ -1179,7 +1312,24 @@
               "frameHeight": 70,
               "frameCount": 22,
               "animTime": 6000
-            },
+            }
+          ]
+        },
+        {
+          "id": "ccth9",
+          "name": "",
+          "crystals": [
+            "地水(100%)",
+            "水火(100%)",
+            "火風(100%)",
+            "風地(100%)",
+            "純地(100%)",
+            "純水(100%)",
+            "純火(100%)",
+            "純風(100%)"
+          ],
+          "encounterCount": "",
+          "monsters": [
             {
               "name": "兔耳仙人掌",
               "levelMin": 19,
@@ -1217,63 +1367,6 @@
               "frameHeight": 102,
               "frameCount": 8,
               "animTime": 1000
-            },
-            {
-              "name": "狠毒鳥人",
-              "levelMin": 17,
-              "levelMax": 19,
-              "earth": 0,
-              "water": 1,
-              "fire": 9,
-              "wind": 0,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "3級普卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101832400.png",
-              "frameWidth": 68,
-              "frameHeight": 109,
-              "frameCount": 6,
-              "animTime": 1000
-            },
-            {
-              "name": "鐵剪螃蟹",
-              "levelMin": 17,
-              "levelMax": 19,
-              "earth": 8,
-              "water": 0,
-              "fire": 0,
-              "wind": 2,
-              "type": "金屬系",
-              "typeDetail": "+龍系 人形,-特殊 不死",
-              "cardGrade": "3級銀卡",
-              "sealable": true,
-              "isBoss": false,
-              "image": "101632400.png",
-              "frameWidth": 72,
-              "frameHeight": 61,
-              "frameCount": 10,
-              "animTime": 1500
-            },
-            {
-              "name": "海盜",
-              "levelMin": 17,
-              "levelMax": 19,
-              "earth": 0,
-              "water": 5,
-              "fire": 5,
-              "wind": 0,
-              "type": "人形系",
-              "typeDetail": "+野獸 昆蟲,-不死 金屬",
-              "cardGrade": "4級",
-              "sealable": false,
-              "isBoss": false,
-              "image": "101822400.png",
-              "frameWidth": 65,
-              "frameHeight": 76,
-              "frameCount": 6,
-              "animTime": 1400
             }
           ]
         }
