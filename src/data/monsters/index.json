@@ -1,0 +1,77 @@
+[
+  {
+    "id": "fureya",
+    "name": "芙蕾雅島",
+    "locationCount": 35
+  },
+  {
+    "id": "sochia",
+    "name": "索奇亞島",
+    "locationCount": 15
+  },
+  {
+    "id": "shalena",
+    "name": "莎蓮娜島",
+    "locationCount": 30
+  },
+  {
+    "id": "minegl",
+    "name": "米內葛爾島",
+    "locationCount": 13
+  },
+  {
+    "id": "kruks",
+    "name": "庫魯克斯島",
+    "locationCount": 26
+  },
+  {
+    "id": "dewitt",
+    "name": "德威特島",
+    "locationCount": 43
+  },
+  {
+    "id": "genom",
+    "name": "傑諾姆島",
+    "locationCount": 2
+  },
+  {
+    "id": "fried",
+    "name": "弗利德島",
+    "locationCount": 6
+  },
+  {
+    "id": "paradise",
+    "name": "樂園之卵",
+    "locationCount": 29
+  },
+  {
+    "id": "simmel",
+    "name": "辛梅爾",
+    "locationCount": 5
+  },
+  {
+    "id": "nospherat",
+    "name": "諾斯菲拉特",
+    "locationCount": 12
+  },
+  {
+    "id": "hanako",
+    "name": "哈那可半島",
+    "locationCount": 10
+  },
+  {
+    "id": "gyaku",
+    "name": "逆星",
+    "locationCount": 8
+  },
+  {
+    "id": "nichiyo",
+    "name": "日耀之域",
+    "locationCount": 12
+  },
+  {
+    "id": "suiyo",
+    "name": "水曜之域",
+    "locationCount": 18
+  }
+]

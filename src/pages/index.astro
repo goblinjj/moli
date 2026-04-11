@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Calculator from "../components/Calculator";
-import type { Recipe, Gem } from "../lib/types";
+import type { Recipe, Gem, MonsterRegion } from "../lib/types";
 
 import swordData from "../data/sword.json";
 import axeData from "../data/axe.json";
@@ -36,6 +36,22 @@ import taskGemData from "../data/gems/taskGem.json";
 import rubyGemData from "../data/gems/rubyGem.json";
 import petGemData from "../data/gems/petGem.json";
 
+import fureyaMonsters from "../data/monsters/fureya.json";
+import sochiaMonsters from "../data/monsters/sochia.json";
+import shalenaMonsters from "../data/monsters/shalena.json";
+import mineglMonsters from "../data/monsters/minegl.json";
+import kruksMonsters from "../data/monsters/kruks.json";
+import dewittMonsters from "../data/monsters/dewitt.json";
+import genomMonsters from "../data/monsters/genom.json";
+import friedMonsters from "../data/monsters/fried.json";
+import paradiseMonsters from "../data/monsters/paradise.json";
+import simmelMonsters from "../data/monsters/simmel.json";
+import nospheratMonsters from "../data/monsters/nospherat.json";
+import hanakoMonsters from "../data/monsters/hanako.json";
+import gyakuMonsters from "../data/monsters/gyaku.json";
+import nichiyoMonsters from "../data/monsters/nichiyo.json";
+import suiyoMonsters from "../data/monsters/suiyo.json";
+
 const recipes = [
   ...swordData, ...axeData, ...spearData, ...bowData, ...staffData,
   ...daggerData, ...throwData, ...bombData,
@@ -49,8 +65,15 @@ const recipes = [
 const gems = [
   ...generalGemData, ...taskGemData, ...rubyGemData, ...petGemData,
 ] as Gem[];
+
+const monsterRegions = [
+  fureyaMonsters, sochiaMonsters, shalenaMonsters, mineglMonsters,
+  kruksMonsters, dewittMonsters, genomMonsters, friedMonsters,
+  paradiseMonsters, simmelMonsters, nospheratMonsters, hanakoMonsters,
+  gyakuMonsters, nichiyoMonsters, suiyoMonsters,
+] as MonsterRegion[];
 ---
 
 <Layout>
-  <Calculator client:load recipes={recipes} gems={gems} />
+  <Calculator client:load recipes={recipes} gems={gems} monsterRegions={monsterRegions} />
 </Layout>

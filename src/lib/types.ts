@@ -59,3 +59,33 @@ export interface Gem {
   image: string;
   levels: GemLevel[];
 }
+
+export interface Monster {
+  name: string;
+  levelMin: number;
+  levelMax: number;
+  earth: number;
+  water: number;
+  fire: number;
+  wind: number;
+  type: string;
+  typeDetail: string;
+  cardGrade: string;
+  sealable: boolean;
+  encounterCount: string;
+  crystals: string[];
+  isBoss: boolean;
+  image: string;
+}
+
+export interface MonsterLocation {
+  id: string;
+  name: string;
+  monsters: Monster[];
+}
+
+export interface MonsterRegion {
+  id: string;
+  name: string;
+  locations: MonsterLocation[];
+}

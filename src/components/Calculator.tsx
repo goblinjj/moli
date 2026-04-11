@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import type { Recipe, PriceConfig, Category, Gem, GemCategory } from "../lib/types";
+import type { Recipe, PriceConfig, Category, Gem, GemCategory, MonsterRegion } from "../lib/types";
 import { calculateCost } from "../lib/calculator";
 import { generateDefaultConfig } from "../lib/defaults";
 import { loadConfig, saveConfig } from "../lib/storage";
@@ -7,13 +7,15 @@ import SearchFilter from "./SearchFilter";
 import RecipeCard from "./RecipeCard";
 import GemCard from "./GemCard";
 import SupplyPricing from "./SupplyPricing";
+import MonsterDistribution from "./MonsterDistribution";
 
 interface CalculatorProps {
   recipes: Recipe[];
   gems: Gem[];
+  monsterRegions: MonsterRegion[];
 }
 
-type Section = "production" | "tools";
+type Section = "production" | "tools" | "monsters";
 type SubCategory = Category | GemCategory;
 
 const CATEGORY_GROUPS: { group: string; isGem?: boolean; items: { id: SubCategory; label: string }[] }[] = [
@@ -93,10 +95,11 @@ function getSectionFromHash(): Section {
   if (typeof window === "undefined") return "production";
   const hash = window.location.hash.replace("#", "");
   if (hash === "tools") return "tools";
+  if (hash === "monsters") return "monsters";
   return "production";
 }
 
-export default function Calculator({ recipes, gems }: CalculatorProps) {
+export default function Calculator({ recipes, gems, monsterRegions }: CalculatorProps) {
   const [activeSection, setActiveSection] = useState<Section>(getSectionFromHash);
   const [activeGroup, setActiveGroup] = useState(0);
   const [activeCategory, setActiveCategory] = useState<SubCategory>("sword");
@@ -199,13 +202,14 @@ export default function Calculator({ recipes, gems }: CalculatorProps) {
           {([
             { id: "production" as Section, label: "生产系资料" },
             { id: "tools" as Section, label: "工具" },
+            { id: "monsters" as Section, label: "魔物分布" },
           ]).map((section) => (
             <button
               key={section.id}
               type="button"
               onClick={() => {
                 setActiveSection(section.id);
-                window.location.hash = section.id === "tools" ? "tools" : "";
+                window.location.hash = section.id === "production" ? "" : section.id;
               }}
               className={`px-4 py-2.5 text-sm font-semibold border-b-2 transition-colors ${
                 activeSection === section.id
@@ -343,6 +347,10 @@ export default function Calculator({ recipes, gems }: CalculatorProps) {
             <SupplyPricing recipes={recipes} />
           </main>
         </>
+      )}
+
+      {activeSection === "monsters" && (
+        <MonsterDistribution regions={monsterRegions} />
       )}
     </div>
   );
