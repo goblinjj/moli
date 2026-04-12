@@ -61,8 +61,12 @@ export default function SupplyPricing({ recipes }: SupplyPricingProps) {
     setRatios((prev) => ({ ...prev, [id]: value }));
   }, []);
 
-  const formatNumber = (n: number) =>
-    Number.isInteger(n) ? n.toLocaleString() : n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const formatNumber = (n: number) => {
+    const rounded = Math.round(n * 100) / 100;
+    return rounded % 1 === 0
+      ? rounded.toLocaleString()
+      : rounded.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
 
   return (
     <div>
