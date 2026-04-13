@@ -401,7 +401,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const handleCancelEditing = useCallback(() => { setEditingCharacter(null); setEditRows([]); }, []);
 
   const handleInlineQuantityChange = useCallback((itemId: string, newQty: number) => {
-    setItems((prev) => prev.map((i) => i.id === itemId ? { ...i, quantity: Math.max(0, newQty) } : i));
+    setItems((prev) => prev.map((i) => i.id === itemId ? { ...i, quantity: Math.max(0, newQty), slots: Math.ceil(Math.max(0, newQty)) } : i));
   }, []);
 
   // --- Import/Export ---
