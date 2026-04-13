@@ -89,7 +89,7 @@ function ConfirmDialog({ message, onConfirm, onCancel }: { message: string; onCo
 }
 
 export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
-  const [items, setItems] = useState<WarehouseItem[]>(() => loadWarehouseItems());
+  const [items, setItems] = useState<WarehouseItem[]>(() => loadWarehouseItems().filter((i) => i.quantity > 0));
   const [charConfigs, setCharConfigs] = useState<CharacterConfig[]>(() => loadCharacterConfigs());
 
   // Build material database with simplified names
