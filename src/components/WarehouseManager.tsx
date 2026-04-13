@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import type { Recipe, WarehouseItem, ItemType, ItemUnit, CharacterConfig, Category } from "../lib/types";
 import { loadWarehouseItems, saveWarehouseItems, loadCharacterConfigs, saveCharacterConfigs } from "../lib/storage";
 import { simplifiedToTraditional, traditionalToSimplified } from "../lib/zhConvert";
+import materialSourcesData from "../data/materialSources.json";
 
 const ITEM_TYPES: ItemType[] = ["食材", "木材", "花", "矿", "装备", "其他"];
 const ITEM_UNITS: ItemUnit[] = ["个", "组", "箱"];
@@ -33,46 +34,37 @@ interface WarehouseManagerProps {
   recipes: Recipe[];
 }
 
+// Picker tab types
+type PickerTab = "食材" | "木材" | "香草" | "矿条" | "武器" | "防具" | "料理" | "血瓶" | "自定义";
+const PICKER_TABS: PickerTab[] = ["食材", "木材", "香草", "矿条", "武器", "防具", "料理", "血瓶", "自定义"];
+
+// Map materialSources types to picker tabs
+const SOURCE_TYPE_TO_TAB: Record<string, PickerTab> = {
+  "食材": "食材", "皮革": "食材", "布料": "食材", "布料成品": "食材",
+  "木材": "木材", "香草": "香草", "礦條": "矿条", "礦石": "矿条",
+};
+
+// Finished product sub-categories
+const WEAPON_SUB_CATS: { id: Category; label: string }[] = [
+  { id: "sword", label: "铸剑" }, { id: "axe", label: "造斧" },
+  { id: "spear", label: "造枪" }, { id: "bow", label: "造弓" },
+  { id: "staff", label: "造杖" }, { id: "dagger", label: "小刀" },
+  { id: "throw", label: "投掷" }, { id: "bomb", label: "炸弹" },
+];
+const ARMOR_SUB_CATS: { id: Category; label: string }[] = [
+  { id: "helmet", label: "头盔" }, { id: "hat", label: "帽子" },
+  { id: "armor", label: "铠甲" }, { id: "cloth", label: "衣服" },
+  { id: "robe", label: "长袍" }, { id: "boots", label: "靴子" },
+  { id: "shoes", label: "鞋子" }, { id: "shield", label: "盾牌" },
+];
+
+// Recipe lookup groups (for "按配方查库存" feature)
 const RECIPE_GROUPS: { group: string; categories: { id: Category; label: string }[] }[] = [
-  {
-    group: "武器",
-    categories: [
-      { id: "sword", label: "铸剑" }, { id: "axe", label: "造斧" },
-      { id: "spear", label: "造枪" }, { id: "bow", label: "造弓" },
-      { id: "staff", label: "造杖" }, { id: "dagger", label: "小刀" },
-      { id: "throw", label: "投掷" }, { id: "bomb", label: "炸弹" },
-    ],
-  },
-  {
-    group: "防具",
-    categories: [
-      { id: "helmet", label: "头盔" }, { id: "hat", label: "帽子" },
-      { id: "armor", label: "铠甲" }, { id: "cloth", label: "衣服" },
-      { id: "robe", label: "长袍" }, { id: "boots", label: "靴子" },
-      { id: "shoes", label: "鞋子" }, { id: "shield", label: "盾牌" },
-    ],
-  },
-  {
-    group: "补给",
-    categories: [
-      { id: "cooking", label: "料理" }, { id: "pharmacy", label: "药品" },
-    ],
-  },
-  {
-    group: "其他",
-    categories: [
-      { id: "accessory", label: "饰品" }, { id: "dragon", label: "水龙" },
-      { id: "fiveC", label: "5C" }, { id: "scroll", label: "卷轴" },
-    ],
-  },
-  {
-    group: "宠物",
-    categories: [
-      { id: "collar", label: "项圈" }, { id: "crystal", label: "晶石" },
-      { id: "petArmor", label: "装甲" }, { id: "petAccessory", label: "饰品" },
-      { id: "petCloth", label: "服装" },
-    ],
-  },
+  { group: "武器", categories: WEAPON_SUB_CATS },
+  { group: "防具", categories: ARMOR_SUB_CATS },
+  { group: "补给", categories: [{ id: "cooking", label: "料理" }, { id: "pharmacy", label: "药品" }] },
+  { group: "其他", categories: [{ id: "accessory", label: "饰品" }, { id: "dragon", label: "水龙" }, { id: "fiveC", label: "5C" }, { id: "scroll", label: "卷轴" }] },
+  { group: "宠物", categories: [{ id: "collar", label: "项圈" }, { id: "crystal", label: "晶石" }, { id: "petArmor", label: "装甲" }, { id: "petAccessory", label: "饰品" }, { id: "petCloth", label: "服装" }] },
 ];
 
 function ConfirmDialog({ message, onConfirm, onCancel }: { message: string; onConfirm: () => void; onCancel: () => void }) {
@@ -117,10 +109,6 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
     return map;
   }, [materialDb]);
 
-  const allMaterialNames = useMemo(() => {
-    return Array.from(materialDb.keys()).sort();
-  }, [materialDb]);
-
   const [filterType, setFilterType] = useState<ItemType | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [showAddCharacter, setShowAddCharacter] = useState(false);
@@ -136,9 +124,10 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const [expandedCharacters, setExpandedCharacters] = useState<Set<string>>(new Set());
 
   // Material picker state (inline in edit panel)
-  const [pickerGroup, setPickerGroup] = useState(0);
-  const [pickerCategory, setPickerCategory] = useState<Category | null>(RECIPE_GROUPS[0].categories[0].id);
+  const [pickerTab, setPickerTab] = useState<PickerTab>("食材");
+  const [pickerSubCat, setPickerSubCat] = useState<Category>(WEAPON_SUB_CATS[0].id);
   const [pickerSearch, setPickerSearch] = useState("");
+  const [customItemName, setCustomItemName] = useState("");
 
   // Recipe lookup state
   const [showRecipeLookup, setShowRecipeLookup] = useState(false);
@@ -400,23 +389,53 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   // Names already in edit rows (for picker highlighting)
   const editRowNames = useMemo(() => new Set(editRows.map((r) => r.itemName).filter(Boolean)), [editRows]);
 
-  // --- Material picker filtered list ---
-  const pickerMaterials = useMemo(() => {
-    if (!pickerCategory) return [];
-    const catRecipes = recipes.filter((r) => r.category === pickerCategory);
-    const matSet = new Map<string, { image: string; level: number }>();
-    for (const r of catRecipes) {
+  // Classify all raw materials by tab
+  const rawMaterialsByTab = useMemo(() => {
+    const map: Record<string, { name: string; image: string; level: number; simplified: string }[]> = {
+      "食材": [], "木材": [], "香草": [], "矿条": [],
+    };
+    const seen = new Set<string>();
+    const sources = materialSourcesData as Record<string, { type: string; level: number }>;
+    for (const r of recipes) {
       for (const m of r.materials) {
-        if (!matSet.has(m.name)) matSet.set(m.name, { image: m.image, level: m.materialLevel });
+        if (seen.has(m.name)) continue;
+        seen.add(m.name);
+        const source = sources[m.name];
+        const tab = source ? (SOURCE_TYPE_TO_TAB[source.type] || "食材") : "食材";
+        if (map[tab]) {
+          map[tab].push({ name: m.name, image: m.image, level: m.materialLevel, simplified: traditionalToSimplified[m.name] || m.name });
+        }
       }
     }
-    let result = Array.from(matSet.entries()).map(([name, { image, level }]) => ({ name, image, level, simplified: traditionalToSimplified[name] || name }));
+    for (const key of Object.keys(map)) map[key].sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
+    return map;
+  }, [recipes]);
+
+  // --- Material picker filtered list ---
+  const pickerItems = useMemo(() => {
+    const isRawTab = ["食材", "木材", "香草", "矿条"].includes(pickerTab);
+    if (pickerTab === "自定义") return [];
+
+    let result: { name: string; image: string; level: number; simplified: string }[];
+    if (isRawTab) {
+      result = rawMaterialsByTab[pickerTab] || [];
+    } else {
+      // Finished products from recipes
+      let cats: Category[];
+      if (pickerTab === "武器") cats = [pickerSubCat];
+      else if (pickerTab === "防具") cats = [pickerSubCat];
+      else if (pickerTab === "料理") cats = ["cooking"];
+      else cats = ["pharmacy"];
+      const catRecipes = recipes.filter((r) => cats.includes(r.category));
+      result = catRecipes.map((r) => ({ name: r.name, image: r.image, level: r.level, simplified: traditionalToSimplified[r.name] || r.name }));
+      result.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
+    }
     if (pickerSearch.trim()) {
       const q = pickerSearch.trim().toLowerCase();
       result = result.filter((m) => m.name.toLowerCase().includes(q) || m.simplified.toLowerCase().includes(q));
     }
-    return result.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
-  }, [recipes, pickerCategory, pickerSearch]);
+    return result;
+  }, [pickerTab, pickerSubCat, pickerSearch, rawMaterialsByTab, recipes]);
 
   // --- Recipe lookup ---
   const lookupRecipes = useMemo(() => {
@@ -649,36 +668,64 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
 
           {/* Inline material picker */}
           <div className="bg-gray-50 rounded-lg p-3 mb-3 border border-gray-100">
+            {/* Tab row */}
             <div className="flex gap-1 mb-2 flex-wrap">
-              {RECIPE_GROUPS.map((g, idx) => (
-                <button key={g.group} type="button" onClick={() => { setPickerGroup(idx); setPickerCategory(g.categories[0].id); setPickerSearch(""); }}
-                  className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all ${pickerGroup === idx ? pillActive : pillInactive}`}>
-                  {g.group}
+              {PICKER_TABS.map((tab) => (
+                <button key={tab} type="button" onClick={() => { setPickerTab(tab); setPickerSearch(""); if (tab === "武器") setPickerSubCat(WEAPON_SUB_CATS[0].id); if (tab === "防具") setPickerSubCat(ARMOR_SUB_CATS[0].id); }}
+                  className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all ${pickerTab === tab ? pillActive : pillInactive}`}>
+                  {tab}
                 </button>
               ))}
             </div>
-            <div className="flex gap-1 mb-2 flex-wrap">
-              {RECIPE_GROUPS[pickerGroup].categories.map((cat) => (
-                <button key={cat.id} type="button" onClick={() => { setPickerCategory(cat.id); setPickerSearch(""); }}
-                  className={`px-2 py-0.5 rounded text-[11px] font-medium transition-all ${pickerCategory === cat.id ? pillActive : pillInactive}`}>
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-            <input type="text" value={pickerSearch} onChange={(e) => setPickerSearch(e.target.value)} placeholder="搜索材料..."
-              className="w-full bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-xs text-gray-700 mb-2 focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500" />
-            {pickerMaterials.length === 0 ? (
-              <div className="text-center text-gray-400 text-xs py-3">{pickerCategory ? "没有匹配的材料" : "请先选择分类"}</div>
+            {/* Sub-category pills for 武器/防具 */}
+            {pickerTab === "武器" && (
+              <div className="flex gap-1 mb-2 flex-wrap">
+                {WEAPON_SUB_CATS.map((cat) => (
+                  <button key={cat.id} type="button" onClick={() => { setPickerSubCat(cat.id); setPickerSearch(""); }}
+                    className={`px-2 py-0.5 rounded text-[11px] font-medium transition-all ${pickerSubCat === cat.id ? pillActive : pillInactive}`}>
+                    {cat.label}
+                  </button>
+                ))}
+              </div>
+            )}
+            {pickerTab === "防具" && (
+              <div className="flex gap-1 mb-2 flex-wrap">
+                {ARMOR_SUB_CATS.map((cat) => (
+                  <button key={cat.id} type="button" onClick={() => { setPickerSubCat(cat.id); setPickerSearch(""); }}
+                    className={`px-2 py-0.5 rounded text-[11px] font-medium transition-all ${pickerSubCat === cat.id ? pillActive : pillInactive}`}>
+                    {cat.label}
+                  </button>
+                ))}
+              </div>
+            )}
+            {/* Search bar (not for custom tab) */}
+            {pickerTab !== "自定义" && (
+              <input type="text" value={pickerSearch} onChange={(e) => setPickerSearch(e.target.value)} placeholder="搜索..."
+                className="w-full bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-xs text-gray-700 mb-2 focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500" />
+            )}
+            {/* Custom input */}
+            {pickerTab === "自定义" ? (
+              <div className="flex items-center gap-2">
+                <input type="text" value={customItemName} onChange={(e) => setCustomItemName(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === "Enter" && customItemName.trim()) { handlePickMaterial(customItemName.trim(), ""); setCustomItemName(""); } }}
+                  placeholder="输入物品名称，回车添加..." autoFocus
+                  className="flex-1 bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-xs text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500" />
+                <button type="button" onClick={() => { if (customItemName.trim()) { handlePickMaterial(customItemName.trim(), ""); setCustomItemName(""); } }}
+                  disabled={!customItemName.trim()}
+                  className="px-3 py-1.5 rounded-lg text-xs font-medium bg-accent-500 text-white hover:bg-accent-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed">添加</button>
+              </div>
+            ) : pickerItems.length === 0 ? (
+              <div className="text-center text-gray-400 text-xs py-3">没有匹配的物品</div>
             ) : (
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-1 max-h-36 overflow-y-auto">
-                {pickerMaterials.map((m) => {
+                {pickerItems.map((m) => {
                   const added = editRowNames.has(m.name);
                   return (
                     <button key={m.name} type="button" onClick={() => handlePickMaterial(m.name, m.image)}
                       className={`flex items-center gap-1.5 px-1.5 py-1 rounded-lg border text-left transition-colors ${
                         added ? "bg-accent-50 border-accent-300 ring-1 ring-accent-300" : "border-gray-200 bg-white hover:bg-accent-50 hover:border-accent-200"
                       }`}>
-                      <img src={`/items/${m.image}`} alt="" className="w-5 h-5 object-contain flex-shrink-0" />
+                      {m.image && <img src={`/items/${m.image}`} alt="" className="w-5 h-5 object-contain flex-shrink-0" />}
                       <div className="min-w-0 flex-1">
                         <div className={`text-[11px] truncate ${added ? "text-accent-700 font-medium" : "text-gray-700"}`}>{m.simplified !== m.name ? m.simplified : m.name}</div>
                       </div>
