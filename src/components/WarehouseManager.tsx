@@ -435,16 +435,16 @@ export default function WarehouseManager() {
       )}
 
       {/* === Unified view: Character cards + Stats === */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-        {/* Left: Character cards */}
-        <div>
-          <h2 className="text-sm font-semibold text-gray-500 mb-3">角色仓库</h2>
+      <div className="flex flex-col lg:flex-row gap-4">
+        {/* Left: Character cards as compact grid */}
+        <div className="lg:w-1/2 xl:w-2/5 flex-shrink-0">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">角色仓库</h2>
           {filteredCharacters.length === 0 && editingCharacter === null ? (
-            <div className="text-center text-slate-400 mt-8 text-sm">
-              {items.length === 0 ? '点击右上角"+ 添加角色"开始记录物资' : "没有找到匹配的记录"}
+            <div className="text-center text-slate-400 mt-6 text-xs">
+              {items.length === 0 ? '点击"+ 添加角色"开始' : "没有匹配的记录"}
             </div>
           ) : (
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-2">
               {filteredCharacters.map((charName) => {
                 let charItems = groupedByCharacter.get(charName) || [];
                 if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
@@ -454,33 +454,29 @@ export default function WarehouseManager() {
                 }
                 if (editingCharacter === charName) return null;
                 return (
-                  <div key={charName} className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
-                    <div className="flex items-center justify-between px-4 py-2 bg-gray-50 border-b border-gray-200">
-                      <span className="font-semibold text-gray-800 text-sm">{charName}</span>
-                      <div className="flex gap-2">
+                  <div key={charName} className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <div className="flex items-center justify-between px-2.5 py-1.5 bg-gray-50 border-b border-gray-100">
+                      <span className="font-semibold text-gray-800 text-xs">{charName}</span>
+                      <div className="flex gap-1.5">
                         <button type="button" onClick={() => startEditing(charName, groupedByCharacter.get(charName) || [])}
-                          className="text-xs text-accent-500 hover:text-accent-700 font-medium">编辑</button>
+                          className="text-[10px] text-accent-500 hover:text-accent-700 font-medium">编辑</button>
                         <button type="button" onClick={() => handleDeleteCharacter(charName)}
-                          className="text-xs text-red-400 hover:text-red-600 font-medium">删除</button>
+                          className="text-[10px] text-red-400 hover:text-red-600 font-medium">删除</button>
                       </div>
                     </div>
                     {charItems.length === 0 ? (
-                      <div className="px-4 py-3 text-xs text-gray-400">暂无物资，点击编辑添加</div>
+                      <div className="px-2.5 py-2 text-[10px] text-gray-400">暂无物资</div>
                     ) : (
-                      <table className="w-full text-sm border-collapse">
-                        <tbody>
-                          {charItems.map((item) => (
-                            <tr key={item.id} className="border-b border-gray-50 last:border-b-0 hover:bg-gray-50">
-                              <td className="py-1.5 px-4">
-                                <span className="px-2 py-0.5 rounded-full text-xs bg-gray-100 text-gray-600">{item.itemType}</span>
-                              </td>
-                              <td className="py-1.5 px-2 text-gray-700 text-sm">{item.itemName}</td>
-                              <td className="py-1.5 px-2 text-right tabular-nums text-gray-700 text-sm">{item.quantity.toLocaleString()}</td>
-                              <td className="py-1.5 px-2 text-gray-500 text-xs">{item.unit}</td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
+                      <div className="divide-y divide-gray-50">
+                        {charItems.map((item) => (
+                          <div key={item.id} className="flex items-center px-2.5 py-1 text-xs hover:bg-gray-50">
+                            <span className="text-gray-400 w-8 flex-shrink-0">{item.itemType}</span>
+                            <span className="text-gray-700 flex-1 min-w-0 truncate">{item.itemName}</span>
+                            <span className="tabular-nums text-gray-700 ml-2">{item.quantity}</span>
+                            <span className="text-gray-400 ml-0.5 w-4">{item.unit}</span>
+                          </div>
+                        ))}
+                      </div>
                     )}
                   </div>
                 );
@@ -489,56 +485,50 @@ export default function WarehouseManager() {
           )}
         </div>
 
-        {/* Right: Stats summary with inline editing */}
-        <div>
-          <h2 className="text-sm font-semibold text-gray-500 mb-3">物资统计</h2>
+        {/* Right: Stats as compact list */}
+        <div className="flex-1 min-w-0">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">物资统计</h2>
           {statsData.length === 0 ? (
-            <div className="text-center text-slate-400 mt-8 text-sm">
-              {items.length === 0 ? "添加物资后这里会显示统计" : "没有找到匹配的物资"}
+            <div className="text-center text-slate-400 mt-6 text-xs">
+              {items.length === 0 ? "添加物资后显示统计" : "没有匹配的物资"}
             </div>
           ) : (
-            <div className="space-y-3">
+            <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden divide-y divide-gray-100">
               {statsData.map((stat) => {
                 const isExpanded = editingItemKey === stat.key;
                 return (
-                  <div key={stat.key} className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <div key={stat.key}>
                     <div
-                      className="flex items-center justify-between px-4 py-2.5 cursor-pointer hover:bg-gray-50 transition-colors"
+                      className="flex items-center px-3 py-1.5 cursor-pointer hover:bg-gray-50 transition-colors"
                       onClick={() => setEditingItemKey(isExpanded ? null : stat.key)}
                     >
-                      <div className="flex items-center gap-2">
-                        <span className="font-semibold text-gray-800 text-sm">{stat.itemName}</span>
-                        <span className="px-2 py-0.5 rounded-full text-xs bg-gray-100 text-gray-500">{stat.type}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="font-mono font-semibold text-gray-700 text-sm">{stat.total.toLocaleString()}</span>
-                        <span className="text-xs text-gray-500">{stat.unit}</span>
-                        <svg className={`w-4 h-4 text-gray-400 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </div>
+                      <span className="text-gray-400 text-[10px] w-8 flex-shrink-0">{stat.type}</span>
+                      <span className="text-gray-800 text-xs font-medium flex-1 min-w-0 truncate">{stat.itemName}</span>
+                      <span className="tabular-nums font-semibold text-gray-700 text-xs ml-2">{stat.total.toLocaleString()}</span>
+                      <span className="text-gray-400 text-[10px] ml-0.5 w-4">{stat.unit}</span>
+                      <svg className={`w-3 h-3 text-gray-300 ml-1.5 transition-transform flex-shrink-0 ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
                     </div>
                     {isExpanded && (
-                      <div className="border-t border-gray-100 px-4 py-2 space-y-1.5">
+                      <div className="bg-gray-50/50 px-3 py-1.5 space-y-1">
                         {stat.characters.map((ch) => (
-                          <div key={ch.itemId} className="flex items-center justify-between gap-2">
-                            <span className="text-xs text-gray-600 min-w-0 truncate">{ch.name}</span>
-                            <div className="flex items-center gap-1">
-                              <button type="button"
-                                onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - 1)}
-                                className="w-6 h-6 rounded bg-gray-100 text-gray-500 hover:bg-gray-200 text-xs font-bold flex items-center justify-center">
-                                -
-                              </button>
-                              <input type="number" value={ch.quantity}
-                                onChange={(e) => handleInlineQuantityChange(ch.itemId, Number(e.target.value) || 0)}
-                                className="w-16 text-center text-xs font-mono bg-white border border-gray-200 rounded px-1 py-0.5 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
-                              <button type="button"
-                                onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + 1)}
-                                className="w-6 h-6 rounded bg-gray-100 text-gray-500 hover:bg-gray-200 text-xs font-bold flex items-center justify-center">
-                                +
-                              </button>
-                              <span className="text-xs text-gray-400 ml-0.5">{stat.unit}</span>
-                            </div>
+                          <div key={ch.itemId} className="flex items-center gap-1.5">
+                            <span className="text-[11px] text-gray-500 min-w-0 truncate flex-1">{ch.name}</span>
+                            <button type="button"
+                              onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - 1)}
+                              className="w-5 h-5 rounded bg-gray-100 text-gray-500 hover:bg-gray-200 text-[10px] font-bold flex items-center justify-center flex-shrink-0">
+                              -
+                            </button>
+                            <input type="number" value={ch.quantity}
+                              onChange={(e) => handleInlineQuantityChange(ch.itemId, Number(e.target.value) || 0)}
+                              className="w-12 text-center text-[11px] font-mono bg-white border border-gray-200 rounded px-1 py-0.5 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
+                            <button type="button"
+                              onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + 1)}
+                              className="w-5 h-5 rounded bg-gray-100 text-gray-500 hover:bg-gray-200 text-[10px] font-bold flex items-center justify-center flex-shrink-0">
+                              +
+                            </button>
+                            <span className="text-[10px] text-gray-400">{stat.unit}</span>
                           </div>
                         ))}
                       </div>
