@@ -404,34 +404,72 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
     setItems((prev) => prev.map((i) => i.id === itemId ? { ...i, quantity: Math.max(0, newQty), slots: Math.ceil(Math.max(0, newQty)) } : i));
   }, []);
 
-  // --- Import/Export ---
-  const handleOpenExport = useCallback(() => {
-    const json = JSON.stringify({ items, charConfigs });
-    setTransferText(btoa(unescape(encodeURIComponent(json))));
+  // --- Import/Export (compact format with deflate compression) ---
+  const compressData = useCallback(async (data: string): Promise<string> => {
+    const encoder = new TextEncoder();
+    const stream = new Blob([encoder.encode(data)]).stream().pipeThrough(new CompressionStream("deflate"));
+    const compressed = await new Response(stream).arrayBuffer();
+    const bytes = new Uint8Array(compressed);
+    let binary = "";
+    for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+    return "Z:" + btoa(binary); // "Z:" prefix marks compressed format
+  }, []);
+  const decompressData = useCallback(async (data: string): Promise<string> => {
+    if (!data.startsWith("Z:")) {
+      // Legacy uncompressed base64 format
+      return decodeURIComponent(escape(atob(data)));
+    }
+    const binary = atob(data.slice(2));
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate"));
+    return new Response(stream).text();
+  }, []);
+  // Compact: strip id/materialImage, shorten keys, omit slots when == ceil(quantity)
+  const packItems = (arr: WarehouseItem[]) => arr.map((i) => {
+    const o: any = { c: i.characterName, t: i.itemType, n: i.itemName, q: i.quantity, u: i.unit };
+    if (i.slots !== Math.ceil(i.quantity)) o.s = i.slots;
+    return o;
+  });
+  const packConfigs = (arr: CharacterConfig[]) => arr.map((c) => ({ n: c.name, s: c.totalSlots }));
+  const unpackItems = (arr: any[]): Omit<WarehouseItem, "id">[] => arr.map((d) => ({
+    characterName: d.c || d.characterName, itemType: d.t || d.itemType, itemName: d.n || d.itemName,
+    quantity: d.q || d.quantity, unit: d.u || d.unit, slots: d.s ?? d.slots ?? Math.ceil(d.q || d.quantity),
+  }));
+  const unpackConfigs = (arr: any[]): CharacterConfig[] => arr.map((c) => ({
+    name: c.n || c.name, totalSlots: c.s || c.totalSlots,
+  }));
+
+  const handleOpenExport = useCallback(async () => {
+    const json = JSON.stringify({ i: packItems(items), c: packConfigs(charConfigs) });
+    setTransferText(await compressData(json));
     setTransferMode("export"); setShowTransfer(true);
-  }, [items, charConfigs]);
+  }, [items, charConfigs, compressData]);
   const handleOpenImport = useCallback(() => { setTransferText(""); setTransferMode("import"); setShowTransfer(true); }, []);
-  const handleImportConfirm = useCallback(() => {
+  const handleImportConfirm = useCallback(async () => {
     try {
-      const json = decodeURIComponent(escape(atob(transferText.trim())));
+      const json = await decompressData(transferText.trim());
       const parsed = JSON.parse(json);
-      const rawItems = Array.isArray(parsed) ? parsed : parsed.items;
-      const rawConfigs: CharacterConfig[] = Array.isArray(parsed) ? [] : (parsed.charConfigs || []);
+      // Support both compact (i/c keys) and legacy (items/charConfigs keys) formats
+      const rawItems = Array.isArray(parsed) ? parsed : (parsed.i || parsed.items);
+      const rawConfigs = Array.isArray(parsed) ? [] : (parsed.c || parsed.charConfigs || []);
       if (!Array.isArray(rawItems)) { alert("无效的数据格式"); return; }
-      const imported: WarehouseItem[] = rawItems
-        .filter((d: any) => d.characterName && d.itemName && d.itemType && d.quantity && d.unit)
-        .map((d: any) => ({ ...d, id: generateId(), slots: d.slots ?? Math.ceil(d.quantity) }));
+      const unpacked = unpackItems(rawItems);
+      const imported: WarehouseItem[] = unpacked
+        .filter((d) => d.characterName && d.itemName && d.itemType && d.quantity && d.unit)
+        .map((d) => ({ ...d, id: generateId() }));
       if (imported.length === 0) { alert("未找到有效的物资记录"); return; }
       setItems((prev) => [...prev, ...imported]);
-      if (rawConfigs.length > 0) {
+      const configs = unpackConfigs(rawConfigs);
+      if (configs.length > 0) {
         setCharConfigs((prev) => {
           const existing = new Set(prev.map((c) => c.name));
-          return [...prev, ...rawConfigs.filter((c: CharacterConfig) => !existing.has(c.name))];
+          return [...prev, ...configs.filter((c) => !existing.has(c.name))];
         });
       }
       setShowTransfer(false); setTransferText("");
     } catch { alert("数据解析失败，请确认粘贴的内容正确"); }
-  }, [transferText]);
+  }, [transferText, decompressData]);
   const handleCopyExport = useCallback(() => { navigator.clipboard.writeText(transferText).then(() => alert("已复制到剪贴板")); }, [transferText]);
 
   // Names already in edit rows (for picker highlighting)
