@@ -147,7 +147,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const [lookupSearch, setLookupSearch] = useState("");
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
 
-  useEffect(() => { saveWarehouseItems(items); }, [items]);
+  useEffect(() => { saveWarehouseItems(items.filter((i) => i.quantity > 0)); }, [items]);
   useEffect(() => { saveCharacterConfigs(charConfigs); }, [charConfigs]);
 
   const getCharTotalSlots = useCallback((charName: string) => {
