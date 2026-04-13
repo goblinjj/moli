@@ -672,6 +672,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
               <div key={mat.name} className="flex items-center gap-1.5 bg-white rounded px-2 py-1 border border-blue-100">
                 <img src={`/items/${mat.image}`} alt="" className="w-4 h-4 object-contain" />
                 <span className="text-[11px] text-gray-700">{mat.simplified !== mat.name ? mat.simplified : mat.name}</span>
+                <span className="text-[10px] font-mono text-gray-400">x{mat.quantity}</span>
               </div>
             ))}
           </div>
