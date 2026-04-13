@@ -57,6 +57,9 @@ export default function WarehouseManager() {
   // Inline quantity editing in stats
   const [editingItemKey, setEditingItemKey] = useState<string | null>(null);
 
+  // Expanded character card
+  const [expandedCharacter, setExpandedCharacter] = useState<string | null>(null);
+
   useEffect(() => {
     saveWarehouseItems(items);
   }, [items]);
@@ -105,8 +108,18 @@ export default function WarehouseManager() {
       const q = searchQuery.trim().toLowerCase();
       result = result.filter((i) => i.itemName.toLowerCase().includes(q));
     }
-    return result.sort((a, b) => a.type.localeCompare(b.type) || a.itemName.localeCompare(b.itemName));
+    return result.sort((a, b) => a.itemName.localeCompare(b.itemName));
   }, [items, filterType, searchQuery]);
+
+  // Stats grouped by type
+  const statsGroupedByType = useMemo(() => {
+    const map = new Map<ItemType, typeof statsData>();
+    for (const stat of statsData) {
+      if (!map.has(stat.type)) map.set(stat.type, []);
+      map.get(stat.type)!.push(stat);
+    }
+    return ITEM_TYPES.filter((t) => map.has(t)).map((t) => ({ type: t, items: map.get(t)! }));
+  }, [statsData]);
 
   // --- Character actions ---
   const handleAddCharacter = useCallback(() => {
@@ -434,95 +447,118 @@ export default function WarehouseManager() {
         </div>
       )}
 
-      {/* === Character cards === */}
+      {/* === Character tags === */}
       <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">角色仓库</h2>
       {filteredCharacters.length === 0 && editingCharacter === null ? (
-        <div className="text-center text-slate-400 py-4 text-xs">
+        <div className="text-center text-slate-400 py-3 text-xs">
           {items.length === 0 ? '点击"+ 添加角色"开始' : "没有匹配的记录"}
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1.5 mb-4">
+        <div className="flex flex-wrap gap-1 mb-2">
           {filteredCharacters.map((charName) => {
-            let charItems = groupedByCharacter.get(charName) || [];
-            if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
-            if (searchQuery.trim()) {
-              const q = searchQuery.trim().toLowerCase();
-              charItems = charItems.filter((i) => i.itemName.toLowerCase().includes(q));
-            }
             if (editingCharacter === charName) return null;
+            const charItemCount = (groupedByCharacter.get(charName) || []).length;
+            const isExpanded = expandedCharacter === charName;
             return (
-              <div key={charName} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
-                <div className="flex items-center justify-between px-2 py-1 bg-gray-50 border-b border-gray-100">
-                  <span className="font-semibold text-gray-800 text-[11px] truncate">{charName}</span>
-                  <div className="flex gap-1 flex-shrink-0 ml-1">
-                    <button type="button" onClick={() => startEditing(charName, groupedByCharacter.get(charName) || [])}
-                      className="text-[10px] text-accent-500 hover:text-accent-700">编辑</button>
-                    <button type="button" onClick={() => handleDeleteCharacter(charName)}
-                      className="text-[10px] text-red-400 hover:text-red-600">删</button>
-                  </div>
-                </div>
-                {charItems.length === 0 ? (
-                  <div className="px-2 py-1 text-[10px] text-gray-300">空</div>
-                ) : (
-                  <div>
-                    {charItems.map((item) => (
-                      <div key={item.id} className="flex items-baseline px-2 py-[2px] text-[11px] leading-tight hover:bg-gray-50">
-                        <span className="text-gray-700 flex-1 min-w-0 truncate">{item.itemName}</span>
-                        <span className="tabular-nums text-gray-600 ml-1 flex-shrink-0">{item.quantity}{item.unit}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <button key={charName} type="button"
+                onClick={() => setExpandedCharacter(isExpanded ? null : charName)}
+                className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium transition-colors ${
+                  isExpanded ? "bg-accent-500 text-white" : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50"
+                }`}>
+                <span>{charName}</span>
+                <span className={`text-[10px] ${isExpanded ? "text-white/70" : "text-gray-400"}`}>{charItemCount}</span>
+              </button>
             );
           })}
         </div>
       )}
 
-      {/* === Stats cards === */}
+      {/* Expanded character detail */}
+      {expandedCharacter && editingCharacter === null && (() => {
+        let charItems = groupedByCharacter.get(expandedCharacter) || [];
+        if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
+        if (searchQuery.trim()) {
+          const q = searchQuery.trim().toLowerCase();
+          charItems = charItems.filter((i) => i.itemName.toLowerCase().includes(q));
+        }
+        return (
+          <div className="bg-white border border-gray-200 rounded-md shadow-sm mb-4 overflow-hidden">
+            <div className="flex items-center justify-between px-2.5 py-1.5 bg-gray-50 border-b border-gray-100">
+              <span className="font-semibold text-gray-800 text-xs">{expandedCharacter}</span>
+              <div className="flex gap-2">
+                <button type="button" onClick={() => { startEditing(expandedCharacter, groupedByCharacter.get(expandedCharacter) || []); setExpandedCharacter(null); }}
+                  className="text-[10px] text-accent-500 hover:text-accent-700 font-medium">编辑</button>
+                <button type="button" onClick={() => handleDeleteCharacter(expandedCharacter)}
+                  className="text-[10px] text-red-400 hover:text-red-600 font-medium">删除角色</button>
+              </div>
+            </div>
+            {charItems.length === 0 ? (
+              <div className="px-2.5 py-2 text-[10px] text-gray-400">暂无物资，点击编辑添加</div>
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-4 px-2.5 py-1">
+                {charItems.map((item) => (
+                  <div key={item.id} className="flex items-baseline py-[1px] text-[11px] leading-tight">
+                    <span className="text-gray-700 min-w-0 truncate">{item.itemName}</span>
+                    <span className="tabular-nums text-gray-500 ml-auto pl-1 flex-shrink-0">{item.quantity}{item.unit}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })()}
+
+      {/* === Stats by category === */}
       <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">物资统计</h2>
-      {statsData.length === 0 ? (
-        <div className="text-center text-slate-400 py-4 text-xs">
+      {statsGroupedByType.length === 0 ? (
+        <div className="text-center text-slate-400 py-3 text-xs">
           {items.length === 0 ? "添加物资后显示统计" : "没有匹配的物资"}
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1.5">
-          {statsData.map((stat) => {
-            const isExpanded = editingItemKey === stat.key;
-            return (
-              <div key={stat.key} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
-                <div
-                  className="flex items-baseline justify-between px-2 py-1 cursor-pointer hover:bg-gray-50 transition-colors"
-                  onClick={() => setEditingItemKey(isExpanded ? null : stat.key)}
-                >
-                  <span className="text-gray-800 text-[11px] font-medium min-w-0 truncate">{stat.itemName}</span>
-                  <span className="tabular-nums font-semibold text-gray-600 text-[11px] ml-1 flex-shrink-0">{stat.total}{stat.unit}</span>
-                </div>
-                {isExpanded && (
-                  <div className="border-t border-gray-100 px-2 py-1 space-y-0.5 bg-gray-50/50">
-                    {stat.characters.map((ch) => (
-                      <div key={ch.itemId} className="flex items-center gap-1">
-                        <span className="text-[10px] text-gray-500 min-w-0 truncate flex-1">{ch.name}</span>
-                        <button type="button"
-                          onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - 1)}
-                          className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">
-                          -
-                        </button>
-                        <input type="number" value={ch.quantity}
-                          onChange={(e) => handleInlineQuantityChange(ch.itemId, Number(e.target.value) || 0)}
-                          className="w-10 text-center text-[10px] font-mono bg-white border border-gray-200 rounded px-0.5 py-0 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
-                        <button type="button"
-                          onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + 1)}
-                          className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">
-                          +
-                        </button>
+        <div className="space-y-3">
+          {statsGroupedByType.map(({ type, items: typeItems }) => (
+            <div key={type}>
+              <h3 className="text-[11px] font-semibold text-gray-500 mb-1">{type}</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1.5">
+                {typeItems.map((stat) => {
+                  const isExpanded = editingItemKey === stat.key;
+                  return (
+                    <div key={stat.key} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
+                      <div
+                        className="flex items-baseline justify-between px-2 py-1 cursor-pointer hover:bg-gray-50 transition-colors"
+                        onClick={() => setEditingItemKey(isExpanded ? null : stat.key)}
+                      >
+                        <span className="text-gray-800 text-[11px] font-medium min-w-0 truncate">{stat.itemName}</span>
+                        <span className="tabular-nums font-semibold text-gray-600 text-[11px] ml-1 flex-shrink-0">{stat.total}{stat.unit}</span>
                       </div>
-                    ))}
-                  </div>
-                )}
+                      {isExpanded && (
+                        <div className="border-t border-gray-100 px-2 py-1 space-y-0.5 bg-gray-50/50">
+                          {stat.characters.map((ch) => (
+                            <div key={ch.itemId} className="flex items-center gap-1">
+                              <span className="text-[10px] text-gray-500 min-w-0 truncate flex-1">{ch.name}</span>
+                              <button type="button"
+                                onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - 1)}
+                                className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">
+                                -
+                              </button>
+                              <input type="number" value={ch.quantity}
+                                onChange={(e) => handleInlineQuantityChange(ch.itemId, Number(e.target.value) || 0)}
+                                className="w-10 text-center text-[10px] font-mono bg-white border border-gray-200 rounded px-0.5 py-0 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
+                              <button type="button"
+                                onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + 1)}
+                                className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">
+                                +
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       )}
     </div>
