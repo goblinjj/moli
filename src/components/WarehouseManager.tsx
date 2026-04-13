@@ -132,7 +132,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const [transferMode, setTransferMode] = useState<"export" | "import">("export");
   const [confirmAction, setConfirmAction] = useState<{ message: string; action: () => void } | null>(null);
   const [editingItemKey, setEditingItemKey] = useState<string | null>(null);
-  const [expandedCharacter, setExpandedCharacter] = useState<string | null>(null);
+  const [expandedCharacters, setExpandedCharacters] = useState<Set<string>>(new Set());
 
   // Material picker state
   const [showMaterialPicker, setShowMaterialPicker] = useState(false);
@@ -246,11 +246,11 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         setItems((prev) => prev.filter((i) => i.characterName !== charName));
         setCharConfigs((prev) => prev.filter((c) => c.name !== charName));
         if (editingCharacter === charName) { setEditingCharacter(null); setEditRows([]); }
-        if (expandedCharacter === charName) setExpandedCharacter(null);
+        setExpandedCharacters((prev) => { const next = new Set(prev); next.delete(charName); return next; });
         setConfirmAction(null);
       },
     });
-  }, [editingCharacter, expandedCharacter]);
+  }, [editingCharacter]);
 
   // --- Batch editing ---
   const lastRowDefaults = (rows: EditRow[]): { type: ItemType; unit: ItemUnit } => {
@@ -571,9 +571,6 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
               <div key={mat.name} className="flex items-center gap-1.5 bg-white rounded px-2 py-1 border border-blue-100">
                 <img src={`/items/${mat.image}`} alt="" className="w-4 h-4 object-contain" />
                 <span className="text-[11px] text-gray-700">{mat.simplified !== mat.name ? mat.simplified : mat.name}</span>
-                <span className={`text-[11px] font-mono font-semibold ${mat.totalStock >= mat.quantity ? "text-green-600" : "text-red-500"}`}>
-                  {mat.totalStock}/{mat.quantity}
-                </span>
               </div>
             ))}
           </div>
@@ -758,9 +755,9 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
             if (editingCharacter === charName) return null;
             const used = getCharUsedSlots(charName);
             const total = getCharTotalSlots(charName);
-            const isExpanded = expandedCharacter === charName;
+            const isExpanded = expandedCharacters.has(charName);
             return (
-              <button key={charName} type="button" onClick={() => setExpandedCharacter(isExpanded ? null : charName)}
+              <button key={charName} type="button" onClick={() => setExpandedCharacters((prev) => { const next = new Set(prev); if (next.has(charName)) next.delete(charName); else next.add(charName); return next; })}
                 className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium transition-colors ${
                   isExpanded ? "bg-accent-500 text-white" : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50"
                 }`}>
@@ -772,9 +769,9 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         </div>
       )}
 
-      {/* Expanded character detail */}
-      {expandedCharacter && editingCharacter === null && (() => {
-        let charItems = groupedByCharacter.get(expandedCharacter) || [];
+      {/* Expanded character details */}
+      {expandedCharacters.size > 0 && editingCharacter === null && Array.from(expandedCharacters).filter((cn) => filteredCharacters.includes(cn)).map((charName) => {
+        let charItems = groupedByCharacter.get(charName) || [];
         if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
         if (recipeMaterialNames) charItems = charItems.filter((i) => itemMatchesRecipe(i.itemName));
         if (searchQuery.trim()) {
@@ -784,19 +781,19 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
             return i.itemName.toLowerCase().includes(q) || s.includes(q);
           });
         }
-        const used = getCharUsedSlots(expandedCharacter);
-        const total = getCharTotalSlots(expandedCharacter);
+        const used = getCharUsedSlots(charName);
+        const total = getCharTotalSlots(charName);
         return (
-          <div className="bg-white border border-gray-200 rounded-md shadow-sm mb-4 overflow-hidden">
+          <div key={charName} className="bg-white border border-gray-200 rounded-md shadow-sm mb-4 overflow-hidden">
             <div className="flex items-center justify-between px-2.5 py-1.5 bg-gray-50 border-b border-gray-100">
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-gray-800 text-xs">{expandedCharacter}</span>
+                <span className="font-semibold text-gray-800 text-xs">{charName}</span>
                 <span className={`text-[10px] font-mono ${used >= total ? "text-red-400" : "text-gray-400"}`}>{used}/{total}格</span>
               </div>
               <div className="flex gap-2">
-                <button type="button" onClick={() => { startEditing(expandedCharacter, groupedByCharacter.get(expandedCharacter) || []); setExpandedCharacter(null); }}
+                <button type="button" onClick={() => { startEditing(charName, groupedByCharacter.get(charName) || []); setExpandedCharacters((prev) => { const next = new Set(prev); next.delete(charName); return next; }); }}
                   className="text-[10px] text-accent-500 hover:text-accent-700 font-medium">编辑</button>
-                <button type="button" onClick={() => handleDeleteCharacter(expandedCharacter)}
+                <button type="button" onClick={() => handleDeleteCharacter(charName)}
                   className="text-[10px] text-red-400 hover:text-red-600 font-medium">删除角色</button>
               </div>
             </div>
@@ -818,7 +815,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
             )}
           </div>
         );
-      })()}
+      })}
 
       {/* Stats by category */}
       <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">物资统计</h2>
