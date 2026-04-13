@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import type { WarehouseItem, ItemType, ItemUnit, CharacterConfig } from "../lib/types";
+import type { Recipe, WarehouseItem, ItemType, ItemUnit, CharacterConfig } from "../lib/types";
 import { loadWarehouseItems, saveWarehouseItems, loadCharacterConfigs, saveCharacterConfigs } from "../lib/storage";
 
 const ITEM_TYPES: ItemType[] = ["食材", "木材", "花", "矿", "装备", "其他"];
@@ -11,6 +11,11 @@ function generateId(): string {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 }
 
+interface MaterialInfo {
+  name: string;
+  image: string;
+}
+
 interface EditRow {
   id: string;
   itemType: ItemType;
@@ -18,6 +23,11 @@ interface EditRow {
   quantity: number;
   unit: ItemUnit;
   slots: number;
+  materialImage?: string;
+}
+
+interface WarehouseManagerProps {
+  recipes: Recipe[];
 }
 
 // Confirm dialog component
@@ -35,9 +45,26 @@ function ConfirmDialog({ message, onConfirm, onCancel }: { message: string; onCo
   );
 }
 
-export default function WarehouseManager() {
+export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const [items, setItems] = useState<WarehouseItem[]>(() => loadWarehouseItems());
   const [charConfigs, setCharConfigs] = useState<CharacterConfig[]>(() => loadCharacterConfigs());
+
+  // Build material database from recipes
+  const materialDb = useMemo(() => {
+    const map = new Map<string, MaterialInfo>();
+    for (const r of recipes) {
+      for (const m of r.materials) {
+        if (!map.has(m.name)) {
+          map.set(m.name, { name: m.name, image: m.image });
+        }
+      }
+    }
+    return map;
+  }, [recipes]);
+
+  const allMaterialNames = useMemo(() => {
+    return Array.from(materialDb.keys()).sort();
+  }, [materialDb]);
   const [filterType, setFilterType] = useState<ItemType | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -84,9 +111,12 @@ export default function WarehouseManager() {
     return Array.from(new Set(items.map((i) => i.characterName))).sort();
   }, [items]);
 
+  // Merge material DB names + user-added names for autocomplete
   const itemNames = useMemo(() => {
-    return Array.from(new Set(items.map((i) => i.itemName))).sort();
-  }, [items]);
+    const names = new Set(allMaterialNames);
+    for (const i of items) names.add(i.itemName);
+    return Array.from(names).sort();
+  }, [items, allMaterialNames]);
 
   // Items grouped by character
   const groupedByCharacter = useMemo(() => {
@@ -182,6 +212,7 @@ export default function WarehouseManager() {
       quantity: i.quantity,
       unit: i.unit,
       slots: i.slots,
+      materialImage: i.materialImage,
     }));
     const defaults = lastRowDefaults(rows);
     rows.push({ id: generateId(), itemType: defaults.type, itemName: "", quantity: 1, unit: defaults.unit, slots: 1 });
@@ -192,9 +223,13 @@ export default function WarehouseManager() {
     setEditRows((prev) => {
       const next = [...prev];
       next[idx] = { ...next[idx], [field]: value };
-      // Auto-update slots when quantity changes (only if slots wasn't manually set differently)
       if (field === "quantity") {
         next[idx] = { ...next[idx], slots: Math.ceil(Number(value) || 0) };
+      }
+      // Auto-fill materialImage when name matches a known material
+      if (field === "itemName") {
+        const mat = materialDb.get(String(value));
+        next[idx] = { ...next[idx], materialImage: mat?.image };
       }
       if (idx === next.length - 1 && next[idx].itemName.trim()) {
         const d = lastRowDefaults(next);
@@ -202,7 +237,7 @@ export default function WarehouseManager() {
       }
       return next;
     });
-  }, []);
+  }, [materialDb]);
 
   const handleDeleteRow = useCallback((idx: number) => {
     setConfirmAction({
@@ -235,6 +270,7 @@ export default function WarehouseManager() {
         quantity: r.quantity,
         unit: r.unit,
         slots: r.slots,
+        materialImage: r.materialImage || materialDb.get(r.itemName.trim())?.image,
       }));
       return [...others, ...newItems];
     });
@@ -448,6 +484,7 @@ export default function WarehouseManager() {
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="text-left text-gray-500 text-xs border-b border-gray-200">
+                  <th className="py-2 px-1 font-medium w-7"></th>
                   <th className="py-2 px-2 font-medium w-28">类型</th>
                   <th className="py-2 px-2 font-medium">名称</th>
                   <th className="py-2 px-2 font-medium w-24 text-right">数量</th>
@@ -459,6 +496,11 @@ export default function WarehouseManager() {
               <tbody>
                 {editRows.map((row, idx) => (
                   <tr key={row.id} className="border-b border-gray-50">
+                    <td className="py-1.5 px-1 w-7">
+                      {(row.materialImage || materialDb.get(row.itemName)?.image) && (
+                        <img src={`/items/${row.materialImage || materialDb.get(row.itemName)?.image}`} alt="" className="w-5 h-5 object-contain" />
+                      )}
+                    </td>
                     <td className="py-1.5 px-2">
                       <select value={row.itemType} onChange={(e) => handleRowChange(idx, "itemType", e.target.value)}
                         className={selectCls + " w-full text-xs py-1"}>
@@ -562,12 +604,16 @@ export default function WarehouseManager() {
               <div className="px-2.5 py-2 text-[10px] text-gray-400">暂无物资，点击编辑添加</div>
             ) : (
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-4 px-2.5 py-1">
-                {charItems.map((item) => (
-                  <div key={item.id} className="flex items-baseline py-[1px] text-[11px] leading-tight">
-                    <span className="text-gray-700 min-w-0 truncate">{item.itemName}</span>
-                    <span className="tabular-nums text-gray-500 ml-auto pl-1 flex-shrink-0">{item.quantity}{item.unit}</span>
-                  </div>
-                ))}
+                {charItems.map((item) => {
+                  const img = item.materialImage || materialDb.get(item.itemName)?.image;
+                  return (
+                    <div key={item.id} className="flex items-center py-[1px] text-[11px] leading-tight gap-1">
+                      {img && <img src={`/items/${img}`} alt="" className="w-4 h-4 object-contain flex-shrink-0" />}
+                      <span className="text-gray-700 min-w-0 truncate">{item.itemName}</span>
+                      <span className="tabular-nums text-gray-500 ml-auto pl-1 flex-shrink-0">{item.quantity}{item.unit}</span>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -591,11 +637,14 @@ export default function WarehouseManager() {
                   return (
                     <div key={stat.key} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
                       <div
-                        className="flex items-baseline justify-between px-2 py-1 cursor-pointer hover:bg-gray-50 transition-colors"
+                        className="flex items-center justify-between px-2 py-1 cursor-pointer hover:bg-gray-50 transition-colors gap-1"
                         onClick={() => setEditingItemKey(isExpanded ? null : stat.key)}
                       >
+                        {materialDb.get(stat.itemName)?.image && (
+                          <img src={`/items/${materialDb.get(stat.itemName)!.image}`} alt="" className="w-4 h-4 object-contain flex-shrink-0" />
+                        )}
                         <span className="text-gray-800 text-[11px] font-medium min-w-0 truncate">{stat.itemName}</span>
-                        <span className="tabular-nums font-semibold text-gray-600 text-[11px] ml-1 flex-shrink-0">{stat.total}{stat.unit}</span>
+                        <span className="tabular-nums font-semibold text-gray-600 text-[11px] ml-auto flex-shrink-0">{stat.total}{stat.unit}</span>
                       </div>
                       {isExpanded && (
                         <div className="border-t border-gray-100 px-2 py-1 space-y-0.5 bg-gray-50/50">

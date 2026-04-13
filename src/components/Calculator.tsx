@@ -359,7 +359,7 @@ export default function Calculator({ recipes, gems, monsterIslands }: Calculator
           </nav>
           <main className="flex-1 overflow-y-auto p-5 lg:p-6">
             {activeToolTab === "supplyPricing" && <SupplyPricing recipes={recipes} />}
-            {activeToolTab === "warehouse" && <WarehouseManager />}
+            {activeToolTab === "warehouse" && <WarehouseManager recipes={recipes} />}
           </main>
         </>
       )}

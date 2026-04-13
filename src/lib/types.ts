@@ -110,6 +110,7 @@ export interface WarehouseItem {
   quantity: number;
   unit: ItemUnit;
   slots: number;
+  materialImage?: string;
 }
 
 export interface CharacterConfig {
