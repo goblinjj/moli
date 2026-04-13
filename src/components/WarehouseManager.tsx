@@ -434,112 +434,97 @@ export default function WarehouseManager() {
         </div>
       )}
 
-      {/* === Unified view: Character cards + Stats === */}
-      <div className="flex flex-col lg:flex-row gap-4">
-        {/* Left: Character cards as compact grid */}
-        <div className="lg:w-1/2 xl:w-2/5 flex-shrink-0">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">角色仓库</h2>
-          {filteredCharacters.length === 0 && editingCharacter === null ? (
-            <div className="text-center text-slate-400 mt-6 text-xs">
-              {items.length === 0 ? '点击"+ 添加角色"开始' : "没有匹配的记录"}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-2">
-              {filteredCharacters.map((charName) => {
-                let charItems = groupedByCharacter.get(charName) || [];
-                if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
-                if (searchQuery.trim()) {
-                  const q = searchQuery.trim().toLowerCase();
-                  charItems = charItems.filter((i) => i.itemName.toLowerCase().includes(q));
-                }
-                if (editingCharacter === charName) return null;
-                return (
-                  <div key={charName} className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-                    <div className="flex items-center justify-between px-2.5 py-1.5 bg-gray-50 border-b border-gray-100">
-                      <span className="font-semibold text-gray-800 text-xs">{charName}</span>
-                      <div className="flex gap-1.5">
-                        <button type="button" onClick={() => startEditing(charName, groupedByCharacter.get(charName) || [])}
-                          className="text-[10px] text-accent-500 hover:text-accent-700 font-medium">编辑</button>
-                        <button type="button" onClick={() => handleDeleteCharacter(charName)}
-                          className="text-[10px] text-red-400 hover:text-red-600 font-medium">删除</button>
-                      </div>
-                    </div>
-                    {charItems.length === 0 ? (
-                      <div className="px-2.5 py-2 text-[10px] text-gray-400">暂无物资</div>
-                    ) : (
-                      <div className="divide-y divide-gray-50">
-                        {charItems.map((item) => (
-                          <div key={item.id} className="flex items-center px-2.5 py-1 text-xs hover:bg-gray-50">
-                            <span className="text-gray-400 w-8 flex-shrink-0">{item.itemType}</span>
-                            <span className="text-gray-700 flex-1 min-w-0 truncate">{item.itemName}</span>
-                            <span className="tabular-nums text-gray-700 ml-2">{item.quantity}</span>
-                            <span className="text-gray-400 ml-0.5 w-4">{item.unit}</span>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          )}
+      {/* === Character cards === */}
+      <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">角色仓库</h2>
+      {filteredCharacters.length === 0 && editingCharacter === null ? (
+        <div className="text-center text-slate-400 py-4 text-xs">
+          {items.length === 0 ? '点击"+ 添加角色"开始' : "没有匹配的记录"}
         </div>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1.5 mb-4">
+          {filteredCharacters.map((charName) => {
+            let charItems = groupedByCharacter.get(charName) || [];
+            if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
+            if (searchQuery.trim()) {
+              const q = searchQuery.trim().toLowerCase();
+              charItems = charItems.filter((i) => i.itemName.toLowerCase().includes(q));
+            }
+            if (editingCharacter === charName) return null;
+            return (
+              <div key={charName} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
+                <div className="flex items-center justify-between px-2 py-1 bg-gray-50 border-b border-gray-100">
+                  <span className="font-semibold text-gray-800 text-[11px] truncate">{charName}</span>
+                  <div className="flex gap-1 flex-shrink-0 ml-1">
+                    <button type="button" onClick={() => startEditing(charName, groupedByCharacter.get(charName) || [])}
+                      className="text-[10px] text-accent-500 hover:text-accent-700">编辑</button>
+                    <button type="button" onClick={() => handleDeleteCharacter(charName)}
+                      className="text-[10px] text-red-400 hover:text-red-600">删</button>
+                  </div>
+                </div>
+                {charItems.length === 0 ? (
+                  <div className="px-2 py-1 text-[10px] text-gray-300">空</div>
+                ) : (
+                  <div>
+                    {charItems.map((item) => (
+                      <div key={item.id} className="flex items-baseline px-2 py-[2px] text-[11px] leading-tight hover:bg-gray-50">
+                        <span className="text-gray-700 flex-1 min-w-0 truncate">{item.itemName}</span>
+                        <span className="tabular-nums text-gray-600 ml-1 flex-shrink-0">{item.quantity}{item.unit}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
 
-        {/* Right: Stats as compact list */}
-        <div className="flex-1 min-w-0">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">物资统计</h2>
-          {statsData.length === 0 ? (
-            <div className="text-center text-slate-400 mt-6 text-xs">
-              {items.length === 0 ? "添加物资后显示统计" : "没有匹配的物资"}
-            </div>
-          ) : (
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden divide-y divide-gray-100">
-              {statsData.map((stat) => {
-                const isExpanded = editingItemKey === stat.key;
-                return (
-                  <div key={stat.key}>
-                    <div
-                      className="flex items-center px-3 py-1.5 cursor-pointer hover:bg-gray-50 transition-colors"
-                      onClick={() => setEditingItemKey(isExpanded ? null : stat.key)}
-                    >
-                      <span className="text-gray-400 text-[10px] w-8 flex-shrink-0">{stat.type}</span>
-                      <span className="text-gray-800 text-xs font-medium flex-1 min-w-0 truncate">{stat.itemName}</span>
-                      <span className="tabular-nums font-semibold text-gray-700 text-xs ml-2">{stat.total.toLocaleString()}</span>
-                      <span className="text-gray-400 text-[10px] ml-0.5 w-4">{stat.unit}</span>
-                      <svg className={`w-3 h-3 text-gray-300 ml-1.5 transition-transform flex-shrink-0 ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </div>
-                    {isExpanded && (
-                      <div className="bg-gray-50/50 px-3 py-1.5 space-y-1">
-                        {stat.characters.map((ch) => (
-                          <div key={ch.itemId} className="flex items-center gap-1.5">
-                            <span className="text-[11px] text-gray-500 min-w-0 truncate flex-1">{ch.name}</span>
-                            <button type="button"
-                              onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - 1)}
-                              className="w-5 h-5 rounded bg-gray-100 text-gray-500 hover:bg-gray-200 text-[10px] font-bold flex items-center justify-center flex-shrink-0">
-                              -
-                            </button>
-                            <input type="number" value={ch.quantity}
-                              onChange={(e) => handleInlineQuantityChange(ch.itemId, Number(e.target.value) || 0)}
-                              className="w-12 text-center text-[11px] font-mono bg-white border border-gray-200 rounded px-1 py-0.5 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
-                            <button type="button"
-                              onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + 1)}
-                              className="w-5 h-5 rounded bg-gray-100 text-gray-500 hover:bg-gray-200 text-[10px] font-bold flex items-center justify-center flex-shrink-0">
-                              +
-                            </button>
-                            <span className="text-[10px] text-gray-400">{stat.unit}</span>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          )}
+      {/* === Stats cards === */}
+      <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">物资统计</h2>
+      {statsData.length === 0 ? (
+        <div className="text-center text-slate-400 py-4 text-xs">
+          {items.length === 0 ? "添加物资后显示统计" : "没有匹配的物资"}
         </div>
-      </div>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1.5">
+          {statsData.map((stat) => {
+            const isExpanded = editingItemKey === stat.key;
+            return (
+              <div key={stat.key} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
+                <div
+                  className="flex items-baseline justify-between px-2 py-1 cursor-pointer hover:bg-gray-50 transition-colors"
+                  onClick={() => setEditingItemKey(isExpanded ? null : stat.key)}
+                >
+                  <span className="text-gray-800 text-[11px] font-medium min-w-0 truncate">{stat.itemName}</span>
+                  <span className="tabular-nums font-semibold text-gray-600 text-[11px] ml-1 flex-shrink-0">{stat.total}{stat.unit}</span>
+                </div>
+                {isExpanded && (
+                  <div className="border-t border-gray-100 px-2 py-1 space-y-0.5 bg-gray-50/50">
+                    {stat.characters.map((ch) => (
+                      <div key={ch.itemId} className="flex items-center gap-1">
+                        <span className="text-[10px] text-gray-500 min-w-0 truncate flex-1">{ch.name}</span>
+                        <button type="button"
+                          onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - 1)}
+                          className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">
+                          -
+                        </button>
+                        <input type="number" value={ch.quantity}
+                          onChange={(e) => handleInlineQuantityChange(ch.itemId, Number(e.target.value) || 0)}
+                          className="w-10 text-center text-[10px] font-mono bg-white border border-gray-200 rounded px-0.5 py-0 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
+                        <button type="button"
+                          onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + 1)}
+                          className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">
+                          +
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
