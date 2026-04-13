@@ -134,11 +134,11 @@ export default function WarehouseManager() {
   }, [editingCharacter]);
 
   // --- Batch editing ---
-  const lastRowType = (rows: EditRow[]): ItemType => {
+  const lastRowDefaults = (rows: EditRow[]): { type: ItemType; unit: ItemUnit } => {
     for (let i = rows.length - 1; i >= 0; i--) {
-      if (rows[i].itemName.trim()) return rows[i].itemType;
+      if (rows[i].itemName.trim()) return { type: rows[i].itemType, unit: rows[i].unit };
     }
-    return "食材";
+    return { type: "食材", unit: DEFAULT_UNIT };
   };
 
   const startEditing = useCallback((charName: string, existingItems: WarehouseItem[]) => {
@@ -150,8 +150,8 @@ export default function WarehouseManager() {
       quantity: i.quantity,
       unit: i.unit,
     }));
-    const defaultType = rows.length > 0 ? rows[rows.length - 1].itemType : "食材";
-    rows.push({ id: generateId(), itemType: defaultType, itemName: "", quantity: 1, unit: DEFAULT_UNIT });
+    const defaults = lastRowDefaults(rows);
+    rows.push({ id: generateId(), itemType: defaults.type, itemName: "", quantity: 1, unit: defaults.unit });
     setEditRows(rows);
   }, []);
 
@@ -160,7 +160,8 @@ export default function WarehouseManager() {
       const next = [...prev];
       next[idx] = { ...next[idx], [field]: value };
       if (idx === next.length - 1 && next[idx].itemName.trim()) {
-        next.push({ id: generateId(), itemType: lastRowType(next), itemName: "", quantity: 1, unit: DEFAULT_UNIT });
+        const d = lastRowDefaults(next);
+        next.push({ id: generateId(), itemType: d.type, itemName: "", quantity: 1, unit: d.unit });
       }
       return next;
     });
@@ -173,7 +174,8 @@ export default function WarehouseManager() {
         setEditRows((prev) => {
           const next = prev.filter((_, i) => i !== idx);
           if (next.length === 0 || next[next.length - 1].itemName.trim()) {
-            next.push({ id: generateId(), itemType: lastRowType(next), itemName: "", quantity: 1, unit: DEFAULT_UNIT });
+            const d = lastRowDefaults(next);
+            next.push({ id: generateId(), itemType: d.type, itemName: "", quantity: 1, unit: d.unit });
           }
           return next;
         });
