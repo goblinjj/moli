@@ -109,4 +109,10 @@ export interface WarehouseItem {
   itemName: string;
   quantity: number;
   unit: ItemUnit;
+  slots: number;
+}
+
+export interface CharacterConfig {
+  name: string;
+  totalSlots: number;
 }

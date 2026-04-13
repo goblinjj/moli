@@ -1,10 +1,11 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import type { WarehouseItem, ItemType, ItemUnit } from "../lib/types";
-import { loadWarehouseItems, saveWarehouseItems } from "../lib/storage";
+import type { WarehouseItem, ItemType, ItemUnit, CharacterConfig } from "../lib/types";
+import { loadWarehouseItems, saveWarehouseItems, loadCharacterConfigs, saveCharacterConfigs } from "../lib/storage";
 
 const ITEM_TYPES: ItemType[] = ["食材", "木材", "花", "矿", "装备", "其他"];
 const ITEM_UNITS: ItemUnit[] = ["个", "组", "箱"];
 const DEFAULT_UNIT: ItemUnit = "箱";
+const DEFAULT_TOTAL_SLOTS = 40;
 
 function generateId(): string {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
@@ -16,6 +17,7 @@ interface EditRow {
   itemName: string;
   quantity: number;
   unit: ItemUnit;
+  slots: number;
 }
 
 // Confirm dialog component
@@ -35,6 +37,7 @@ function ConfirmDialog({ message, onConfirm, onCancel }: { message: string; onCo
 
 export default function WarehouseManager() {
   const [items, setItems] = useState<WarehouseItem[]>(() => loadWarehouseItems());
+  const [charConfigs, setCharConfigs] = useState<CharacterConfig[]>(() => loadCharacterConfigs());
   const [filterType, setFilterType] = useState<ItemType | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -45,6 +48,7 @@ export default function WarehouseManager() {
   // Editing state
   const [editingCharacter, setEditingCharacter] = useState<string | null>(null);
   const [editRows, setEditRows] = useState<EditRow[]>([]);
+  const [editTotalSlots, setEditTotalSlots] = useState(DEFAULT_TOTAL_SLOTS);
 
   // Import/Export modal
   const [showTransfer, setShowTransfer] = useState(false);
@@ -62,6 +66,18 @@ export default function WarehouseManager() {
 
   useEffect(() => {
     saveWarehouseItems(items);
+  }, [items]);
+
+  useEffect(() => {
+    saveCharacterConfigs(charConfigs);
+  }, [charConfigs]);
+
+  const getCharTotalSlots = useCallback((charName: string) => {
+    return charConfigs.find((c) => c.name === charName)?.totalSlots ?? DEFAULT_TOTAL_SLOTS;
+  }, [charConfigs]);
+
+  const getCharUsedSlots = useCallback((charName: string) => {
+    return items.filter((i) => i.characterName === charName).reduce((sum, i) => sum + i.slots, 0);
   }, [items]);
 
   const characterNames = useMemo(() => {
@@ -140,7 +156,9 @@ export default function WarehouseManager() {
       message: `确认删除角色「${charName}」及其所有物资记录？`,
       action: () => {
         setItems((prev) => prev.filter((i) => i.characterName !== charName));
+        setCharConfigs((prev) => prev.filter((c) => c.name !== charName));
         if (editingCharacter === charName) { setEditingCharacter(null); setEditRows([]); }
+        if (expandedCharacter === charName) setExpandedCharacter(null);
         setConfirmAction(null);
       },
     });
@@ -156,25 +174,31 @@ export default function WarehouseManager() {
 
   const startEditing = useCallback((charName: string, existingItems: WarehouseItem[]) => {
     setEditingCharacter(charName);
+    setEditTotalSlots(getCharTotalSlots(charName));
     const rows: EditRow[] = existingItems.map((i) => ({
       id: i.id,
       itemType: i.itemType,
       itemName: i.itemName,
       quantity: i.quantity,
       unit: i.unit,
+      slots: i.slots,
     }));
     const defaults = lastRowDefaults(rows);
-    rows.push({ id: generateId(), itemType: defaults.type, itemName: "", quantity: 1, unit: defaults.unit });
+    rows.push({ id: generateId(), itemType: defaults.type, itemName: "", quantity: 1, unit: defaults.unit, slots: 1 });
     setEditRows(rows);
-  }, []);
+  }, [getCharTotalSlots]);
 
   const handleRowChange = useCallback((idx: number, field: keyof EditRow, value: any) => {
     setEditRows((prev) => {
       const next = [...prev];
       next[idx] = { ...next[idx], [field]: value };
+      // Auto-update slots when quantity changes (only if slots wasn't manually set differently)
+      if (field === "quantity") {
+        next[idx] = { ...next[idx], slots: Math.ceil(Number(value) || 0) };
+      }
       if (idx === next.length - 1 && next[idx].itemName.trim()) {
         const d = lastRowDefaults(next);
-        next.push({ id: generateId(), itemType: d.type, itemName: "", quantity: 1, unit: d.unit });
+        next.push({ id: generateId(), itemType: d.type, itemName: "", quantity: 1, unit: d.unit, slots: 1 });
       }
       return next;
     });
@@ -188,7 +212,7 @@ export default function WarehouseManager() {
           const next = prev.filter((_, i) => i !== idx);
           if (next.length === 0 || next[next.length - 1].itemName.trim()) {
             const d = lastRowDefaults(next);
-            next.push({ id: generateId(), itemType: d.type, itemName: "", quantity: 1, unit: d.unit });
+            next.push({ id: generateId(), itemType: d.type, itemName: "", quantity: 1, unit: d.unit, slots: 1 });
           }
           return next;
         });
@@ -210,8 +234,14 @@ export default function WarehouseManager() {
         itemName: r.itemName.trim(),
         quantity: r.quantity,
         unit: r.unit,
+        slots: r.slots,
       }));
       return [...others, ...newItems];
+    });
+    // Save character slot config
+    setCharConfigs((prev) => {
+      const others = prev.filter((c) => c.name !== charName);
+      return [...others, { name: charName, totalSlots: editTotalSlots }];
     });
     setEditingCharacter(null);
     setEditRows([]);
@@ -229,12 +259,12 @@ export default function WarehouseManager() {
 
   // --- Import/Export via base64 ---
   const handleOpenExport = useCallback(() => {
-    const json = JSON.stringify(items);
+    const json = JSON.stringify({ items, charConfigs });
     const b64 = btoa(unescape(encodeURIComponent(json)));
     setTransferText(b64);
     setTransferMode("export");
     setShowTransfer(true);
-  }, [items]);
+  }, [items, charConfigs]);
 
   const handleOpenImport = useCallback(() => {
     setTransferText("");
@@ -245,13 +275,22 @@ export default function WarehouseManager() {
   const handleImportConfirm = useCallback(() => {
     try {
       const json = decodeURIComponent(escape(atob(transferText.trim())));
-      const data = JSON.parse(json);
-      if (!Array.isArray(data)) { alert("无效的数据格式"); return; }
-      const imported: WarehouseItem[] = data
+      const parsed = JSON.parse(json);
+      // Support both old format (array) and new format ({items, charConfigs})
+      const rawItems = Array.isArray(parsed) ? parsed : parsed.items;
+      const rawConfigs: CharacterConfig[] = Array.isArray(parsed) ? [] : (parsed.charConfigs || []);
+      if (!Array.isArray(rawItems)) { alert("无效的数据格式"); return; }
+      const imported: WarehouseItem[] = rawItems
         .filter((d: any) => d.characterName && d.itemName && d.itemType && d.quantity && d.unit)
-        .map((d: any) => ({ ...d, id: generateId() }));
+        .map((d: any) => ({ ...d, id: generateId(), slots: d.slots ?? Math.ceil(d.quantity) }));
       if (imported.length === 0) { alert("未找到有效的物资记录"); return; }
       setItems((prev) => [...prev, ...imported]);
+      if (rawConfigs.length > 0) {
+        setCharConfigs((prev) => {
+          const existing = new Set(prev.map((c) => c.name));
+          return [...prev, ...rawConfigs.filter((c: CharacterConfig) => !existing.has(c.name))];
+        });
+      }
       setShowTransfer(false);
       setTransferText("");
     } catch {
@@ -383,12 +422,23 @@ export default function WarehouseManager() {
       </div>
 
       {/* Batch editing panel */}
-      {editingCharacter !== null && (
+      {editingCharacter !== null && (() => {
+        const usedSlots = editRows.filter((r) => r.itemName.trim() && r.quantity > 0).reduce((s, r) => s + r.slots, 0);
+        return (
         <div className="bg-white border border-accent-200 rounded-xl p-4 mb-4 shadow-sm">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-semibold text-gray-800">
-              编辑 <span className="text-accent-600">{editingCharacter}</span> 的物资
-            </h3>
+            <div className="flex items-center gap-3">
+              <h3 className="text-sm font-semibold text-gray-800">
+                编辑 <span className="text-accent-600">{editingCharacter}</span> 的物资
+              </h3>
+              <div className="flex items-center gap-1 text-xs text-gray-500">
+                <span className={`font-mono font-semibold ${usedSlots > editTotalSlots ? "text-red-500" : "text-gray-700"}`}>{usedSlots}</span>
+                <span>/</span>
+                <input type="number" value={editTotalSlots} onChange={(e) => setEditTotalSlots(Number(e.target.value) || DEFAULT_TOTAL_SLOTS)}
+                  min={1} className="w-10 text-center font-mono font-semibold bg-white border border-gray-200 rounded px-1 py-0 text-xs focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
+                <span>格</span>
+              </div>
+            </div>
             <div className="flex gap-2">
               <button type="button" onClick={handleCancelEditing} className="px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">取消</button>
               <button type="button" onClick={handleSaveEditing} className="px-4 py-1.5 rounded-lg text-xs font-medium bg-accent-500 text-white hover:bg-accent-600 transition-colors">保存全部</button>
@@ -402,6 +452,7 @@ export default function WarehouseManager() {
                   <th className="py-2 px-2 font-medium">名称</th>
                   <th className="py-2 px-2 font-medium w-24 text-right">数量</th>
                   <th className="py-2 px-2 font-medium w-20">单位</th>
+                  <th className="py-2 px-2 font-medium w-16 text-right">占格</th>
                   <th className="py-2 px-2 font-medium w-12 text-center">操作</th>
                 </tr>
               </thead>
@@ -429,6 +480,11 @@ export default function WarehouseManager() {
                         {ITEM_UNITS.map((u) => <option key={u} value={u}>{u}</option>)}
                       </select>
                     </td>
+                    <td className="py-1.5 px-2">
+                      <input type="number" value={row.slots}
+                        onChange={(e) => { setEditRows((prev) => { const next = [...prev]; next[idx] = { ...next[idx], slots: Number(e.target.value) || 0 }; return next; }); }}
+                        min={0} className={inputCls + " text-xs py-1 text-right"} />
+                    </td>
                     <td className="py-1.5 px-2 text-center">
                       {!(idx === editRows.length - 1 && !row.itemName.trim()) && (
                         <button type="button" onClick={() => handleDeleteRow(idx)} className="text-xs text-red-400 hover:text-red-600">
@@ -445,7 +501,8 @@ export default function WarehouseManager() {
             </datalist>
           </div>
         </div>
-      )}
+        );
+      })()}
 
       {/* === Character tags === */}
       <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">角色仓库</h2>
@@ -457,8 +514,10 @@ export default function WarehouseManager() {
         <div className="flex flex-wrap gap-1 mb-2">
           {filteredCharacters.map((charName) => {
             if (editingCharacter === charName) return null;
-            const charItemCount = (groupedByCharacter.get(charName) || []).length;
+            const used = getCharUsedSlots(charName);
+            const total = getCharTotalSlots(charName);
             const isExpanded = expandedCharacter === charName;
+            const isFull = used >= total;
             return (
               <button key={charName} type="button"
                 onClick={() => setExpandedCharacter(isExpanded ? null : charName)}
@@ -466,7 +525,9 @@ export default function WarehouseManager() {
                   isExpanded ? "bg-accent-500 text-white" : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50"
                 }`}>
                 <span>{charName}</span>
-                <span className={`text-[10px] ${isExpanded ? "text-white/70" : "text-gray-400"}`}>{charItemCount}</span>
+                <span className={`text-[10px] font-mono ${
+                  isExpanded ? "text-white/70" : isFull ? "text-red-400" : "text-gray-400"
+                }`}>{used}/{total}</span>
               </button>
             );
           })}
@@ -481,10 +542,15 @@ export default function WarehouseManager() {
           const q = searchQuery.trim().toLowerCase();
           charItems = charItems.filter((i) => i.itemName.toLowerCase().includes(q));
         }
+        const used = getCharUsedSlots(expandedCharacter);
+        const total = getCharTotalSlots(expandedCharacter);
         return (
           <div className="bg-white border border-gray-200 rounded-md shadow-sm mb-4 overflow-hidden">
             <div className="flex items-center justify-between px-2.5 py-1.5 bg-gray-50 border-b border-gray-100">
-              <span className="font-semibold text-gray-800 text-xs">{expandedCharacter}</span>
+              <div className="flex items-center gap-2">
+                <span className="font-semibold text-gray-800 text-xs">{expandedCharacter}</span>
+                <span className={`text-[10px] font-mono ${used >= total ? "text-red-400" : "text-gray-400"}`}>{used}/{total}格</span>
+              </div>
               <div className="flex gap-2">
                 <button type="button" onClick={() => { startEditing(expandedCharacter, groupedByCharacter.get(expandedCharacter) || []); setExpandedCharacter(null); }}
                   className="text-[10px] text-accent-500 hover:text-accent-700 font-medium">编辑</button>
