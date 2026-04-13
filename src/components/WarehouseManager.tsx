@@ -16,6 +16,7 @@ interface MaterialInfo {
   name: string;
   image: string;
   simplifiedName: string;
+  materialLevel: number;
 }
 
 interface EditRow {
@@ -99,7 +100,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       for (const m of r.materials) {
         if (!map.has(m.name)) {
           const simplified = traditionalToSimplified[m.name] || m.name;
-          map.set(m.name, { name: m.name, image: m.image, simplifiedName: simplified });
+          map.set(m.name, { name: m.name, image: m.image, simplifiedName: simplified, materialLevel: m.materialLevel });
         }
       }
     }
@@ -218,8 +219,12 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         return i.itemName.toLowerCase().includes(q) || simplified.includes(q) || traditional.includes(q);
       });
     }
-    return result.sort((a, b) => a.itemName.localeCompare(b.itemName));
-  }, [items, filterType, searchQuery, recipeMaterialNames, itemMatchesRecipe]);
+    return result.sort((a, b) => {
+      const levelA = materialLookup.get(a.itemName)?.materialLevel ?? Infinity;
+      const levelB = materialLookup.get(b.itemName)?.materialLevel ?? Infinity;
+      return levelA - levelB || a.itemName.localeCompare(b.itemName);
+    });
+  }, [items, filterType, searchQuery, recipeMaterialNames, itemMatchesRecipe, materialLookup]);
 
   const statsGroupedByType = useMemo(() => {
     const map = new Map<ItemType, typeof statsData>();
