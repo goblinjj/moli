@@ -135,10 +135,9 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const [expandedItemKeys, setExpandedItemKeys] = useState<Set<string>>(new Set());
   const [expandedCharacters, setExpandedCharacters] = useState<Set<string>>(new Set());
 
-  // Material picker state
-  const [showMaterialPicker, setShowMaterialPicker] = useState(false);
+  // Material picker state (inline in edit panel)
   const [pickerGroup, setPickerGroup] = useState(0);
-  const [pickerCategory, setPickerCategory] = useState<Category | null>(null);
+  const [pickerCategory, setPickerCategory] = useState<Category | null>(RECIPE_GROUPS[0].categories[0].id);
   const [pickerSearch, setPickerSearch] = useState("");
 
   // Recipe lookup state
@@ -160,12 +159,6 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   }, [items]);
 
   const characterNames = useMemo(() => Array.from(new Set(items.map((i) => i.characterName))).sort(), [items]);
-
-  const itemNames = useMemo(() => {
-    const names = new Set(allMaterialNames);
-    for (const i of items) names.add(i.itemName);
-    return Array.from(names).sort();
-  }, [items, allMaterialNames]);
 
   const groupedByCharacter = useMemo(() => {
     const map = new Map<string, WarehouseItem[]>();
@@ -319,19 +312,29 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
     });
   }, [editRows]);
 
-  // Add material from picker
+  // Add material from picker (toggle: add if not present, remove if present)
   const handlePickMaterial = useCallback((matName: string, matImage: string) => {
     setEditRows((prev) => {
+      // Check if already added
+      const existingIdx = prev.findIndex((r) => r.itemName === matName);
+      if (existingIdx >= 0) {
+        // Remove it
+        const next = prev.filter((_, i) => i !== existingIdx);
+        if (next.length === 0 || next[next.length - 1].itemName.trim()) {
+          const d = lastRowDefaults(next);
+          next.push({ id: generateId(), itemType: d.type, itemName: "", quantity: 1, unit: d.unit, slots: 1 });
+        }
+        return next;
+      }
+      // Add it
       const next = [...prev];
       const lastIdx = next.length - 1;
-      // Fill the last empty row
       if (lastIdx >= 0 && !next[lastIdx].itemName.trim()) {
         next[lastIdx] = { ...next[lastIdx], itemName: matName, materialImage: matImage };
       } else {
         const d = lastRowDefaults(next);
         next.push({ id: generateId(), itemType: d.type, itemName: matName, quantity: 1, unit: d.unit, slots: 1, materialImage: matImage });
       }
-      // Add new empty row
       const d2 = lastRowDefaults(next);
       next.push({ id: generateId(), itemType: d2.type, itemName: "", quantity: 1, unit: d2.unit, slots: 1 });
       return next;
@@ -394,22 +397,25 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   }, [transferText]);
   const handleCopyExport = useCallback(() => { navigator.clipboard.writeText(transferText).then(() => alert("已复制到剪贴板")); }, [transferText]);
 
+  // Names already in edit rows (for picker highlighting)
+  const editRowNames = useMemo(() => new Set(editRows.map((r) => r.itemName).filter(Boolean)), [editRows]);
+
   // --- Material picker filtered list ---
   const pickerMaterials = useMemo(() => {
     if (!pickerCategory) return [];
     const catRecipes = recipes.filter((r) => r.category === pickerCategory);
-    const matSet = new Map<string, string>();
+    const matSet = new Map<string, { image: string; level: number }>();
     for (const r of catRecipes) {
       for (const m of r.materials) {
-        if (!matSet.has(m.name)) matSet.set(m.name, m.image);
+        if (!matSet.has(m.name)) matSet.set(m.name, { image: m.image, level: m.materialLevel });
       }
     }
-    let result = Array.from(matSet.entries()).map(([name, image]) => ({ name, image, simplified: traditionalToSimplified[name] || name }));
+    let result = Array.from(matSet.entries()).map(([name, { image, level }]) => ({ name, image, level, simplified: traditionalToSimplified[name] || name }));
     if (pickerSearch.trim()) {
       const q = pickerSearch.trim().toLowerCase();
       result = result.filter((m) => m.name.toLowerCase().includes(q) || m.simplified.toLowerCase().includes(q));
     }
-    return result.sort((a, b) => a.name.localeCompare(b.name));
+    return result.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
   }, [recipes, pickerCategory, pickerSearch]);
 
   // --- Recipe lookup ---
@@ -589,57 +595,6 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         </div>
       )}
 
-      {/* Material picker modal */}
-      {showMaterialPicker && (
-        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4" onClick={() => setShowMaterialPicker(false)}>
-          <div className="bg-white rounded-xl shadow-xl max-w-lg w-full max-h-[70vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
-            <div className="p-3 border-b border-gray-200">
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-sm font-semibold text-gray-800">选择材料</h3>
-                <button type="button" onClick={() => setShowMaterialPicker(false)} className="text-gray-400 hover:text-gray-600 text-lg leading-none">&times;</button>
-              </div>
-              <div className="flex gap-1 mb-2 flex-wrap">
-                {RECIPE_GROUPS.map((g, idx) => (
-                  <button key={g.group} type="button" onClick={() => { setPickerGroup(idx); setPickerCategory(g.categories[0].id); }}
-                    className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all ${pickerGroup === idx ? pillActive : pillInactive}`}>
-                    {g.group}
-                  </button>
-                ))}
-              </div>
-              <div className="flex gap-1 mb-2 flex-wrap">
-                {RECIPE_GROUPS[pickerGroup].categories.map((cat) => (
-                  <button key={cat.id} type="button" onClick={() => setPickerCategory(cat.id)}
-                    className={`px-2 py-0.5 rounded text-[11px] font-medium transition-all ${pickerCategory === cat.id ? pillActive : pillInactive}`}>
-                    {cat.label}
-                  </button>
-                ))}
-              </div>
-              <input type="text" value={pickerSearch} onChange={(e) => setPickerSearch(e.target.value)} placeholder="搜索材料..."
-                className="w-full bg-gray-50 border border-gray-200 rounded-lg px-3 py-1.5 text-xs text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-500/20" />
-            </div>
-            <div className="flex-1 overflow-y-auto p-3">
-              {pickerMaterials.length === 0 ? (
-                <div className="text-center text-gray-400 text-xs py-6">{pickerCategory ? "没有匹配的材料" : "请先选择分类"}</div>
-              ) : (
-                <div className="grid grid-cols-2 gap-1">
-                  {pickerMaterials.map((m) => (
-                    <button key={m.name} type="button"
-                      onClick={() => { handlePickMaterial(m.name, m.image); setShowMaterialPicker(false); }}
-                      className="flex items-center gap-2 px-2 py-1.5 rounded-lg border border-gray-100 hover:bg-accent-50 hover:border-accent-200 text-left transition-colors">
-                      <img src={`/items/${m.image}`} alt="" className="w-5 h-5 object-contain flex-shrink-0" />
-                      <div className="min-w-0">
-                        <div className="text-[11px] text-gray-700 truncate">{m.simplified !== m.name ? m.simplified : m.name}</div>
-                        {m.simplified !== m.name && <div className="text-[9px] text-gray-400 truncate">{m.name}</div>}
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Filters + add character */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <input type="text" placeholder="搜索物资或角色..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}
@@ -687,19 +642,60 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
               </div>
             </div>
             <div className="flex gap-2">
-              <button type="button" onClick={() => { setPickerSearch(""); setPickerCategory(RECIPE_GROUPS[0].categories[0].id); setPickerGroup(0); setShowMaterialPicker(true); }}
-                className="px-3 py-1.5 rounded-lg text-xs font-medium bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">从资料库选择</button>
               <button type="button" onClick={handleCancelEditing} className="px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">取消</button>
               <button type="button" onClick={handleSaveEditing} className="px-4 py-1.5 rounded-lg text-xs font-medium bg-accent-500 text-white hover:bg-accent-600 transition-colors">保存全部</button>
             </div>
           </div>
+
+          {/* Inline material picker */}
+          <div className="bg-gray-50 rounded-lg p-3 mb-3 border border-gray-100">
+            <div className="flex gap-1 mb-2 flex-wrap">
+              {RECIPE_GROUPS.map((g, idx) => (
+                <button key={g.group} type="button" onClick={() => { setPickerGroup(idx); setPickerCategory(g.categories[0].id); setPickerSearch(""); }}
+                  className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all ${pickerGroup === idx ? pillActive : pillInactive}`}>
+                  {g.group}
+                </button>
+              ))}
+            </div>
+            <div className="flex gap-1 mb-2 flex-wrap">
+              {RECIPE_GROUPS[pickerGroup].categories.map((cat) => (
+                <button key={cat.id} type="button" onClick={() => { setPickerCategory(cat.id); setPickerSearch(""); }}
+                  className={`px-2 py-0.5 rounded text-[11px] font-medium transition-all ${pickerCategory === cat.id ? pillActive : pillInactive}`}>
+                  {cat.label}
+                </button>
+              ))}
+            </div>
+            <input type="text" value={pickerSearch} onChange={(e) => setPickerSearch(e.target.value)} placeholder="搜索材料..."
+              className="w-full bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-xs text-gray-700 mb-2 focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500" />
+            {pickerMaterials.length === 0 ? (
+              <div className="text-center text-gray-400 text-xs py-3">{pickerCategory ? "没有匹配的材料" : "请先选择分类"}</div>
+            ) : (
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-1 max-h-36 overflow-y-auto">
+                {pickerMaterials.map((m) => {
+                  const added = editRowNames.has(m.name);
+                  return (
+                    <button key={m.name} type="button" onClick={() => handlePickMaterial(m.name, m.image)}
+                      className={`flex items-center gap-1.5 px-1.5 py-1 rounded-lg border text-left transition-colors ${
+                        added ? "bg-accent-50 border-accent-300 ring-1 ring-accent-300" : "border-gray-200 bg-white hover:bg-accent-50 hover:border-accent-200"
+                      }`}>
+                      <img src={`/items/${m.image}`} alt="" className="w-5 h-5 object-contain flex-shrink-0" />
+                      <div className="min-w-0 flex-1">
+                        <div className={`text-[11px] truncate ${added ? "text-accent-700 font-medium" : "text-gray-700"}`}>{m.simplified !== m.name ? m.simplified : m.name}</div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+
+          {/* Edit table for added items */}
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="text-left text-gray-500 text-xs border-b border-gray-200">
                   <th className="py-2 px-1 font-medium w-7"></th>
-                  <th className="py-2 px-2 font-medium w-24">类型</th>
-                  <th className="py-2 px-2 font-medium w-32">名称</th>
+                  <th className="py-2 px-2 font-medium">名称</th>
                   <th className="py-2 px-2 font-medium w-20 text-right">数量</th>
                   <th className="py-2 px-2 font-medium w-16">单位</th>
                   <th className="py-2 px-2 font-medium w-20 text-right">占格</th>
@@ -707,7 +703,9 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                 </tr>
               </thead>
               <tbody>
-                {editRows.map((row, idx) => (
+                {editRows.filter((r) => r.itemName.trim()).map((row) => {
+                  const idx = editRows.indexOf(row);
+                  return (
                   <tr key={row.id} className="border-b border-gray-50">
                     <td className="py-1.5 px-1 w-7">
                       {(row.materialImage || materialLookup.get(row.itemName)?.image) && (
@@ -715,15 +713,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                       )}
                     </td>
                     <td className="py-1.5 px-2">
-                      <select value={row.itemType} onChange={(e) => handleRowChange(idx, "itemType", e.target.value)}
-                        className={selectCls + " w-full text-xs py-1"}>
-                        {ITEM_TYPES.map((t) => <option key={t} value={t}>{t}</option>)}
-                      </select>
-                    </td>
-                    <td className="py-1.5 px-2">
-                      <input type="text" value={row.itemName} onChange={(e) => handleRowChange(idx, "itemName", e.target.value)}
-                        list="wh-item-list" placeholder={idx === editRows.length - 1 ? "输入名称或从资料库选择..." : "物资名称"}
-                        className={inputCls + " text-xs py-1"} />
+                      <span className="text-xs text-gray-800">{row.itemName}</span>
                     </td>
                     <td className="py-1.5 px-2">
                       <input type="number" value={row.quantity} onChange={(e) => handleRowChange(idx, "quantity", Number(e.target.value) || 0)}
@@ -741,17 +731,16 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                         min={0} className={inputCls + " text-xs py-1 text-right"} />
                     </td>
                     <td className="py-1.5 px-2 text-center">
-                      {!(idx === editRows.length - 1 && !row.itemName.trim()) && (
-                        <button type="button" onClick={() => handleDeleteRow(idx)} className="text-xs text-red-400 hover:text-red-600">删除</button>
-                      )}
+                      <button type="button" onClick={() => handleDeleteRow(idx)} className="text-xs text-red-400 hover:text-red-600">删除</button>
                     </td>
                   </tr>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
-            <datalist id="wh-item-list">
-              {itemNames.map((n) => <option key={n} value={n} />)}
-            </datalist>
+            {editRows.filter((r) => r.itemName.trim()).length === 0 && (
+              <div className="text-center text-gray-400 text-xs py-4">点击上方材料添加到列表</div>
+            )}
           </div>
         </div>
         );
