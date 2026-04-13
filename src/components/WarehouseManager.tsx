@@ -131,7 +131,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const [transferText, setTransferText] = useState("");
   const [transferMode, setTransferMode] = useState<"export" | "import">("export");
   const [confirmAction, setConfirmAction] = useState<{ message: string; action: () => void } | null>(null);
-  const [editingItemKey, setEditingItemKey] = useState<string | null>(null);
+  const [expandedItemKeys, setExpandedItemKeys] = useState<Set<string>>(new Set());
   const [expandedCharacters, setExpandedCharacters] = useState<Set<string>>(new Set());
 
   // Material picker state
@@ -828,11 +828,11 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
               <h3 className="text-[11px] font-semibold text-gray-500 mb-1">{type}</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1.5">
                 {typeItems.map((stat) => {
-                  const isExpanded = editingItemKey === stat.key;
+                  const isExpanded = expandedItemKeys.has(stat.key);
                   return (
                     <div key={stat.key} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
                       <div className="flex items-center justify-between px-2 py-1 cursor-pointer hover:bg-gray-50 transition-colors gap-1"
-                        onClick={() => setEditingItemKey(isExpanded ? null : stat.key)}>
+                        onClick={() => setExpandedItemKeys((prev) => { const next = new Set(prev); if (next.has(stat.key)) next.delete(stat.key); else next.add(stat.key); return next; })}>
                         {materialLookup.get(stat.itemName)?.image && (
                           <img src={`/items/${materialLookup.get(stat.itemName)!.image}`} alt="" className="w-4 h-4 object-contain flex-shrink-0" />
                         )}
