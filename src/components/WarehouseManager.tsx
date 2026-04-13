@@ -40,11 +40,17 @@ const PICKER_TABS: PickerTab[] = ["食材", "木材", "香草", "矿条", "武�
 
 // Hardcoded 食材 list (simplified Chinese, order = display order)
 const FOOD_ITEMS: string[] = [
-  "白饭", "蕃茄", "蕃茄酱", "鸡蛋", "鹿皮", "神圣醋", "神圣美乃滋", "神圣米", "神圣油", "小麦粉",
+  "蕃茄", "鸡蛋", "鹿皮", "神圣醋", "神圣米", "神圣油", "小麦粉",
   "葱", "牛奶", "青椒", "酱油", "盐", "海苔", "鸡肉", "芹菜", "竹夹鱼", "竹笋",
   "胡椒", "姜", "马铃薯", "牛肉", "星鳗", "猪肉", "蚕丝", "米", "砂糖", "高级奶油",
   "咖哩块", "辣椒", "螃蟹", "霜降牛肉", "海胆", "伊势虾", "鱼翅", "鳖",
 ];
+
+// Shorten pharmacy names: "生命力回復藥（100）" → "100"
+function shortenPharmacyName(name: string): string {
+  const m = name.match(/^生命力回復藥[（(](\d+)[）)]/);
+  return m ? m[1] : (traditionalToSimplified[name] || name);
+}
 
 // Hardcoded 高级物品 list (simplified Chinese)
 const ADVANCED_ITEMS: string[] = [
@@ -441,7 +447,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const pickerItems = useMemo(() => {
     if (pickerTab === "自定义") return [];
 
-    let result: { name: string; image: string; level: number; simplified: string }[];
+    let result: { name: string; image: string; level: number; simplified: string; displayName?: string }[];
     if (pickerTab === "食材") {
       result = resolveNameList(FOOD_ITEMS);
     } else if (pickerTab === "高级物品") {
@@ -456,7 +462,11 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       else if (pickerTab === "料理") cats = ["cooking"];
       else cats = ["pharmacy"];
       const catRecipes = recipes.filter((r) => cats.includes(r.category));
-      result = catRecipes.map((r) => ({ name: r.name, image: r.image, level: r.level, simplified: traditionalToSimplified[r.name] || r.name }));
+      result = catRecipes.map((r) => ({
+        name: r.name, image: r.image, level: r.level,
+        simplified: traditionalToSimplified[r.name] || r.name,
+        displayName: pickerTab === "血瓶" ? shortenPharmacyName(r.name) : undefined,
+      }));
       result.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
     }
     if (pickerSearch.trim()) {
@@ -756,7 +766,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                       }`}>
                       {m.image && <img src={`/items/${m.image}`} alt="" className="w-5 h-5 object-contain flex-shrink-0" />}
                       <div className="min-w-0 flex-1">
-                        <div className={`text-[11px] truncate ${added ? "text-accent-700 font-medium" : "text-gray-700"}`}>{m.simplified !== m.name ? m.simplified : m.name}</div>
+                        <div className={`text-[11px] truncate ${added ? "text-accent-700 font-medium" : "text-gray-700"}`}>{m.displayName || (m.simplified !== m.name ? m.simplified : m.name)}</div>
                       </div>
                     </button>
                   );
@@ -770,12 +780,12 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="text-left text-gray-500 text-xs border-b border-gray-200">
-                  <th className="py-2 px-1 font-medium w-7"></th>
-                  <th className="py-2 px-2 font-medium">名称</th>
-                  <th className="py-2 px-2 font-medium w-20 text-right">数量</th>
-                  <th className="py-2 px-2 font-medium w-16">单位</th>
-                  <th className="py-2 px-2 font-medium w-20 text-right">占格</th>
-                  <th className="py-2 px-2 font-medium w-12 text-center">操作</th>
+                  <th className="py-2 px-1 font-medium" style={{width: 28}}></th>
+                  <th className="py-2 px-1 font-medium" style={{minWidth: 60}}>名称</th>
+                  <th className="py-2 px-1 font-medium text-right" style={{width: 64}}>数量</th>
+                  <th className="py-2 px-1 font-medium" style={{width: 56}}>单位</th>
+                  <th className="py-2 px-1 font-medium text-right" style={{width: 64}}>占格</th>
+                  <th className="py-2 px-1 font-medium text-center" style={{width: 40}}>操作</th>
                 </tr>
               </thead>
               <tbody>
@@ -783,31 +793,31 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                   const idx = editRows.indexOf(row);
                   return (
                   <tr key={row.id} className="border-b border-gray-50">
-                    <td className="py-1.5 px-1 w-7">
+                    <td className="py-1 px-1" style={{width: 28}}>
                       {(row.materialImage || materialLookup.get(row.itemName)?.image) && (
                         <img src={`/items/${row.materialImage || materialLookup.get(row.itemName)?.image}`} alt="" className="w-5 h-5 object-contain" />
                       )}
                     </td>
-                    <td className="py-1.5 px-2">
-                      <span className="text-xs text-gray-800">{row.itemName}</span>
+                    <td className="py-1 px-1">
+                      <span className="text-xs text-gray-800 truncate block">{traditionalToSimplified[row.itemName] || row.itemName}</span>
                     </td>
-                    <td className="py-1.5 px-2">
+                    <td className="py-1 px-1" style={{width: 64}}>
                       <input type="number" value={row.quantity} onChange={(e) => handleRowChange(idx, "quantity", Number(e.target.value) || 0)}
-                        min={0} className={inputCls + " text-xs py-1 text-right"} />
+                        min={0} className={inputCls + " text-xs py-0.5 text-right"} />
                     </td>
-                    <td className="py-1.5 px-2">
+                    <td className="py-1 px-1" style={{width: 56}}>
                       <select value={row.unit} onChange={(e) => handleRowChange(idx, "unit", e.target.value)}
-                        className={selectCls + " w-full text-xs py-1"}>
+                        className={selectCls + " w-full text-xs py-0.5"}>
                         {ITEM_UNITS.map((u) => <option key={u} value={u}>{u}</option>)}
                       </select>
                     </td>
-                    <td className="py-1.5 px-2">
+                    <td className="py-1 px-1" style={{width: 64}}>
                       <input type="number" value={row.slots}
                         onChange={(e) => { setEditRows((prev) => { const next = [...prev]; next[idx] = { ...next[idx], slots: Number(e.target.value) || 0 }; return next; }); }}
-                        min={0} className={inputCls + " text-xs py-1 text-right"} />
+                        min={0} className={inputCls + " text-xs py-0.5 text-right"} />
                     </td>
-                    <td className="py-1.5 px-2 text-center">
-                      <button type="button" onClick={() => handleDeleteRow(idx)} className="text-xs text-red-400 hover:text-red-600">删除</button>
+                    <td className="py-1 px-1 text-center" style={{width: 40}}>
+                      <button type="button" onClick={() => handleDeleteRow(idx)} className="text-[11px] text-red-400 hover:text-red-600">删除</button>
                     </td>
                   </tr>
                   );
