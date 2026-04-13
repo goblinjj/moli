@@ -98,3 +98,15 @@ export interface MonsterIsland {
   name: string;
   subMaps: MonsterSubMap[];
 }
+
+export type ItemType = "食材" | "木材" | "花" | "矿" | "装备" | "其他";
+export type ItemUnit = "个" | "组" | "箱";
+
+export interface WarehouseItem {
+  id: string;
+  characterName: string;
+  itemType: ItemType;
+  itemName: string;
+  quantity: number;
+  unit: ItemUnit;
+}

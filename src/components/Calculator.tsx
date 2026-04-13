@@ -7,6 +7,7 @@ import SearchFilter from "./SearchFilter";
 import RecipeCard from "./RecipeCard";
 import GemCard from "./GemCard";
 import SupplyPricing from "./SupplyPricing";
+import WarehouseManager from "./WarehouseManager";
 import MonsterDistribution from "./MonsterDistribution";
 
 interface CalculatorProps {
@@ -16,6 +17,7 @@ interface CalculatorProps {
 }
 
 type Section = "production" | "tools" | "monsters";
+type ToolTab = "supplyPricing" | "warehouse";
 type SubCategory = Category | GemCategory;
 
 const CATEGORY_GROUPS: { group: string; isGem?: boolean; items: { id: SubCategory; label: string }[] }[] = [
@@ -101,6 +103,7 @@ function getSectionFromHash(): Section {
 
 export default function Calculator({ recipes, gems, monsterIslands }: CalculatorProps) {
   const [activeSection, setActiveSection] = useState<Section>(getSectionFromHash);
+  const [activeToolTab, setActiveToolTab] = useState<ToolTab>("supplyPricing");
   const [activeGroup, setActiveGroup] = useState(0);
   const [activeCategory, setActiveCategory] = useState<SubCategory>("sword");
   const [searchQuery, setSearchQuery] = useState("");
@@ -335,16 +338,28 @@ export default function Calculator({ recipes, gems, monsterIslands }: Calculator
         <>
           <nav className="bg-white border-b border-gray-200">
             <div className="flex items-center gap-1.5 px-5 lg:px-6 py-2">
-              <button
-                type="button"
-                className="px-3.5 py-1 rounded-full text-xs font-medium bg-accent-500 text-white shadow-sm shadow-accent-500/20"
-              >
-                补给估价
-              </button>
+              {([
+                { id: "supplyPricing" as ToolTab, label: "补给估价" },
+                { id: "warehouse" as ToolTab, label: "仓库管理" },
+              ]).map((tab) => (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setActiveToolTab(tab.id)}
+                  className={`px-3.5 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-150 ${
+                    activeToolTab === tab.id
+                      ? "bg-accent-500 text-white shadow-sm shadow-accent-500/20"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
             </div>
           </nav>
           <main className="flex-1 overflow-y-auto p-5 lg:p-6">
-            <SupplyPricing recipes={recipes} />
+            {activeToolTab === "supplyPricing" && <SupplyPricing recipes={recipes} />}
+            {activeToolTab === "warehouse" && <WarehouseManager />}
           </main>
         </>
       )}

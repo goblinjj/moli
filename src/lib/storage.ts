@@ -41,3 +41,23 @@ export function savePricingRatios(ratios: Record<string, number>): void {
   if (typeof window === "undefined") return;
   localStorage.setItem(RATIO_STORAGE_KEY, JSON.stringify(ratios));
 }
+
+import type { WarehouseItem } from "./types";
+
+const WAREHOUSE_STORAGE_KEY = "moli-warehouse-items";
+
+export function loadWarehouseItems(): WarehouseItem[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const saved = localStorage.getItem(WAREHOUSE_STORAGE_KEY);
+    if (!saved) return [];
+    return JSON.parse(saved);
+  } catch {
+    return [];
+  }
+}
+
+export function saveWarehouseItems(items: WarehouseItem[]): void {
+  if (typeof window === "undefined") return;
+  localStorage.setItem(WAREHOUSE_STORAGE_KEY, JSON.stringify(items));
+}
