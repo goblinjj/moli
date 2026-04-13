@@ -35,8 +35,25 @@ interface WarehouseManagerProps {
 }
 
 // Picker tab types
-type PickerTab = "食材" | "木材" | "香草" | "矿条" | "武器" | "防具" | "料理" | "血瓶" | "自定义";
-const PICKER_TABS: PickerTab[] = ["食材", "木材", "香草", "矿条", "武器", "防具", "料理", "血瓶", "自定义"];
+type PickerTab = "食材" | "木材" | "香草" | "矿条" | "武器" | "防具" | "料理" | "血瓶" | "高级物品" | "自定义";
+const PICKER_TABS: PickerTab[] = ["食材", "木材", "香草", "矿条", "武器", "防具", "料理", "血瓶", "高级物品", "自定义"];
+
+// Hardcoded 食材 list (simplified Chinese, order = display order)
+const FOOD_ITEMS: string[] = [
+  "白饭", "蕃茄", "蕃茄酱", "鸡蛋", "鹿皮", "神圣醋", "神圣美乃滋", "神圣米", "神圣油", "小麦粉",
+  "葱", "牛奶", "青椒", "酱油", "盐", "海苔", "鸡肉", "芹菜", "竹夹鱼", "竹笋",
+  "胡椒", "姜", "马铃薯", "牛肉", "星鳗", "猪肉", "蚕丝", "米", "砂糖", "高级奶油",
+  "咖哩块", "辣椒", "螃蟹", "霜降牛肉", "海胆", "伊势虾", "鱼翅", "鳖",
+];
+
+// Hardcoded 高级物品 list (simplified Chinese)
+const ADVANCED_ITEMS: string[] = [
+  "魔族的水晶", "鋼騎之礦", "誓言之證", "火焰之魂", "神眼", "水龙的鳍", "藍龍之鱗", "永久冰石",
+  "妖草的血", "德特家的布", "湿地毒蛇", "魔法红萝卜",
+  "生锈的短剑", "生锈的盾", "生锈的斧", "生锈的弓", "生锈的剑", "生锈的铠", "生锈的枪",
+  "生锈的投掷武器", "生锈的头盔", "生锈的杖",
+  "破烂的帽子", "破烂的袍", "破烂的鞋子", "破烂的靴子", "破烂的衣服",
+];
 
 // Map materialSources types to picker tabs
 const SOURCE_TYPE_TO_TAB: Record<string, PickerTab> = {
@@ -389,10 +406,19 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   // Names already in edit rows (for picker highlighting)
   const editRowNames = useMemo(() => new Set(editRows.map((r) => r.itemName).filter(Boolean)), [editRows]);
 
-  // Classify all raw materials by tab
+  // Resolve a hardcoded simplified name list to items with images
+  const resolveNameList = useCallback((names: string[]) => {
+    return names.map((s) => {
+      const t = simplifiedToTraditional[s] || s;
+      const mat = materialLookup.get(t) || materialLookup.get(s);
+      return { name: t, image: mat?.image || "", level: mat?.materialLevel ?? 0, simplified: s };
+    });
+  }, [materialLookup]);
+
+  // Classify raw materials (木材/香草/矿条) by materialSources type
   const rawMaterialsByTab = useMemo(() => {
     const map: Record<string, { name: string; image: string; level: number; simplified: string }[]> = {
-      "食材": [], "木材": [], "香草": [], "矿条": [],
+      "木材": [], "香草": [], "矿条": [],
     };
     const seen = new Set<string>();
     const sources = materialSourcesData as Record<string, { type: string; level: number }>;
@@ -401,8 +427,8 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         if (seen.has(m.name)) continue;
         seen.add(m.name);
         const source = sources[m.name];
-        const tab = source ? (SOURCE_TYPE_TO_TAB[source.type] || "食材") : "食材";
-        if (map[tab]) {
+        const tab = source ? (SOURCE_TYPE_TO_TAB[source.type] || null) : null;
+        if (tab && tab !== "食材" && map[tab]) {
           map[tab].push({ name: m.name, image: m.image, level: m.materialLevel, simplified: traditionalToSimplified[m.name] || m.name });
         }
       }
@@ -413,11 +439,14 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
 
   // --- Material picker filtered list ---
   const pickerItems = useMemo(() => {
-    const isRawTab = ["食材", "木材", "香草", "矿条"].includes(pickerTab);
     if (pickerTab === "自定义") return [];
 
     let result: { name: string; image: string; level: number; simplified: string }[];
-    if (isRawTab) {
+    if (pickerTab === "食材") {
+      result = resolveNameList(FOOD_ITEMS);
+    } else if (pickerTab === "高级物品") {
+      result = resolveNameList(ADVANCED_ITEMS);
+    } else if (["木材", "香草", "矿条"].includes(pickerTab)) {
       result = rawMaterialsByTab[pickerTab] || [];
     } else {
       // Finished products from recipes
@@ -435,7 +464,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       result = result.filter((m) => m.name.toLowerCase().includes(q) || m.simplified.toLowerCase().includes(q));
     }
     return result;
-  }, [pickerTab, pickerSubCat, pickerSearch, rawMaterialsByTab, recipes]);
+  }, [pickerTab, pickerSubCat, pickerSearch, rawMaterialsByTab, recipes, resolveNameList]);
 
   // --- Recipe lookup ---
   const lookupRecipes = useMemo(() => {
