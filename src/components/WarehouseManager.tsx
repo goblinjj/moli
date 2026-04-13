@@ -190,6 +190,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       characters: val.characters.sort((a, b) => b.quantity - a.quantity),
     }));
     if (filterType) result = result.filter((i) => i.type === filterType);
+    if (recipeMaterialNames) result = result.filter((i) => itemMatchesRecipe(i.itemName));
     if (searchQuery.trim()) {
       const q = searchQuery.trim().toLowerCase();
       result = result.filter((i) => {
@@ -199,7 +200,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       });
     }
     return result.sort((a, b) => a.itemName.localeCompare(b.itemName));
-  }, [items, filterType, searchQuery]);
+  }, [items, filterType, searchQuery, recipeMaterialNames, itemMatchesRecipe]);
 
   const statsGroupedByType = useMemo(() => {
     const map = new Map<ItemType, typeof statsData>();
@@ -418,6 +419,25 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const pillActive = "bg-accent-500 text-white shadow-sm shadow-accent-500/20";
   const pillInactive = "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900";
 
+  // Material names for the selected recipe (for filtering)
+  const recipeMaterialNames = useMemo(() => {
+    if (!selectedRecipe) return null;
+    const names = new Set<string>();
+    for (const mat of selectedRecipe.materials) {
+      names.add(mat.name);
+      const simplified = traditionalToSimplified[mat.name];
+      if (simplified) names.add(simplified);
+    }
+    return names;
+  }, [selectedRecipe]);
+
+  const itemMatchesRecipe = useCallback((itemName: string) => {
+    if (!recipeMaterialNames) return true;
+    if (recipeMaterialNames.has(itemName)) return true;
+    const lookup = materialLookup.get(itemName);
+    return !!lookup && recipeMaterialNames.has(lookup.name);
+  }, [recipeMaterialNames, materialLookup]);
+
   const filteredCharacters = useMemo(() => {
     return characterNames.filter((name) => {
       const charItems = groupedByCharacter.get(name) || [];
@@ -430,9 +450,10 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         })) return false;
       }
       if (filterType && !charItems.some((i) => i.itemType === filterType)) return false;
+      if (recipeMaterialNames && !charItems.some((i) => itemMatchesRecipe(i.itemName))) return false;
       return true;
     });
-  }, [characterNames, groupedByCharacter, searchQuery, filterType]);
+  }, [characterNames, groupedByCharacter, searchQuery, filterType, recipeMaterialNames, itemMatchesRecipe]);
 
   return (
     <div>
@@ -451,10 +472,16 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
           className="px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
           导入数据
         </button>
-        <button type="button" onClick={() => { setShowRecipeLookup(true); setSelectedRecipe(null); setLookupCategory(null); setLookupSearch(""); }}
-          className="px-3 py-1.5 rounded-lg text-xs font-medium bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+        <button type="button" onClick={() => { setShowRecipeLookup(!showRecipeLookup); if (showRecipeLookup) { setSelectedRecipe(null); } else { setLookupCategory(RECIPE_GROUPS[lookupGroup].categories[0].id); setLookupSearch(""); } }}
+          className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${showRecipeLookup ? pillActive : "bg-blue-50 text-blue-600 hover:bg-blue-100"}`}>
           按配方查库存
         </button>
+        {selectedRecipe && (
+          <button type="button" onClick={() => { setSelectedRecipe(null); }}
+            className="px-3 py-1.5 rounded-lg text-xs font-medium bg-red-50 text-red-500 hover:bg-red-100 transition-colors">
+            清除配方筛选: {traditionalToSimplified[selectedRecipe.name] || selectedRecipe.name} &times;
+          </button>
+        )}
       </div>
 
       {confirmAction && <ConfirmDialog message={confirmAction.message} onConfirm={confirmAction.action} onCancel={() => setConfirmAction(null)} />}
@@ -489,90 +516,66 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         </div>
       )}
 
-      {/* Recipe lookup modal */}
-      {showRecipeLookup && (
-        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4" onClick={() => setShowRecipeLookup(false)}>
-          <div className="bg-white rounded-xl shadow-xl max-w-2xl w-full max-h-[80vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
-            <div className="p-4 border-b border-gray-200">
-              <div className="flex items-center justify-between mb-3">
-                <h3 className="text-sm font-semibold text-gray-800">按配方查库存</h3>
-                <button type="button" onClick={() => setShowRecipeLookup(false)} className="text-gray-400 hover:text-gray-600 text-lg leading-none">&times;</button>
-              </div>
-              {/* Group tabs */}
-              <div className="flex gap-1 mb-2 flex-wrap">
-                {RECIPE_GROUPS.map((g, idx) => (
-                  <button key={g.group} type="button" onClick={() => { setLookupGroup(idx); setLookupCategory(g.categories[0].id); setSelectedRecipe(null); }}
-                    className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all ${lookupGroup === idx ? pillActive : pillInactive}`}>
-                    {g.group}
-                  </button>
-                ))}
-              </div>
-              {/* Category pills */}
-              <div className="flex gap-1 mb-2 flex-wrap">
-                {RECIPE_GROUPS[lookupGroup].categories.map((cat) => (
-                  <button key={cat.id} type="button" onClick={() => { setLookupCategory(cat.id); setSelectedRecipe(null); }}
-                    className={`px-2 py-0.5 rounded text-[11px] font-medium transition-all ${lookupCategory === cat.id ? pillActive : pillInactive}`}>
-                    {cat.label}
-                  </button>
-                ))}
-              </div>
-              <input type="text" value={lookupSearch} onChange={(e) => setLookupSearch(e.target.value)} placeholder="搜索配方名..."
-                className="w-full bg-gray-50 border border-gray-200 rounded-lg px-3 py-1.5 text-xs text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-500/20" />
+      {/* Recipe lookup inline panel */}
+      {showRecipeLookup && !selectedRecipe && (
+        <div className="bg-white border border-gray-200 rounded-lg shadow-sm mb-4 p-3">
+          {/* Group tabs */}
+          <div className="flex gap-1 mb-2 flex-wrap">
+            {RECIPE_GROUPS.map((g, idx) => (
+              <button key={g.group} type="button" onClick={() => { setLookupGroup(idx); setLookupCategory(g.categories[0].id); }}
+                className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all ${lookupGroup === idx ? pillActive : pillInactive}`}>
+                {g.group}
+              </button>
+            ))}
+          </div>
+          {/* Category pills */}
+          <div className="flex gap-1 mb-2 flex-wrap">
+            {RECIPE_GROUPS[lookupGroup].categories.map((cat) => (
+              <button key={cat.id} type="button" onClick={() => { setLookupCategory(cat.id); }}
+                className={`px-2 py-0.5 rounded text-[11px] font-medium transition-all ${lookupCategory === cat.id ? pillActive : pillInactive}`}>
+                {cat.label}
+              </button>
+            ))}
+          </div>
+          <input type="text" value={lookupSearch} onChange={(e) => setLookupSearch(e.target.value)} placeholder="搜索配方名..."
+            className="w-full bg-gray-50 border border-gray-200 rounded-lg px-3 py-1.5 text-xs text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-500/20 mb-2" />
+          {lookupRecipes.length === 0 ? (
+            <div className="text-center text-gray-400 text-xs py-4">{lookupCategory ? "没有匹配的配方" : "请先选择分类"}</div>
+          ) : (
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-1.5 max-h-48 overflow-y-auto">
+              {lookupRecipes.map((r) => (
+                <button key={r.id} type="button" onClick={() => { setSelectedRecipe(r); setShowRecipeLookup(false); }}
+                  className="flex items-center gap-1.5 px-2 py-1 rounded-lg border border-gray-200 hover:bg-gray-50 text-left transition-colors">
+                  <img src={`/items/${r.image}`} alt="" className="w-5 h-5 object-contain flex-shrink-0" />
+                  <div className="min-w-0">
+                    <div className="text-[11px] font-medium text-gray-800 truncate">{traditionalToSimplified[r.name] || r.name}</div>
+                    <div className="text-[10px] text-gray-400">Lv.{r.level}</div>
+                  </div>
+                </button>
+              ))}
             </div>
-            <div className="flex-1 overflow-y-auto p-4">
-              {!selectedRecipe ? (
-                lookupRecipes.length === 0 ? (
-                  <div className="text-center text-gray-400 text-xs py-8">{lookupCategory ? "没有匹配的配方" : "请先选择分类"}</div>
-                ) : (
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
-                    {lookupRecipes.map((r) => (
-                      <button key={r.id} type="button" onClick={() => setSelectedRecipe(r)}
-                        className="flex items-center gap-2 px-2 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-50 text-left transition-colors">
-                        <img src={`/items/${r.image}`} alt="" className="w-6 h-6 object-contain flex-shrink-0" />
-                        <div className="min-w-0">
-                          <div className="text-[11px] font-medium text-gray-800 truncate">{r.name}</div>
-                          <div className="text-[10px] text-gray-400">Lv.{r.level}</div>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                )
-              ) : (
-                <div>
-                  <button type="button" onClick={() => setSelectedRecipe(null)} className="text-[11px] text-accent-500 hover:text-accent-700 mb-3">&larr; 返回列表</button>
-                  <div className="flex items-center gap-2 mb-3">
-                    <img src={`/items/${selectedRecipe.image}`} alt="" className="w-8 h-8 object-contain" />
-                    <div>
-                      <div className="text-sm font-semibold text-gray-800">{selectedRecipe.name}</div>
-                      <div className="text-[10px] text-gray-400">Lv.{selectedRecipe.level}</div>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    {recipeStock.map((mat) => (
-                      <div key={mat.name} className="border border-gray-200 rounded-lg p-2">
-                        <div className="flex items-center gap-2 mb-1">
-                          <img src={`/items/${mat.image}`} alt="" className="w-5 h-5 object-contain" />
-                          <span className="text-xs font-medium text-gray-800">{mat.simplified !== mat.name ? `${mat.simplified}(${mat.name})` : mat.name}</span>
-                          <span className="text-[10px] text-gray-400">需要 &times;{mat.quantity}</span>
-                          <span className={`ml-auto text-xs font-mono font-semibold ${mat.totalStock >= mat.quantity ? "text-green-600" : "text-red-500"}`}>
-                            库存: {mat.totalStock}
-                          </span>
-                        </div>
-                        {mat.stock.length > 0 ? (
-                          <div className="flex flex-wrap gap-x-3 gap-y-0.5 ml-7">
-                            {mat.stock.map((s, i) => (
-                              <span key={i} className="text-[10px] text-gray-500">{s.character}: {s.quantity}{s.unit}</span>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="text-[10px] text-gray-300 ml-7">暂无库存</div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+          )}
+        </div>
+      )}
+
+      {/* Recipe stock summary when recipe is selected */}
+      {selectedRecipe && (
+        <div className="bg-blue-50 border border-blue-200 rounded-lg mb-4 p-3">
+          <div className="flex items-center gap-2 mb-2">
+            <img src={`/items/${selectedRecipe.image}`} alt="" className="w-6 h-6 object-contain" />
+            <span className="text-xs font-semibold text-gray-800">{traditionalToSimplified[selectedRecipe.name] || selectedRecipe.name}</span>
+            <span className="text-[10px] text-gray-400">Lv.{selectedRecipe.level}</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {recipeStock.map((mat) => (
+              <div key={mat.name} className="flex items-center gap-1.5 bg-white rounded px-2 py-1 border border-blue-100">
+                <img src={`/items/${mat.image}`} alt="" className="w-4 h-4 object-contain" />
+                <span className="text-[11px] text-gray-700">{mat.simplified !== mat.name ? mat.simplified : mat.name}</span>
+                <span className={`text-[11px] font-mono font-semibold ${mat.totalStock >= mat.quantity ? "text-green-600" : "text-red-500"}`}>
+                  {mat.totalStock}/{mat.quantity}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       )}
@@ -687,7 +690,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                 <tr className="text-left text-gray-500 text-xs border-b border-gray-200">
                   <th className="py-2 px-1 font-medium w-7"></th>
                   <th className="py-2 px-2 font-medium w-24">类型</th>
-                  <th className="py-2 px-2 font-medium">名称</th>
+                  <th className="py-2 px-2 font-medium w-32">名称</th>
                   <th className="py-2 px-2 font-medium w-20 text-right">数量</th>
                   <th className="py-2 px-2 font-medium w-16">单位</th>
                   <th className="py-2 px-2 font-medium w-20 text-right">占格</th>
@@ -773,6 +776,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       {expandedCharacter && editingCharacter === null && (() => {
         let charItems = groupedByCharacter.get(expandedCharacter) || [];
         if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
+        if (recipeMaterialNames) charItems = charItems.filter((i) => itemMatchesRecipe(i.itemName));
         if (searchQuery.trim()) {
           const q = searchQuery.trim().toLowerCase();
           charItems = charItems.filter((i) => {
