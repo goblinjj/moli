@@ -134,6 +134,13 @@ export default function WarehouseManager() {
   }, [editingCharacter]);
 
   // --- Batch editing ---
+  const lastRowType = (rows: EditRow[]): ItemType => {
+    for (let i = rows.length - 1; i >= 0; i--) {
+      if (rows[i].itemName.trim()) return rows[i].itemType;
+    }
+    return "食材";
+  };
+
   const startEditing = useCallback((charName: string, existingItems: WarehouseItem[]) => {
     setEditingCharacter(charName);
     const rows: EditRow[] = existingItems.map((i) => ({
@@ -143,7 +150,8 @@ export default function WarehouseManager() {
       quantity: i.quantity,
       unit: i.unit,
     }));
-    rows.push({ id: generateId(), itemType: "食材", itemName: "", quantity: 1, unit: DEFAULT_UNIT });
+    const defaultType = rows.length > 0 ? rows[rows.length - 1].itemType : "食材";
+    rows.push({ id: generateId(), itemType: defaultType, itemName: "", quantity: 1, unit: DEFAULT_UNIT });
     setEditRows(rows);
   }, []);
 
@@ -152,7 +160,7 @@ export default function WarehouseManager() {
       const next = [...prev];
       next[idx] = { ...next[idx], [field]: value };
       if (idx === next.length - 1 && next[idx].itemName.trim()) {
-        next.push({ id: generateId(), itemType: "食材", itemName: "", quantity: 1, unit: DEFAULT_UNIT });
+        next.push({ id: generateId(), itemType: lastRowType(next), itemName: "", quantity: 1, unit: DEFAULT_UNIT });
       }
       return next;
     });
@@ -165,7 +173,7 @@ export default function WarehouseManager() {
         setEditRows((prev) => {
           const next = prev.filter((_, i) => i !== idx);
           if (next.length === 0 || next[next.length - 1].itemName.trim()) {
-            next.push({ id: generateId(), itemType: "食材", itemName: "", quantity: 1, unit: DEFAULT_UNIT });
+            next.push({ id: generateId(), itemType: lastRowType(next), itemName: "", quantity: 1, unit: DEFAULT_UNIT });
           }
           return next;
         });
