@@ -230,6 +230,13 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
     return ITEM_TYPES.filter((t) => map.has(t)).map((t) => ({ type: t, items: map.get(t)! }));
   }, [statsData]);
 
+  // Auto-expand all stats items when recipe filter is applied
+  useEffect(() => {
+    if (selectedRecipe && statsData.length > 0) {
+      setExpandedItemKeys(new Set(statsData.map((s) => s.key)));
+    }
+  }, [selectedRecipe, statsData]);
+
   // --- Character actions ---
   const handleAddCharacter = useCallback(() => {
     const name = newCharacterName.trim();
