@@ -4,7 +4,7 @@ import { loadWarehouseItems, saveWarehouseItems, loadCharacterConfigs, saveChara
 import { simplifiedToTraditional, traditionalToSimplified } from "../lib/zhConvert";
 import materialSourcesData from "../data/materialSources.json";
 
-const ITEM_TYPES: ItemType[] = ["食材", "木材", "花", "矿", "装备", "其他"];
+
 const ITEM_UNITS: ItemUnit[] = ["个", "组", "箱"];
 const DEFAULT_UNIT: ItemUnit = "箱";
 const DEFAULT_TOTAL_SLOTS = 80;
@@ -132,7 +132,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
     return map;
   }, [materialDb]);
 
-  const [filterType, setFilterType] = useState<ItemType | null>(null);
+  const [filterType, setFilterType] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [showAddCharacter, setShowAddCharacter] = useState(false);
   const [newCharacterName, setNewCharacterName] = useState("");
@@ -201,11 +201,35 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
     return !!lookup && recipeMaterialNames.has(lookup.name);
   }, [recipeMaterialNames, materialLookup]);
 
+  // Classify item name into picker-style categories
+  const classifyItem = useCallback((itemName: string): string => {
+    const simplified = traditionalToSimplified[itemName] || itemName;
+    if (FOOD_ITEMS.includes(simplified) || FOOD_ITEMS.some((f) => (simplifiedToTraditional[f] || f) === itemName)) return "食材";
+    if (ADVANCED_ITEMS.includes(simplified) || ADVANCED_ITEMS.some((a) => (simplifiedToTraditional[a] || a) === itemName)) return "高级物品";
+    const sources = materialSourcesData as Record<string, { type: string }>;
+    const source = sources[itemName];
+    if (source) {
+      const tab = SOURCE_TYPE_TO_TAB[source.type];
+      if (tab && tab !== "食材") return tab;
+    }
+    const recipe = recipes.find((r) => r.name === itemName);
+    if (recipe) {
+      const cat = recipe.category;
+      if (["sword", "axe", "spear", "bow", "staff", "dagger", "throw", "bomb"].includes(cat)) return "武器";
+      if (["helmet", "hat", "armor", "cloth", "robe", "boots", "shoes", "shield"].includes(cat)) return "防具";
+      if (cat === "cooking") return "料理";
+      if (cat === "pharmacy") return "血瓶";
+    }
+    return "其他";
+  }, [recipes]);
+
+  const STATS_CATEGORIES = ["食材", "木材", "香草", "矿条", "武器", "防具", "料理", "血瓶", "高级物品", "其他"] as const;
+
   const statsData = useMemo(() => {
-    const map = new Map<string, { type: ItemType; unit: ItemUnit; characters: { name: string; quantity: number; itemId: string }[]; total: number }>();
+    const map = new Map<string, { unit: ItemUnit; characters: { name: string; quantity: number; itemId: string }[]; total: number }>();
     for (const item of items) {
       const key = `${item.itemName}|${item.unit}`;
-      if (!map.has(key)) map.set(key, { type: item.itemType, unit: item.unit, characters: [], total: 0 });
+      if (!map.has(key)) map.set(key, { unit: item.unit, characters: [], total: 0 });
       const entry = map.get(key)!;
       entry.characters.push({ name: item.characterName, quantity: item.quantity, itemId: item.id });
       entry.total += item.quantity;
@@ -214,7 +238,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       key, itemName: key.split("|")[0], ...val,
       characters: val.characters.sort((a, b) => b.quantity - a.quantity),
     }));
-    if (filterType) result = result.filter((i) => i.type === filterType);
+    if (filterType) result = result.filter((i) => classifyItem(i.itemName) === filterType);
     if (recipeMaterialNames) result = result.filter((i) => itemMatchesRecipe(i.itemName));
     if (searchQuery.trim()) {
       const q = searchQuery.trim().toLowerCase();
@@ -229,16 +253,17 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       const levelB = materialLookup.get(b.itemName)?.materialLevel ?? Infinity;
       return levelA - levelB || a.itemName.localeCompare(b.itemName);
     });
-  }, [items, filterType, searchQuery, recipeMaterialNames, itemMatchesRecipe, materialLookup]);
+  }, [items, filterType, searchQuery, recipeMaterialNames, itemMatchesRecipe, materialLookup, classifyItem]);
 
-  const statsGroupedByType = useMemo(() => {
-    const map = new Map<ItemType, typeof statsData>();
+  const statsGroupedByCategory = useMemo(() => {
+    const map = new Map<string, typeof statsData>();
     for (const stat of statsData) {
-      if (!map.has(stat.type)) map.set(stat.type, []);
-      map.get(stat.type)!.push(stat);
+      const cat = classifyItem(stat.itemName);
+      if (!map.has(cat)) map.set(cat, []);
+      map.get(cat)!.push(stat);
     }
-    return ITEM_TYPES.filter((t) => map.has(t)).map((t) => ({ type: t, items: map.get(t)! }));
-  }, [statsData]);
+    return STATS_CATEGORIES.filter((t) => map.has(t)).map((t) => ({ type: t, items: map.get(t)! }));
+  }, [statsData, classifyItem]);
 
   // Auto-expand all stats items when recipe filter is applied
   useEffect(() => {
@@ -525,11 +550,11 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
           return i.itemName.toLowerCase().includes(q) || s.includes(q) || t.includes(q);
         })) return false;
       }
-      if (filterType && !charItems.some((i) => i.itemType === filterType)) return false;
+      if (filterType && !charItems.some((i) => classifyItem(i.itemName) === filterType)) return false;
       if (recipeMaterialNames && !charItems.some((i) => itemMatchesRecipe(i.itemName))) return false;
       return true;
     });
-  }, [characterNames, groupedByCharacter, searchQuery, filterType, recipeMaterialNames, itemMatchesRecipe]);
+  }, [characterNames, groupedByCharacter, searchQuery, filterType, recipeMaterialNames, itemMatchesRecipe, classifyItem]);
 
   return (
     <div>
@@ -659,7 +684,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
           className="w-48 bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-sm text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500" />
         <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-hide">
           <button type="button" onClick={() => setFilterType(null)} className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all duration-150 ${filterType === null ? pillActive : pillInactive}`}>全部</button>
-          {ITEM_TYPES.map((t) => (
+          {STATS_CATEGORIES.map((t) => (
             <button key={t} type="button" onClick={() => setFilterType(t === filterType ? null : t)}
               className={`px-2.5 py-0.5 rounded-full text-xs font-medium transition-all duration-150 ${filterType === t ? pillActive : pillInactive}`}>{t}</button>
           ))}
@@ -859,7 +884,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       {/* Expanded character details */}
       {expandedCharacters.size > 0 && editingCharacter === null && Array.from(expandedCharacters).filter((cn) => filteredCharacters.includes(cn)).map((charName) => {
         let charItems = groupedByCharacter.get(charName) || [];
-        if (filterType) charItems = charItems.filter((i) => i.itemType === filterType);
+        if (filterType) charItems = charItems.filter((i) => classifyItem(i.itemName) === filterType);
         if (recipeMaterialNames) charItems = charItems.filter((i) => itemMatchesRecipe(i.itemName));
         if (searchQuery.trim()) {
           const q = searchQuery.trim().toLowerCase();
@@ -906,11 +931,11 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
 
       {/* Stats by category */}
       <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">物资统计</h2>
-      {statsGroupedByType.length === 0 ? (
+      {statsGroupedByCategory.length === 0 ? (
         <div className="text-center text-slate-400 py-3 text-xs">{items.length === 0 ? "添加物资后显示统计" : "没有匹配的物资"}</div>
       ) : (
         <div className="space-y-3">
-          {statsGroupedByType.map(({ type, items: typeItems }) => (
+          {statsGroupedByCategory.map(({ type, items: typeItems }) => (
             <div key={type}>
               <h3 className="text-[11px] font-semibold text-gray-500 mb-1">{type}</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1.5">
