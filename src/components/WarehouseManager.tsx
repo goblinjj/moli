@@ -176,6 +176,25 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
     return map;
   }, [items]);
 
+  // Material names for the selected recipe (for filtering)
+  const recipeMaterialNames = useMemo(() => {
+    if (!selectedRecipe) return null;
+    const names = new Set<string>();
+    for (const mat of selectedRecipe.materials) {
+      names.add(mat.name);
+      const simplified = traditionalToSimplified[mat.name];
+      if (simplified) names.add(simplified);
+    }
+    return names;
+  }, [selectedRecipe]);
+
+  const itemMatchesRecipe = useCallback((itemName: string) => {
+    if (!recipeMaterialNames) return true;
+    if (recipeMaterialNames.has(itemName)) return true;
+    const lookup = materialLookup.get(itemName);
+    return !!lookup && recipeMaterialNames.has(lookup.name);
+  }, [recipeMaterialNames, materialLookup]);
+
   const statsData = useMemo(() => {
     const map = new Map<string, { type: ItemType; unit: ItemUnit; characters: { name: string; quantity: number; itemId: string }[]; total: number }>();
     for (const item of items) {
@@ -418,25 +437,6 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const selectCls = "bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-sm text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500";
   const pillActive = "bg-accent-500 text-white shadow-sm shadow-accent-500/20";
   const pillInactive = "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900";
-
-  // Material names for the selected recipe (for filtering)
-  const recipeMaterialNames = useMemo(() => {
-    if (!selectedRecipe) return null;
-    const names = new Set<string>();
-    for (const mat of selectedRecipe.materials) {
-      names.add(mat.name);
-      const simplified = traditionalToSimplified[mat.name];
-      if (simplified) names.add(simplified);
-    }
-    return names;
-  }, [selectedRecipe]);
-
-  const itemMatchesRecipe = useCallback((itemName: string) => {
-    if (!recipeMaterialNames) return true;
-    if (recipeMaterialNames.has(itemName)) return true;
-    const lookup = materialLookup.get(itemName);
-    return !!lookup && recipeMaterialNames.has(lookup.name);
-  }, [recipeMaterialNames, materialLookup]);
 
   const filteredCharacters = useMemo(() => {
     return characterNames.filter((name) => {
