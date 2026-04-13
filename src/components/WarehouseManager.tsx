@@ -782,9 +782,9 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                 <tr className="text-left text-gray-500 text-xs border-b border-gray-200">
                   <th className="py-2 px-1 font-medium" style={{width: 28}}></th>
                   <th className="py-2 px-1 font-medium" style={{minWidth: 60}}>名称</th>
-                  <th className="py-2 px-1 font-medium text-right" style={{width: 64}}>数量</th>
-                  <th className="py-2 px-1 font-medium" style={{width: 56}}>单位</th>
-                  <th className="py-2 px-1 font-medium text-right" style={{width: 64}}>占格</th>
+                  <th className="py-2 px-1 font-medium text-center" style={{width: 64}}>数量</th>
+                  <th className="py-2 px-1 font-medium text-center" style={{width: 74}}>单位</th>
+                  <th className="py-2 px-1 font-medium text-center" style={{width: 64}}>占格</th>
                   <th className="py-2 px-1 font-medium text-center" style={{width: 40}}>操作</th>
                 </tr>
               </thead>
@@ -801,20 +801,20 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                     <td className="py-1 px-1">
                       <span className="text-xs text-gray-800 truncate block">{traditionalToSimplified[row.itemName] || row.itemName}</span>
                     </td>
-                    <td className="py-1 px-1" style={{width: 64}}>
+                    <td className="py-1 px-1 text-center" style={{width: 64}}>
                       <input type="number" value={row.quantity} onChange={(e) => handleRowChange(idx, "quantity", Number(e.target.value) || 0)}
-                        min={0} className={inputCls + " text-xs py-0.5 text-right"} />
+                        min={0} className={inputCls + " text-xs py-0.5 text-center"} />
                     </td>
-                    <td className="py-1 px-1" style={{width: 56}}>
+                    <td className="py-1 px-1 text-center" style={{width: 74}}>
                       <select value={row.unit} onChange={(e) => handleRowChange(idx, "unit", e.target.value)}
-                        className={selectCls + " w-full text-xs py-0.5"}>
+                        className={selectCls + " w-full text-xs py-0.5 text-center"}>
                         {ITEM_UNITS.map((u) => <option key={u} value={u}>{u}</option>)}
                       </select>
                     </td>
-                    <td className="py-1 px-1" style={{width: 64}}>
+                    <td className="py-1 px-1 text-center" style={{width: 64}}>
                       <input type="number" value={row.slots}
                         onChange={(e) => { setEditRows((prev) => { const next = [...prev]; next[idx] = { ...next[idx], slots: Number(e.target.value) || 0 }; return next; }); }}
-                        min={0} className={inputCls + " text-xs py-0.5 text-right"} />
+                        min={0} className={inputCls + " text-xs py-0.5 text-center"} />
                     </td>
                     <td className="py-1 px-1 text-center" style={{width: 40}}>
                       <button type="button" onClick={() => handleDeleteRow(idx)} className="text-[11px] text-red-400 hover:text-red-600">删除</button>
