@@ -459,13 +459,11 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
         .filter((d) => d.characterName && d.itemName && d.itemType && d.quantity && d.unit)
         .map((d) => ({ ...d, id: generateId() }));
       if (imported.length === 0) { alert("未找到有效的物资记录"); return; }
-      setItems((prev) => [...prev, ...imported]);
       const configs = unpackConfigs(rawConfigs);
+      if (!confirm(`即将导入 ${imported.length} 条物资记录${configs.length > 0 ? `和 ${configs.length} 个角色配置` : ""}，这将完全覆盖现有的所有数据。是否继续？`)) return;
+      setItems(imported);
       if (configs.length > 0) {
-        setCharConfigs((prev) => {
-          const existing = new Set(prev.map((c) => c.name));
-          return [...prev, ...configs.filter((c) => !existing.has(c.name))];
-        });
+        setCharConfigs(configs);
       }
       setShowTransfer(false); setTransferText("");
     } catch { alert("数据解析失败，请确认粘贴的内容正确"); }
@@ -641,7 +639,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
               </>
             ) : (
               <>
-                <p className="text-xs text-gray-500 mb-2">粘贴从其他人处获得的数据文本，导入后将追加到现有数据中。</p>
+                <p className="text-xs text-gray-500 mb-2">粘贴从其他人处获得的数据文本，导入后将完全覆盖现有数据。</p>
                 <textarea value={transferText} onChange={(e) => setTransferText(e.target.value)} placeholder="在此粘贴数据..."
                   className="w-full h-32 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs font-mono text-gray-600 resize-none focus:outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500" />
                 <div className="flex justify-end gap-2 mt-3">
