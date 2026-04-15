@@ -225,12 +225,23 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
 
   const STATS_CATEGORIES = ["食材", "木材", "香草", "矿条", "武器", "防具", "料理", "血瓶", "高级物品", "其他"] as const;
 
+  const recipeLookup = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const r of recipes) {
+      if (r.image && !map.has(r.name)) map.set(r.name, r.image);
+      const simplified = traditionalToSimplified[r.name];
+      if (r.image && simplified && !map.has(simplified)) map.set(simplified, r.image);
+    }
+    return map;
+  }, [recipes]);
+
   const statsData = useMemo(() => {
-    const map = new Map<string, { unit: ItemUnit; characters: { name: string; quantity: number; itemId: string }[]; total: number }>();
+    const map = new Map<string, { unit: ItemUnit; materialImage?: string; characters: { name: string; quantity: number; itemId: string }[]; total: number }>();
     for (const item of items) {
       const key = `${item.itemName}|${item.unit}`;
-      if (!map.has(key)) map.set(key, { unit: item.unit, characters: [], total: 0 });
+      if (!map.has(key)) map.set(key, { unit: item.unit, materialImage: item.materialImage, characters: [], total: 0 });
       const entry = map.get(key)!;
+      if (!entry.materialImage && item.materialImage) entry.materialImage = item.materialImage;
       entry.characters.push({ name: item.characterName, quantity: item.quantity, itemId: item.id });
       entry.total += item.quantity;
     }
@@ -982,8 +993,8 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                     <div key={stat.key} className="bg-white border border-gray-200 rounded-md shadow-sm overflow-hidden">
                       <div className="flex items-center justify-between px-2 py-1 cursor-pointer hover:bg-gray-50 transition-colors gap-1"
                         onClick={() => setExpandedItemKeys((prev) => { const next = new Set(prev); if (next.has(stat.key)) next.delete(stat.key); else next.add(stat.key); return next; })}>
-                        {materialLookup.get(stat.itemName)?.image && (
-                          <img src={`/items/${materialLookup.get(stat.itemName)!.image}`} alt="" className="w-4 h-4 object-contain flex-shrink-0" />
+                        {(stat.materialImage || materialLookup.get(stat.itemName)?.image || recipeLookup.get(stat.itemName)) && (
+                          <img src={`/items/${stat.materialImage || materialLookup.get(stat.itemName)?.image || recipeLookup.get(stat.itemName)}`} alt="" className="w-4 h-4 object-contain flex-shrink-0" />
                         )}
                         <span className="text-gray-800 text-[11px] font-medium min-w-0 truncate">{stat.itemName}</span>
                         <span className="tabular-nums font-semibold text-gray-600 text-[11px] ml-auto flex-shrink-0">{stat.total}{stat.unit}</span>
