@@ -90,6 +90,38 @@ const RECIPE_GROUPS: { group: string; categories: { id: Category; label: string 
   { group: "宠物", categories: [{ id: "collar", label: "项圈" }, { id: "crystal", label: "晶石" }, { id: "petArmor", label: "装甲" }, { id: "petAccessory", label: "饰品" }, { id: "petCloth", label: "服装" }] },
 ];
 
+interface QuantityInputProps {
+  value: number;
+  onChange: (n: number) => void;
+  min?: number;
+  className?: string;
+}
+
+function QuantityInput({ value, onChange, min = 0, className }: QuantityInputProps) {
+  const [draft, setDraft] = useState<string>(String(value));
+  const [focused, setFocused] = useState(false);
+  useEffect(() => {
+    if (!focused) setDraft(String(value));
+  }, [value, focused]);
+  return (
+    <input
+      type="number"
+      value={draft}
+      min={min}
+      className={className}
+      onFocus={(e) => { setFocused(true); e.target.select(); }}
+      onChange={(e) => setDraft(e.target.value)}
+      onBlur={() => {
+        const parsed = parseInt(draft, 10);
+        const normalized = Number.isNaN(parsed) || parsed < min ? min : parsed;
+        setDraft(String(normalized));
+        setFocused(false);
+        if (normalized !== value) onChange(normalized);
+      }}
+    />
+  );
+}
+
 function ConfirmDialog({ message, onConfirm, onCancel }: { message: string; onConfirm: () => void; onCancel: () => void }) {
   return (
     <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4" onClick={onCancel}>
@@ -145,6 +177,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const [confirmAction, setConfirmAction] = useState<{ message: string; action: () => void } | null>(null);
   const [expandedItemKeys, setExpandedItemKeys] = useState<Set<string>>(new Set());
   const [expandedCharacters, setExpandedCharacters] = useState<Set<string>>(new Set());
+  const [stepValue, setStepValue] = useState<number>(1);
 
   // Material picker state (inline in edit panel)
   const [pickerTab, setPickerTab] = useState<PickerTab>("食材");
@@ -767,8 +800,8 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
               <div className="flex items-center gap-1 text-xs text-gray-500">
                 <span className={`font-mono font-semibold ${usedSlots > editTotalSlots ? "text-red-500" : "text-gray-700"}`}>{usedSlots}</span>
                 <span>/</span>
-                <input type="number" value={editTotalSlots} onChange={(e) => setEditTotalSlots(Number(e.target.value) || DEFAULT_TOTAL_SLOTS)}
-                  min={1} className="w-12 text-center font-mono font-semibold bg-white border border-gray-200 rounded px-1 py-0 text-xs focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
+                <QuantityInput value={editTotalSlots} onChange={setEditTotalSlots} min={1}
+                  className="w-12 text-center font-mono font-semibold bg-white border border-gray-200 rounded px-1 py-0 text-xs focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
                 <span>格</span>
               </div>
             </div>
@@ -875,7 +908,7 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                       <span className="text-xs text-gray-800 truncate block">{traditionalToSimplified[row.itemName] || row.itemName}</span>
                     </td>
                     <td className="py-1 px-1 text-center" style={{width: 64}}>
-                      <input type="number" value={row.quantity} onChange={(e) => handleRowChange(idx, "quantity", Number(e.target.value) || 0)}
+                      <QuantityInput value={row.quantity} onChange={(n) => handleRowChange(idx, "quantity", n)}
                         min={0} className={inputCls + " text-xs py-0.5 text-center"} />
                     </td>
                     <td className="py-1 px-1 text-center" style={{width: 74}}>
@@ -885,8 +918,8 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                       </select>
                     </td>
                     <td className="py-1 px-1 text-center" style={{width: 64}}>
-                      <input type="number" value={row.slots}
-                        onChange={(e) => { setEditRows((prev) => { const next = [...prev]; next[idx] = { ...next[idx], slots: Number(e.target.value) || 0 }; return next; }); }}
+                      <QuantityInput value={row.slots}
+                        onChange={(n) => { setEditRows((prev) => { const next = [...prev]; next[idx] = { ...next[idx], slots: n }; return next; }); }}
                         min={0} className={inputCls + " text-xs py-0.5 text-center"} />
                     </td>
                     <td className="py-1 px-1 text-center" style={{width: 40}}>
@@ -978,7 +1011,14 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
       })}
 
       {/* Stats by category */}
-      <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-1.5">物资统计</h2>
+      <div className="flex items-center justify-between mb-1.5">
+        <h2 className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">物资统计</h2>
+        <div className="flex items-center gap-1 text-[10px] text-gray-400">
+          <span>步进</span>
+          <QuantityInput value={stepValue} onChange={setStepValue} min={1}
+            className="w-12 text-center font-mono font-semibold bg-white border border-gray-200 rounded px-1 py-0 text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
+        </div>
+      </div>
       {statsGroupedByCategory.length === 0 ? (
         <div className="text-center text-slate-400 py-3 text-xs">{items.length === 0 ? "添加物资后显示统计" : "没有匹配的物资"}</div>
       ) : (
@@ -1004,11 +1044,11 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
                           {stat.characters.map((ch) => (
                             <div key={ch.itemId} className="flex items-center gap-1">
                               <span className="text-[10px] text-gray-500 min-w-0 truncate flex-1">{ch.name}</span>
-                              <button type="button" onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - 1)}
+                              <button type="button" onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity - stepValue)}
                                 className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">-</button>
-                              <input type="number" value={ch.quantity} onChange={(e) => handleInlineQuantityChange(ch.itemId, Number(e.target.value) || 0)}
+                              <QuantityInput value={ch.quantity} onChange={(n) => handleInlineQuantityChange(ch.itemId, n)} min={0}
                                 className="w-10 text-center text-[10px] font-mono bg-white border border-gray-200 rounded px-0.5 py-0 focus:outline-none focus:ring-1 focus:ring-accent-500/30" />
-                              <button type="button" onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + 1)}
+                              <button type="button" onClick={() => handleInlineQuantityChange(ch.itemId, ch.quantity + stepValue)}
                                 className="w-4 h-4 rounded bg-gray-200/80 text-gray-500 hover:bg-gray-300 text-[9px] font-bold flex items-center justify-center flex-shrink-0">+</button>
                             </div>
                           ))}
