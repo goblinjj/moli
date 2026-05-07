@@ -112,7 +112,7 @@ function QuantityInput({ value, onChange, min = 0, className }: QuantityInputPro
       onFocus={(e) => { setFocused(true); e.target.select(); }}
       onChange={(e) => setDraft(e.target.value)}
       onBlur={() => {
-        const parsed = parseInt(draft, 10);
+        const parsed = parseFloat(draft);
         const normalized = Number.isNaN(parsed) || parsed < min ? min : parsed;
         setDraft(String(normalized));
         setFocused(false);
@@ -445,7 +445,9 @@ export default function WarehouseManager({ recipes }: WarehouseManagerProps) {
   const handleCancelEditing = useCallback(() => { setEditingCharacter(null); setEditRows([]); }, []);
 
   const handleInlineQuantityChange = useCallback((itemId: string, newQty: number) => {
-    setItems((prev) => prev.map((i) => i.id === itemId ? { ...i, quantity: Math.max(0, newQty), slots: Math.ceil(Math.max(0, newQty)) } : i));
+    const rounded = Math.round(newQty * 1e6) / 1e6;
+    const clamped = Math.max(0, rounded);
+    setItems((prev) => prev.map((i) => i.id === itemId ? { ...i, quantity: clamped, slots: Math.ceil(clamped) } : i));
   }, []);
 
   // --- Import/Export (compact format with deflate compression) ---
